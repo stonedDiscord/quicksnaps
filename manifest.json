@@ -1,21 +1,40 @@
 {
-  "generated_at": "2026-07-18T14:11:02.552369+00:00",
+  "generated_at": "2026-07-18T14:11:20.933286+00:00",
   "title": "MAME quick snaps",
-  "head": "6d498abb0679d35da6727dee1978eb9891800b67",
-  "base": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
-  "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67",
+  "head": "85162043f468c303a779679f1fd897f5cd647a24",
+  "base": "6d498abb0679d35da6727dee1978eb9891800b67",
+  "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24",
   "changed_files": [
-    "src/mame/namco/sg_vga.cpp"
+    "scripts/src/machine.lua",
+    "src/devices/machine/generalplus_gpce4_soc.cpp",
+    "src/devices/machine/generalplus_gpce4_soc.h",
+    "src/mame/handheld/bl_handhelds_lcdc.cpp",
+    "src/mame/handheld/generalplus_gpce4.cpp"
   ],
   "reasons": {
-    "galfever": [
-      "driver changed: src/mame/namco/sg_vga.cpp"
+    "digicolr": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
     ],
-    "hplanet": [
-      "driver changed: src/mame/namco/sg_vga.cpp"
+    "mapacman": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
     ],
-    "shootpar": [
-      "driver changed: src/mame/namco/sg_vga.cpp"
+    "parcade": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    ],
+    "siddr": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    ],
+    "tagalaga": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    ],
+    "taspinv": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    ],
+    "taturtf": [
+      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    ],
+    "blhandheldlcdc": [
+      "driver changed: src/mame/handheld/bl_handhelds_lcdc.cpp"
     ]
   },
   "machines": [
@@ -14694,6 +14713,246 @@
           "failure_reason": "norautpn          Noraut Deluxe Poker (bootleg)            (bootleg, 198?)",
           "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
           "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
+        }
+      }
+    },
+    {
+      "name": "digicolr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.763,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.782,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "mapacman",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.841,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.733,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "parcade",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.8,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.816,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "siddr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.737,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.737,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "tagalaga",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.709,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.791,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "taspinv",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.761,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.74,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "taturtf",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.748,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.742,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: UNSP: unknown opcode ff00 at 3005",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        }
+      }
+    },
+    {
+      "name": "blhandheldlcdc",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.242,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "kblades           Blades of Steel (handheld)              (Konami, 1990)",
+          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.301,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "kblades           Blades of Steel (handheld)              (Konami, 1990)",
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
         }
       }
     }
