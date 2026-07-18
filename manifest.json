@@ -1,58 +1,14 @@
 {
-  "generated_at": "2026-07-18T20:04:56.204868+00:00",
+  "generated_at": "2026-07-18T20:05:15.380977+00:00",
   "title": "MAME quick snaps",
-  "head": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-  "base": "27da577c21c473297f6aeecf5ab48c5a56872525",
-  "artifact": "mame-linux-clang-65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-  "commit_message": "vsystem: change some drivers to use the retry_access trick to sync cpus instead of boosting interleave",
+  "head": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
+  "base": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
+  "artifact": "mame-linux-clang-571f3d4b723373e8ede3dd18931d88857fa84dfc",
+  "commit_message": "Revert \"ioport: set disable_side_effects on internal frame update (eg. if reading an input port triggers an irq, MAME's frame update shouldn't affect it)\"\n\nThis reverts commit f695e757c57f29ab4a220ff03a4b847e0f9c9530.\n\nI/O ports are for reporting the state of a set of input lines.  If a\ncustom input member has side effects, it's broken.  Use a read callback\nof some kind (read handler, delegate, devcb, etc.) instead.  Allowing or\nencouraging I/O ports with read side effects breaks too many\nassumptions.",
   "changed_files": [
-    "src/emu/ioport.cpp",
-    "src/mame/vsystem/aerofgt.cpp",
-    "src/mame/vsystem/crshrace.cpp",
-    "src/mame/vsystem/f1gp.cpp",
-    "src/mame/vsystem/tail2nos.cpp"
+    "src/emu/ioport.cpp"
   ],
-  "reasons": {
-    "aerofgt": [
-      "driver changed: src/mame/vsystem/aerofgt.cpp"
-    ],
-    "crshrace": [
-      "driver changed: src/mame/vsystem/crshrace.cpp"
-    ],
-    "crshrace2": [
-      "driver changed: src/mame/vsystem/crshrace.cpp"
-    ],
-    "crshrace2a": [
-      "driver changed: src/mame/vsystem/crshrace.cpp"
-    ],
-    "f1gp": [
-      "driver changed: src/mame/vsystem/f1gp.cpp"
-    ],
-    "f1gp2": [
-      "driver changed: src/mame/vsystem/f1gp.cpp"
-    ],
-    "f1gpa": [
-      "driver changed: src/mame/vsystem/f1gp.cpp"
-    ],
-    "f1gpb": [
-      "driver changed: src/mame/vsystem/f1gp.cpp"
-    ],
-    "f1gpbl": [
-      "driver changed: src/mame/vsystem/f1gp.cpp"
-    ],
-    "sformula": [
-      "driver changed: src/mame/vsystem/tail2nos.cpp"
-    ],
-    "sformulaa": [
-      "driver changed: src/mame/vsystem/tail2nos.cpp"
-    ],
-    "tail2nos": [
-      "driver changed: src/mame/vsystem/tail2nos.cpp"
-    ],
-    "tail2nosa": [
-      "driver changed: src/mame/vsystem/tail2nos.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
