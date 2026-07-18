@@ -1,121 +1,43 @@
 {
-  "generated_at": "2026-07-18T17:19:34.910486+00:00",
+  "generated_at": "2026-07-18T17:20:00.251071+00:00",
   "title": "MAME quick snaps",
-  "head": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
-  "base": "f39eb8da6be6e827fa7ba3ecc60be66a82dff27b",
-  "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020",
-  "commit_message": "playmark/playmark.cpp, playmark/powerbal.cpp, playmark/sderby.cpp: Cleaned up code: (#15289)\n\n* Split driver state class for different hardware configurations.\n* Added side effect checks for debugger reads.\n* Use generic_latch_8_device for sound command port.\n* Restrict bitmap drawing to clipping rectangle.\n* Use BIT helper for single bit values.\n* Improved logging.\n* Reduced duplication and improved member function and ROM region names.",
+  "head": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+  "base": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+  "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123",
+  "commit_message": "dynax/realbrk.cpp: Fixed DIP switch matrix read behaviour and cleaned up code: (#15291)\n\n* Fixed text tilemap color handling, use generic graphics decoding layouts.\n* Use BIT and util::sext to extract bits and sign-extend fields.\n* Use explicitly sized integers for member variables in save states.\n* Reduced literal tag usage.",
   "changed_files": [
-    "src/mame/playmark/playmark.cpp",
-    "src/mame/playmark/playmark.h",
-    "src/mame/playmark/playmark_v.cpp",
-    "src/mame/playmark/powerbal.cpp",
-    "src/mame/playmark/sderby.cpp"
+    "src/mame/dynax/realbrk.cpp",
+    "src/mame/dynax/realbrk.h",
+    "src/mame/dynax/realbrk_v.cpp"
   ],
   "reasons": {
-    "atombjt": [
-      "driver changed: src/mame/playmark/powerbal.cpp"
+    "dai2kaku": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "bigtwin": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
+    "pkgnsh": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "bigtwinb": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
+    "pkgnshdx": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "bigtwinc": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
+    "realbrk": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "croupier": [
-      "driver changed: src/mame/playmark/sderby.cpp"
+    "realbrkj": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "croupiera": [
-      "driver changed: src/mame/playmark/sderby.cpp"
+    "realbrkk": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ],
-    "croupierb": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "excelsr": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "excelsra": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "hotmind": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "hotminda": [
-      "driver changed: src/mame/playmark/powerbal.cpp"
-    ],
-    "hotmindb": [
-      "driver changed: src/mame/playmark/powerbal.cpp"
-    ],
-    "hotmindc": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "hrdtimes": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "hrdtimesa": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "luckboom": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "luckboomh": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "magicstk": [
-      "driver changed: src/mame/playmark/powerbal.cpp"
-    ],
-    "magictch": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "magictcha": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "powerbal": [
-      "driver changed: src/mame/playmark/powerbal.cpp"
-    ],
-    "sderby": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "sderbya": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "shinygld": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "spacewin": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "tropfrt": [
-      "driver changed: src/mame/playmark/sderby.cpp"
-    ],
-    "wbeachvl": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "wbeachvl2": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "wbeachvl3": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
-    ],
-    "wbeachvla": [
-      "driver changed: src/mame/playmark/playmark.cpp",
-      "driver changed: src/mame/playmark/playmark.h"
+    "realbrko": [
+      "driver changed: src/mame/dynax/realbrk.cpp",
+      "driver changed: src/mame/dynax/realbrk.h"
     ]
   },
   "machines": [
@@ -71620,6 +71542,230 @@
           "failure_reason": null,
           "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
           "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        }
+      }
+    },
+    {
+      "name": "dai2kaku",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.001,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.403,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "pkgnsh",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.076,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.989,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "pkgnshdx",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.065,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.503,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "realbrk",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.826,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.265,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "realbrkj",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.798,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.662,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "realbrkk",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.924,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.306,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "realbrko",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.704,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
+          "artifact": "mame-linux-clang-0d7be4fcdf71a1b9324172e19a0eec819a3de020"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.202,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
         }
       }
     }
