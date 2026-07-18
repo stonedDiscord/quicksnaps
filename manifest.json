@@ -1,240 +1,37 @@
 {
-  "generated_at": "2026-07-18T15:38:04.993372+00:00",
+  "generated_at": "2026-07-18T15:38:31.525260+00:00",
   "title": "MAME quick snaps",
-  "head": "a5c638f7411090cd327ec122d00572ba4b42902e",
-  "base": "39b2d1c7f0a4019dc552f6770f4962f380372763",
-  "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e",
-  "commit_message": "namcos2/21: assume audiocpu rom range is c000-ffff",
+  "head": "55f2882692b47100786625e410d16cd08c2cd8ed",
+  "base": "a5c638f7411090cd327ec122d00572ba4b42902e",
+  "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed",
+  "commit_message": "temco/senjyo.cpp: dumped PROM for starforcb [f205v]",
   "changed_files": [
-    "src/mame/namco/dangbar.cpp",
-    "src/mame/namco/namco_c148.cpp",
-    "src/mame/namco/namcos2.cpp",
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp"
+    "src/mame/tecmo/senjyo.cpp"
   ],
   "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "baluba": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "megaforc": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "assault": [
-      "driver changed: src/mame/namco/namcos2.cpp"
+    "megaforcu": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "assaultj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
+    "senjyo": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "assaultp": [
-      "driver changed: src/mame/namco/namcos2.cpp"
+    "starforc": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "bellybmbr": [
-      "driver changed: src/mame/namco/dangbar.cpp"
+    "starforca": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "bubbletr": [
-      "driver changed: src/mame/namco/namcos2.cpp"
+    "starforcb": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ],
-    "bubbletrj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "burnforc": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "burnforco": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "cosmogng": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "cosmogngj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "dangbar": [
-      "driver changed: src/mame/namco/dangbar.cpp"
-    ],
-    "dirtfoxj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "dsaber": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "dsabera": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "dsaberj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap2": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap2j": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap3": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap3a": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap3bl": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap3j": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finalap3jc": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finallap": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finallapc": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finallapd": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finallapjb": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finallapjc": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "finehour": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "fourtrax": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "fourtraxa": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "fourtraxj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "gollygho": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "kyukaidk": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "kyukaidko": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "luckywld": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "luckywldj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "marvland": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "marvlandup": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "metlhawk": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "metlhawkj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "mirninja": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "mirninjaa": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "ordyne": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "ordynej": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "ordyneje": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "phelios": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "pheliosj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "rthun2": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "rthun2j": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sgunner": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sgunner2": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sgunner2j": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sgunnerj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "sspanic": [
-      "driver changed: src/mame/namco/dangbar.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "suzuk8h2": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "suzuk8h2j": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "suzuka8h": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "suzuka8hj": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sws": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sws92": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sws92g": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "sws93": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "valkyrie": [
-      "driver changed: src/mame/namco/namcos2.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "starforce": [
+      "driver changed: src/mame/tecmo/senjyo.cpp"
     ]
   },
   "machines": [
@@ -40600,6 +40397,262 @@
           "failure_reason": "machine has no emulated screen",
           "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
           "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        }
+      }
+    },
+    {
+      "name": "baluba",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.441,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.161,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "megaforc",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.812,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.577,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "megaforcu",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.103,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.15,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "senjyo",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.287,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.35,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "starforc",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.781,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.11,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "starforca",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.048,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.514,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "starforcb",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.406,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.275,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+        }
+      }
+    },
+    {
+      "name": "starforce",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.13,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a5c638f7411090cd327ec122d00572ba4b42902e",
+          "artifact": "mame-linux-clang-a5c638f7411090cd327ec122d00572ba4b42902e"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.921,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
+          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
         }
       }
     }
