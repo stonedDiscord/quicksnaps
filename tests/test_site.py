@@ -77,7 +77,8 @@ class SiteComparisonTests(unittest.TestCase):
             (directory / filename).write_bytes(self.png(b"\0\0\0\xff", b"metadata"))
         (directory / "mame.log").write_text("[quicksnaps] input skipped")
         manifest = {
-            "generated_at": "now", "head": "sha", "machines": [{
+            "generated_at": "now", "head": "sha", "reasons": {"game": ["driver changed"]},
+            "machines": [{
                 "name": "game", "status": "passed", "captures": {"current": {
                     "status": "passed", "revision": "sha", "button": "1 Player Start",
                     "button_applied": False,
@@ -87,6 +88,23 @@ class SiteComparisonTests(unittest.TestCase):
         (output / "manifest.json").write_text(json.dumps(manifest))
         build_site(output)
         self.assertIn("unavailable; no input pressed", (output / "index.html").read_text())
+
+    def test_past_machine_is_only_a_name_link_on_index(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        output = Path(temporary.name)
+        (output / "machines" / "oldgame").mkdir(parents=True)
+        manifest = {
+            "generated_at": "now", "head": "sha", "reasons": {},
+            "machines": [{"name": "oldgame", "status": "passed", "button": "1 Player Start"}],
+        }
+        (output / "manifest.json").write_text(json.dumps(manifest))
+        build_site(output)
+        index = (output / "index.html").read_text()
+        self.assertIn('<a href="machines/oldgame/">oldgame</a>', index)
+        self.assertIn('class="machine archived"', index)
+        self.assertNotIn("Before input", index)
+        self.assertNotIn("Captured at", index)
 
 
 if __name__ == "__main__":

@@ -16,6 +16,7 @@ body { max-width: 1500px; margin: auto; padding: 2rem; }
 h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .machine { border-top: 1px solid #38414b; padding: 1.5rem 0 2rem; }
 .machine h2 { display: inline-block; margin: 0 1rem .8rem 0; }
+.machine.archived { padding: .65rem 0; } .machine.archived h2 { margin: 0; font-size: 1rem; }
 .status { padding: .2rem .55rem; border-radius: 99px; background: #234c35; }
 .failed { background: #642d34; } .reason { color: #b7c2cc; }
 .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
@@ -119,6 +120,12 @@ def build_site(output: Path) -> None:
 
     for machine in manifest["machines"]:
         name = html.escape(str(machine["name"]))
+        if machine["name"] not in reasons:
+            cards.append(
+                f'<article class="machine archived" data-name="{name}">'
+                f'<h2><a href="machines/{name}/">{name}</a></h2></article>'
+            )
+            continue
         status = html.escape(str(machine["status"]))
         why = "; ".join(
             _reason_html(reason, manifest.get("head", "master"))
