@@ -1,31 +1,21 @@
 {
-  "generated_at": "2026-07-18T17:25:59.670074+00:00",
+  "generated_at": "2026-07-18T17:26:24.663439+00:00",
   "title": "MAME quick snaps",
-  "head": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
-  "base": "374be90a00f47b53e17db9439946c4155fad1a27",
-  "artifact": "mame-linux-clang-fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
-  "commit_message": "combatsc: correct z80 clock, add some address mirrors and remove obsolete note about music timing [hap, Jim Westfall]",
+  "head": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
+  "base": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
+  "artifact": "mame-linux-clang-09b0ab540c731155e76a784f909d93cde6c6e6b1",
+  "commit_message": "hash/p2000_cart.xml: Fix validation. [R. Belmont]",
   "changed_files": [
-    "src/mame/konami/combatsc.cpp"
+    "hash/p2000_cart.xml",
+    "src/devices/machine/mb87030.cpp",
+    "src/mame/philips/p2000t.cpp"
   ],
   "reasons": {
-    "bootcamp": [
-      "driver changed: src/mame/konami/combatsc.cpp"
+    "p2000m": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "bootcampa": [
-      "driver changed: src/mame/konami/combatsc.cpp"
-    ],
-    "combatsc": [
-      "driver changed: src/mame/konami/combatsc.cpp"
-    ],
-    "combatscb": [
-      "driver changed: src/mame/konami/combatsc.cpp"
-    ],
-    "combatscj": [
-      "driver changed: src/mame/konami/combatsc.cpp"
-    ],
-    "combatsct": [
-      "driver changed: src/mame/konami/combatsc.cpp"
+    "p2000t": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ]
   },
   "machines": [
@@ -70513,31 +70503,31 @@
       "name": "p2000m",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "f3ff0cab85b6472bbc79d5987796ad51a7c0ffec",
+      "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 3.016,
+          "duration_seconds": 1.169,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "45c50b4c313dcc00d421b9fc971debfd95e6781f",
-          "artifact": "mame-linux-clang-45c50b4c313dcc00d421b9fc971debfd95e6781f"
+          "revision": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
+          "artifact": "mame-linux-clang-fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 2.353,
+          "duration_seconds": 1.198,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f3ff0cab85b6472bbc79d5987796ad51a7c0ffec",
-          "artifact": "mame-linux-clang-f3ff0cab85b6472bbc79d5987796ad51a7c0ffec"
+          "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
+          "artifact": "mame-linux-clang-09b0ab540c731155e76a784f909d93cde6c6e6b1"
         }
       }
     },
@@ -70545,31 +70535,31 @@
       "name": "p2000t",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "f3ff0cab85b6472bbc79d5987796ad51a7c0ffec",
+      "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 3.999,
+          "duration_seconds": 2.217,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "45c50b4c313dcc00d421b9fc971debfd95e6781f",
-          "artifact": "mame-linux-clang-45c50b4c313dcc00d421b9fc971debfd95e6781f"
+          "revision": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
+          "artifact": "mame-linux-clang-fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 4.061,
+          "duration_seconds": 2.154,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f3ff0cab85b6472bbc79d5987796ad51a7c0ffec",
-          "artifact": "mame-linux-clang-f3ff0cab85b6472bbc79d5987796ad51a7c0ffec"
+          "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
+          "artifact": "mame-linux-clang-09b0ab540c731155e76a784f909d93cde6c6e6b1"
         }
       }
     },
