@@ -30,11 +30,13 @@ class SiteComparisonTests(unittest.TestCase):
             pixel = b"\xff\0\0\xff" if changed and variant == "current" else b"\0\0\0\xff"
             (directory / "after.png").write_bytes(self.png(pixel, comment))
             (directory / "mame.log").write_text("")
-        capture = {"status": "passed", "revision": "sha", "button": "1 Player Start"}
+        previous_capture = {"status": "passed", "revision": "oldsha", "button": "1 Player Start"}
+        current_capture = {"status": "passed", "revision": "newsha", "button": "1 Player Start"}
         manifest = {
-            "generated_at": "now", "head": "sha", "reasons": {"game": ["driver changed"]},
+            "generated_at": "now", "head": "newsha", "base": "oldsha",
+            "reasons": {"game": ["driver changed: src/mame/test/game.cpp"]},
             "machines": [{"name": "game", "status": "passed", "captures": {
-                "previous": capture, "current": capture,
+                "previous": previous_capture, "current": current_capture,
             }}],
         }
         (output / "manifest.json").write_text(json.dumps(manifest))
@@ -49,10 +51,15 @@ class SiteComparisonTests(unittest.TestCase):
         self.assertIn("current/after.png", details)
 
     def test_changed_pair_shows_images_on_index(self):
-        index, _ = self.make_site(changed=True)
+        index, details = self.make_site(changed=True)
         self.assertNotIn("No screenshot change detected", index)
         self.assertIn("previous/before.png", index)
         self.assertIn("current/after.png", index)
+        self.assertIn("https://github.com/mamedev/mame/commit/newsha", index)
+        self.assertIn("https://github.com/mamedev/mame/commit/oldsha", index)
+        self.assertIn("https://github.com/mamedev/mame/blob/newsha/src/mame/test/game.cpp", index)
+        self.assertIn("https://github.com/mamedev/mame/commit/newsha", details)
+        self.assertIn("https://github.com/mamedev/mame/blob/newsha/src/mame/test/game.cpp", details)
 
     def test_png_metadata_difference_is_not_visual_change(self):
         index, details = self.make_site(changed=False, metadata_changed=True)

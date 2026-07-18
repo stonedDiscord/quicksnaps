@@ -4,6 +4,10 @@ import html
 import json
 import struct
 from pathlib import Path
+from urllib.parse import quote
+
+
+MAME_GITHUB = "https://github.com/mamedev/mame"
 
 
 CSS = """\
@@ -52,6 +56,24 @@ def _png_visual_signature(path: Path) -> bytes:
     return bytes(visual) if visual else data
 
 
+def _commit_link(revision: object) -> str:
+    value = str(revision)
+    escaped = html.escape(value)
+    if not value or value in ("unknown", "manual"):
+        return escaped
+    return f'<a href="{MAME_GITHUB}/commit/{quote(value, safe="")}">{escaped}</a>'
+
+
+def _reason_html(reason: object, revision: object) -> str:
+    value = str(reason)
+    prefix = "driver changed: "
+    if value.startswith(prefix):
+        path = value.removeprefix(prefix)
+        href = f"{MAME_GITHUB}/blob/{quote(str(revision), safe='')}/{quote(path, safe='/')}"
+        return f'driver changed: <a href="{href}">{html.escape(path)}</a>'
+    return html.escape(value)
+
+
 def build_site(output: Path) -> None:
     manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
     cards = []
@@ -74,7 +96,7 @@ def build_site(output: Path) -> None:
 
     def capture_html(name: str, machine: dict[str, object], variant: str, capture: dict[str, object]) -> str:
         status = html.escape(str(capture.get("status", "failed")))
-        revision = html.escape(str(capture.get("revision", "unknown")))
+        revision = capture.get("revision", "unknown")
         artifact = html.escape(str(capture.get("artifact") or "local build"))
         body = f'<p><span class="status {status}">{status}</span></p>'
         diagnostics = ""
@@ -93,12 +115,15 @@ def build_site(output: Path) -> None:
 <figure><figcaption>Before input</figcaption><a href="machines/{name}/{variant}/before.png"><img loading="lazy" src="machines/{name}/{variant}/before.png" alt="{name} {variant} before input"></a></figure>
 <figure><figcaption>{after_caption}</figcaption><a href="machines/{name}/{variant}/after.png"><img loading="lazy" src="machines/{name}/{variant}/after.png" alt="{name} {variant} after wait"></a></figure>
 </div>'''
-        return f'<section class="build"><h3>{variant.title()}: {revision}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
+        return f'<section class="build"><h3>{variant.title()}: {_commit_link(revision)}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
 
     for machine in manifest["machines"]:
         name = html.escape(str(machine["name"]))
         status = html.escape(str(machine["status"]))
-        why = "; ".join(map(str, reasons.get(machine["name"], [])))
+        why = "; ".join(
+            _reason_html(reason, manifest.get("head", "master"))
+            for reason in reasons.get(machine["name"], [])
+        )
         captures = machine.get("captures", {})
         if captures:
             if images_changed(str(machine["name"]), captures):
@@ -108,15 +133,15 @@ def build_site(output: Path) -> None:
                 )
             else:
                 shots = f'<p class="unchanged">No screenshot change detected. <a href="machines/{name}/">View machine details</a>.</p>'
-            captured = html.escape(str(captures.get("current", {}).get("revision", machine.get("revision", "unknown"))))
+            captured = str(captures.get("current", {}).get("revision", machine.get("revision", "unknown")))
         elif status == "passed":
-            captured = html.escape(str(machine.get("revision", "unknown")))
+            captured = str(machine.get("revision", "unknown"))
             shots = f'''<div class="shots">
 <figure><figcaption>Before input</figcaption><a href="machines/{name}/before.png"><img loading="lazy" src="machines/{name}/before.png" alt="{name} before input"></a></figure>
 <figure><figcaption>After {html.escape(str(machine['button']))}</figcaption><a href="machines/{name}/after.png"><img loading="lazy" src="machines/{name}/after.png" alt="{name} after input"></a></figure>
 </div>'''
         else:
-            captured = html.escape(str(machine.get("revision", "unknown")))
+            captured = str(machine.get("revision", "unknown"))
             shots = ""
             reason = html.escape(str(machine.get("failure_reason") or "Unknown capture failure"))
             log_path = output / "machines" / str(machine["name"]) / "mame.log"
@@ -124,15 +149,16 @@ def build_site(output: Path) -> None:
             shots = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/mame.log">Open raw log</a></p></details>'
         cards.append(f'''<article class="machine" data-name="{name}">
 <h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
-<div class="reason">Captured at {captured}. {html.escape(why)}</div>{shots}</article>''')
+<div class="reason">Captured at {_commit_link(captured)}. {why}</div>{shots}</article>''')
 
     title = html.escape(str(manifest.get("title", "MAME quick snaps")))
-    revision = html.escape(str(manifest.get("head", "manual run")))
+    revision = manifest.get("head", "manual run")
+    base = manifest.get("base")
     artifact = html.escape(str(manifest.get("artifact") or "local build"))
     document = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>
 <link rel="stylesheet" href="style.css"></head><body><h1>{title}</h1>
-<div class="meta">Revision {revision} - {artifact} - generated {html.escape(manifest['generated_at'])}</div>
+<div class="meta">Revision {_commit_link(revision)}{f' from {_commit_link(base)}' if base else ''} - {artifact} - generated {html.escape(manifest['generated_at'])}</div>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
 <main>{''.join(cards)}</main><script>document.querySelector('#filter').addEventListener('input',e=>{{for(const card of document.querySelectorAll('.machine'))card.hidden=!card.dataset.name.includes(e.target.value.toLowerCase())}})</script>
 </body></html>'''
@@ -143,6 +169,10 @@ def build_site(output: Path) -> None:
     for machine in manifest["machines"]:
         directory = output / "machines" / str(machine["name"])
         name = html.escape(str(machine["name"]))
+        why = "; ".join(
+            _reason_html(reason, manifest.get("head", "master"))
+            for reason in reasons.get(machine["name"], [])
+        )
         captures = machine.get("captures", {})
         if captures:
             content = "".join(
@@ -151,6 +181,7 @@ def build_site(output: Path) -> None:
             )
         else:
             content = '<div class="shots"><figure><figcaption>Before input</figcaption><img src="before.png"></figure><figure><figcaption>After input</figcaption><img src="after.png"></figure></div>'
-        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name}</title><link rel="stylesheet" href="../../style.css"></head><body><a href="../../">&lt;- all machines</a><h1>{name}</h1>{content}</body></html>'''
+        context = f'<p class="reason">{why}</p>' if why else ""
+        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name}</title><link rel="stylesheet" href="../../style.css"></head><body><a href="../../">&lt;- all machines</a><h1>{name}</h1>{context}{content}</body></html>'''
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(page, encoding="utf-8")
