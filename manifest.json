@@ -1,79 +1,20 @@
 {
-  "generated_at": "2026-07-18T15:34:21.602221+00:00",
+  "generated_at": "2026-07-18T15:34:42.479489+00:00",
   "title": "MAME quick snaps",
-  "head": "67bbb92cf19042cd0776bff9f2b175af5867d9bc",
-  "base": "ca5d08de2dc73f26c646b02f530b6fc701e1b248",
-  "artifact": "mame-linux-clang-67bbb92cf19042cd0776bff9f2b175af5867d9bc",
-  "commit_message": "psikyo/psikyosh.cpp: Updates (#15280)\n\n* psikyo/psikyosh.cpp: Updates\n- Fix z buffer bitmap address calculation in sprite draw routine\n- Fix save state support\n- Fix spacings\n- Add notes",
+  "head": "797381847f762ac985c34bea84c0b7aeef4c3360",
+  "base": "67bbb92cf19042cd0776bff9f2b175af5867d9bc",
+  "artifact": "mame-linux-clang-797381847f762ac985c34bea84c0b7aeef4c3360",
+  "commit_message": "sony/smc777.cpp: misc fixes:\n* reverse palette offsets and add gfx pal bank (demofd4)\n* add default palette for non-color board pal bank (side effect of above)\n* add reverse hookup for text layer (amazon), add FRC hookup\n* disable cursor if out of range (sys12j:BIRD, transitt)\n* add set_raw in place of legacy screen setup (makes transitt scroll less jerky)\n* BREAKING CHANGE: replace floppy option from ssdd to 35ssdd string\n\nSystems promoted to working\n---------------------------\nSMC-777 [Angelo Salese]",
   "changed_files": [
-    "src/mame/psikyo/psikyosh.cpp",
-    "src/mame/psikyo/psikyosh.h",
-    "src/mame/psikyo/psikyosh_v.cpp"
+    "hash/pc8801_flop.xml",
+    "hash/smc777.xml",
+    "src/mame/sony/smc777.cpp",
+    "src/mame/sony/smc777_kbd.cpp",
+    "src/mame/sony/smc777_kbd.h"
   ],
   "reasons": {
-    "daraku": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "dragnblz": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "gnbarich": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "gunbird2": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "gunbird2a": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "mjgtaste": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "s1945ii": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "s1945iii": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "s1945iiibl": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "s1945iiibla": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "sbomber": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "sbombera": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "soldivid": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "soldividk": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "tgm2": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
-    ],
-    "tgm2p": [
-      "driver changed: src/mame/psikyo/psikyosh.cpp",
-      "driver changed: src/mame/psikyo/psikyosh.h"
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
     ]
   },
   "machines": [
@@ -14543,31 +14484,31 @@
       "name": "smc777",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
+      "revision": "797381847f762ac985c34bea84c0b7aeef4c3360",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.488,
+          "duration_seconds": 1.538,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "9a20965ce119233c14d0664b10f5af6e99058402",
-          "artifact": "mame-linux-clang-9a20965ce119233c14d0664b10f5af6e99058402"
+          "revision": "67bbb92cf19042cd0776bff9f2b175af5867d9bc",
+          "artifact": "mame-linux-clang-67bbb92cf19042cd0776bff9f2b175af5867d9bc"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.499,
+          "duration_seconds": 1.489,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
-          "artifact": "mame-linux-clang-24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478"
+          "revision": "797381847f762ac985c34bea84c0b7aeef4c3360",
+          "artifact": "mame-linux-clang-797381847f762ac985c34bea84c0b7aeef4c3360"
         }
       }
     },
