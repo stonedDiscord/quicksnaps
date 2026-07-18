@@ -1,32 +1,255 @@
 {
-  "generated_at": "2026-07-18T17:39:47.601646+00:00",
+  "generated_at": "2026-07-18T17:43:21.557054+00:00",
   "title": "MAME quick snaps",
-  "head": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
-  "base": "c55b7121935e2e631cae0d5d66e703975a77df0f",
-  "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f",
-  "commit_message": "namcos21: improve posirq",
+  "head": "08813903cdac12be0294ad1fd6de57bef20a336b",
+  "base": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+  "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b",
+  "commit_message": "current Plug + Play PR (4 sets + 3 softlist entries) (#15308)\n\nNew systems marked not working\n------------------------------\nLittle Tikes Cozy Coupe U-Drive [Team Europe, David Haywood]\nMini Arcade Machine 300-in-1 (Orb Gaming) [Team Europe, David Haywood]\nArcade Game 2.0 (model 8052C, Family Sport 176-in-1) [Team Europe, David Haywood]\n\n\nNew clones marked not working\n-----------------------------\nEA Sports Classics: NHL 95 & FIFA Soccer 96 (JAKKS Pacific TV Game, version 11 11 A) [Team Europe, David Haywood]\n\n\n\nNew software list items marked not working\n------------------------------------------\ntelestory_cart.xml:\nCendrillon - Cendrillon / Beautes en Fleur (France) [Team Europe]\nWinnie l'Ourson - Saute, Tigrou, Saute! / Winnie l'Ourson et l'arbre a miel (France) [Team Europe]\nLe Roi Lion / Le Roi Lion II - L'honneur de la Trieu (France) [Team Europe]",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/newcrest/royal.cpp"
+    "hash/telestory_cart.xml",
+    "src/mame/handheld/evolution_handheld.cpp",
+    "src/mame/mame.lst",
+    "src/mame/nintendo/nes_vt32.cpp",
+    "src/mame/tvgames/generalplus_gpl16250_rom.cpp",
+    "src/mame/tvgames/spg110.cpp"
   ],
   "reasons": {
-    "granada": [
-      "driver changed: src/mame/newcrest/royal.cpp"
+    "beijuehh": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
     ],
-    "sroyal": [
-      "driver changed: src/mame/newcrest/royal.cpp"
+    "bornkidh": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
     ],
-    "supra": [
-      "driver changed: src/mame/newcrest/royal.cpp"
+    "buttdtct": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
     ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "conyfght": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
     ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "conyping": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
     ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "conyteni": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "dgun2573": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "dgun2573a": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "dgunl3201": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "dgunl3202": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "dressmtv": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "easports": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "easportsa": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "easportsu": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "evolhh": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "fcpocket": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "fingerd": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "fpsport": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "gameu108": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "gameu50": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "gameu90": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "gormiti": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "gp230": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "hoppech": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "imgame": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "jak_bj": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "jak_blue": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_bobb": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_bobbo": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_capb": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_diso": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_dood": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_prr": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "jak_sbdd": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_spdmo": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_spdmoa": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_spmm": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "jak_ssmo": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_thom": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_thomp": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "jak_tpir": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "jak_wpt": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "k10_2l": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "k10_5l": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpc": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcdp": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcfz": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcfzcz": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcg": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcgp": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcli": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcpp": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcs": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "lxpcsp": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "matet100": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "matet220": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "matet300": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "micac250": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "myaasa": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "myaass": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "myac220": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "mymman": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "orb300": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "pokesmqz": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "pokexyqz": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "retror30": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "rminitv": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "smartfp": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "smartfpf": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "smartfps": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "smkatsum": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "sstarkar": [
+      "driver changed: src/mame/tvgames/spg110.cpp"
+    ],
+    "tkmag220": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "tomyspt": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "tvkunio1": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "typo176": [
+      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
+    ],
+    "typo240": [
+      "driver changed: src/mame/nintendo/nes_vt32.cpp"
+    ],
+    "udrive": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    ],
+    "yuleyuan": [
+      "driver changed: src/mame/handheld/evolution_handheld.cpp"
     ]
   },
   "machines": [
@@ -84563,6 +84786,2486 @@
           "failure_reason": "machine has no emulated screen",
           "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
           "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        }
+      }
+    },
+    {
+      "name": "beijuehh",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 46.415,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 43.735,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "bornkidh",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 43.192,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 41.666,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "buttdtct",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.501,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.389,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "conyfght",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 11.471,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 11.325,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "conyping",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.443,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.76,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "conyteni",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.07,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.759,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "dgun2573",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 7.414,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 7.438,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "dgun2573a",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.911,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 7.315,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "dgunl3201",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.973,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.955,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "dgunl3202",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.786,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.687,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "dressmtv",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 39.434,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 38.431,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "easports",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.384,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.072,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "easportsu",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 11.484,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.283,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "evolhh",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.133,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.033,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "fcpocket",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 8.808,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 8.307,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "fingerd",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.607,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.295,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "fpsport",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 43.303,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 40.471,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "gameu108",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 37.166,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 36.377,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "gameu50",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 37.114,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 35.291,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "gameu90",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 37.974,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 34.366,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "gormiti",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 39.061,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 37.824,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "gp230",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 35.282,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 34.933,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "hoppech",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.963,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.976,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "imgame",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 35.118,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 35.1,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_bj",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 35.735,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 34.787,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_blue",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 11.648,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.611,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_bobb",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.674,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.472,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_bobbo",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.952,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.103,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_capb",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.571,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.411,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_diso",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.678,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 11.229,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_dood",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 11.797,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 12.048,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_prr",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 34.095,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 34.681,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_sbdd",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.779,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 11.713,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_spdmo",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 8.805,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 8.532,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_spdmoa",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.116,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.265,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_spmm",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 28.754,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 29.262,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_ssmo",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 11.406,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 11.238,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_thom",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.46,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.202,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_thomp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 8.664,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 8.603,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_tpir",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 31.432,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 31.237,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "jak_wpt",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 10.196,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 10.212,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "k10_2l",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.94,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.126,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "k10_5l",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.996,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.257,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpc",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.111,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.163,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcdp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.31,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.445,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcfz",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.634,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.552,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcfzcz",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.533,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.015,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcg",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.096,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.201,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcgp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.218,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.776,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcli",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.341,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.51,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcpp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.536,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.287,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcs",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.033,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.679,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "lxpcsp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.729,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.594,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "matet100",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.319,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.222,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "matet220",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.775,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.084,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "matet300",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.841,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.139,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "micac250",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.584,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.654,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "myaasa",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.524,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 7.218,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "myaass",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 7.37,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.4,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "myac220",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 26.048,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 26.08,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "mymman",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.259,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.362,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "pokesmqz",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.888,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.954,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "pokexyqz",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.694,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.725,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "retror30",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.11,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.108,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "rminitv",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.821,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.108,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "smartfp",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 29.67,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 31.051,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "smartfpf",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 27.918,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 28.176,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "smartfps",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 28.042,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 27.478,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "smkatsum",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.027,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.023,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "sstarkar",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.922,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.038,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "tkmag220",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 23.216,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 22.881,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "tomyspt",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.938,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.053,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "tvkunio1",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.649,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.681,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "typo240",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.148,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.326,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "yuleyuan",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.706,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
+          "artifact": "mame-linux-clang-e61d2594a7422cc595a9dc8b39866aeb6478c65f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.016,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "easportsa",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.107,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "orb300",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.954,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "typo176",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.401,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "udrive",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.219,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
+          "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
         }
       }
     }
