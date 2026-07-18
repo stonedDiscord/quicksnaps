@@ -1,58 +1,21 @@
 {
-  "generated_at": "2026-07-18T14:20:18.202221+00:00",
+  "generated_at": "2026-07-18T14:20:40.023831+00:00",
   "title": "MAME quick snaps",
-  "head": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
-  "base": "2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
-  "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+  "head": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+  "base": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+  "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
   "changed_files": [
-    "src/mame/gaelco/scalextric.cpp",
-    "src/mame/mame.lst"
+    "src/emu/screen.cpp",
+    "src/mame/layout/novag_obsidian.lay",
+    "src/mame/mame.lst",
+    "src/mame/novag/emerclp.cpp"
   ],
   "reasons": {
-    "scxam": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
+    "emerclp": [
+      "driver changed: src/mame/novag/emerclp.cpp"
     ],
-    "scxen": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxena": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxfr": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxfra": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxgr": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxit": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxita": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxpt": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxsp": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxspa": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxspb": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxspc": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxspd": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
-    ],
-    "scxus": [
-      "driver changed: src/mame/gaelco/scalextric.cpp"
+    "obsidian": [
+      "driver changed: src/mame/novag/emerclp.cpp"
     ]
   },
   "machines": [
@@ -18268,6 +18231,55 @@
           "failure_reason": "input field not found: 1 Player Start",
           "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
           "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "emerclp",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.557,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.561,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+          "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a"
+        }
+      }
+    },
+    {
+      "name": "obsidian",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.623,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+          "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a"
         }
       }
     }
