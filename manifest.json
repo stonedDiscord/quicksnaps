@@ -1,890 +1,54 @@
 {
-  "generated_at": "2026-07-18T14:09:24.595015+00:00",
+  "generated_at": "2026-07-18T14:10:42.611324+00:00",
   "title": "MAME quick snaps",
-  "head": "ae1c408331704e915a7779105cd25a4fb25bede3",
-  "base": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-  "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3",
+  "head": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+  "base": "ae1c408331704e915a7779105cd25a4fb25bede3",
+  "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3",
   "changed_files": [
-    "src/mame/dataeast/mirage.cpp",
-    "src/mame/dynax/ddenlovr.cpp",
-    "src/mame/eolith/ghosteo.cpp",
-    "src/mame/jaleco/bnstars.cpp",
-    "src/mame/metro/tmmjprd.cpp",
-    "src/mame/misc/homedata.cpp",
-    "src/mame/misc/homedata.h",
-    "src/mame/nichibutsu/myvision.cpp",
-    "src/mame/nichibutsu/nyanpai.cpp",
-    "src/mame/nichibutsu/nyanpai.h",
-    "src/mame/psikyo/psikyo4.cpp",
-    "src/mame/psikyo/psikyo4.h",
-    "src/mame/sanritsu/mjkjidai.cpp",
-    "src/mame/seibu/goodejan.cpp",
-    "src/mame/seta/kiwame.cpp",
-    "src/mame/seta/srmp5.cpp",
-    "src/mame/seta/srmp6.cpp",
-    "src/mame/seta/vsmjtria.cpp",
-    "src/mame/shared/mahjong.cpp",
-    "src/mame/shared/mahjong.h",
-    "src/mame/sony/taitogn.cpp",
-    "src/mame/taito/taito_f2.cpp",
-    "src/mame/taito/taito_f2.h",
-    "src/mame/toaplan/mjsister.cpp",
-    "src/mame/vsystem/ojankohs.cpp"
+    "src/mame/namco/gal3.cpp",
+    "src/mame/namco/namcos21.cpp",
+    "src/mame/namco/namcos21_c67.cpp",
+    "src/mame/namco/namcos21_de.cpp"
   ],
   "reasons": {
-    "4psimasy": [
-      "driver changed: src/mame/nichibutsu/nyanpai.cpp",
-      "driver changed: src/mame/nichibutsu/nyanpai.h"
+    "aircomb": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "aerofgtsg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
+    "aircombj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "akamaru": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
+    "cybsled": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "animaljr": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
+    "cybsleda": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "animaljrj": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
+    "driveyes": [
+      "driver changed: src/mame/namco/namcos21_de.cpp"
     ],
-    "animaljrs": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
+    "gal3": [
+      "driver changed: src/mame/namco/gal3.cpp"
     ],
-    "battlcry": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
+    "solvalou": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "battlcryc": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
+    "starblad": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "battlcryp": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
+    "starbladj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "bballoon": [
-      "driver changed: src/mame/eolith/ghosteo.cpp"
+    "winrun": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "bnstars1": [
-      "driver changed: src/mame/jaleco/bnstars.cpp"
+    "winrun91": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "brvbladeg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
+    "winrungp": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "cameltry": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "cameltrya": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "cameltryau": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "cameltryj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "cameltryu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ccasino": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "chaoshea": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "chaosheaj": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "coh1002t": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "coh3002t": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "daichuka": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "daichukaa": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "daimyojn": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "daireach": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ddenlovj": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ddenlovr": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ddenlovrb": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ddenlovrk": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "deadconx": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "deadconxj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dinorex": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dinorexj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dinorexu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dondokod": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dondokodj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dondokodu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "driftout": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "driftoutct": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "driftoutj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "driveout": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "dtoyoken": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "euroch92": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "euroch92j": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "finalb": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "finalbj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "finalbu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "flamegung": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "flipmaze": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "footchmp": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "footchmpbl": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ftimpactg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "funkyfig": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "funkyfiga": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "gdariusg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "gobyrc": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "goodejan": [
-      "driver changed: src/mame/seibu/goodejan.cpp"
-    ],
-    "goodejana": [
-      "driver changed: src/mame/seibu/goodejan.cpp"
-    ],
-    "growl": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "growla": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "growlp": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "growlu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "gunfront": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "gunfrontj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "hanakanz": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hapytour": [
-      "driver changed: src/mame/eolith/ghosteo.cpp"
-    ],
-    "hginga": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hgingaa": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hgkairak": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hgokbang": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hgokou": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hgokoua": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hkagerou": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hnrose": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "hotdebut": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hotgm4ev": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hotgmck": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hotgmck3": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hotgmcki": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "hourouki": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "hparadis": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "htengoku": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "htheroj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "htherou": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "htsubaki": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "janshinp": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "jogakuen": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "jongoh": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "jongtei": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "jongteia": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "kiwame": [
-      "driver changed: src/mame/seta/kiwame.cpp"
-    ],
-    "kollon": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "kollonc": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "koshien": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "kotbinsp": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "kotbinyo": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "kotbinyosu": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "lastapos": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "lemnangl": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "liquidk": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "liquidku": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "loderndf": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "loderndfa": [
-      "driver changed: src/mame/psikyo/psikyo4.cpp",
-      "driver changed: src/mame/psikyo/psikyo4.h"
-    ],
-    "mahjngoh": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "majest12j": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "majest12u": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "majest12ua": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "majest12ub": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "mawasunda": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "megablst": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "megablstj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "megablstu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "metalb": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "metalba": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "metalbj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "mhgaiden": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mhhonban": [
-      "driver changed: src/mame/nichibutsu/nyanpai.cpp",
-      "driver changed: src/mame/nichibutsu/nyanpai.h"
-    ],
-    "mirage": [
-      "driver changed: src/mame/dataeast/mirage.cpp"
-    ],
-    "mizubaku": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "mjchuuka": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjclinic": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjclinica": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjdchuka": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjflove": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjgnight": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjhokite": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjikaga": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjjoship": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjkinjas": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjkjidai": [
-      "driver changed: src/mame/sanritsu/mjkjidai.cpp"
-    ],
-    "mjkojink": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjkokryu": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyorn2": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyornt": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyorntr": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyster": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmysterr": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyuniv": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmyunivh": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmywrld": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjmywrldt": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjnigiri": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjnquest": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "mjnquestb": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "mjprivat": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mjreach1": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjreach1a": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjschuka": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjsister": [
-      "driver changed: src/mame/toaplan/mjsister.cpp"
-    ],
-    "mjswacad": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjswacads": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjtenho": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjxysl": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mjyougo": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "mmpanic": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "momotaro": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mrokumei": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "musobana": [
-      "driver changed: src/mame/nichibutsu/nyanpai.cpp",
-      "driver changed: src/mame/nichibutsu/nyanpai.h"
-    ],
-    "myvision": [
-      "driver changed: src/mame/nichibutsu/myvision.cpp"
-    ],
-    "nettoqc": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "nightrai": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "ninjak": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ninjakj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ninjaku": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "nyanpai": [
-      "driver changed: src/mame/nichibutsu/nyanpai.cpp",
-      "driver changed: src/mame/nichibutsu/nyanpai.h"
-    ],
-    "ojanko2": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "ojankoc": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "ojankoca": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "ojankocb": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "ojankohs": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "ojankoy": [
-      "driver changed: src/mame/vsystem/ojankohs.cpp"
-    ],
-    "otenamhf": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "otenamih": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "otenki": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "psyvaria": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "psyvarij": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "psyvarrv": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "pulirula": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "pulirulaa": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "pulirulaj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qcrayon": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qcrayon2": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qjinsei": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qtorimon": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "quiz365": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "quiz365t": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "quizchq": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "quizchqk": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "quizchql": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "quizhq": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qzchikyu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "qzquest": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "raycris": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "raycrisj": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "raystormg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "rcdego": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "reikaids": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "rongrong": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "rongrongg": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "rongrongj": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "runark": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "seljan2": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "seljan2a": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "shanghss": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "shangtou": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "shikigam": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "shikigama": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "shngmtkbg": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "sianniv": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "solfigtr": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "soutenry": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "spuzbobl": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "spuzboblj": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "srmp5": [
-      "driver changed: src/mame/seta/srmp5.cpp"
-    ],
-    "srmp6": [
-      "driver changed: src/mame/seta/srmp6.cpp"
-    ],
-    "sryudens": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ssi": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ssia": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "ssib": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "tblkkuzug": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "thundfox": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "thundfoxj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "thundfoxu": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "tmmjprd": [
-      "driver changed: src/mame/metro/tmmjprd.cpp"
-    ],
-    "tmpdoki": [
-      "driver changed: src/mame/metro/tmmjprd.cpp"
-    ],
-    "totmejan": [
-      "driver changed: src/mame/seibu/goodejan.cpp"
-    ],
-    "touryuu": [
-      "driver changed: src/mame/eolith/ghosteo.cpp"
-    ],
-    "touryuua": [
-      "driver changed: src/mame/eolith/ghosteo.cpp"
-    ],
-    "ultrchmp": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "ultrchmph": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "usagi": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "vitaminc": [
-      "driver changed: src/mame/misc/homedata.cpp",
-      "driver changed: src/mame/misc/homedata.h"
-    ],
-    "vsmjtria": [
-      "driver changed: src/mame/seta/vsmjtria.cpp"
-    ],
-    "xiistag": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "yesnoj": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "yuyugogo": [
-      "driver changed: src/mame/taito/taito_f2.cpp",
-      "driver changed: src/mame/taito/taito_f2.h"
-    ],
-    "zokumahj": [
-      "driver changed: src/mame/nichibutsu/nyanpai.cpp",
-      "driver changed: src/mame/nichibutsu/nyanpai.h"
-    ],
-    "zokuoten": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "zokuotena": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "zooo": [
-      "driver changed: src/mame/sony/taitogn.cpp"
-    ],
-    "hgokou_joystick": [
-      "driver changed: src/mame/dynax/ddenlovr.cpp"
-    ],
-    "mahjong_panel_connector": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
-    ],
-    "mahjong_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
-    ],
-    "mahjong_medal_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
-    ],
-    "hanafuda_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
-    ],
-    "hanafuda_medal_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
-    ],
-    "hanaroku_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp",
-      "driver changed: src/mame/shared/mahjong.h"
+    "namco_de_pcb": [
+      "driver changed: src/mame/namco/namcos21_de.cpp"
     ]
   },
   "machines": [
@@ -892,29 +56,29 @@
       "name": "aircomb",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 23.768,
+          "duration_seconds": 24.925,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 25.552,
+          "duration_seconds": 23.967,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -922,29 +86,29 @@
       "name": "aircombj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 25.547,
+          "duration_seconds": 23.112,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 24.702,
+          "duration_seconds": 23.026,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -952,29 +116,29 @@
       "name": "cybsled",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 27.401,
+          "duration_seconds": 27.0,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 29.837,
+          "duration_seconds": 29.035,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -982,29 +146,29 @@
       "name": "cybsleda",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 29.331,
+          "duration_seconds": 26.525,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 29.464,
+          "duration_seconds": 29.492,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -1012,29 +176,29 @@
       "name": "solvalou",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 23.372,
+          "duration_seconds": 21.217,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 22.532,
+          "duration_seconds": 21.098,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -1042,29 +206,29 @@
       "name": "starblad",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 22.375,
+          "duration_seconds": 24.645,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 24.541,
+          "duration_seconds": 21.391,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -1072,29 +236,29 @@
       "name": "starbladj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 22.485,
+          "duration_seconds": 24.548,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 23.526,
+          "duration_seconds": 21.027,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -4295,28 +3459,30 @@
     {
       "name": "gal3",
       "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "30177ff8627239c93906b9eb54c03fb9b8154809",
+      "button": "1 Player Start",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.57,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 2.068,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "88fb41e18fd5ffc2ae0186a5c1f35bcf922f4d39",
-          "artifact": "mame-linux-clang-88fb41e18fd5ffc2ae0186a5c1f35bcf922f4d39"
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.644,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 1.579,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "30177ff8627239c93906b9eb54c03fb9b8154809",
-          "artifact": "mame-linux-clang-30177ff8627239c93906b9eb54c03fb9b8154809"
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -5725,56 +4891,60 @@
     {
       "name": "driveyes",
       "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.613,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 1.644,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.581,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 1.047,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
     {
       "name": "namco_de_pcb",
       "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.197,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 0.41,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": "m1coderdp         Code Red Club (Maygay) v2.1 (Protocol) (M1A/B)                                                                      (Maygay, 199?)",
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.2,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 0.616,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": "m1coderdp         Code Red Club (Maygay) v2.1 (Protocol) (M1A/B)                                                                      (Maygay, 199?)",
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -5810,29 +4980,29 @@
       "name": "winrun",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 14.579,
+          "duration_seconds": 13.961,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 14.949,
+          "duration_seconds": 14.339,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -5840,29 +5010,29 @@
       "name": "winrun91",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.959,
+          "duration_seconds": 11.791,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 11.826,
+          "duration_seconds": 11.797,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
@@ -5870,29 +5040,29 @@
       "name": "winrungp",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+      "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.456,
+          "duration_seconds": 11.727,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
+          "revision": "ae1c408331704e915a7779105cd25a4fb25bede3",
+          "artifact": "mame-linux-clang-ae1c408331704e915a7779105cd25a4fb25bede3"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 11.998,
+          "duration_seconds": 11.646,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
-          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
+          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
+          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
         }
       }
     },
