@@ -1,434 +1,259 @@
 {
-  "generated_at": "2026-07-18T14:02:44.441131+00:00",
+  "generated_at": "2026-07-18T14:04:00.755826+00:00",
   "title": "MAME quick snaps",
-  "head": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
-  "base": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-  "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1",
+  "head": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+  "base": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+  "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e",
   "changed_files": [
-    "src/devices/bus/megadrive/md_carts.cpp",
-    "src/devices/bus/megadrive/md_slot.cpp",
-    "src/devices/bus/megadrive/md_slot.h",
-    "src/devices/bus/megadrive/rom.cpp",
-    "src/mame/sega/segas32.cpp"
+    "src/mame/namco/namcos21.cpp",
+    "src/mame/namco/namcos21_c67.cpp",
+    "src/mame/namco/namcos21_dsp_c67.cpp",
+    "src/mame/namco/namcos21_dsp_c67.h"
   ],
   "reasons": {
-    "alien3": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "aircomb": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "alien3j": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "aircombj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "alien3u": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "cybsled": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "arabfgt": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "cybsleda": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "arabfgtj": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "solvalou": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "arabfgtu": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "starblad": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "arescue": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "starbladj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "arescuej": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "winrun": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "arescueu": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "winrun91": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "as1": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "winrungp": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "as1a": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "as1b": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "as1c": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "brival": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "brivalj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "darkedge": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "darkedgej": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "dbzvrvs": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1en": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1enj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1enu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1lap": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1lapj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "f1lapt": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "ga2": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "ga2j": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "ga2u": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "harddunk": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "harddunkj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "holo": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jleague": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jleagueo": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jpark": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jparkj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jparkja": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "jparkjc": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "kokoroj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "kokoroj2": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "kokoroja": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "orunners": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "orunnersj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "orunnersu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "radm": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "radmu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "radr": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "radrj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "radru": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "scross": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "scrossa": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "scrossu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "slipstrm": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "slipstrmh": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "sonic": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "sonicp": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "spidman": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "spidmanj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "spidmanu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "svf": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "svfo": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "svs": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "titlef": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "titlefj": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "titlefu": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_regular": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_analog": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_trackball": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_4player": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_v25": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_upd7725": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_cd": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_multi": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_multi_analog": [
-      "driver changed: src/mame/sega/segas32.cpp"
-    ],
-    "segas32_pcb_multi_6player": [
-      "driver changed: src/mame/sega/segas32.cpp"
+    "namcos21_dsp_c67_device": [
+      "driver changed: src/mame/namco/namcos21_dsp_c67.cpp",
+      "driver changed: src/mame/namco/namcos21_dsp_c67.h"
     ]
   },
   "machines": [
     {
       "name": "aircomb",
       "status": "passed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.337,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 23.768,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.469,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 25.552,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "aircombj",
       "status": "passed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.842,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 25.547,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 4.968,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 24.702,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "cybsled",
-      "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.602,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 27.401,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.59,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 29.837,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "cybsleda",
-      "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.579,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 29.331,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.576,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 29.464,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "solvalou",
       "status": "passed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.227,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 23.372,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 6.307,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 22.532,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "starblad",
       "status": "passed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.215,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 22.375,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 6.226,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 24.541,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "starbladj",
       "status": "passed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.27,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 22.485,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 6.307,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 23.526,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
@@ -3683,28 +3508,30 @@
     {
       "name": "namcos21_dsp_c67_device",
       "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.241,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 0.408,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": "mas               As                                                     (MEGA, 1989)",
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.248,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "duration_seconds": 0.478,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": "mas               As                                                     (MEGA, 1989)",
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
@@ -5138,85 +4965,91 @@
     },
     {
       "name": "winrun",
-      "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.57,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 14.579,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.568,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 14.949,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "winrun91",
-      "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.58,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 11.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.572,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 11.826,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
     {
       "name": "winrungp",
-      "status": "failed",
-      "button": "P1 Button 1",
-      "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.574,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 11.456,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
-          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
+          "failure_reason": null,
+          "revision": "36a3122e5187fe9f800d9a928234b76fc5f366f1",
+          "artifact": "mame-linux-clang-36a3122e5187fe9f800d9a928234b76fc5f366f1"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.568,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
+          "status": "passed",
+          "duration_seconds": 11.998,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "fcbd254e070a0d51ea5d78801789beecdae0d4e0",
-          "artifact": "mame-linux-clang-fcbd254e070a0d51ea5d78801789beecdae0d4e0"
+          "failure_reason": null,
+          "revision": "2302113e96bf6f2d9290abbf044a04301bb4a42e",
+          "artifact": "mame-linux-clang-2302113e96bf6f2d9290abbf044a04301bb4a42e"
         }
       }
     },
