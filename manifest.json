@@ -1,24 +1,15 @@
 {
-  "generated_at": "2026-07-18T16:42:36.726411+00:00",
+  "generated_at": "2026-07-18T16:43:11.252647+00:00",
   "title": "MAME quick snaps",
-  "head": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
-  "base": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
-  "artifact": "mame-linux-clang-8945f05060c1ea53fb2c56bc8408242c42c99b92",
-  "commit_message": "namcos21: gpu c148 ext input is screen field",
+  "head": "67b67f83d7be409132832611ecdf191dbd4e7d01",
+  "base": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
+  "artifact": "mame-linux-clang-67b67f83d7be409132832611ecdf191dbd4e7d01",
+  "commit_message": "i8087: fix fprem1",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp"
+    "src/devices/cpu/i386/x87ops.hxx",
+    "src/devices/machine/i8087.cpp"
   ],
-  "reasons": {
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
