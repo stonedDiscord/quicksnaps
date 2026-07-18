@@ -1,35 +1,16 @@
 {
-  "generated_at": "2026-07-18T17:38:47.508020+00:00",
+  "generated_at": "2026-07-18T17:39:10.327314+00:00",
   "title": "MAME quick snaps",
-  "head": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
-  "base": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
-  "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7",
-  "commit_message": "pipewire: remove PW_STREAM_FLAG_RT_PROCESS flag due to race condition (abuffer get & push)",
+  "head": "c55b7121935e2e631cae0d5d66e703975a77df0f",
+  "base": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+  "artifact": "mame-linux-clang-c55b7121935e2e631cae0d5d66e703975a77df0f",
+  "commit_message": "frontend/mame/clifront.cpp: Honour -noreadconfig for command line verbs.",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/novag/sapphire.cpp",
-    "src/osd/modules/sound/pipewire_sound.cpp"
+    "src/frontend/mame/clifront.cpp",
+    "src/lib/util/options.cpp",
+    "src/lib/util/options.h"
   ],
-  "reasons": {
-    "chesstea": [
-      "driver changed: src/mame/novag/sapphire.cpp"
-    ],
-    "sapphire": [
-      "driver changed: src/mame/novag/sapphire.cpp"
-    ],
-    "sapphire2": [
-      "driver changed: src/mame/novag/sapphire.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
