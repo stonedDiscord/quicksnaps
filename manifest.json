@@ -1,17 +1,24 @@
 {
-  "generated_at": "2026-07-18T16:36:26.333923+00:00",
+  "generated_at": "2026-07-18T16:36:45.560511+00:00",
   "title": "MAME quick snaps",
-  "head": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
-  "base": "a8a155d33a986f0dcce705c6a95a7ee860586ba7",
-  "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e",
-  "commit_message": "driveyes: disable sound output for left and right pcbs",
+  "head": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
+  "base": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+  "artifact": "mame-linux-clang-b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
+  "commit_message": "apple2video: fix ivelultr/dodo/laser2c text rendering (#15290)\n\n* align character bits to match hardware reference\n* also cleanup template instantiations",
   "changed_files": [
-    "src/mame/namco/namcoio_gearbox.h",
-    "src/mame/namco/namcos21_de.cpp"
+    "src/mame/apple/apple2video.cpp",
+    "src/mame/apple/superga2.cpp",
+    "src/mame/apple/tk2000.cpp"
   ],
   "reasons": {
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
+    "kuzmich": [
+      "driver changed: src/mame/apple/superga2.cpp"
+    ],
+    "mpf2": [
+      "driver changed: src/mame/apple/tk2000.cpp"
+    ],
+    "tk2000": [
+      "driver changed: src/mame/apple/tk2000.cpp"
     ]
   },
   "machines": [
@@ -21879,31 +21886,31 @@
       "name": "mpf2",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
+      "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.817,
+          "duration_seconds": 0.934,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "af4d7ca382c5adc2e7f690e078cd33d831e1dd9b",
-          "artifact": "mame-linux-clang-af4d7ca382c5adc2e7f690e078cd33d831e1dd9b"
+          "revision": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+          "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.939,
+          "duration_seconds": 0.97,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
-          "artifact": "mame-linux-clang-d3989b3e8596425c42aa7afb0275b1e28e53bbf4"
+          "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
+          "artifact": "mame-linux-clang-b3bc8ac9f427e28c1b96b14159959db05e3fb7c3"
         }
       }
     },
@@ -22103,31 +22110,31 @@
       "name": "tk2000",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
+      "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.787,
+          "duration_seconds": 0.936,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "af4d7ca382c5adc2e7f690e078cd33d831e1dd9b",
-          "artifact": "mame-linux-clang-af4d7ca382c5adc2e7f690e078cd33d831e1dd9b"
+          "revision": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+          "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.715,
+          "duration_seconds": 0.897,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
-          "artifact": "mame-linux-clang-d3989b3e8596425c42aa7afb0275b1e28e53bbf4"
+          "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
+          "artifact": "mame-linux-clang-b3bc8ac9f427e28c1b96b14159959db05e3fb7c3"
         }
       }
     },
@@ -46047,31 +46054,31 @@
       "name": "kuzmich",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
+      "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.551,
+          "duration_seconds": 0.71,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "af4d7ca382c5adc2e7f690e078cd33d831e1dd9b",
-          "artifact": "mame-linux-clang-af4d7ca382c5adc2e7f690e078cd33d831e1dd9b"
+          "revision": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+          "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.684,
+          "duration_seconds": 0.742,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d3989b3e8596425c42aa7afb0275b1e28e53bbf4",
-          "artifact": "mame-linux-clang-d3989b3e8596425c42aa7afb0275b1e28e53bbf4"
+          "revision": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
+          "artifact": "mame-linux-clang-b3bc8ac9f427e28c1b96b14159959db05e3fb7c3"
         }
       }
     },
