@@ -83,6 +83,7 @@ def main() -> int:
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--repository", default="mamedev/mame")
     parser.add_argument("--rompath")
+    parser.add_argument("--jobs", type=int, help="machines to capture in parallel")
     parser.add_argument("--limit", type=int, help="maximum artifacts to process this invocation")
     parser.add_argument("--push-branch", help="push each completed commit to this origin branch")
     args = parser.parse_args()
@@ -113,6 +114,8 @@ def main() -> int:
                 common.extend(("--base", current))
             if args.rompath:
                 common.extend(("--rompath", args.rompath))
+            if args.jobs is not None:
+                common.extend(("--jobs", str(args.jobs)))
 
             def selection_for(capture_binary: Path, filename: str) -> Path:
                 selection = temporary_path / filename

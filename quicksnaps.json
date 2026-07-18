@@ -1,18 +1,14 @@
 {
   "defaults": {
-    "warmup_seconds": 10,
+    "warmup_seconds": 30,
     "after_seconds": 2,
     "press_seconds": 0.25,
-    "button": "P1 Button 1",
+    "button": "1 Player Start",
     "mame_args": []
   },
   "machines": [
     "pacman",
-    {
-      "name": "galaga",
-      "warmup_seconds": 15,
-      "button": "P1 Button 1"
-    }
+    "galaga"
   ],
   "impact": {
     "run_all_on_unmatched": true
@@ -25,4 +21,3 @@
     }
   ]
 }
-

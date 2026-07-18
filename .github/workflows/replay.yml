@@ -25,6 +25,7 @@ jobs:
       GH_TOKEN: ${{ secrets.UPSTREAM_ARTIFACT_TOKEN }}
       PAGES_BRANCH: ${{ vars.PAGES_BRANCH || 'gh-pages' }}
       ROMPATH: ${{ vars.MAME_ROM_PATH }}
+      CAPTURE_JOBS: ${{ vars.CAPTURE_JOBS }}
       PYTHONPATH: ${{ github.workspace }}/quicksnaps/src
     steps:
       - uses: actions/checkout@v7
@@ -64,5 +65,6 @@ jobs:
             --push-branch "$PAGES_BRANCH"
           )
           if [[ -n "${ROMPATH:-}" ]]; then args+=(--rompath "$ROMPATH"); fi
+          if [[ -n "${CAPTURE_JOBS:-}" ]]; then args+=(--jobs "$CAPTURE_JOBS"); fi
           if [[ -n "${{ inputs.limit }}" ]]; then args+=(--limit "${{ inputs.limit }}"); fi
           python3 quicksnaps/scripts/replay-artifacts.py "${args[@]}"

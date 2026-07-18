@@ -63,16 +63,17 @@ machine:
     "pacman",
     {
       "name": "galaga",
-      "warmup_seconds": 15,
-      "button": "P1 Button 1",
+      "warmup_seconds": 30,
+      "button": "1 Player Start",
       "mame_args": []
     }
   ]
 }
 ```
 
-Input names are MAME I/O field names (for example `P1 Button 1`), not host key
-names. A machine requiring media can put its device arguments in `mame_args`.
+Input names are MAME I/O field names (for example `1 Player Start`), not host
+key names. The default is `1 Player Start`, captured after 30 emulated seconds. A
+machine requiring media can put its device arguments in `mame_args`.
 ROMs are deliberately not part of either repository.
 
 Local/test mode supports `impact_rules` and the safe unmatched fallback. Catalog
@@ -112,6 +113,7 @@ the runner label `mame-quicksnaps`, then set these Actions values:
 | --- | --- |
 | `MAME_ROM_PATH` | ROM directory on the runner |
 | `PAGES_BRANCH` | Generated site branch; defaults to `gh-pages` |
+| `CAPTURE_JOBS` | Parallel MAME processes; defaults to the runner's CPU count |
 
 Add the Actions secret `UPSTREAM_ARTIFACT_TOKEN`. It must be a GitHub token that
 can read Actions artifacts from the public `mamedev/mame` repository; the normal
@@ -147,3 +149,7 @@ the mixed pass/fail result so one unsupported machine cannot stall history.
 Direct local capture still returns non-zero for machine failures unless
 `--allow-failures` is supplied. Structural errors such as invalid configuration,
 artifact downloads, or source-history failures always stop replay.
+
+MAME runs with `-nothrottle`, so configured timings are emulated seconds rather
+than wall-clock delays. Affected machines run concurrently; use `CAPTURE_JOBS`
+or local `--jobs` to limit CPU and memory use on the runner.

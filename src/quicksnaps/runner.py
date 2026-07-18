@@ -11,6 +11,21 @@ from pathlib import Path
 from .config import Machine
 
 
+def _failure_from_log(log: str, fallback: str) -> str:
+    quicksnaps_errors = [
+        line.removeprefix("[quicksnaps] ").strip()
+        for line in log.splitlines()
+        if line.startswith("[quicksnaps] ")
+    ]
+    if quicksnaps_errors:
+        return quicksnaps_errors[-1]
+    meaningful = [
+        line.strip() for line in log.splitlines()
+        if line.strip() and not line.startswith(("ALSA lib ", "Warning: -video none"))
+    ]
+    return meaningful[-1] if meaningful else fallback
+
+
 def capture_machine(
     mame: Path,
     machine: Machine,
@@ -52,12 +67,16 @@ def capture_machine(
     )
     started = time.monotonic()
     limit = timeout or max(60.0, (machine.warmup_seconds + machine.after_seconds + machine.press_seconds) * 5)
+    failure_reason: str | None = None
     try:
         result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=env, timeout=limit)
         status = "passed" if result.returncode == 0 else "failed"
         log = result.stdout
+        if result.returncode != 0:
+            failure_reason = _failure_from_log(log, f"MAME exited with status {result.returncode}")
     except subprocess.TimeoutExpired as error:
         status = "failed"
+        failure_reason = f"MAME timed out after {limit:.1f} wall-clock seconds"
         captured = error.stdout or ""
         if isinstance(captured, bytes):
             captured = captured.decode(errors="replace")
@@ -68,6 +87,11 @@ def capture_machine(
     images_present = all((machine_dir / name).is_file() for name in ("before.png", "after.png"))
     if not images_present:
         status = "failed"
+        missing = [name for name in ("before.png", "after.png") if not (machine_dir / name).is_file()]
+        if failure_reason is None:
+            failure_reason = _failure_from_log(log, "") or None
+        if failure_reason is None:
+            failure_reason = "Missing screenshot output: " + ", ".join(missing)
     (machine_dir / "mame.log").write_text(log, encoding="utf-8")
     return {
         "name": machine.name,
@@ -77,6 +101,7 @@ def capture_machine(
         "warmup_seconds": machine.warmup_seconds,
         "after_seconds": machine.after_seconds,
         "press_seconds": machine.press_seconds,
+        "failure_reason": failure_reason,
     }
 
 

@@ -5,6 +5,7 @@ import json
 import os
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from .artifacts import available_artifacts
@@ -58,6 +59,8 @@ def cmd_affected(args: argparse.Namespace) -> int:
 
 
 def cmd_capture(args: argparse.Namespace) -> int:
+    if args.jobs < 1:
+        raise ValueError("--jobs must be at least 1")
     config = load_config(args.config)
     selected, changed = _resolve_selection(args)
     args.output.mkdir(parents=True, exist_ok=True)
@@ -68,8 +71,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
     ):
         selected = {name: ["initial Pages snapshot"] for name in config.machine_names}
     head = _revision(args.mame_repo, args.head) if args.head else os.environ.get("MAME_SHA", "manual")
-    results = []
-    for name in selected:
+    def run_machine(name: str) -> dict[str, object]:
         print(f"Capturing {name}...", flush=True)
         result = capture_machine(
             args.mame, config.machine(name), args.output, args.rompath, args.timeout, args.variant
@@ -86,8 +88,17 @@ def cmd_capture(args: argparse.Namespace) -> int:
                 "revision": revision,
                 "captures": {args.variant: capture},
             }
-        results.append(result)
         print(f"{name}: {result['status']}", flush=True)
+        return result
+
+    results_by_name: dict[str, dict[str, object]] = {}
+    workers = min(args.jobs, len(selected)) if selected else 1
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(run_machine, name): name for name in selected}
+        for future in as_completed(futures):
+            name = futures[future]
+            results_by_name[name] = future.result()
+    results = [results_by_name[name] for name in selected]
 
     metadata = {
         "title": args.title,
@@ -142,6 +153,10 @@ def make_parser() -> argparse.ArgumentParser:
     capture.add_argument("--output", type=_path, default=_path("site"))
     capture.add_argument("--rompath")
     capture.add_argument("--timeout", type=float)
+    capture.add_argument(
+        "--jobs", type=int, default=max(1, os.cpu_count() or 1),
+        help="number of machines to capture in parallel (default: CPU count)",
+    )
     capture.add_argument("--title", default="MAME quick snaps")
     capture.add_argument("--artifact", help="CI artifact name used for this capture")
     capture.add_argument("--variant", choices=("previous", "current"))

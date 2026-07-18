@@ -16,6 +16,8 @@ h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .build { margin-top: 1.2rem; padding: 1rem; background: #171b20; border: 1px solid #303943; }
 .build h3 { margin-top: 0; overflow-wrap: anywhere; }
+details { margin-top: 1rem; } summary { cursor: pointer; color: #e7b56d; }
+pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; white-space: pre-wrap; overflow-wrap: anywhere; }
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
@@ -33,13 +35,19 @@ def build_site(output: Path) -> None:
         revision = html.escape(str(capture.get("revision", "unknown")))
         artifact = html.escape(str(capture.get("artifact") or "local build"))
         body = f'<p><span class="status {status}">{status}</span></p>'
+        diagnostics = ""
+        if status != "passed":
+            reason = html.escape(str(capture.get("failure_reason") or "Unknown capture failure"))
+            log_path = output / "machines" / str(machine["name"]) / variant / "mame.log"
+            log = html.escape(log_path.read_text(encoding="utf-8", errors="replace")) if log_path.is_file() else "Log unavailable"
+            diagnostics = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/{variant}/mame.log">Open raw log</a></p></details>'
         if status == "passed":
             button = html.escape(str(capture.get("button", machine.get("button", "input"))))
             body = f'''<div class="shots">
 <figure><figcaption>Before input</figcaption><a href="machines/{name}/{variant}/before.png"><img loading="lazy" src="machines/{name}/{variant}/before.png" alt="{name} {variant} before input"></a></figure>
 <figure><figcaption>After {button}</figcaption><a href="machines/{name}/{variant}/after.png"><img loading="lazy" src="machines/{name}/{variant}/after.png" alt="{name} {variant} after input"></a></figure>
 </div>'''
-        return f'<section class="build"><h3>{variant.title()}: {revision}</h3><div class="meta">{artifact}</div>{body}</section>'
+        return f'<section class="build"><h3>{variant.title()}: {revision}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
 
     for machine in manifest["machines"]:
         name = html.escape(str(machine["name"]))
@@ -61,6 +69,10 @@ def build_site(output: Path) -> None:
         else:
             captured = html.escape(str(machine.get("revision", "unknown")))
             shots = ""
+            reason = html.escape(str(machine.get("failure_reason") or "Unknown capture failure"))
+            log_path = output / "machines" / str(machine["name"]) / "mame.log"
+            log = html.escape(log_path.read_text(encoding="utf-8", errors="replace")) if log_path.is_file() else "Log unavailable"
+            shots = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/mame.log">Open raw log</a></p></details>'
         cards.append(f'''<article class="machine" data-name="{name}">
 <h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
 <div class="reason">Captured at {captured}. {html.escape(why)}</div>{shots}</article>''')

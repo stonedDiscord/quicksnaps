@@ -27,10 +27,10 @@ class CaptureExitTests(unittest.TestCase):
                 mame=Path("mame"), mame_repo=Path("repo"), rompath=None, timeout=None,
                 variant="current", capture_revision="sha", artifact="artifact", title="test",
                 allow_failures=True, selection_file=Path("selection.json"), catalog=True,
+                jobs=2,
             )
             self.assertEqual(0, cmd_capture(args))
 
 
 if __name__ == "__main__":
     unittest.main()
-

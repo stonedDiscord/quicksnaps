@@ -9,10 +9,10 @@ from typing import Any
 
 @dataclass(frozen=True)
 class Defaults:
-    warmup_seconds: float = 10.0
+    warmup_seconds: float = 30.0
     after_seconds: float = 2.0
     press_seconds: float = 0.25
-    button: str = "P1 Button 1"
+    button: str = "1 Player Start"
     mame_args: tuple[str, ...] = ()
 
 
@@ -69,10 +69,10 @@ def load_config(path: Path) -> Config:
     raw = json.loads(path.read_text(encoding="utf-8"))
     default_raw = raw.get("defaults", {})
     defaults = Defaults(
-        warmup_seconds=_number(default_raw, "warmup_seconds", 10.0),
+        warmup_seconds=_number(default_raw, "warmup_seconds", 30.0),
         after_seconds=_number(default_raw, "after_seconds", 2.0),
         press_seconds=_number(default_raw, "press_seconds", 0.25),
-        button=str(default_raw.get("button", "P1 Button 1")),
+        button=str(default_raw.get("button", "1 Player Start")),
         mame_args=tuple(map(str, default_raw.get("mame_args", []))),
     )
 
