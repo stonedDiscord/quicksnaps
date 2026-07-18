@@ -1,43 +1,20 @@
 {
-  "generated_at": "2026-07-18T17:20:00.251071+00:00",
+  "generated_at": "2026-07-18T17:20:31.662456+00:00",
   "title": "MAME quick snaps",
-  "head": "9913b7ad53c18188cf815efd01eb38e9f300e123",
-  "base": "0d7be4fcdf71a1b9324172e19a0eec819a3de020",
-  "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123",
-  "commit_message": "dynax/realbrk.cpp: Fixed DIP switch matrix read behaviour and cleaned up code: (#15291)\n\n* Fixed text tilemap color handling, use generic graphics decoding layouts.\n* Use BIT and util::sext to extract bits and sign-extend fields.\n* Use explicitly sized integers for member variables in save states.\n* Reduced literal tag usage.",
+  "head": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
+  "base": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+  "artifact": "mame-linux-clang-ade84a8b1e228c81f8173d59895ab14aa505a39f",
+  "commit_message": "philips/p2000t.cpp: cleanups around keyboard, remove macros\n\nNew working software list items\n-------------------------------\np2000_cart: Brick-Wall, Doolhof, Fraxxon: Space Fight II, Lazy Bug, Monkey Kong, Multipede, Space Fight, Tetris [P2000T Software Preservation]\n\nNew software list items marked not working\n------------------------------------------\np2000_cart: Ghosthunt [P2000T Software Preservation]",
   "changed_files": [
-    "src/mame/dynax/realbrk.cpp",
-    "src/mame/dynax/realbrk.h",
-    "src/mame/dynax/realbrk_v.cpp"
+    "hash/p2000_cart.xml",
+    "src/mame/philips/p2000t.cpp"
   ],
   "reasons": {
-    "dai2kaku": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
+    "p2000m": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "pkgnsh": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
-    ],
-    "pkgnshdx": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
-    ],
-    "realbrk": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
-    ],
-    "realbrkj": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
-    ],
-    "realbrkk": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
-    ],
-    "realbrko": [
-      "driver changed: src/mame/dynax/realbrk.cpp",
-      "driver changed: src/mame/dynax/realbrk.h"
+    "p2000t": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ]
   },
   "machines": [
@@ -70525,31 +70502,31 @@
       "name": "p2000m",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928",
+      "revision": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 1.207,
-          "button": "1 Player Start",
-          "button_applied": true,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
-          "revision": "c7ea7101554ccfdd15acdb6143c3dfee35e497f5",
-          "artifact": "mame-linux-clang-c7ea7101554ccfdd15acdb6143c3dfee35e497f5"
-        },
-        "current": {
           "status": "passed",
-          "duration_seconds": 3.042,
+          "duration_seconds": 1.229,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928",
-          "artifact": "mame-linux-clang-bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928"
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.169,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
+          "artifact": "mame-linux-clang-ade84a8b1e228c81f8173d59895ab14aa505a39f"
         }
       }
     },
@@ -70557,31 +70534,31 @@
       "name": "p2000t",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928",
+      "revision": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 1.242,
-          "button": "1 Player Start",
-          "button_applied": true,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
-          "revision": "c7ea7101554ccfdd15acdb6143c3dfee35e497f5",
-          "artifact": "mame-linux-clang-c7ea7101554ccfdd15acdb6143c3dfee35e497f5"
-        },
-        "current": {
           "status": "passed",
-          "duration_seconds": 4.663,
+          "duration_seconds": 2.114,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928",
-          "artifact": "mame-linux-clang-bd7ec7c4ed0efdfa78f21c8e8f469ed1cd7ec928"
+          "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
+          "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.277,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
+          "artifact": "mame-linux-clang-ade84a8b1e228c81f8173d59895ab14aa505a39f"
         }
       }
     },
