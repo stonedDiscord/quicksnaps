@@ -19,6 +19,21 @@ def changed_files(repo: Path, base: str, head: str) -> list[str]:
     return [line for line in result.stdout.splitlines() if line]
 
 
+def runnable_machines(repo: Path, revision: str) -> set[str]:
+    result = subprocess.run(
+        ["git", "show", f"{revision}:src/mame/mame.lst"],
+        cwd=repo,
+        check=True,
+        text=True,
+        stdout=subprocess.PIPE,
+    )
+    return {
+        line.strip()
+        for line in result.stdout.splitlines()
+        if line.strip() and not line.lstrip().startswith(("//", "@"))
+    }
+
+
 def source_map(mame: Path, machines: tuple[str, ...] | None = None) -> dict[str, str]:
     requested = machines or ("*",)
     result = subprocess.run(

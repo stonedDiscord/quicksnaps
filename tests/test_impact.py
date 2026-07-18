@@ -1,7 +1,8 @@
 import unittest
 
 from quicksnaps.config import Config, ImpactRule, Machine
-from quicksnaps.impact import resolve, resolve_catalog
+from quicksnaps.impact import resolve, resolve_catalog, runnable_machines
+from unittest.mock import patch
 
 
 def machine(name: str) -> Machine:
@@ -9,6 +10,10 @@ def machine(name: str) -> Machine:
 
 
 class ResolveTests(unittest.TestCase):
+    @patch("quicksnaps.impact.subprocess.run")
+    def test_runnable_catalog_comes_from_driver_list(self, run):
+        run.return_value.stdout = "// comment\n@source:shared/mahjong.cpp\nrealgame\n\n"
+        self.assertEqual({"realgame"}, runnable_machines(None, "sha"))
     def test_direct_driver_change_selects_only_matching_machine(self):
         config = Config((machine("pacman"), machine("galaga")))
         selected = resolve(

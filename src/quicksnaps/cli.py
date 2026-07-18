@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
+import shutil
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -10,7 +12,7 @@ from pathlib import Path
 
 from .artifacts import available_artifacts
 from .config import load_config
-from .impact import changed_files, resolve, resolve_catalog, source_map
+from .impact import changed_files, resolve, resolve_catalog, runnable_machines, source_map
 from .runner import capture_machine, write_manifest
 from .site import build_site
 
@@ -48,6 +50,8 @@ def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], 
     changed = changed_files(args.mame_repo, args.base, args.head)
     sources = source_map(args.mame, None if args.catalog else config.machine_names)
     if args.catalog:
+        runnable = runnable_machines(args.mame_repo, args.head)
+        sources = {name: source for name, source in sources.items() if name in runnable}
         return resolve_catalog(changed, sources), changed
     return resolve(config, changed, sources, tuple(sources)), changed
 
@@ -64,6 +68,8 @@ def cmd_capture(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     selected, changed = _resolve_selection(args)
     args.output.mkdir(parents=True, exist_ok=True)
+    if args.catalog and args.head:
+        _prune_nonrunnable(args.output, runnable_machines(args.mame_repo, args.head))
     if (
         args.base and args.head
         and not args.selection_file
@@ -114,6 +120,23 @@ def cmd_capture(args: argparse.Namespace) -> int:
     if failures:
         print(f"{failures} machine capture(s) failed", file=sys.stderr)
     return 0 if args.allow_failures else (1 if failures else 0)
+
+
+def _prune_nonrunnable(output: Path, runnable: set[str]) -> None:
+    manifest_path = output / "manifest.json"
+    if not manifest_path.is_file():
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    removed = [item for item in manifest.get("machines", []) if item.get("name") not in runnable]
+    if not removed:
+        return
+    manifest["machines"] = [item for item in manifest.get("machines", []) if item.get("name") in runnable]
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    for item in removed:
+        name = str(item.get("name", ""))
+        if re.fullmatch(r"[a-zA-Z0-9_]+", name):
+            shutil.rmtree(output / "machines" / name, ignore_errors=True)
+        print(f"Pruned non-runnable catalog entry: {name}", flush=True)
 
 
 def cmd_site(args: argparse.Namespace) -> int:

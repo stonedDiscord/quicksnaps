@@ -4,11 +4,24 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from quicksnaps.cli import cmd_capture
+from quicksnaps.cli import _prune_nonrunnable, cmd_capture
 from quicksnaps.config import Config, Defaults, Machine
 
 
 class CaptureExitTests(unittest.TestCase):
+    def test_prunes_nonrunnable_manifest_entry_and_directory(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            stale = output / "machines" / "device_type"
+            stale.mkdir(parents=True)
+            (stale / "mame.log").write_text("old")
+            (output / "manifest.json").write_text(
+                '{"machines":[{"name":"realgame"},{"name":"device_type"}]}\n'
+            )
+            _prune_nonrunnable(output, {"realgame"})
+            self.assertFalse(stale.exists())
+            self.assertNotIn("device_type", (output / "manifest.json").read_text())
+
     @patch("quicksnaps.cli.build_site")
     @patch("quicksnaps.cli.write_manifest")
     @patch("quicksnaps.cli.capture_machine")
