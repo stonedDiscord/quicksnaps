@@ -1,15 +1,19 @@
 {
-  "generated_at": "2026-07-18T18:41:12.869282+00:00",
+  "generated_at": "2026-07-18T18:53:42.779742+00:00",
   "title": "MAME quick snaps",
-  "head": "e61c7f7c8b82f07d187d2eb69578cb975799c1ad",
-  "base": "e1e34159eb92109b86930676b81bf3d3f27810b4",
-  "artifact": "mame-linux-clang-e61c7f7c8b82f07d187d2eb69578cb975799c1ad",
-  "commit_message": "frontend/mameopts.cpp: Fall back to settings from INI files later in the search path. (#15310)\n\nutil/options.cpp: Make earlier INI files take precedence over later INI\nfiles at the same priority level.",
+  "head": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+  "base": "e61c7f7c8b82f07d187d2eb69578cb975799c1ad",
+  "artifact": "mame-linux-clang-9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+  "commit_message": "midway/predators.cpp: De-squeletonised the driver.\n\nSystems promoted to working\n---------------------------\nThe Predators (prototype) [Phil Bennett, David Haywood]",
   "changed_files": [
-    "src/frontend/mame/mameopts.cpp",
-    "src/lib/util/options.cpp"
+    "src/mame/mame.lst",
+    "src/mame/midway/predators.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "predtors": [
+      "driver changed: src/mame/midway/predators.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -106012,6 +106016,26 @@
           "failure_reason": "machine has no emulated screen",
           "revision": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
           "artifact": "mame-linux-clang-c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60"
+        }
+      }
+    },
+    {
+      "name": "predtors",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.153,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+          "artifact": "mame-linux-clang-9c0f91c9c7dca6be9c9576bed2b8afe33513cf44"
         }
       }
     }
