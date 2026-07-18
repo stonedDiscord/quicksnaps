@@ -1,15 +1,18 @@
 {
-  "generated_at": "2026-07-18T15:52:23.911208+00:00",
+  "generated_at": "2026-07-18T15:52:45.610376+00:00",
   "title": "MAME quick snaps",
-  "head": "5c513e47cb17f346c5ac435fc334282565d51942",
-  "base": "c524e48dbbabbb9fa1df246812bde1326c3665c8",
-  "artifact": "mame-linux-clang-5c513e47cb17f346c5ac435fc334282565d51942",
-  "commit_message": "cxd1185.cpp: Ensure appropriate ID register is mapped (#15279)",
+  "head": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
+  "base": "5c513e47cb17f346c5ac435fc334282565d51942",
+  "artifact": "mame-linux-clang-c261dc59a7b8a68c5f3ed503fe174d396d718377",
+  "commit_message": "sequential/prophet5.cpp: Added oscillators (no tuning yet). (#15285)\n\nAlso:\n* Added a missing DC-block stage after the filter.\n* Added randomness to oscillator and filter timing components.\n* Corrected calibration of the LFO balance trimmer.",
   "changed_files": [
-    "src/devices/machine/cxd1185.cpp",
-    "src/devices/machine/cxd1185.h"
+    "src/mame/sequential/prophet5.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "prophet5rev30": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -22397,29 +22400,31 @@
       "name": "prophet5rev30",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+      "revision": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.571,
+          "duration_seconds": 1.81,
           "button": "1 Player Start",
+          "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "failure_reason": "input field not found: 1 Player Start",
-          "revision": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
-          "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9"
+          "failure_reason": "machine has no emulated screen",
+          "revision": "5c513e47cb17f346c5ac435fc334282565d51942",
+          "artifact": "mame-linux-clang-5c513e47cb17f346c5ac435fc334282565d51942"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.59,
+          "duration_seconds": 2.428,
           "button": "1 Player Start",
+          "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "failure_reason": "input field not found: 1 Player Start",
-          "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
-          "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47"
+          "failure_reason": "machine has no emulated screen",
+          "revision": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
+          "artifact": "mame-linux-clang-c261dc59a7b8a68c5f3ed503fe174d396d718377"
         }
       }
     },
