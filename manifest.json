@@ -1,62 +1,15 @@
 {
-  "generated_at": "2026-07-18T14:18:45.338980+00:00",
+  "generated_at": "2026-07-18T14:19:02.738210+00:00",
   "title": "MAME quick snaps",
-  "head": "3ba734e93110240ee0779f528504ea6e6c114062",
-  "base": "25addd26c834b886997f9b5abd6a7d2023cd18c5",
-  "artifact": "mame-linux-clang-3ba734e93110240ee0779f528504ea6e6c114062",
+  "head": "0e4c3900755d14e3ad112eda023a784fe2590fdf",
+  "base": "3ba734e93110240ee0779f528504ea6e6c114062",
+  "artifact": "mame-linux-clang-0e4c3900755d14e3ad112eda023a784fe2590fdf",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_3d.cpp",
-    "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp",
-    "src/mame/namco/namcos21_dsp.cpp",
-    "src/mame/namco/namcos21_dsp_c67.cpp"
+    "src/mame/yachiyo/atamanot.cpp"
   ],
   "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "namcos21_3d": [
-      "driver changed: src/mame/namco/namcos21_3d.cpp"
-    ],
-    "namco_de_pcb": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "namcos21_dsp_device": [
-      "driver changed: src/mame/namco/namcos21_dsp.cpp"
-    ],
-    "namcos21_dsp_c67_device": [
-      "driver changed: src/mame/namco/namcos21_dsp_c67.cpp"
+    "atamanot": [
+      "driver changed: src/mame/yachiyo/atamanot.cpp"
     ]
   },
   "machines": [
@@ -15924,29 +15877,29 @@
       "name": "atamanot",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
+      "revision": "0e4c3900755d14e3ad112eda023a784fe2590fdf",
       "captures": {
         "previous": {
-          "status": "passed",
-          "duration_seconds": 1.084,
-          "button": "1 Player Start",
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
-          "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0"
-        },
-        "current": {
           "status": "failed",
-          "duration_seconds": 0.573,
+          "duration_seconds": 0.561,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
-          "artifact": "mame-linux-clang-241b58eb861e3f4649532da17c3bf84bfdb11ded"
+          "revision": "3ba734e93110240ee0779f528504ea6e6c114062",
+          "artifact": "mame-linux-clang-3ba734e93110240ee0779f528504ea6e6c114062"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.595,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0e4c3900755d14e3ad112eda023a784fe2590fdf",
+          "artifact": "mame-linux-clang-0e4c3900755d14e3ad112eda023a784fe2590fdf"
         }
       }
     },
