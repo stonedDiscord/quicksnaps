@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-07-18T18:53:42.779742+00:00",
+  "generated_at": "2026-07-18T18:54:09.262226+00:00",
   "title": "MAME quick snaps",
-  "head": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
-  "base": "e61c7f7c8b82f07d187d2eb69578cb975799c1ad",
-  "artifact": "mame-linux-clang-9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
-  "commit_message": "midway/predators.cpp: De-squeletonised the driver.\n\nSystems promoted to working\n---------------------------\nThe Predators (prototype) [Phil Bennett, David Haywood]",
+  "head": "466103f5b3dbaf64efa7a035a6310d9bdb7c3c72",
+  "base": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+  "artifact": "mame-linux-clang-466103f5b3dbaf64efa7a035a6310d9bdb7c3c72",
+  "commit_message": "predators: correct copyright holders, not based on falconun sketeton driver",
   "changed_files": [
-    "src/mame/mame.lst",
     "src/mame/midway/predators.cpp"
   ],
   "reasons": {
@@ -106023,11 +106022,23 @@
       "name": "predtors",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "9c0f91c9c7dca6be9c9576bed2b8afe33513cf44",
+      "revision": "466103f5b3dbaf64efa7a035a6310d9bdb7c3c72",
       "captures": {
         "current": {
           "status": "passed",
-          "duration_seconds": 3.153,
+          "duration_seconds": 3.187,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "466103f5b3dbaf64efa7a035a6310d9bdb7c3c72",
+          "artifact": "mame-linux-clang-466103f5b3dbaf64efa7a035a6310d9bdb7c3c72"
+        },
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.202,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
