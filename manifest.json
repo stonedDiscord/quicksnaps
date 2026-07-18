@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-07-18T14:25:01.909647+00:00",
+  "generated_at": "2026-07-18T14:25:22.744957+00:00",
   "title": "MAME quick snaps",
-  "head": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
-  "base": "789e49108dfda46814c82b42945edb8764d8fbb5",
-  "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d",
+  "head": "ab7f28101984e558952477154f2a9ddeff6490f0",
+  "base": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+  "artifact": "mame-linux-clang-ab7f28101984e558952477154f2a9ddeff6490f0",
   "changed_files": [
-    "src/mame/gaelco/sralslot.cpp",
-    "src/mame/mame.lst"
+    "src/mame/namco/namcos6.cpp",
+    "src/mame/namco/sg_vga.cpp"
   ],
   "reasons": {
-    "sralslot": [
-      "driver changed: src/mame/gaelco/sralslot.cpp"
+    "ddflower": [
+      "driver changed: src/mame/namco/namcos6.cpp"
     ],
-    "sralslota": [
-      "driver changed: src/mame/gaelco/sralslot.cpp"
+    "galfever": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ],
-    "sralslotb": [
-      "driver changed: src/mame/gaelco/sralslot.cpp"
+    "hplanet": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ],
-    "sralslotc": [
-      "driver changed: src/mame/gaelco/sralslot.cpp"
+    "shootpar": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ]
   },
   "machines": [
@@ -3855,29 +3855,29 @@
       "name": "galfever",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+      "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.61,
+          "duration_seconds": 0.689,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
-          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.648,
+          "duration_seconds": 0.615,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
-          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
+          "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
+          "artifact": "mame-linux-clang-ab7f28101984e558952477154f2a9ddeff6490f0"
         }
       }
     },
@@ -3885,29 +3885,29 @@
       "name": "hplanet",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+      "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.611,
+          "duration_seconds": 0.643,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
-          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.663,
+          "duration_seconds": 0.729,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
-          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
+          "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
+          "artifact": "mame-linux-clang-ab7f28101984e558952477154f2a9ddeff6490f0"
         }
       }
     },
@@ -4223,29 +4223,29 @@
       "name": "shootpar",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+      "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.621,
+          "duration_seconds": 0.731,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
-          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.61,
+          "duration_seconds": 0.699,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
-          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
+          "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
+          "artifact": "mame-linux-clang-ab7f28101984e558952477154f2a9ddeff6490f0"
         }
       }
     },
@@ -22560,6 +22560,36 @@
           "failure_reason": "input field not found: 1 Player Start",
           "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
           "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
+        }
+      }
+    },
+    {
+      "name": "ddflower",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.628,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.632,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "ab7f28101984e558952477154f2a9ddeff6490f0",
+          "artifact": "mame-linux-clang-ab7f28101984e558952477154f2a9ddeff6490f0"
         }
       }
     }
