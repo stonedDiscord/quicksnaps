@@ -1,23 +1,26 @@
 {
-  "generated_at": "2026-07-18T17:49:09.246382+00:00",
+  "generated_at": "2026-07-18T17:49:31.248137+00:00",
   "title": "MAME quick snaps",
-  "head": "e596c0a3362b2505b3ef58e1556721175d8406f0",
-  "base": "7bd1d8e959e61108eb881045b982214e05b220ae",
-  "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0",
-  "commit_message": "rt1715w: floppy -- attach interrupt output and update GAP3 size. (#14879)\n\nSystems promoted to working\n---------------------------\nRobotron PC-1715W [shattered]",
+  "head": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
+  "base": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+  "artifact": "mame-linux-clang-3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
+  "commit_message": "philips/p2000t.cpp: hookup scroll, fix out of bounds RAM crashes [Angelo Salese, Bart Eversdijk]",
   "changed_files": [
-    "src/lib/formats/pk8020_dsk.cpp",
-    "src/mame/robotron/rt1715.cpp"
+    "hash/megadriv.xml",
+    "hash/p2000_cart.xml",
+    "hash/p2000_cass.xml",
+    "src/mame/nec/piet1.cpp",
+    "src/mame/philips/p2000t.cpp"
   ],
   "reasons": {
-    "rt1715": [
-      "driver changed: src/mame/robotron/rt1715.cpp"
+    "p2000m": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "rt1715lc": [
-      "driver changed: src/mame/robotron/rt1715.cpp"
+    "p2000t": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "rt1715w": [
-      "driver changed: src/mame/robotron/rt1715.cpp"
+    "piet1": [
+      "driver changed: src/mame/nec/piet1.cpp"
     ]
   },
   "machines": [
@@ -70583,21 +70586,9 @@
       "name": "p2000m",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
+      "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
       "captures": {
         "previous": {
-          "status": "passed",
-          "duration_seconds": 1.126,
-          "button": "1 Player Start",
-          "button_applied": false,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "9a9529670ce5733459415e1b318c3ee303190d26",
-          "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26"
-        },
-        "current": {
           "status": "passed",
           "duration_seconds": 1.161,
           "button": "1 Player Start",
@@ -70606,8 +70597,20 @@
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
-          "artifact": "mame-linux-clang-00141dc66f66ec0487f3ee8892c14d2124b63395"
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.155,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
+          "artifact": "mame-linux-clang-3557d3a90ff2eab25a04ef237ff53f111e61bb6f"
         }
       }
     },
@@ -70615,31 +70618,31 @@
       "name": "p2000t",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
+      "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 2.113,
+          "duration_seconds": 2.138,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "9a9529670ce5733459415e1b318c3ee303190d26",
-          "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26"
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 2.164,
+          "duration_seconds": 2.287,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
-          "artifact": "mame-linux-clang-00141dc66f66ec0487f3ee8892c14d2124b63395"
+          "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
+          "artifact": "mame-linux-clang-3557d3a90ff2eab25a04ef237ff53f111e61bb6f"
         }
       }
     },
@@ -87235,31 +87238,31 @@
       "name": "piet1",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+      "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.147,
+          "duration_seconds": 0.696,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "b5753bd97f012154c678de25479894cc75888b7a",
-          "artifact": "mame-linux-clang-b5753bd97f012154c678de25479894cc75888b7a"
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.455,
+          "duration_seconds": 0.752,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
-          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+          "revision": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
+          "artifact": "mame-linux-clang-3557d3a90ff2eab25a04ef237ff53f111e61bb6f"
         }
       }
     },
