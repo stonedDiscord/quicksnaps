@@ -1,43 +1,18 @@
 {
-  "generated_at": "2026-07-18T15:22:07.886219+00:00",
+  "generated_at": "2026-07-18T15:22:30.152962+00:00",
   "title": "MAME quick snaps",
-  "head": "70725158b4e9d2e1230c0515faec754f9cee86a2",
-  "base": "c31aa50fac084175f91836e188024550df617199",
-  "artifact": "mame-linux-clang-70725158b4e9d2e1230c0515faec754f9cee86a2",
-  "commit_message": "New working software list items\n-------------------------------\nplus4_cass: Pirate Adventure [Curt Coder]",
+  "head": "c331217dffc1f8efde2e5f0e162049e39dd8717d",
+  "base": "70725158b4e9d2e1230c0515faec754f9cee86a2",
+  "artifact": "mame-linux-clang-c331217dffc1f8efde2e5f0e162049e39dd8717d",
+  "commit_message": "sony/smc777.cpp: move keyboard handling in own device",
   "changed_files": [
-    "hash/plus4_cass.xml",
-    "src/devices/sound/mos7360.cpp",
-    "src/devices/sound/mos7360.h",
-    "src/mame/commodore/plus4.cpp"
+    "src/mame/sony/smc777.cpp",
+    "src/mame/sony/smc777_kbd.cpp",
+    "src/mame/sony/smc777_kbd.h"
   ],
   "reasons": {
-    "c116": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16_hu": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16p": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c232": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c264": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "plus4": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "plus4p": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "v364": [
-      "driver changed: src/mame/commodore/plus4.cpp"
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
     ]
   },
   "machines": [
@@ -14379,31 +14354,33 @@
     },
     {
       "name": "smc777",
-      "status": "failed",
+      "status": "passed",
       "button": "1 Player Start",
-      "revision": "d027e99d2fc2da95c8a5d67b61e472644794fd03",
+      "revision": "c331217dffc1f8efde2e5f0e162049e39dd8717d",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.545,
+          "status": "passed",
+          "duration_seconds": 1.436,
           "button": "1 Player Start",
+          "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "failure_reason": "input field not found: 1 Player Start",
-          "revision": "bfdebdf221ebbb755b04ac36a583f95b94923ba9",
-          "artifact": "mame-linux-clang-bfdebdf221ebbb755b04ac36a583f95b94923ba9"
+          "failure_reason": null,
+          "revision": "70725158b4e9d2e1230c0515faec754f9cee86a2",
+          "artifact": "mame-linux-clang-70725158b4e9d2e1230c0515faec754f9cee86a2"
         },
         "current": {
-          "status": "failed",
-          "duration_seconds": 0.546,
+          "status": "passed",
+          "duration_seconds": 1.463,
           "button": "1 Player Start",
+          "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "failure_reason": "input field not found: 1 Player Start",
-          "revision": "d027e99d2fc2da95c8a5d67b61e472644794fd03",
-          "artifact": "mame-linux-clang-d027e99d2fc2da95c8a5d67b61e472644794fd03"
+          "failure_reason": null,
+          "revision": "c331217dffc1f8efde2e5f0e162049e39dd8717d",
+          "artifact": "mame-linux-clang-c331217dffc1f8efde2e5f0e162049e39dd8717d"
         }
       }
     },
