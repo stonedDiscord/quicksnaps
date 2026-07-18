@@ -1,52 +1,14 @@
 {
-  "generated_at": "2026-07-18T16:55:07.015983+00:00",
+  "generated_at": "2026-07-18T16:55:28.333862+00:00",
   "title": "MAME quick snaps",
-  "head": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
-  "base": "b10481985243b9b596a5151d54f9fa92d3fb98a9",
-  "artifact": "mame-linux-clang-d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
-  "commit_message": "namcos21: add video enable flag",
+  "head": "603917f48adbeb5e47deaf61953e00b9e48af204",
+  "base": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
+  "artifact": "mame-linux-clang-603917f48adbeb5e47deaf61953e00b9e48af204",
+  "commit_message": "nubus/laserview.cpp: Remove debug printfs that snuck in. [R. Belmont]",
   "changed_files": [
-    "src/devices/bus/saitek_osa/bruteforce.cpp",
-    "src/devices/bus/saitek_osa/expansion.h",
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp"
+    "src/devices/bus/nubus/laserview.cpp"
   ],
-  "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
