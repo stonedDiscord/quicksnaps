@@ -1,123 +1,21 @@
 {
-  "generated_at": "2026-07-18T17:47:51.384744+00:00",
+  "generated_at": "2026-07-18T17:48:19.365880+00:00",
   "title": "MAME quick snaps",
-  "head": "9a9529670ce5733459415e1b318c3ee303190d26",
-  "base": "c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c",
-  "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26",
-  "commit_message": "hexa,brixian: increase ay clock (matches pcb videos)",
+  "head": "00141dc66f66ec0487f3ee8892c14d2124b63395",
+  "base": "9a9529670ce5733459415e1b318c3ee303190d26",
+  "artifact": "mame-linux-clang-00141dc66f66ec0487f3ee8892c14d2124b63395",
+  "commit_message": "philips/p2000t.cpp: initial Cassette SW list (#15307)\n\nphilips/p2000t.cpp: fix machine_config duplication\n\nNew working software list items\n-------------------------------\np2000_cass: 4 x 4, Alggrot, Androiden Nim, Azuda, BABA, Beursspel, P2000 Bingo, Black Jack, Bommenwerpers, Boter-Kaas-En-Eieren, Brick-Wall, Bugs From Space, Canyon Killers, Cave In, Centenkwestie, Chess, Chuckie Egg, Cijferdans, Code Kraker, Computer Jackpot, Dam-Puzzel, De schat van de Inca's, Doolhof, Doolhofspel, Draaikubus, Drakendoolhof, Een-en-twintigen, Eendenjacht, Elevatie, Elevator Humpie / Liftjongen, Eliza & Killer Cars, Explosie, Fantuper, Flight Simulator, Fraxxon: Space Fight II (2 sets), Ganzenbord, De Gebochelde / The Humpbacked Man, Geheugentest, Go Bang, Go spel, Grotvliegers, Haasje-over, Handicap Race, Hexapawn, Hussel, Jackpot Rowa, Jacht op de Schat, Kanonnen, Klei-duiven Schieten, Klemvast, Klibberdrath Castle, Klimop, Kogel-lawine, Koh-i-noor, Korenvliet, Kralen & Schalen, Ladders en Adders, Lazy Bug / Lady Bug, LetterReactieTest, Lucifers, Macho Man, Marco Polo Jr, Mens erger je niet, Monkey Kong, Multipede, Oliedruppels, Oregon Trail, Othello-1 / Sluit-In, Overleven, Pacific, Pacman, Pak de muis, Patience, Peleton verkenning, Pirate's adventure / Piraten avontuur, Qubic, Quest, Racen (3 sets), Wegversmalling, Racetrack, Rijsimulator, Risk, Ruimte-mug, Schateiland, Schatzoeken, Skien, The Snakeygame, Snelletterland, Snorkel, Space Attack, Space Fight, Space-Mission, Spider, Splitsen, Squadrotronie / Ufo's, StarTrek, Stock Car Race, Superbrein, Superlazer, Surround, Swoppers Drag Racing, TankBattle, Tankslag, Target, Tempo Typen, Tennis, Tetris, Triffids in LA, Trucker, U Hangt, Utopia, Valbal, Vier op een rij, Wurm, Zee-slag (shoot'em up), Zeeslag (tabletop, 2 sets), Zipp de rups [P2000T Software Preservation]\n\nNew software list items marked not working\n------------------------------------------\np2000_cass: Alice's Wonderland, Battlestar, Car Race, Casino Hendriks, Ghosthunt, Jackpot: Fruitautomaat, Letterbord, Letterdans, Life, Maanlander, Maanlander 2, Memory, Puzzelen , Race Circuit, Red de muis!, Schieten, Snake, Speelpaleis, Star-kwak, Toernooi, P2000 Vliegroutine, War in Space, Woord-spel, Yahtzee [P2000T Software Preservation]",
   "changed_files": [
-    "src/devices/cpu/mcs51/mcs51ops.cpp",
-    "src/mame/access/acvirus.cpp",
-    "src/mame/taito/arkanoid.cpp"
+    "hash/p2000_cass.xml",
+    "src/devices/machine/mdcr.cpp",
+    "src/mame/philips/p2000t.cpp"
   ],
   "reasons": {
-    "ark1ball": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
+    "p2000m": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "arkaboot": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkangc": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkangc2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoid": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidj": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidja": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidjb": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidjbl": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidjbl2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidpe": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoidu": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkanoiduo": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkatayt": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkatour": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkatour2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkbloc2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkbloc3": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkblock": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkgcbl": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arkgcbla": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "arktayt2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "block2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "brixian": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "cruisin5": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "hexa": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "hexaa": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "paddle2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "tetrsark": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "tetrsark2": [
-      "driver changed: src/mame/taito/arkanoid.cpp"
-    ],
-    "virusa": [
-      "driver changed: src/mame/access/acvirus.cpp"
-    ],
-    "virusb": [
-      "driver changed: src/mame/access/acvirus.cpp"
-    ],
-    "virusc": [
-      "driver changed: src/mame/access/acvirus.cpp"
-    ],
-    "viruscl": [
-      "driver changed: src/mame/access/acvirus.cpp"
-    ],
-    "virusrck": [
-      "driver changed: src/mame/access/acvirus.cpp"
-    ],
-    "virusrckxl": [
-      "driver changed: src/mame/access/acvirus.cpp"
+    "p2000t": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ]
   },
   "machines": [
@@ -70683,31 +70581,31 @@
       "name": "p2000m",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
+      "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.169,
+          "duration_seconds": 1.126,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
-          "artifact": "mame-linux-clang-fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef"
+          "revision": "9a9529670ce5733459415e1b318c3ee303190d26",
+          "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.198,
+          "duration_seconds": 1.161,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
-          "artifact": "mame-linux-clang-09b0ab540c731155e76a784f909d93cde6c6e6b1"
+          "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
+          "artifact": "mame-linux-clang-00141dc66f66ec0487f3ee8892c14d2124b63395"
         }
       }
     },
@@ -70715,31 +70613,31 @@
       "name": "p2000t",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
+      "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 2.217,
+          "duration_seconds": 2.113,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef",
-          "artifact": "mame-linux-clang-fe07e2d5d6abf99d7494a34794322dfdbc3cb8ef"
+          "revision": "9a9529670ce5733459415e1b318c3ee303190d26",
+          "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 2.154,
+          "duration_seconds": 2.164,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "09b0ab540c731155e76a784f909d93cde6c6e6b1",
-          "artifact": "mame-linux-clang-09b0ab540c731155e76a784f909d93cde6c6e6b1"
+          "revision": "00141dc66f66ec0487f3ee8892c14d2124b63395",
+          "artifact": "mame-linux-clang-00141dc66f66ec0487f3ee8892c14d2124b63395"
         }
       }
     },
