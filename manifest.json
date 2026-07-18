@@ -1,34 +1,16 @@
 {
-  "generated_at": "2026-07-18T14:27:06.944100+00:00",
+  "generated_at": "2026-07-18T14:27:26.669740+00:00",
   "title": "MAME quick snaps",
-  "head": "bfdebdf221ebbb755b04ac36a583f95b94923ba9",
-  "base": "dbfc6691bd12bc737251c4e796b3c03cf946ffca",
-  "artifact": "mame-linux-clang-bfdebdf221ebbb755b04ac36a583f95b94923ba9",
+  "head": "d027e99d2fc2da95c8a5d67b61e472644794fd03",
+  "base": "bfdebdf221ebbb755b04ac36a583f95b94923ba9",
+  "artifact": "mame-linux-clang-d027e99d2fc2da95c8a5d67b61e472644794fd03",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_3d.cpp",
-    "src/mame/namco/namcos21_3d.h",
-    "src/mame/namco/namcos21_de.cpp"
+    "hash/smc777.xml",
+    "src/mame/sony/smc777.cpp"
   ],
   "reasons": {
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "namcos21_3d": [
-      "driver changed: src/mame/namco/namcos21_3d.cpp",
-      "driver changed: src/mame/namco/namcos21_3d.h"
-    ],
-    "namco_de_pcb": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
     ]
   },
   "machines": [
@@ -14958,29 +14940,29 @@
       "name": "smc777",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
+      "revision": "d027e99d2fc2da95c8a5d67b61e472644794fd03",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.616,
+          "duration_seconds": 0.545,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "c01cc03f03ec15edd0c9a67cfb654bca75810225",
-          "artifact": "mame-linux-clang-c01cc03f03ec15edd0c9a67cfb654bca75810225"
+          "revision": "bfdebdf221ebbb755b04ac36a583f95b94923ba9",
+          "artifact": "mame-linux-clang-bfdebdf221ebbb755b04ac36a583f95b94923ba9"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.597,
+          "duration_seconds": 0.546,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
-          "artifact": "mame-linux-clang-2f6332d2dd858c7a9fb2d396a3d6a47cf5942495"
+          "revision": "d027e99d2fc2da95c8a5d67b61e472644794fd03",
+          "artifact": "mame-linux-clang-d027e99d2fc2da95c8a5d67b61e472644794fd03"
         }
       }
     },
