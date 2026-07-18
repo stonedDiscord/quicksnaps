@@ -3,6 +3,7 @@ body { max-width: 1500px; margin: auto; padding: 2rem; }
 h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .machine { border-top: 1px solid #38414b; padding: 1.5rem 0 2rem; }
 .machine h2 { display: inline-block; margin: 0 1rem .8rem 0; }
+.machine.archived { padding: .65rem 0; } .machine.archived h2 { margin: 0; font-size: 1rem; }
 .status { padding: .2rem .55rem; border-radius: 99px; background: #234c35; }
 .failed { background: #642d34; } .reason { color: #b7c2cc; }
 .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
@@ -11,6 +12,7 @@ h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .unchanged { padding: 1rem; border: 1px solid #31503d; background: #17251d; color: #b8d8c3; }
 details { margin-top: 1rem; } summary { cursor: pointer; color: #e7b56d; }
 pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; white-space: pre-wrap; overflow-wrap: anywhere; }
+.commit-message { margin: .8rem 0 2rem; padding: 1rem; border-left: 3px solid #6886a3; background: #171b20; white-space: pre-wrap; }
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
