@@ -1,14 +1,22 @@
 {
-  "generated_at": "2026-07-18T18:37:46.946099+00:00",
+  "generated_at": "2026-07-18T18:38:10.509582+00:00",
   "title": "MAME quick snaps",
-  "head": "24b2036f0b2b39bb2ca89d0a0685a7e851678a0a",
-  "base": "329df5374d4e680cc8b7e894083b715b1d8ee774",
-  "artifact": "mame-linux-clang-24b2036f0b2b39bb2ca89d0a0685a7e851678a0a",
-  "commit_message": "Update sorcerer_cass.xml (#15323)\n\nVarious updates to publisher and date metadata",
+  "head": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+  "base": "24b2036f0b2b39bb2ca89d0a0685a7e851678a0a",
+  "artifact": "mame-linux-clang-c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+  "commit_message": "New clones marked not working\n-----------------------------\nOrla SE 41 [DBWBP]",
   "changed_files": [
-    "hash/sorcerer_cass.xml"
+    "src/mame/mame.lst",
+    "src/mame/orla/hk1000.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "hk1000": [
+      "driver changed: src/mame/orla/hk1000.cpp"
+    ],
+    "se41": [
+      "driver changed: src/mame/orla/hk1000.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -105959,6 +105967,58 @@
           "failure_reason": null,
           "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
           "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "hk1000",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 3.07,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "24b2036f0b2b39bb2ca89d0a0685a7e851678a0a",
+          "artifact": "mame-linux-clang-24b2036f0b2b39bb2ca89d0a0685a7e851678a0a"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 3.244,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+          "artifact": "mame-linux-clang-c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60"
+        }
+      }
+    },
+    {
+      "name": "se41",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 3.152,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60",
+          "artifact": "mame-linux-clang-c0bba168a6fb68845bf47e41d47b0a5bf0aa3c60"
         }
       }
     }
