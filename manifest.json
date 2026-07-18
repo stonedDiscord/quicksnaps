@@ -1,54 +1,25 @@
 {
-  "generated_at": "2026-07-18T14:29:50.917282+00:00",
+  "generated_at": "2026-07-18T14:30:09.461947+00:00",
   "title": "MAME quick snaps",
-  "head": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
-  "base": "dffc846376e1cb9c48f0937e6ab6d9fde3c964b6",
-  "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+  "head": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+  "base": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+  "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47",
   "changed_files": [
-    "src/mame/namco/namco_c148.cpp",
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp"
+    "src/devices/sound/va_ops.h",
+    "src/mame/sequential/prophet5.cpp"
   ],
   "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "prophet5rev30": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
     ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "prophet5_cv2cc": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
     ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "prophet5_voice": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
     ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "namco_c148": [
-      "driver changed: src/mame/namco/namco_c148.cpp"
-    ],
-    "namco_de_pcb": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
+    "prophet5_audio": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
     ]
   },
   "machines": [
@@ -23359,6 +23330,126 @@
           "failure_reason": "sunaq             SunA Quiz 6000 Academy (940620-6)                      (SunA, 1994)",
           "revision": "dffc846376e1cb9c48f0937e6ab6d9fde3c964b6",
           "artifact": "mame-linux-clang-dffc846376e1cb9c48f0937e6ab6d9fde3c964b6"
+        }
+      }
+    },
+    {
+      "name": "prophet5rev30",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.571,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+          "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.59,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+          "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47"
+        }
+      }
+    },
+    {
+      "name": "prophet5_cv2cc",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.212,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "popn5             Pop'n Music 5                                      (Konami, 2000)",
+          "revision": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+          "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.212,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "popn5             Pop'n Music 5                                      (Konami, 2000)",
+          "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+          "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47"
+        }
+      }
+    },
+    {
+      "name": "prophet5_voice",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.208,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "pr_theme          Theme Park (Project) (PROCONN)                              (Project, 199?)",
+          "revision": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+          "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.21,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "pr_theme          Theme Park (Project) (PROCONN)                              (Project, 199?)",
+          "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+          "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47"
+        }
+      }
+    },
+    {
+      "name": "prophet5_audio",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.208,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "theraid           The Raid                                                    (Playmatic, 1984)",
+          "revision": "3f7814f532fdd73a8c7e8c367ed50ed474b395a9",
+          "artifact": "mame-linux-clang-3f7814f532fdd73a8c7e8c367ed50ed474b395a9"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.208,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "theraid           The Raid                                                    (Playmatic, 1984)",
+          "revision": "590e5d4b7f38f4784b7b9539f7c61268509ced47",
+          "artifact": "mame-linux-clang-590e5d4b7f38f4784b7b9539f7c61268509ced47"
         }
       }
     }
