@@ -1,20 +1,16 @@
 {
-  "generated_at": "2026-07-18T17:20:31.662456+00:00",
+  "generated_at": "2026-07-18T17:20:57.579332+00:00",
   "title": "MAME quick snaps",
-  "head": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
-  "base": "9913b7ad53c18188cf815efd01eb38e9f300e123",
-  "artifact": "mame-linux-clang-ade84a8b1e228c81f8173d59895ab14aa505a39f",
-  "commit_message": "philips/p2000t.cpp: cleanups around keyboard, remove macros\n\nNew working software list items\n-------------------------------\np2000_cart: Brick-Wall, Doolhof, Fraxxon: Space Fight II, Lazy Bug, Monkey Kong, Multipede, Space Fight, Tetris [P2000T Software Preservation]\n\nNew software list items marked not working\n------------------------------------------\np2000_cart: Ghosthunt [P2000T Software Preservation]",
+  "head": "45c50b4c313dcc00d421b9fc971debfd95e6781f",
+  "base": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
+  "artifact": "mame-linux-clang-45c50b4c313dcc00d421b9fc971debfd95e6781f",
+  "commit_message": "skeleton/clownmgc.cpp: fleshed out driver. Needs sound mostly.",
   "changed_files": [
-    "hash/p2000_cart.xml",
-    "src/mame/philips/p2000t.cpp"
+    "src/mame/skeleton/clownmgc.cpp"
   ],
   "reasons": {
-    "p2000m": [
-      "driver changed: src/mame/philips/p2000t.cpp"
-    ],
-    "p2000t": [
-      "driver changed: src/mame/philips/p2000t.cpp"
+    "clownmgc": [
+      "driver changed: src/mame/skeleton/clownmgc.cpp"
     ]
   },
   "machines": [
@@ -71743,6 +71739,38 @@
           "failure_reason": null,
           "revision": "9913b7ad53c18188cf815efd01eb38e9f300e123",
           "artifact": "mame-linux-clang-9913b7ad53c18188cf815efd01eb38e9f300e123"
+        }
+      }
+    },
+    {
+      "name": "clownmgc",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "45c50b4c313dcc00d421b9fc971debfd95e6781f",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.435,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ade84a8b1e228c81f8173d59895ab14aa505a39f",
+          "artifact": "mame-linux-clang-ade84a8b1e228c81f8173d59895ab14aa505a39f"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.587,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "45c50b4c313dcc00d421b9fc971debfd95e6781f",
+          "artifact": "mame-linux-clang-45c50b4c313dcc00d421b9fc971debfd95e6781f"
         }
       }
     }
