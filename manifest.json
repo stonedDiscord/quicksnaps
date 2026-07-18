@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-07-18T19:51:10.057608+00:00",
+  "generated_at": "2026-07-18T19:51:41.905805+00:00",
   "title": "MAME quick snaps",
-  "head": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
-  "base": "3d11b5a17de05ea08f718a3a35192940a2c6c919",
-  "artifact": "mame-linux-clang-fc622d98e8a4b61092cdd5cd0852e8217de9798d",
-  "commit_message": "i86/i86.cpp: Emulate undocumented DIV/IDIV behavior for the 80(1)8x as relied on by mpc60. [R. Belmont]",
+  "head": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
+  "base": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+  "artifact": "mame-linux-clang-95a98e4db85b2ab8e450749ac6055c4519c5839e",
+  "commit_message": "taito/gunbustr_link.cpp: Set NODELAY option on sockets.\n\nAllows the game to communicate successfully over WiFi rather than just\nloopback connections.",
   "changed_files": [
-    "src/devices/cpu/i86/i86.cpp"
+    "src/mame/capcom/cps2comm.cpp",
+    "src/mame/capcom/cps2comm.h",
+    "src/mame/taito/gunbustr.cpp",
+    "src/mame/taito/gunbustr_link.cpp",
+    "src/mame/taito/gunbustr_link.h"
   ],
-  "reasons": {},
+  "reasons": {
+    "gunbustr": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
+    ],
+    "gunbustrj": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
+    ],
+    "gunbustru": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -109030,31 +109044,31 @@
       "name": "gunbustr",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+      "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.729,
+          "duration_seconds": 5.467,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
-          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
+          "revision": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+          "artifact": "mame-linux-clang-fc622d98e8a4b61092cdd5cd0852e8217de9798d"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.456,
+          "duration_seconds": 7.811,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
-          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+          "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
+          "artifact": "mame-linux-clang-95a98e4db85b2ab8e450749ac6055c4519c5839e"
         }
       }
     },
@@ -109062,31 +109076,31 @@
       "name": "gunbustrj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+      "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.414,
+          "duration_seconds": 5.367,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
-          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
+          "revision": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+          "artifact": "mame-linux-clang-fc622d98e8a4b61092cdd5cd0852e8217de9798d"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.477,
+          "duration_seconds": 7.372,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
-          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+          "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
+          "artifact": "mame-linux-clang-95a98e4db85b2ab8e450749ac6055c4519c5839e"
         }
       }
     },
@@ -109094,31 +109108,31 @@
       "name": "gunbustru",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+      "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.248,
+          "duration_seconds": 5.574,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
-          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
+          "revision": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+          "artifact": "mame-linux-clang-fc622d98e8a4b61092cdd5cd0852e8217de9798d"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.538,
+          "duration_seconds": 7.177,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
-          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+          "revision": "95a98e4db85b2ab8e450749ac6055c4519c5839e",
+          "artifact": "mame-linux-clang-95a98e4db85b2ab8e450749ac6055c4519c5839e"
         }
       }
     },
