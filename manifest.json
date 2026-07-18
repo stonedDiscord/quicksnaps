@@ -1,19 +1,28 @@
 {
-  "generated_at": "2026-07-18T15:35:19.660565+00:00",
+  "generated_at": "2026-07-18T15:35:41.303415+00:00",
   "title": "MAME quick snaps",
-  "head": "06a594ad76ccaeb6278a4a5a3623f95291910f81",
-  "base": "1810633dcc067261ed629aaaf7ca54a2e3638aea",
-  "artifact": "mame-linux-clang-06a594ad76ccaeb6278a4a5a3623f95291910f81",
-  "commit_message": "sony/smc777_kbd.cpp: add CAP(S) and KANA LOCKs",
+  "head": "39b2d1c7f0a4019dc552f6770f4962f380372763",
+  "base": "06a594ad76ccaeb6278a4a5a3623f95291910f81",
+  "artifact": "mame-linux-clang-39b2d1c7f0a4019dc552f6770f4962f380372763",
+  "commit_message": "ui: Rationalised use of menu item flags:\n\n* Renamed FLAG_INVERT to FLAG_DEEMPHASIZE to better reflect what it\n  does.  The Lua equivalent \"invert\" has not been changed because it\n  will likely break external scripts.\n* ui/inputmap.cpp: De-emphasise inherited values, matching the behaviour\n  of the audio effect menus.\n* ui/menu.cpp: De-emphasise the main item text for de-emphasised items\n  without sub-text and for items that are both disabled and\n  de-emphasised.  This makes items with inherited values visually\n  distinct from disabled items while not affecting [ab]use of disabled\n  items for informational text.",
   "changed_files": [
-    "src/mame/sony/smc777.cpp",
-    "src/mame/sony/smc777_kbd.cpp"
+    "src/frontend/mame/ui/audio_effect_compressor.cpp",
+    "src/frontend/mame/ui/audio_effect_eq.cpp",
+    "src/frontend/mame/ui/audio_effect_filter.cpp",
+    "src/frontend/mame/ui/audio_effect_reverb.cpp",
+    "src/frontend/mame/ui/audioeffects.cpp",
+    "src/frontend/mame/ui/inputmap.cpp",
+    "src/frontend/mame/ui/inputmap.h",
+    "src/frontend/mame/ui/menu.cpp",
+    "src/frontend/mame/ui/menu.h",
+    "src/frontend/mame/ui/pluginopt.cpp",
+    "src/frontend/mame/ui/selgame.cpp",
+    "src/frontend/mame/ui/selmenu.cpp",
+    "src/frontend/mame/ui/selsoft.cpp",
+    "src/frontend/mame/ui/simpleselgame.cpp",
+    "src/frontend/mame/ui/videoopt.cpp"
   ],
-  "reasons": {
-    "smc777": [
-      "driver changed: src/mame/sony/smc777.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
