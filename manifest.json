@@ -1,25 +1,33 @@
 {
-  "generated_at": "2026-07-18T18:25:40.369168+00:00",
+  "generated_at": "2026-07-18T18:26:01.530147+00:00",
   "title": "MAME quick snaps",
-  "head": "a65269129c37e0570c4d18bbba1e46791fa928ea",
-  "base": "f60417251c9c9d492d309a62f95e98b377b26187",
-  "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea",
-  "commit_message": "excellent/es9606.cpp: hookup Imagetek VDP, hookup basic inputs",
+  "head": "db9d90747189c016d0a988235efba824562258d7",
+  "base": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+  "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7",
+  "commit_message": "smondial2: correct year",
   "changed_files": [
-    "hash/p2000_cart.xml",
-    "hash/p2000_cass.xml",
-    "src/mame/excellent/es9606.cpp",
-    "src/mame/philips/p2000t.cpp"
+    "hash/mephisto_smondial2.xml",
+    "src/mame/hegenerglaser/smondial.cpp",
+    "src/mame/namco/namcos21_3d.cpp"
   ],
   "reasons": {
-    "keirind2": [
-      "driver changed: src/mame/excellent/es9606.cpp"
+    "mega4": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
     ],
-    "p2000m": [
-      "driver changed: src/mame/philips/p2000t.cpp"
+    "mega4a": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
     ],
-    "p2000t": [
-      "driver changed: src/mame/philips/p2000t.cpp"
+    "smondial": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
+    ],
+    "smondial2": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
+    ],
+    "smondialab": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
+    ],
+    "smondialb": [
+      "driver changed: src/mame/hegenerglaser/smondial.cpp"
     ]
   },
   "machines": [
@@ -103320,6 +103328,198 @@
           "failure_reason": "machine has no emulated screen",
           "revision": "f60417251c9c9d492d309a62f95e98b377b26187",
           "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187"
+        }
+      }
+    },
+    {
+      "name": "mega4",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.696,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.693,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
+        }
+      }
+    },
+    {
+      "name": "mega4a",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.654,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.706,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
+        }
+      }
+    },
+    {
+      "name": "smondial",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.448,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.503,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
+        }
+      }
+    },
+    {
+      "name": "smondial2",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.545,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.494,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
+        }
+      }
+    },
+    {
+      "name": "smondialab",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.406,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.427,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
+        }
+      }
+    },
+    {
+      "name": "smondialb",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "db9d90747189c016d0a988235efba824562258d7",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.508,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.391,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
         }
       }
     }
