@@ -1,393 +1,33 @@
 {
-  "generated_at": "2026-07-18T18:00:43.768440+00:00",
+  "generated_at": "2026-07-18T18:01:52.519656+00:00",
   "title": "MAME quick snaps",
-  "head": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
-  "base": "3557d3a90ff2eab25a04ef237ff53f111e61bb6f",
-  "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236",
-  "commit_message": "GPL951xx milestone (begin splitting from GPL162xx, hack removal in driver, cleanup) (#15309)\n\n- began splitting GPL951xx state from GPL162xx state\n- improved function naming / logging in GPL162xx / GPL951xx\n- rough/preliminary implementation of some GPL951xx features\n- removed start-up code bypass hack for bfpacman, bfdigdug, bfspyhnt etc. as they can now properly identify the SPI ROM\n- a few comment updates in GPCE4\n- used u8 / u16 / u32 in touched files rather than the uintxx_t form + other general cleanups",
+  "head": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+  "base": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+  "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+  "commit_message": "nscsi/cd.cpp: Added a CDROM_2X device that reasonably throttles\tthe read speed to what you'd see with a\t2X CD-ROM drive. [R. Belmont]\n\nsound/l7a1045_l6028_dsp_a.cpp: Throttled DMA wave RAM writes to\ta more reasonable (but still very fast)\trate.\n\nakai/s3000.cpp:\tImprovements. [R. Belmont]\n- Fixed crackling samples: the CD-ROM code in these machines was running a single-buffer race condition\tand hoping it never lost.\n  Slower DSP wave RAM DMA and realistic\t2X CD-ROM read speeds cracked the case.\n- S3000\tand CD3000i copy all 256K of ROM to RAM\tat boot\tand then bank out the ROM in favor of 256K of RAM.  Implementing this\n  resolved the S3000 crashing when loading from\tCD-ROM and many\tother small instabilities.\n- S3000\tand CD3000i key\tmatrix repeat delay depended on\ttimer 2\twhich depended on the V53 external timer input,\twhich was running\n  far too fast.\t Fixed,\tthe buttons now\tfeel reasonable.",
   "changed_files": [
-    "src/devices/machine/generalplus_gpce4_soc.cpp",
-    "src/devices/machine/generalplus_gpl1625x_soc.cpp",
-    "src/devices/machine/generalplus_gpl1625x_soc.h",
-    "src/devices/machine/generalplus_gpl162xx_soc.cpp",
-    "src/devices/machine/generalplus_gpl162xx_soc.h",
-    "src/devices/machine/generalplus_gpl162xx_soc_video.cpp",
-    "src/devices/machine/generalplus_gpl162xx_soc_video.h",
-    "src/devices/machine/generalplus_gpl951xx_soc.cpp",
-    "src/devices/machine/generalplus_gpl951xx_soc.h",
-    "src/devices/machine/generic_spi_flash.cpp",
-    "src/devices/machine/generic_spi_flash.h",
-    "src/mame/tvgames/generalplus_gpl16250.cpp",
-    "src/mame/tvgames/generalplus_gpl16250.h",
-    "src/mame/tvgames/generalplus_gpl16250_mobigo.cpp",
-    "src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-    "src/mame/tvgames/generalplus_gpl16250_nand.h",
-    "src/mame/tvgames/generalplus_gpl16250_rom.cpp",
-    "src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-    "src/mame/tvgames/generalplus_gpl16250_romram.h",
-    "src/mame/tvgames/generalplus_gpl16250_spi.cpp",
-    "src/mame/tvgames/generalplus_gpl162xx_lcdtype.cpp",
-    "src/mame/tvgames/generalplus_gpl951xx.cpp"
+    "src/devices/bus/nscsi/cd.cpp",
+    "src/devices/bus/nscsi/cd.h",
+    "src/devices/bus/nscsi/devices.cpp",
+    "src/devices/sound/l7a1045_l6028_dsp_a.cpp",
+    "src/devices/sound/l7a1045_l6028_dsp_a.h",
+    "src/mame/akai/s3000.cpp"
   ],
   "reasons": {
-    "anpanbd": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
+    "cd3000i": [
+      "driver changed: src/mame/akai/s3000.cpp"
     ],
-    "anpaneng": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
+    "cd3000xl": [
+      "driver changed: src/mame/akai/s3000.cpp"
     ],
-    "anpanm15": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
+    "s2000": [
+      "driver changed: src/mame/akai/s3000.cpp"
     ],
-    "beambox": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
+    "s3000": [
+      "driver changed: src/mame/akai/s3000.cpp"
     ],
-    "beijuehh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "bfdigdug": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bfgalaga": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bfmpac": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bfpacman": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bfspyhnt": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bftetris": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "bk139in1": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "bkid218": [
-      "driver changed: src/mame/tvgames/generalplus_gpl162xx_lcdtype.cpp"
-    ],
-    "bkrankp": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "bornkidh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "bubltea": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "dgun3944": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "dressmtv": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "dsgnpal": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "fixitflx": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "flufflav": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "fpsport": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu108": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu50": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu90": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gormiti": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gp230": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "imgame": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_bj": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_camp": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_car2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_duck": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_gtg": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_hmg2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_hmhsm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_hmpt": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_hsmg2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_pf": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_prft": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_prr": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_s500": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_sinv": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_smwm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_spmm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_sspop": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_swc": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_swcl": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_ths": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_tink": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_totm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "jak_tpir": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_tsm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_umdf": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_wdbg": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jak_wdzh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "jspodred": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "kiugames": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "lazertag": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "lxcymls": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "lxcympp": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "lxcymsm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "lxcyrace": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "mgtfit": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "mobigo": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_mobigo.cpp"
-    ],
-    "mobigo2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_mobigo.cpp"
-    ],
-    "mobigos": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_mobigo.cpp"
-    ],
-    "myac220": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "paccon": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "pcp8718": [
-      "driver changed: src/mame/tvgames/generalplus_gpl162xx_lcdtype.cpp"
-    ],
-    "pcp8728": [
-      "driver changed: src/mame/tvgames/generalplus_gpl162xx_lcdtype.cpp"
-    ],
-    "pockrmsr": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "pokebala": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "pokegac2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "pokegac2y": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "pokegach": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "pokeissh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "pokemech": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "pokgoget": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "prailpls": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "punifrnd": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punij1m": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punij1pk": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punij1pu": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punij2pk": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punirune": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "punistar": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet1": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet1a": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet2": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet2a": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet3": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segapet3a": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "segaptdx": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "smartfp": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smartfpf": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smartfps": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smkcatch": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "smkgacha": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "smkguras": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "smkgurasa": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "starbuck": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "tkmag220": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "tomycar": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
-    ],
-    "typo176": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "vbaby": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "vmastspi": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_spi.cpp"
-    ],
-    "wiwcs": [
-      "driver changed: src/mame/tvgames/generalplus_gpl951xx.cpp"
-    ],
-    "wlsair60": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_nand.h"
-    ],
-    "wrlshunt": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.cpp",
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_romram.h"
+    "s3000xl": [
+      "driver changed: src/mame/akai/s3000.cpp"
     ]
   },
   "machines": [
@@ -92506,6 +92146,166 @@
           "failure_reason": null,
           "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
           "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        }
+      }
+    },
+    {
+      "name": "cd3000i",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 8.738,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+          "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 8.652,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+          "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
+        }
+      }
+    },
+    {
+      "name": "cd3000xl",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 19.866,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+          "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 20.447,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+          "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
+        }
+      }
+    },
+    {
+      "name": "s2000",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 19.384,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+          "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 19.35,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+          "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
+        }
+      }
+    },
+    {
+      "name": "s3000",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 9.383,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+          "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.556,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+          "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
+        }
+      }
+    },
+    {
+      "name": "s3000xl",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 21.103,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "511bdffa5e2f113be0b0af403db8341c6f9d9236",
+          "artifact": "mame-linux-clang-511bdffa5e2f113be0b0af403db8341c6f9d9236"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 21.237,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
+          "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
         }
       }
     }
