@@ -1,14 +1,24 @@
 {
-  "generated_at": "2026-07-18T20:05:15.380977+00:00",
+  "generated_at": "2026-07-18T20:05:42.091161+00:00",
   "title": "MAME quick snaps",
-  "head": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
-  "base": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-  "artifact": "mame-linux-clang-571f3d4b723373e8ede3dd18931d88857fa84dfc",
-  "commit_message": "Revert \"ioport: set disable_side_effects on internal frame update (eg. if reading an input port triggers an irq, MAME's frame update shouldn't affect it)\"\n\nThis reverts commit f695e757c57f29ab4a220ff03a4b847e0f9c9530.\n\nI/O ports are for reporting the state of a set of input lines.  If a\ncustom input member has side effects, it's broken.  Use a read callback\nof some kind (read handler, delegate, devcb, etc.) instead.  Allowing or\nencouraging I/O ports with read side effects breaks too many\nassumptions.",
+  "head": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
+  "base": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
+  "artifact": "mame-linux-clang-4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
+  "commit_message": "crshrace: workaround for ioport frame_update port access",
   "changed_files": [
-    "src/emu/ioport.cpp"
+    "src/mame/vsystem/crshrace.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "crshrace": [
+      "driver changed: src/mame/vsystem/crshrace.cpp"
+    ],
+    "crshrace2": [
+      "driver changed: src/mame/vsystem/crshrace.cpp"
+    ],
+    "crshrace2a": [
+      "driver changed: src/mame/vsystem/crshrace.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -114510,31 +114520,31 @@
       "name": "crshrace",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
+      "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.123,
+          "duration_seconds": 2.392,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "27da577c21c473297f6aeecf5ab48c5a56872525",
-          "artifact": "mame-linux-clang-27da577c21c473297f6aeecf5ab48c5a56872525"
+          "revision": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
+          "artifact": "mame-linux-clang-571f3d4b723373e8ede3dd18931d88857fa84dfc"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 3.792,
+          "duration_seconds": 2.229,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-          "artifact": "mame-linux-clang-65b9ead26e4ea233d812d4cc24d0ee630b76e1af"
+          "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
+          "artifact": "mame-linux-clang-4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8"
         }
       }
     },
@@ -114542,31 +114552,31 @@
       "name": "crshrace2",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
+      "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.109,
+          "duration_seconds": 2.394,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "27da577c21c473297f6aeecf5ab48c5a56872525",
-          "artifact": "mame-linux-clang-27da577c21c473297f6aeecf5ab48c5a56872525"
+          "revision": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
+          "artifact": "mame-linux-clang-571f3d4b723373e8ede3dd18931d88857fa84dfc"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 3.661,
+          "duration_seconds": 2.222,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-          "artifact": "mame-linux-clang-65b9ead26e4ea233d812d4cc24d0ee630b76e1af"
+          "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
+          "artifact": "mame-linux-clang-4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8"
         }
       }
     },
@@ -114574,31 +114584,31 @@
       "name": "crshrace2a",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
+      "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.087,
+          "duration_seconds": 2.256,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "27da577c21c473297f6aeecf5ab48c5a56872525",
-          "artifact": "mame-linux-clang-27da577c21c473297f6aeecf5ab48c5a56872525"
+          "revision": "571f3d4b723373e8ede3dd18931d88857fa84dfc",
+          "artifact": "mame-linux-clang-571f3d4b723373e8ede3dd18931d88857fa84dfc"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 4.184,
+          "duration_seconds": 2.133,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "65b9ead26e4ea233d812d4cc24d0ee630b76e1af",
-          "artifact": "mame-linux-clang-65b9ead26e4ea233d812d4cc24d0ee630b76e1af"
+          "revision": "4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8",
+          "artifact": "mame-linux-clang-4e93fc2bf0f6acf91ebf8bb3b8d2db3036a688f8"
         }
       }
     },
