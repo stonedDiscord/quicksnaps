@@ -1,828 +1,48 @@
 {
-  "generated_at": "2026-07-18T16:15:53.108207+00:00",
+  "generated_at": "2026-07-18T16:17:18.071614+00:00",
   "title": "MAME quick snaps",
-  "head": "db1e21d2dcfae39f93624fc57006260800ba443f",
-  "base": "43faf9265bb1838682067d36ccbb11206c281c38",
-  "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f",
-  "commit_message": "(emu.h) dimemory: add remove_addrmap",
+  "head": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+  "base": "db1e21d2dcfae39f93624fc57006260800ba443f",
+  "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+  "commit_message": "namcos21: assume reset_all_subcpus also resets the associated c148",
   "changed_files": [
-    "src/emu/dimemory.h",
-    "src/mame/dynax/hnayayoi.cpp",
-    "src/mame/kaneko/snowbros.cpp",
-    "src/mame/pacman/pacman.cpp",
-    "src/mame/pacman/pengo.cpp",
-    "src/mame/sega/system16.cpp",
-    "src/mame/seibu/stfight.cpp",
-    "src/mame/seibu/wiz.cpp",
-    "src/mame/sunelectronics/route16.cpp"
+    "src/mame/namco/namcos21.cpp",
+    "src/mame/namco/namcos21_c67.cpp",
+    "src/mame/namco/namcos21_de.cpp"
   ],
   "reasons": {
-    "3in1semi": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
+    "aircomb": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "3in1semia": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
+    "aircombj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "4in1boot": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
+    "cybsled": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "8bpm": [
-      "driver changed: src/mame/pacman/pacman.cpp"
+    "cybsleda": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "abscam": [
-      "driver changed: src/mame/pacman/pacman.cpp"
+    "driveyes": [
+      "driver changed: src/mame/namco/namcos21_de.cpp"
     ],
-    "acitya": [
-      "driver changed: src/mame/pacman/pacman.cpp"
+    "solvalou": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "alibaba": [
-      "driver changed: src/mame/pacman/pacman.cpp"
+    "starblad": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "alibabab": [
-      "driver changed: src/mame/pacman/pacman.cpp"
+    "starbladj": [
+      "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "altbeastbl": [
-      "driver changed: src/mame/sega/system16.cpp"
+    "winrun": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "altbeastbl2": [
-      "driver changed: src/mame/sega/system16.cpp"
+    "winrun91": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "ballboy": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "ballboy3p": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "baracuda": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "bayrouteb1": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "bayrouteb2": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "beastfp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "beastfpa": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "beautyb": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "bigbucks": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "birdiy": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "bloxeedbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "bucaner": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "bucanera": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "bwcasino": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "candory": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "cannonbp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "cltchitrbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "clubpacm": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "clubpacma": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "cookbib2": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "cookbib2a": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "cookbib2b": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "cookbib2c": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "cookbib3": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "crockman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crockmnf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crush": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crush2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crush3": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crush4": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crush5": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crushbl": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crushbl2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crushbl3": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crushrlf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "crushs": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "cshootert": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "ctrpllrp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "ddcrewbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "dduxbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "dremshpr": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "drivfrcp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eeekkp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eggor": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "empcity": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "empcityfr": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "empcityi": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "empcityj": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "empcityu": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "empcityubl": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "eswatbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "eswatbl2": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "eswatbl3": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "eyes": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eyes2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eyesb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eyeszac": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "eyeszacb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "finalttr": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "finger": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "goldnaxeb1": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "goldnaxeb2": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "gorkans": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "gwasu": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "hangly": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "hangly2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "hangly3": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "hnayayoi": [
-      "driver changed: src/mame/dynax/hnayayoi.cpp"
-    ],
-    "hnfubuki": [
-      "driver changed: src/mame/dynax/hnayayoi.cpp"
-    ],
-    "honeydol": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "hyperpac": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "hyperpacb": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "iqpipe": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "jongpute": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "joyman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "jrpacmbl": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "jumpshot": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "jumpshotp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "korosuke": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "kungfut": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "kungfuta": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "lizwiz": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "maketrax": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "maketrxb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mbrush": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mcheonru": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "moremore": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "moremorp": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "mrtnt": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mschamp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mschamps": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "msheartb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacii": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacii2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspackpls": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab3": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab4": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab5": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmab6": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbcc": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbco": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbg": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbg2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbgc": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbgd": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbgf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbhe": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbi": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanblt": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanblt2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanbpl": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmancr": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmane": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmane2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanhnc": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmanlai": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmat": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmbe": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmbmc": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmbn": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacmnf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspacpls": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspactwin": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "mspactwina": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "multi96": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "mutantwarr": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "mwalkbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "newpuc2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "newpuc2b": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "newpuckx": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "nmouse": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "nmouseb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "numcrash": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacgal": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacgal2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacheart": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanfm": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanjpm": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanmr": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanpe": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanso": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmansp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanug": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmanvg": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacmod": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacplus": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pacuman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "painter": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "paintrlr": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "passht4b": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "passshtb": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "pengo": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengoa": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengob": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengoc": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengoj": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengoja": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengojb": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengojbl": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pengojpm": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pengomc1": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pengomc2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pengopac": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "penta": [
-      "driver changed: src/mame/pacman/pengo.cpp"
-    ],
-    "pinguinos": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "piranha": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "piranhah": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "piranhao": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "ponpoko": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "ponpokov": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "popeyeman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "porky": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckman": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmana": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmanb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmanb3": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmanf": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmanh": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "puckmod": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "pzlbreak": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "pzlbreaka": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "rocktrv2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "route16": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "route16a": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "route16b": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "route16bl": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "route16c": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "route16d": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "routex": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "routexa": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "scion": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "scionc": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "shdancbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "shdancbla": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "shinobld": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "shinoblda": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "shinobldb": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "shootbul": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "snowbro3": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbros": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbrosa": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbrosb": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbrosc": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbrosd": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbrosj": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "snowbroswb": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "spacecho": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "spacecho2": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "speakhlp": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "speakres": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "speakresb": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "sprglbpg": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "sprglobp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "sprglobp2": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "stfight": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "stfighta": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "stfightgb": [
-      "driver changed: src/mame/seibu/stfight.cpp"
-    ],
-    "stinger": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "stinger2": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "stratvox": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "stratvoxa": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "stratvoxb": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "suhosong": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "superabc": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "superabco": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "sutjarod": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "tetrisbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "theglobme": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "theglobp": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "theglobpa": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "timescanbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "titanpac": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "toppyrap": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "toto": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "ttmahjng": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "tturfbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "twinadv": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "twinadvk": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "twinkle": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "twinklea": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "untoucha": [
-      "driver changed: src/mame/dynax/hnayayoi.cpp"
-    ],
-    "vanvan": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "vanvanb": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "vanvank": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "vscompmj": [
-      "driver changed: src/mame/sunelectronics/route16.cpp"
-    ],
-    "wb3bbl": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "wb3bble": [
-      "driver changed: src/mame/sega/system16.cpp"
-    ],
-    "wintbob": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
-    ],
-    "wiz": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "wizt": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "wizta": [
-      "driver changed: src/mame/seibu/wiz.cpp"
-    ],
-    "woodpeca": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "woodpeck": [
-      "driver changed: src/mame/pacman/pacman.cpp"
-    ],
-    "yutnori": [
-      "driver changed: src/mame/kaneko/snowbros.cpp"
+    "winrungp": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ]
   },
   "machines": [
@@ -830,31 +50,31 @@
       "name": "aircomb",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 26.58,
+          "duration_seconds": 22.769,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 26.036,
+          "duration_seconds": 25.221,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -862,31 +82,31 @@
       "name": "aircombj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 27.378,
+          "duration_seconds": 22.858,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 25.653,
+          "duration_seconds": 24.635,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -894,31 +114,31 @@
       "name": "cybsled",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 27.994,
+          "duration_seconds": 26.662,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 26.386,
+          "duration_seconds": 27.954,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -926,31 +146,31 @@
       "name": "cybsleda",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 27.188,
+          "duration_seconds": 25.925,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 28.537,
+          "duration_seconds": 27.105,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -958,31 +178,31 @@
       "name": "solvalou",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 22.936,
+          "duration_seconds": 22.597,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 21.889,
+          "duration_seconds": 21.897,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -990,31 +210,31 @@
       "name": "starblad",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 26.023,
+          "duration_seconds": 21.063,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 23.443,
+          "duration_seconds": 22.549,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -1022,31 +242,31 @@
       "name": "starbladj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 22.726,
+          "duration_seconds": 22.985,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 22.711,
+          "duration_seconds": 23.852,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -5740,31 +4960,31 @@
       "name": "driveyes",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 35.861,
+          "duration_seconds": 32.984,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 33.93,
+          "duration_seconds": 31.43,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -5772,31 +4992,31 @@
       "name": "winrun",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 16.086,
+          "duration_seconds": 14.471,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 15.558,
+          "duration_seconds": 14.578,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -5804,31 +5024,31 @@
       "name": "winrun91",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 13.572,
+          "duration_seconds": 11.118,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 12.365,
+          "duration_seconds": 12.256,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
@@ -5836,31 +5056,31 @@
       "name": "winrungp",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
+      "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 13.034,
+          "duration_seconds": 12.072,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
-          "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab"
+          "revision": "db1e21d2dcfae39f93624fc57006260800ba443f",
+          "artifact": "mame-linux-clang-db1e21d2dcfae39f93624fc57006260800ba443f"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 12.623,
+          "duration_seconds": 12.162,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "8c9eaf1f5f660988a02bb8d748138fa7c406f2b7",
-          "artifact": "mame-linux-clang-8c9eaf1f5f660988a02bb8d748138fa7c406f2b7"
+          "revision": "d04e5abad3e4cb4d4fb0e56a9da93291558d434f",
+          "artifact": "mame-linux-clang-d04e5abad3e4cb4d4fb0e56a9da93291558d434f"
         }
       }
     },
