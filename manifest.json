@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-07-18T19:11:16.736374+00:00",
+  "generated_at": "2026-07-18T19:11:50.106515+00:00",
   "title": "MAME quick snaps",
-  "head": "ee5e93f9d6a22b5353f402d8bca952b5546670ab",
-  "base": "45faab9e7b23878adf14f275bb3b2528de7b6a47",
-  "artifact": "mame-linux-clang-ee5e93f9d6a22b5353f402d8bca952b5546670ab",
-  "commit_message": "sound/va_ops.cpp: Used SAMPLE_RATE_INPUT_ADAPTIVE for VA_SCALE_OFFSET. (#15330)",
+  "head": "2b2dd63fe1ffa584d81fc0cb43e1c4bf7301b8c8",
+  "base": "ee5e93f9d6a22b5353f402d8bca952b5546670ab",
+  "artifact": "mame-linux-clang-2b2dd63fe1ffa584d81fc0cb43e1c4bf7301b8c8",
+  "commit_message": "iwm: fix debugger side-effects (#15329)\n\n* propagate eac5b0f from swim1\n* also remove dead code leftover from 623e248\n* fixes #15315, laser128",
   "changed_files": [
-    "src/devices/sound/va_ops.cpp"
+    "src/devices/machine/iwm.cpp",
+    "src/devices/machine/iwm.h"
   ],
   "reasons": {},
   "machines": [
