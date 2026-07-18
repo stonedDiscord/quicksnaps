@@ -1,27 +1,18 @@
 {
-  "generated_at": "2026-07-18T16:22:42.072719+00:00",
+  "generated_at": "2026-07-18T16:22:59.080981+00:00",
   "title": "MAME quick snaps",
-  "head": "ee8341daef8241da6989e7800b8f265082d1eed6",
-  "base": "a303fc6be4b9bc3d9af38a39940e540ed77adf7d",
-  "artifact": "mame-linux-clang-ee8341daef8241da6989e7800b8f265082d1eed6",
-  "commit_message": "namcos21: add note about gpu regs",
+  "head": "d0e3bf22cfd5156cc1cb594f98f26c82f9722a03",
+  "base": "ee8341daef8241da6989e7800b8f265082d1eed6",
+  "artifact": "mame-linux-clang-d0e3bf22cfd5156cc1cb594f98f26c82f9722a03",
+  "commit_message": "namcos21_dsp: add poly size mismatch check",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
+    "src/mame/namco/namcos21_3d.cpp",
+    "src/mame/namco/namcos21_3d.h",
     "src/mame/namco/namcos21_dsp.cpp",
-    "src/mame/namco/namcos21_dsp.h",
-    "src/mame/namco/namcos21_dsp_c67.cpp"
+    "src/mame/namco/namcos21_dsp_c67.cpp",
+    "src/mame/namco/namcos21_dsp_c67.h"
   ],
-  "reasons": {
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
