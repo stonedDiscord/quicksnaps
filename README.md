@@ -63,7 +63,7 @@ machine:
     "pacman",
     {
       "name": "galaga",
-      "warmup_seconds": 300,
+      "warmup_seconds": 30,
       "button": "1 Player Start",
       "mame_args": []
     }
@@ -72,7 +72,7 @@ machine:
 ```
 
 Input names are MAME I/O field names (for example `1 Player Start`), not host
-key names. The default is `1 Player Start`, captured after 300 emulated seconds. A
+key names. The default is `1 Player Start`, captured after 30 emulated seconds. A
 machine requiring media can put its device arguments in `mame_args`.
 ROMs are deliberately not part of either repository.
 
