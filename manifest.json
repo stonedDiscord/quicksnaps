@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-18T14:20:40.023831+00:00",
+  "generated_at": "2026-07-18T14:20:57.882256+00:00",
   "title": "MAME quick snaps",
-  "head": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
-  "base": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
-  "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+  "head": "96fd98bc643aa64ea61739e423e385227f377c06",
+  "base": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+  "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06",
   "changed_files": [
-    "src/emu/screen.cpp",
-    "src/mame/layout/novag_obsidian.lay",
-    "src/mame/mame.lst",
-    "src/mame/novag/emerclp.cpp"
+    "src/mame/kaneko/kaneko_spr.cpp",
+    "src/mame/kaneko/kaneko_spr.h"
   ],
   "reasons": {
-    "emerclp": [
-      "driver changed: src/mame/novag/emerclp.cpp"
+    "kaneko_vu002": [
+      "driver changed: src/mame/kaneko/kaneko_spr.cpp",
+      "driver changed: src/mame/kaneko/kaneko_spr.h"
     ],
-    "obsidian": [
-      "driver changed: src/mame/novag/emerclp.cpp"
+    "kaneko_kc002": [
+      "driver changed: src/mame/kaneko/kaneko_spr.cpp",
+      "driver changed: src/mame/kaneko/kaneko_spr.h"
     ]
   },
   "machines": [
@@ -18280,6 +18280,66 @@
           "failure_reason": "input field not found: 1 Player Start",
           "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
           "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a"
+        }
+      }
+    },
+    {
+      "name": "kaneko_vu002",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.23,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "canonv20e         V-20E (MSX1, UK)                                                                 (Canon, 1985)",
+          "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+          "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.191,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "canonv20e         V-20E (MSX1, UK)                                                                 (Canon, 1985)",
+          "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+          "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06"
+        }
+      }
+    },
+    {
+      "name": "kaneko_kc002",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.197,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "cane              Cane (prototype)                                                         (Model Racing, 1979?)",
+          "revision": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
+          "artifact": "mame-linux-clang-3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.225,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "cane              Cane (prototype)                                                         (Model Racing, 1979?)",
+          "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+          "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06"
         }
       }
     }
