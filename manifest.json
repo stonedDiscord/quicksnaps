@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-07-18T19:50:47.608180+00:00",
+  "generated_at": "2026-07-18T19:51:10.057608+00:00",
   "title": "MAME quick snaps",
-  "head": "3d11b5a17de05ea08f718a3a35192940a2c6c919",
-  "base": "4a26071d6671b0a614b275ae31bf40b4c3eb476f",
-  "artifact": "mame-linux-clang-3d11b5a17de05ea08f718a3a35192940a2c6c919",
-  "commit_message": "sound/l4003.cpp: Main speakers turn on. [R. Belmont]\n* All registers hooked up and working thanks to very close similarity to the L6028.",
+  "head": "fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+  "base": "3d11b5a17de05ea08f718a3a35192940a2c6c919",
+  "artifact": "mame-linux-clang-fc622d98e8a4b61092cdd5cd0852e8217de9798d",
+  "commit_message": "i86/i86.cpp: Emulate undocumented DIV/IDIV behavior for the 80(1)8x as relied on by mpc60. [R. Belmont]",
   "changed_files": [
-    "src/devices/sound/l4003.cpp",
-    "src/devices/sound/l4003.h"
+    "src/devices/cpu/i86/i86.cpp"
   ],
   "reasons": {},
   "machines": [
