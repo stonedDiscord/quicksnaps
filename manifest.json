@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-18T13:42:32.899512+00:00",
+  "generated_at": "2026-07-18T13:43:52.150786+00:00",
   "title": "MAME quick snaps",
-  "head": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
-  "base": "830cbf5ece23cf96460d97a58562110d10a35b41",
-  "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+  "head": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+  "base": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+  "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b",
   "changed_files": [
+    "src/mame/namco/namcos21_3d.cpp",
+    "src/mame/namco/namcos21_3d.h",
     "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp",
-    "src/mame/namco/namcos21_dsp_c67.cpp",
-    "src/mame/namco/namcos21_dsp_c67.h"
+    "src/mame/namco/namcos21_dsp_c67.cpp"
   ],
   "reasons": {
     "aircomb": [
@@ -23,9 +23,6 @@
     "cybsleda": [
       "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
     "solvalou": [
       "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
@@ -35,12 +32,12 @@
     "starbladj": [
       "driver changed: src/mame/namco/namcos21_c67.cpp"
     ],
-    "namco_de_pcb": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
+    "namcos21_3d": [
+      "driver changed: src/mame/namco/namcos21_3d.cpp",
+      "driver changed: src/mame/namco/namcos21_3d.h"
     ],
     "namcos21_dsp_c67_device": [
-      "driver changed: src/mame/namco/namcos21_dsp_c67.cpp",
-      "driver changed: src/mame/namco/namcos21_dsp_c67.h"
+      "driver changed: src/mame/namco/namcos21_dsp_c67.cpp"
     ]
   },
   "machines": [
@@ -48,27 +45,27 @@
       "name": "aircomb",
       "status": "passed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.207,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 5.309,
+          "duration_seconds": 5.307,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.435,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -76,27 +73,27 @@
       "name": "aircombj",
       "status": "passed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.856,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 4.876,
+          "duration_seconds": 5.062,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.909,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -104,19 +101,9 @@
       "name": "cybsled",
       "status": "failed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.547,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
           "status": "failed",
           "duration_seconds": 0.558,
           "button": "P1 Button 1",
@@ -125,6 +112,16 @@
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.583,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -132,27 +129,27 @@
       "name": "cybsleda",
       "status": "failed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.551,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "failed",
-          "duration_seconds": 0.544,
+          "duration_seconds": 0.546,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.635,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -160,27 +157,27 @@
       "name": "solvalou",
       "status": "passed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.054,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 6.284,
+          "duration_seconds": 6.374,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.154,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -188,27 +185,27 @@
       "name": "starblad",
       "status": "passed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.134,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 6.137,
+          "duration_seconds": 6.216,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.234,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -216,27 +213,27 @@
       "name": "starbladj",
       "status": "passed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 6.107,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 6.064,
+          "duration_seconds": 6.282,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.216,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -3492,27 +3489,27 @@
       "name": "namcos21_dsp_c67_device",
       "status": "failed",
       "button": "P1 Button 1",
-      "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.231,
-          "button": "P1 Button 1",
-          "warmup_seconds": 10.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "revision": "830cbf5ece23cf96460d97a58562110d10a35b41",
-          "artifact": "mame-linux-clang-830cbf5ece23cf96460d97a58562110d10a35b41"
-        },
-        "current": {
-          "status": "failed",
-          "duration_seconds": 0.24,
+          "duration_seconds": 0.243,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.261,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     },
@@ -4913,6 +4910,34 @@
           "press_seconds": 0.25,
           "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
           "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        }
+      }
+    },
+    {
+      "name": "namcos21_3d",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.197,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "aff0d4dcce43bd998915fa18ce785295ffb8dafd",
+          "artifact": "mame-linux-clang-aff0d4dcce43bd998915fa18ce785295ffb8dafd"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.188,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "26f57785ca81931cd1ded101d102c02788ef3d9b",
+          "artifact": "mame-linux-clang-26f57785ca81931cd1ded101d102c02788ef3d9b"
         }
       }
     }
