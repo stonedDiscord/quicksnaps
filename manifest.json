@@ -1,26 +1,13 @@
 {
-  "generated_at": "2026-07-18T14:48:51.234783+00:00",
+  "generated_at": "2026-07-18T14:49:10.754422+00:00",
   "title": "MAME quick snaps",
-  "head": "49971e37c7814313985f7fee54387dbf7a1cd9c5",
-  "base": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
-  "artifact": "mame-linux-clang-49971e37c7814313985f7fee54387dbf7a1cd9c5",
+  "head": "25a10e0d600494370e4cb7e005cf88f4bf1b4b36",
+  "base": "49971e37c7814313985f7fee54387dbf7a1cd9c5",
+  "artifact": "mame-linux-clang-25a10e0d600494370e4cb7e005cf88f4bf1b4b36",
   "changed_files": [
-    "scripts/src/machine.lua",
-    "src/devices/bus/a2bus/a2sd.cpp",
-    "src/devices/bus/a2bus/booti.cpp",
-    "src/devices/machine/at28.cpp",
-    "src/devices/machine/at28.h",
-    "src/devices/machine/eeprom28.h",
-    "src/devices/machine/eeprom28.ipp",
-    "src/devices/machine/x28.cpp",
-    "src/devices/machine/x28.h",
-    "src/mame/ensoniq/vfxcart.h"
+    "hash/m5_cart.xml"
   ],
-  "reasons": {
-    "ensoniq_vfx_cartridge": [
-      "driver changed: src/mame/ensoniq/vfxcart.h"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
