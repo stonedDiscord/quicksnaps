@@ -3,12 +3,37 @@ from __future__ import annotations
 import json
 import os
 import shutil
+import struct
 import subprocess
 import time
 from datetime import UTC, datetime
 from pathlib import Path
 
 from .config import Machine
+
+
+PNG_NONVISUAL_CHUNKS = {b"tEXt", b"zTXt", b"iTXt", b"tIME", b"eXIf"}
+
+
+def normalize_png(path: Path) -> None:
+    data = path.read_bytes()
+    if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+        return
+    output = bytearray(data[:8])
+    offset = 8
+    while offset + 12 <= len(data):
+        length = struct.unpack(">I", data[offset : offset + 4])[0]
+        end = offset + 12 + length
+        if end > len(data):
+            return
+        chunk_type = data[offset + 4 : offset + 8]
+        if chunk_type not in PNG_NONVISUAL_CHUNKS:
+            output.extend(data[offset:end])
+        offset = end
+        if chunk_type == b"IEND":
+            break
+    if offset == len(data) and bytes(output) != data:
+        path.write_bytes(output)
 
 
 def _failure_from_log(log: str, fallback: str) -> str:
@@ -86,6 +111,10 @@ def capture_machine(
 
     for runtime_dir in ("cfg", "nvram", "state"):
         shutil.rmtree(machine_dir / runtime_dir, ignore_errors=True)
+    for filename in ("before.png", "after.png"):
+        image = machine_dir / filename
+        if image.is_file():
+            normalize_png(image)
     images_present = all((machine_dir / name).is_file() for name in ("before.png", "after.png"))
     if not images_present:
         status = "failed"

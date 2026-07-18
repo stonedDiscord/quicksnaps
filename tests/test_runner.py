@@ -1,12 +1,36 @@
 import json
+import struct
 import tempfile
 import unittest
+import zlib
 from pathlib import Path
 
-from quicksnaps.runner import _failure_from_log, write_manifest
+from quicksnaps.runner import _failure_from_log, normalize_png, write_manifest
 
 
 class ManifestTests(unittest.TestCase):
+    def test_png_normalization_removes_metadata_but_preserves_pixels(self):
+        def chunk(kind: bytes, payload: bytes) -> bytes:
+            crc = zlib.crc32(kind + payload) & 0xFFFFFFFF
+            return struct.pack(">I", len(payload)) + kind + payload + struct.pack(">I", crc)
+
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "shot.png"
+            header = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+            pixels = zlib.compress(b"\0\0\0\0\xff")
+            path.write_bytes(
+                b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", header)
+                + chunk(b"tEXt", b"Software\0MAME old")
+                + chunk(b"pHYs", struct.pack(">IIB", 1, 1, 0))
+                + chunk(b"IDAT", pixels) + chunk(b"IEND", b"")
+            )
+            normalize_png(path)
+            normalized = path.read_bytes()
+            self.assertNotIn(b"tEXt", normalized)
+            self.assertNotIn(b"MAME old", normalized)
+            self.assertIn(b"pHYs", normalized)
+            self.assertIn(pixels, normalized)
+
     def test_failure_summary_prefers_quicksnaps_diagnostic(self):
         log = "noise\n[quicksnaps] input field not found: 1 Player Start\n"
         self.assertEqual("input field not found: 1 Player Start", _failure_from_log(log, "failed"))
