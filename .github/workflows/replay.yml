@@ -1,0 +1,64 @@
+name: Replay MAME CI artifacts
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  repository_dispatch:
+    types: [mame-updated]
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum artifacts to process (blank means all)
+        required: false
+
+concurrency:
+  group: quicksnaps-pages
+  cancel-in-progress: false
+
+jobs:
+  replay:
+    # The runner supplies legally acquired ROMs; MAME itself comes from CI.
+    runs-on: [self-hosted, mame-quicksnaps]
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.UPSTREAM_ARTIFACT_TOKEN }}
+      PAGES_BRANCH: ${{ vars.PAGES_BRANCH || 'gh-pages' }}
+      ROMPATH: ${{ vars.MAME_ROM_PATH }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: quicksnaps
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: mamedev/mame
+          path: mame-source
+          fetch-depth: 0
+      - name: Prepare Pages branch worktree
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git -C quicksnaps ls-remote --exit-code --heads origin "$PAGES_BRANCH" >/dev/null 2>&1; then
+            git -C quicksnaps fetch origin "$PAGES_BRANCH"
+            git -C quicksnaps worktree add ../pages "origin/$PAGES_BRANCH"
+            git -C pages switch -C "$PAGES_BRANCH"
+          else
+            git -C quicksnaps worktree add --detach ../pages
+            git -C pages switch --orphan "$PAGES_BRANCH"
+            git -C pages rm -rf .
+          fi
+      - name: Install quicksnaps
+        run: python3 -m pip install ./quicksnaps
+      - name: Replay available artifacts
+        shell: bash
+        run: |
+          args=(
+            --pages "$GITHUB_WORKSPACE/pages"
+            --mame-repo "$GITHUB_WORKSPACE/mame-source"
+            --config "$GITHUB_WORKSPACE/quicksnaps/quicksnaps.json"
+            --push-branch "$PAGES_BRANCH"
+          )
+          if [[ -n "${ROMPATH:-}" ]]; then args+=(--rompath "$ROMPATH"); fi
+          if [[ -n "${{ inputs.limit }}" ]]; then args+=(--limit "${{ inputs.limit }}"); fi
+          python3 quicksnaps/scripts/replay-artifacts.py "${args[@]}"

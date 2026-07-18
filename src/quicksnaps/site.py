@@ -1,0 +1,61 @@
+from __future__ import annotations
+
+import html
+import json
+from pathlib import Path
+
+
+CSS = """\
+:root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #111418; color: #e8edf2; }
+body { max-width: 1500px; margin: auto; padding: 2rem; }
+h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
+.machine { border-top: 1px solid #38414b; padding: 1.5rem 0 2rem; }
+.machine h2 { display: inline-block; margin: 0 1rem .8rem 0; }
+.status { padding: .2rem .55rem; border-radius: 99px; background: #234c35; }
+.failed { background: #642d34; } .reason { color: #b7c2cc; }
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
+img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
+input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
+@media (max-width: 750px) { .shots { grid-template-columns: 1fr; } body { padding: 1rem; } }
+"""
+
+
+def build_site(output: Path) -> None:
+    manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
+    cards = []
+    reasons = manifest.get("reasons", {})
+    for machine in manifest["machines"]:
+        name = html.escape(str(machine["name"]))
+        status = html.escape(str(machine["status"]))
+        why = "; ".join(map(str, reasons.get(machine["name"], [])))
+        captured = html.escape(str(machine.get("revision", "unknown")))
+        shots = ""
+        if status == "passed":
+            shots = f'''<div class="shots">
+<figure><figcaption>Before input</figcaption><a href="machines/{name}/before.png"><img loading="lazy" src="machines/{name}/before.png" alt="{name} before input"></a></figure>
+<figure><figcaption>After {html.escape(str(machine['button']))}</figcaption><a href="machines/{name}/after.png"><img loading="lazy" src="machines/{name}/after.png" alt="{name} after input"></a></figure>
+</div>'''
+        cards.append(f'''<article class="machine" data-name="{name}">
+<h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
+<div class="reason">Captured at {captured}. {html.escape(why)}</div>{shots}</article>''')
+
+    title = html.escape(str(manifest.get("title", "MAME quick snaps")))
+    revision = html.escape(str(manifest.get("head", "manual run")))
+    artifact = html.escape(str(manifest.get("artifact") or "local build"))
+    document = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>
+<link rel="stylesheet" href="style.css"></head><body><h1>{title}</h1>
+<div class="meta">Revision {revision} - {artifact} - generated {html.escape(manifest['generated_at'])}</div>
+<input id="filter" type="search" placeholder="Filter machines..." autofocus>
+<main>{''.join(cards)}</main><script>document.querySelector('#filter').addEventListener('input',e=>{{for(const card of document.querySelectorAll('.machine'))card.hidden=!card.dataset.name.includes(e.target.value.toLowerCase())}})</script>
+</body></html>'''
+    (output / "index.html").write_text(document, encoding="utf-8")
+    (output / "style.css").write_text(CSS, encoding="utf-8")
+    (output / ".nojekyll").touch()
+
+    for machine in manifest["machines"]:
+        directory = output / "machines" / str(machine["name"])
+        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(str(machine['name']))}</title><link rel="stylesheet" href="../../style.css"></head><body><a href="../../">&lt;- all machines</a><h1>{html.escape(str(machine['name']))}</h1><div class="shots"><figure><figcaption>Before input</figcaption><img src="before.png"></figure><figure><figcaption>After input</figcaption><img src="after.png"></figure></div><p><a href="mame.log">MAME log</a></p></body></html>'''
+        directory.mkdir(parents=True, exist_ok=True)
+        (directory / "index.html").write_text(page, encoding="utf-8")

@@ -1,0 +1,28 @@
+{
+  "defaults": {
+    "warmup_seconds": 10,
+    "after_seconds": 2,
+    "press_seconds": 0.25,
+    "button": "P1 Button 1",
+    "mame_args": []
+  },
+  "machines": [
+    "pacman",
+    {
+      "name": "galaga",
+      "warmup_seconds": 15,
+      "button": "P1 Button 1"
+    }
+  ],
+  "impact": {
+    "run_all_on_unmatched": true
+  },
+  "impact_rules": [
+    {
+      "paths": ["src/devices/**", "src/emu/**", "src/osd/**"],
+      "machines": "all",
+      "reason": "shared MAME subsystem changed"
+    }
+  ]
+}
+
