@@ -1,26 +1,24 @@
 {
-  "generated_at": "2026-07-18T14:48:34.445112+00:00",
+  "generated_at": "2026-07-18T14:48:51.234783+00:00",
   "title": "MAME quick snaps",
-  "head": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
-  "base": "120007e241d2f20384313e78e76d413e81982e12",
-  "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+  "head": "49971e37c7814313985f7fee54387dbf7a1cd9c5",
+  "base": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+  "artifact": "mame-linux-clang-49971e37c7814313985f7fee54387dbf7a1cd9c5",
   "changed_files": [
-    "src/devices/bus/a2bus/a2eauxslot.h",
-    "src/devices/bus/a2bus/a2eext80col.h",
-    "src/devices/bus/a2bus/a2eramworks3.h",
-    "src/devices/bus/a2bus/a2estd80col.cpp",
-    "src/devices/bus/a2bus/a2estd80col.h",
-    "src/mame/apple/apple2video.cpp"
+    "scripts/src/machine.lua",
+    "src/devices/bus/a2bus/a2sd.cpp",
+    "src/devices/bus/a2bus/booti.cpp",
+    "src/devices/machine/at28.cpp",
+    "src/devices/machine/at28.h",
+    "src/devices/machine/eeprom28.h",
+    "src/devices/machine/eeprom28.ipp",
+    "src/devices/machine/x28.cpp",
+    "src/devices/machine/x28.h",
+    "src/mame/ensoniq/vfxcart.h"
   ],
   "reasons": {
-    "a2video": [
-      "driver changed: src/mame/apple/apple2video.cpp"
-    ],
-    "a2video_comp": [
-      "driver changed: src/mame/apple/apple2video.cpp"
-    ],
-    "a2video_comprgb": [
-      "driver changed: src/mame/apple/apple2video.cpp"
+    "ensoniq_vfx_cartridge": [
+      "driver changed: src/mame/ensoniq/vfxcart.h"
     ]
   },
   "machines": [
@@ -30310,6 +30308,36 @@
           "failure_reason": null,
           "revision": "120007e241d2f20384313e78e76d413e81982e12",
           "artifact": "mame-linux-clang-120007e241d2f20384313e78e76d413e81982e12"
+        }
+      }
+    },
+    {
+      "name": "ensoniq_vfx_cartridge",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "49971e37c7814313985f7fee54387dbf7a1cd9c5",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.224,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "invcarht          Invinco / Car Hunt (Germany)                      (Sega, 1979)",
+          "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+          "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.232,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "invcarht          Invinco / Car Hunt (Germany)                      (Sega, 1979)",
+          "revision": "49971e37c7814313985f7fee54387dbf7a1cd9c5",
+          "artifact": "mame-linux-clang-49971e37c7814313985f7fee54387dbf7a1cd9c5"
         }
       }
     }
