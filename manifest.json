@@ -1,14 +1,19 @@
 {
-  "generated_at": "2026-07-18T17:37:24.349873+00:00",
+  "generated_at": "2026-07-18T17:37:45.276936+00:00",
   "title": "MAME quick snaps",
-  "head": "9a2971e7572cf0dbfff2dffe7131e749b4b6b641",
-  "base": "936800b17c1b4885879282f083f131587907c262",
-  "artifact": "mame-linux-clang-9a2971e7572cf0dbfff2dffe7131e749b4b6b641",
-  "commit_message": "snk/hng64.cpp: snk/hng64_sprite.ipp: Fixed a possible transparency issue. (#14276)\n\nAlso simplified zoom shift.",
+  "head": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
+  "base": "9a2971e7572cf0dbfff2dffe7131e749b4b6b641",
+  "artifact": "mame-linux-clang-cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
+  "commit_message": "sequential/prophet5.cpp: Added handcrafted factory patch nvram. (#15306)\n\n* sequential/prophet5.cpp: Added handcrafted default patch nvram.\n\n* prophet5: Updated nvram.\nMax knob value corresponds to 120, not 127.\n\n* prophet5.cpp: Using BAD_DUMP for the nvram.",
   "changed_files": [
-    "src/mame/snk/hng64_sprite.ipp"
+    "src/mame/mame.lst",
+    "src/mame/sequential/prophet5.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "prophet5r30": [
+      "driver changed: src/mame/sequential/prophet5.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -22807,38 +22812,6 @@
           "failure_reason": null,
           "revision": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
           "artifact": "mame-linux-clang-2e34ae2f20de1e0bfcd2c888859af7ae31d938eb"
-        }
-      }
-    },
-    {
-      "name": "prophet5rev30",
-      "status": "failed",
-      "button": "1 Player Start",
-      "revision": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
-      "captures": {
-        "previous": {
-          "status": "failed",
-          "duration_seconds": 1.81,
-          "button": "1 Player Start",
-          "button_applied": false,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": "machine has no emulated screen",
-          "revision": "5c513e47cb17f346c5ac435fc334282565d51942",
-          "artifact": "mame-linux-clang-5c513e47cb17f346c5ac435fc334282565d51942"
-        },
-        "current": {
-          "status": "failed",
-          "duration_seconds": 2.428,
-          "button": "1 Player Start",
-          "button_applied": false,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": "machine has no emulated screen",
-          "revision": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
-          "artifact": "mame-linux-clang-c261dc59a7b8a68c5f3ed503fe174d396d718377"
         }
       }
     },
@@ -84363,6 +84336,26 @@
           "failure_reason": null,
           "revision": "936800b17c1b4885879282f083f131587907c262",
           "artifact": "mame-linux-clang-936800b17c1b4885879282f083f131587907c262"
+        }
+      }
+    },
+    {
+      "name": "prophet5r30",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 2.46,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
+          "artifact": "mame-linux-clang-cc5d6369f6e9c44155640b3a4342a8bf3c6e4839"
         }
       }
     }
