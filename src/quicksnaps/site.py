@@ -25,6 +25,7 @@ h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .unchanged { padding: 1rem; border: 1px solid #31503d; background: #17251d; color: #b8d8c3; }
 details { margin-top: 1rem; } summary { cursor: pointer; color: #e7b56d; }
 pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; white-space: pre-wrap; overflow-wrap: anywhere; }
+.commit-message { margin: .8rem 0 2rem; padding: 1rem; border-left: 3px solid #6886a3; background: #171b20; white-space: pre-wrap; }
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
@@ -162,10 +163,12 @@ def build_site(output: Path) -> None:
     revision = manifest.get("head", "manual run")
     base = manifest.get("base")
     artifact = html.escape(str(manifest.get("artifact") or "local build"))
+    commit_message = html.escape(str(manifest.get("commit_message") or "Commit message unavailable"))
     document = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>
 <link rel="stylesheet" href="style.css"></head><body><h1>{title}</h1>
 <div class="meta">Revision {_commit_link(revision)}{f' from {_commit_link(base)}' if base else ''} - {artifact} - generated {html.escape(manifest['generated_at'])}</div>
+<div class="commit-message">{commit_message}</div>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
 <main>{''.join(cards)}</main><script>document.querySelector('#filter').addEventListener('input',e=>{{for(const card of document.querySelectorAll('.machine'))card.hidden=!card.dataset.name.includes(e.target.value.toLowerCase())}})</script>
 </body></html>'''

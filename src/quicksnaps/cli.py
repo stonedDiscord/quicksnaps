@@ -28,6 +28,17 @@ def _revision(repo: Path, revision: str) -> str:
     return result.stdout.strip()
 
 
+def _commit_message(repo: Path, revision: str) -> str:
+    result = subprocess.run(
+        ["git", "show", "-s", "--format=%B", revision],
+        cwd=repo,
+        check=True,
+        text=True,
+        stdout=subprocess.PIPE,
+    )
+    return result.stdout.strip()
+
+
 def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], list[str]]:
     config = load_config(args.config)
     if args.selection_file:
@@ -111,6 +122,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
         "head": head,
         "base": _revision(args.mame_repo, args.base) if args.base else None,
         "artifact": args.artifact,
+        "commit_message": _commit_message(args.mame_repo, args.head) if args.head else None,
         "changed_files": changed,
         "reasons": selected,
     }

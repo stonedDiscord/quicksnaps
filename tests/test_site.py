@@ -34,6 +34,7 @@ class SiteComparisonTests(unittest.TestCase):
         current_capture = {"status": "passed", "revision": "newsha", "button": "1 Player Start"}
         manifest = {
             "generated_at": "now", "head": "newsha", "base": "oldsha",
+            "commit_message": "Fix the game video\n\nPreserve details <safely>.",
             "reasons": {"game": ["driver changed: src/mame/test/game.cpp"]},
             "machines": [{"name": "game", "status": "passed", "captures": {
                 "previous": previous_capture, "current": current_capture,
@@ -58,6 +59,8 @@ class SiteComparisonTests(unittest.TestCase):
         self.assertIn("https://github.com/mamedev/mame/commit/newsha", index)
         self.assertIn("https://github.com/mamedev/mame/commit/oldsha", index)
         self.assertIn("https://github.com/mamedev/mame/blob/newsha/src/mame/test/game.cpp", index)
+        self.assertIn("Fix the game video", index)
+        self.assertIn("Preserve details &lt;safely&gt;.", index)
         self.assertIn("https://github.com/mamedev/mame/commit/newsha", details)
         self.assertIn("https://github.com/mamedev/mame/blob/newsha/src/mame/test/game.cpp", details)
 
