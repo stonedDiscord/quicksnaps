@@ -44,6 +44,19 @@ class Config:
     def machine_names(self) -> tuple[str, ...]:
         return tuple(machine.name for machine in self.machines)
 
+    def machine(self, name: str) -> Machine:
+        for machine in self.machines:
+            if machine.name == name:
+                return machine
+        return Machine(
+            name=name,
+            warmup_seconds=self.defaults.warmup_seconds,
+            after_seconds=self.defaults.after_seconds,
+            press_seconds=self.defaults.press_seconds,
+            button=self.defaults.button,
+            mame_args=self.defaults.mame_args,
+        )
+
 
 def _number(data: dict[str, Any], key: str, default: float) -> float:
     value = float(data.get(key, default))

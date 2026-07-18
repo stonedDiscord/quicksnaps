@@ -1,7 +1,7 @@
 import unittest
 
 from quicksnaps.config import Config, ImpactRule, Machine
-from quicksnaps.impact import resolve
+from quicksnaps.impact import resolve, resolve_catalog
 
 
 def machine(name: str) -> Machine:
@@ -39,6 +39,24 @@ class ResolveTests(unittest.TestCase):
         config = Config((machine("pacman"), machine("galaga")), run_all_on_unmatched=True)
         selected = resolve(config, ["scripts/build/foo.lua"], {})
         self.assertEqual(["pacman", "galaga"], list(selected))
+
+    def test_catalog_uses_full_source_map_not_configured_samples(self):
+        selected = resolve_catalog(
+            ["src/mame/namco/galaga.cpp"],
+            {
+                "galaga": "namco/galaga.cpp",
+                "galagamw": "namco/galaga.cpp",
+                "pacman": "pacman/pacman.cpp",
+            },
+        )
+        self.assertEqual(["galaga", "galagamw"], list(selected))
+
+    def test_catalog_ignores_unmatched_shared_changes(self):
+        selected = resolve_catalog(
+            ["src/devices/cpu/z80/z80.cpp"],
+            {"galaga": "namco/galaga.cpp", "pacman": "pacman/pacman.cpp"},
+        )
+        self.assertEqual({}, selected)
 
 
 if __name__ == "__main__":

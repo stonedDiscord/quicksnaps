@@ -9,7 +9,7 @@ from pathlib import Path
 
 from .artifacts import available_artifacts
 from .config import load_config
-from .impact import changed_files, resolve, source_map
+from .impact import changed_files, resolve, resolve_catalog, source_map
 from .runner import capture_machine, write_manifest
 from .site import build_site
 
@@ -31,11 +31,12 @@ def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], 
         selection = json.loads(args.selection_file.read_text(encoding="utf-8"))
         selected = {str(name): list(map(str, reasons)) for name, reasons in selection["machines"].items()}
         unknown = set(selected) - set(config.machine_names)
-        if unknown:
+        if unknown and not args.catalog:
             raise ValueError(f"selection references unknown configured machines: {sorted(unknown)}")
         return selected, list(map(str, selection.get("changed_files", [])))
     if args.all:
-        return {name: ["all machines requested"] for name in config.machine_names}, []
+        names = tuple(source_map(args.mame)) if args.catalog else config.machine_names
+        return {name: ["all machines requested"] for name in names}, []
     if args.machine:
         unknown = set(args.machine) - set(config.machine_names)
         if unknown:
@@ -44,8 +45,10 @@ def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], 
     if not args.base or not args.head:
         raise ValueError("provide --base and --head, --all, or --machine")
     changed = changed_files(args.mame_repo, args.base, args.head)
-    sources = source_map(args.mame, config.machine_names)
-    return resolve(config, changed, sources), changed
+    sources = source_map(args.mame, None if args.catalog else config.machine_names)
+    if args.catalog:
+        return resolve_catalog(changed, sources), changed
+    return resolve(config, changed, sources, tuple(sources)), changed
 
 
 def cmd_affected(args: argparse.Namespace) -> int:
@@ -58,15 +61,18 @@ def cmd_capture(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     selected, changed = _resolve_selection(args)
     args.output.mkdir(parents=True, exist_ok=True)
-    if args.base and args.head and not (args.output / "manifest.json").is_file():
+    if (
+        args.base and args.head
+        and not args.selection_file
+        and not (args.output / "manifest.json").is_file()
+    ):
         selected = {name: ["initial Pages snapshot"] for name in config.machine_names}
-    configured = {machine.name: machine for machine in config.machines}
     head = _revision(args.mame_repo, args.head) if args.head else os.environ.get("MAME_SHA", "manual")
     results = []
     for name in selected:
         print(f"Capturing {name}...", flush=True)
         result = capture_machine(
-            args.mame, configured[name], args.output, args.rompath, args.timeout, args.variant
+            args.mame, config.machine(name), args.output, args.rompath, args.timeout, args.variant
         )
         revision = args.capture_revision or head
         result["revision"] = revision
@@ -118,6 +124,7 @@ def common_selection(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--base")
     parser.add_argument("--head")
     parser.add_argument("--selection-file", type=_path, help="reuse an affected command JSON result")
+    parser.add_argument("--catalog", action="store_true", help="use every machine reported by MAME")
 
 
 def make_parser() -> argparse.ArgumentParser:

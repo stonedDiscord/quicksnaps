@@ -111,31 +111,35 @@ def main() -> int:
             ]
             if current:
                 common.extend(("--base", current))
-            else:
-                common.append("--all")
             if args.rompath:
                 common.extend(("--rompath", args.rompath))
 
-            selection = temporary_path / "selection.json"
-            affected = [
-                sys.executable, "-m", "quicksnaps.cli", "affected",
-                "--config", str(args.config), "--mame", str(binary),
-                "--mame-repo", str(args.mame_repo), "--head", artifact.sha,
-            ]
-            if current:
-                affected.extend(("--base", current))
-            else:
-                affected.append("--all")
-            selection.write_text(run(*affected, capture=True) + "\n", encoding="utf-8")
-            common.extend(("--selection-file", str(selection)))
+            def selection_for(capture_binary: Path, filename: str) -> Path:
+                selection = temporary_path / filename
+                if not current:
+                    # The oldest artifact is only the left edge of future comparisons.
+                    selection.write_text('{"changed_files": [], "machines": {}}\n', encoding="utf-8")
+                    return selection
+                affected = [
+                    sys.executable, "-m", "quicksnaps.cli", "affected", "--catalog",
+                    "--config", str(args.config), "--mame", str(capture_binary),
+                    "--mame-repo", str(args.mame_repo), "--base", current,
+                    "--head", artifact.sha,
+                ]
+                selection.write_text(run(*affected, capture=True) + "\n", encoding="utf-8")
+                return selection
+
+            current_selection = selection_for(binary, "current-selection.json")
 
             if current and previous_artifact:
                 previous_binary = download(
                     previous_artifact, temporary_path / "previous", args.repository
                 )
+                previous_selection = selection_for(previous_binary, "previous-selection.json")
                 run(
                     *common, "--mame", str(previous_binary), "--variant", "previous",
                     "--capture-revision", current, "--artifact", previous_artifact.name,
+                    "--selection-file", str(previous_selection), "--catalog",
                 )
             elif current:
                 print(f"Previous artifact for {current} has expired; capturing current only", flush=True)
@@ -143,6 +147,7 @@ def main() -> int:
             run(
                 *common, "--mame", str(binary), "--variant", "current",
                 "--capture-revision", artifact.sha, "--artifact", artifact.name,
+                "--selection-file", str(current_selection), "--catalog",
             )
         commit_pages(args.pages, artifact, current)
         if args.push_branch:

@@ -1,7 +1,7 @@
 # quicksnaps
 
 `quicksnaps` turns MAME changes into a visual, browsable regression history. For
-each affected configured machine it runs MAME for a fixed amount of emulated
+each affected catalog machine it runs MAME for a fixed amount of emulated
 time, captures a screenshot, presses a configured emulated input, and captures a
 second screenshot. The generated static site is committed to a dedicated GitHub
 Pages branch once per available upstream MAME CI artifact.
@@ -12,19 +12,19 @@ The default development binary is `../mame/mamed`.
 
 1. A scheduled or manually triggered workflow lists unexpired MAME CI artifacts.
 2. Starting with the oldest available `mame-linux-clang-<SHA>` artifact,
-   `quicksnaps` asks that binary for each configured machine's
-   source file with `-listsource`.
-3. Direct driver changes select their machines. Configured glob rules cover
-   shared devices and cores. An unmatched file selects every configured machine
-   by default, prioritizing safety over runtime.
+   `quicksnaps` discovers MAME's full machine-to-driver map with `-listsource '*'`.
+3. Direct `src/mame` driver changes select every machine reported for those
+   sources, including clones. Shared-device changes are currently left alone
+   until dependency-aware impact mapping is available.
 4. Each selected machine is run with both the preceding artifact and the new
    artifact. MAME's Lua API schedules screenshots and an I/O port field press using
    emulated time. It does not depend on window focus or desktop automation.
 5. A rolling static site is committed to this repository's `gh-pages` branch.
    Unaffected machine folders remain unchanged.
 
-The first publish captures every configured machine to establish a complete
-baseline, regardless of which files changed in that MAME commit.
+The oldest artifact establishes the left edge of history without running sample
+machines. Starting with the next artifact pair, touched drivers gradually add
+their machines to the site.
 
 Each affected machine normally shows four images: before/after the configured
 input on the previous build, and before/after on the current build. This slowly
@@ -51,8 +51,11 @@ artifact still inside GitHub's retention window.
 
 ## Configure machines
 
-Edit `quicksnaps.json`. A string uses all defaults; an object can override
-timings, the input field name, and MAME arguments:
+Artifact replay discovers its production machine universe from `mame
+-listsource '*'`; the sample `machines` array in `quicksnaps.json` is only used
+by explicit local/test captures. Defaults from that file apply to discovered
+machines, while a matching object can override timing or input for an exceptional
+machine:
 
 ```json
 {
@@ -72,9 +75,11 @@ Input names are MAME I/O field names (for example `P1 Button 1`), not host key
 names. A machine requiring media can put its device arguments in `mame_args`.
 ROMs are deliberately not part of either repository.
 
-`impact_rules` map shared source globs to a subset of configured machines or to
-`"all"`. Set `impact.run_all_on_unmatched` to `false` only after the rules cover
-the source tree sufficiently for your needs.
+Local/test mode supports `impact_rules` and the safe unmatched fallback. Catalog
+replay deliberately selects only machines whose `src/mame` driver source changed;
+it does not apply the sample rules or turn a shared-device change into a run of
+MAME's entire catalog. Dependency-aware shared-device impact can be added later
+without treating the sample machine list as production configuration.
 
 ## Run locally
 
@@ -126,9 +131,9 @@ gh api repos/OWNER/quicksnaps/dispatches -f event_type=mame-updated
 ```
 
 Artifacts are ordered by MAME's first-parent `master` history, not API listing
-order. The first invocation captures every configured machine using the oldest
-available artifact. Later invocations resume after the SHA in the Pages
-manifest, even if that older artifact ZIP has since expired. Use the optional
+order. The first invocation records the oldest available artifact as the history
+cursor. Later invocations resume after the SHA in the Pages manifest, even if
+that older artifact ZIP has since expired. Use the optional
 manual `limit` input to process a small batch; each artifact is committed before
 the next begins and immediately pushed, making long initial replays safely
 resumable even if a later artifact fails.
