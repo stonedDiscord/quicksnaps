@@ -1,40 +1,21 @@
 {
-  "generated_at": "2026-07-18T14:11:20.933286+00:00",
+  "generated_at": "2026-07-18T14:11:40.291184+00:00",
   "title": "MAME quick snaps",
-  "head": "85162043f468c303a779679f1fd897f5cd647a24",
-  "base": "6d498abb0679d35da6727dee1978eb9891800b67",
-  "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24",
+  "head": "95524a9a4558c2f112899918e09d6032b562378b",
+  "base": "85162043f468c303a779679f1fd897f5cd647a24",
+  "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b",
   "changed_files": [
-    "scripts/src/machine.lua",
-    "src/devices/machine/generalplus_gpce4_soc.cpp",
-    "src/devices/machine/generalplus_gpce4_soc.h",
-    "src/mame/handheld/bl_handhelds_lcdc.cpp",
-    "src/mame/handheld/generalplus_gpce4.cpp"
+    "src/mame/namco/sg_vga.cpp"
   ],
   "reasons": {
-    "digicolr": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    "galfever": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ],
-    "mapacman": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
+    "hplanet": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ],
-    "parcade": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "siddr": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "tagalaga": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "taspinv": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "taturtf": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "blhandheldlcdc": [
-      "driver changed: src/mame/handheld/bl_handhelds_lcdc.cpp"
+    "shootpar": [
+      "driver changed: src/mame/namco/sg_vga.cpp"
     ]
   },
   "machines": [
@@ -3870,20 +3851,9 @@
       "name": "galfever",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
       "captures": {
         "previous": {
-          "status": "failed",
-          "duration_seconds": 0.631,
-          "button": "1 Player Start",
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": "input field not found: 1 Player Start",
-          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
-          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
-        },
-        "current": {
           "status": "failed",
           "duration_seconds": 0.61,
           "button": "1 Player Start",
@@ -3891,8 +3861,19 @@
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
-          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.648,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
         }
       }
     },
@@ -3900,29 +3881,29 @@
       "name": "hplanet",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.632,
+          "duration_seconds": 0.611,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
-          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.647,
+          "duration_seconds": 0.663,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
-          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
         }
       }
     },
@@ -4238,29 +4219,29 @@
       "name": "shootpar",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
+      "revision": "95524a9a4558c2f112899918e09d6032b562378b",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.694,
+          "duration_seconds": 0.621,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "b0afd4dcb9a08654367014bd402e0624cd48cce3",
-          "artifact": "mame-linux-clang-b0afd4dcb9a08654367014bd402e0624cd48cce3"
+          "revision": "85162043f468c303a779679f1fd897f5cd647a24",
+          "artifact": "mame-linux-clang-85162043f468c303a779679f1fd897f5cd647a24"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.668,
+          "duration_seconds": 0.61,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "6d498abb0679d35da6727dee1978eb9891800b67",
-          "artifact": "mame-linux-clang-6d498abb0679d35da6727dee1978eb9891800b67"
+          "revision": "95524a9a4558c2f112899918e09d6032b562378b",
+          "artifact": "mame-linux-clang-95524a9a4558c2f112899918e09d6032b562378b"
         }
       }
     },
