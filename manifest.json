@@ -1,13 +1,286 @@
 {
-  "generated_at": "2026-07-18T14:23:50.918022+00:00",
+  "generated_at": "2026-07-18T14:24:22.526070+00:00",
   "title": "MAME quick snaps",
-  "head": "0fa3532209ee1cddff2738c09100404f7ded15eb",
-  "base": "de103666b0fe892d2d02b747ea099a8806edf524",
-  "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb",
+  "head": "55a64a57ea7821f38241aa4287d29e95aae87001",
+  "base": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+  "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001",
   "changed_files": [
-    "src/emu/screen.cpp"
+    "src/mame/apple/apple2.cpp",
+    "src/mame/apple/apple2e.cpp",
+    "src/mame/apple/apple2gs.cpp",
+    "src/mame/apple/apple2video.cpp",
+    "src/mame/apple/apple2video.h",
+    "src/mame/apple/tk2000.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "ace100": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "ace1000": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "ace2200": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "ace500": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "albert": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "am100": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "am64": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "apple2": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "apple2c": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c0": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c0de": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c0fr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c0se": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c0uk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c3": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c3de": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c3fr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c3se": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c3uk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c4": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c4de": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c4fr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c4se": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2c4uk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2cde": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2cfr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2cp": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2cse": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2cuk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2e": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2ede": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2ee": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2eede": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2eefr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2ees": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2eese": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2eeuk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2efr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2ep": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2epde": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2epfr": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2epse": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2epuk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2ese": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2euk": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "apple2gs": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsmt": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsr0": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsr0p": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsr0p2": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsr1": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2gsr3p": [
+      "driver changed: src/mame/apple/apple2gs.cpp"
+    ],
+    "apple2jp": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "apple2p": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "apple2pe": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "basis108": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "cec2000": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "cece": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "cecg": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "ceci": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "cecm": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "craft2p": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "dodo": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "elppa": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "hkc8800a": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "ivelultr": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "las128e2": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "las128ex": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "laser128": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "laser128o": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "laser2c": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "maxxi": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "microeng": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "mpf2": [
+      "driver changed: src/mame/apple/tk2000.cpp"
+    ],
+    "mprof3": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "prav82": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "prav8c": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "prav8m": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "space84": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "spectred": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "tk2000": [
+      "driver changed: src/mame/apple/tk2000.cpp"
+    ],
+    "tk3000": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "uniap2en": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "uniap2pt": [
+      "driver changed: src/mame/apple/apple2.cpp"
+    ],
+    "zijini": [
+      "driver changed: src/mame/apple/apple2e.cpp"
+    ],
+    "a2video": [
+      "driver changed: src/mame/apple/apple2video.cpp",
+      "driver changed: src/mame/apple/apple2video.h"
+    ],
+    "a2video_comp": [
+      "driver changed: src/mame/apple/apple2video.cpp",
+      "driver changed: src/mame/apple/apple2video.h"
+    ],
+    "a2video_comprgb": [
+      "driver changed: src/mame/apple/apple2video.cpp",
+      "driver changed: src/mame/apple/apple2video.h"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -19830,6 +20103,2646 @@
           "failure_reason": "comx35p           COMX 35 (PAL)                                       (Comx World Operations Ltd, 1983)",
           "revision": "de103666b0fe892d2d02b747ea099a8806edf524",
           "artifact": "mame-linux-clang-de103666b0fe892d2d02b747ea099a8806edf524"
+        }
+      }
+    },
+    {
+      "name": "ace100",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.034,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.093,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "ace1000",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.995,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.936,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "ace2200",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.94,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.94,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "ace500",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.082,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.968,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "albert",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.998,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.932,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "am100",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.939,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.002,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "am64",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.97,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.024,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.943,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.944,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.901,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.002,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c0",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.056,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.101,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c0de",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.091,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.011,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c0fr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.061,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.999,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c0se",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.893,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.977,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c0uk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.978,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.079,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c3",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.006,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.973,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c3de",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.071,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.027,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c3fr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.99,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.972,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c3se",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.985,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.009,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c3uk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.927,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.964,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c4",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.961,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.002,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c4de",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.039,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.171,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c4fr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.943,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.036,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c4se",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.955,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.004,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2c4uk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.011,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.006,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2cde",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.904,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.992,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2cfr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.91,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.04,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2cp",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.033,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.018,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2cse",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.992,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.042,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2cuk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.035,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.081,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2e",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.106,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.058,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2ede",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.895,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.007,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2ee",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.96,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.005,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2eede",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.992,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.059,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2eefr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.98,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.059,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2ees",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.998,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.942,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2eese",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.943,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.053,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2eeuk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.938,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.956,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2efr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.974,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.969,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2ep",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.97,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2epde",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.024,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.006,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2epfr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.973,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.016,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2epse",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.973,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.991,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2epuk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.964,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.018,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2ese",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.977,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.179,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2euk",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.933,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.103,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gs",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.931,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.003,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsmt",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.93,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsr0",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.957,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.985,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsr0p",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.929,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.896,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsr0p2",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.932,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.96,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsr1",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.912,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.979,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2gsr3p",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.958,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.924,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2jp",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.97,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.964,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2p",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.033,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.974,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "apple2pe",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.984,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.899,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "basis108",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.982,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.924,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "cec2000",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.917,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "cece",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.963,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.027,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "cecg",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.016,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.975,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "ceci",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.969,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.011,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "cecm",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.001,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.947,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "craft2p",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.889,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.945,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "dodo",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.93,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.954,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "elppa",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.912,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.989,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "hkc8800a",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.961,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.967,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "ivelultr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.021,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.876,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "las128e2",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.013,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.951,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "las128ex",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.945,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.017,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "laser128",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.932,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.999,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "laser128o",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.912,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.003,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "laser2c",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.998,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.977,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "maxxi",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.964,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.905,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "microeng",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.861,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.019,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "mpf2",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.964,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.904,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "mprof3",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.913,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.994,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "prav82",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.957,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.888,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "prav8c",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.922,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "prav8m",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.898,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.959,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "space84",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.906,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.941,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "spectred",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.945,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.914,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "tk2000",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.945,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.927,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "tk3000",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.921,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.899,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "uniap2en",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.909,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.934,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "uniap2pt",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.884,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.874,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "zijini",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.725,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.665,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "a2video",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.278,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "av20dev           Acorn V20 (Development)                  (Acorn Computers, 1992)",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.292,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "av20dev           Acorn V20 (Development)                  (Acorn Computers, 1992)",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "a2video_comp",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.273,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "gatedoom          Gate of Doom (US revision 4)                                 (Data East Corporation, 1990)",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.284,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "gatedoom          Gate of Doom (US revision 4)                                 (Data East Corporation, 1990)",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "a2video_comprgb",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.235,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "videopina         Video Pinball (4 ROMs version)                                  (Atari, 1979)",
+          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
+          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.241,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "videopina         Video Pinball (4 ROMs version)                                  (Atari, 1979)",
+          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
         }
       }
     }
