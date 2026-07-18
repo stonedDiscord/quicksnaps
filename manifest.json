@@ -1,18 +1,14 @@
 {
-  "generated_at": "2026-07-18T15:52:45.610376+00:00",
+  "generated_at": "2026-07-18T15:53:02.947014+00:00",
   "title": "MAME quick snaps",
-  "head": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
-  "base": "5c513e47cb17f346c5ac435fc334282565d51942",
-  "artifact": "mame-linux-clang-c261dc59a7b8a68c5f3ed503fe174d396d718377",
-  "commit_message": "sequential/prophet5.cpp: Added oscillators (no tuning yet). (#15285)\n\nAlso:\n* Added a missing DC-block stage after the filter.\n* Added randomness to oscillator and filter timing components.\n* Corrected calibration of the LFO balance trimmer.",
+  "head": "852ed1a2e5a4c4d166be43898f61b2512940bdab",
+  "base": "c261dc59a7b8a68c5f3ed503fe174d396d718377",
+  "artifact": "mame-linux-clang-852ed1a2e5a4c4d166be43898f61b2512940bdab",
+  "commit_message": "Fix mem-mem MOV on i8089 (#15286)\n\nThe base register for memory operations was being fixed up to handle the\nPP register. But memory-to-memory MOVs act like two instructions, and\nthe second half was being decoded ad-hoc without that fixup. This adds\nthat fixup to the second half.",
   "changed_files": [
-    "src/mame/sequential/prophet5.cpp"
+    "src/devices/cpu/i8089/i8089_channel.cpp"
   ],
-  "reasons": {
-    "prophet5rev30": [
-      "driver changed: src/mame/sequential/prophet5.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
