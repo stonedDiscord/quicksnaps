@@ -1,15 +1,14 @@
 {
-  "generated_at": "2026-07-18T16:48:39.565295+00:00",
+  "generated_at": "2026-07-18T16:48:57.064135+00:00",
   "title": "MAME quick snaps",
-  "head": "e0c146decbd5a8fb668d47870c4bb61a1e8f3a3c",
-  "base": "d9b6e5f41af8092cbc7b733db4cff5b04a428e2d",
-  "artifact": "mame-linux-clang-e0c146decbd5a8fb668d47870c4bb61a1e8f3a3c",
-  "commit_message": "nubus/laserview.cpp: Folded the SE/30 PDS version of the card in and improved the overall emulation. [R. Belmont]",
+  "head": "239b75c9e1f0f51b88128684239579a90e408b24",
+  "base": "e0c146decbd5a8fb668d47870c4bb61a1e8f3a3c",
+  "artifact": "mame-linux-clang-239b75c9e1f0f51b88128684239579a90e408b24",
+  "commit_message": "Make debug logging less noisy for various NES/VT devices",
   "changed_files": [
-    "scripts/src/bus.lua",
-    "src/devices/bus/nubus/cards.cpp",
-    "src/devices/bus/nubus/laserview.cpp",
-    "src/devices/bus/nubus/laserview.h"
+    "src/devices/sound/nes_apu.cpp",
+    "src/devices/video/ppu2c0x.cpp",
+    "src/mame/nintendo/nes_vt_soc.cpp"
   ],
   "reasons": {},
   "machines": [
