@@ -119,7 +119,11 @@ def build_site(output: Path) -> None:
 </div>'''
         return f'<section class="build"><h3>{variant.title()}: {_commit_link(revision)}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
 
-    for machine in manifest["machines"]:
+    index_machines = sorted(
+        manifest["machines"],
+        key=lambda machine: (machine["name"] not in reasons, str(machine["name"]).lower()),
+    )
+    for machine in index_machines:
         name = html.escape(str(machine["name"]))
         if machine["name"] not in reasons:
             cards.append(

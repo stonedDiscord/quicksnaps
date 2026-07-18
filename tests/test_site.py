@@ -109,6 +109,30 @@ class SiteComparisonTests(unittest.TestCase):
         self.assertNotIn("Before input", index)
         self.assertNotIn("Captured at", index)
 
+    def test_current_run_machines_appear_before_history(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        output = Path(temporary.name)
+        for name in ("aaa_old", "zzz_current"):
+            directory = output / "machines" / name / "current"
+            directory.mkdir(parents=True)
+            for filename in ("before.png", "after.png"):
+                (directory / filename).write_bytes(self.png(b"\0\0\0\xff", b"metadata"))
+        manifest = {
+            "generated_at": "now", "head": "sha",
+            "reasons": {"zzz_current": ["driver changed"]},
+            "machines": [
+                {"name": "aaa_old", "status": "passed"},
+                {"name": "zzz_current", "status": "passed", "captures": {
+                    "current": {"status": "passed", "revision": "sha"},
+                }},
+            ],
+        }
+        (output / "manifest.json").write_text(json.dumps(manifest))
+        build_site(output)
+        index = (output / "index.html").read_text()
+        self.assertLess(index.index("zzz_current"), index.index("aaa_old"))
+
 
 if __name__ == "__main__":
     unittest.main()
