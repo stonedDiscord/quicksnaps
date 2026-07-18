@@ -1,255 +1,17 @@
 {
-  "generated_at": "2026-07-18T17:43:21.557054+00:00",
+  "generated_at": "2026-07-18T17:43:45.525981+00:00",
   "title": "MAME quick snaps",
-  "head": "08813903cdac12be0294ad1fd6de57bef20a336b",
-  "base": "e61d2594a7422cc595a9dc8b39866aeb6478c65f",
-  "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b",
-  "commit_message": "current Plug + Play PR (4 sets + 3 softlist entries) (#15308)\n\nNew systems marked not working\n------------------------------\nLittle Tikes Cozy Coupe U-Drive [Team Europe, David Haywood]\nMini Arcade Machine 300-in-1 (Orb Gaming) [Team Europe, David Haywood]\nArcade Game 2.0 (model 8052C, Family Sport 176-in-1) [Team Europe, David Haywood]\n\n\nNew clones marked not working\n-----------------------------\nEA Sports Classics: NHL 95 & FIFA Soccer 96 (JAKKS Pacific TV Game, version 11 11 A) [Team Europe, David Haywood]\n\n\n\nNew software list items marked not working\n------------------------------------------\ntelestory_cart.xml:\nCendrillon - Cendrillon / Beautes en Fleur (France) [Team Europe]\nWinnie l'Ourson - Saute, Tigrou, Saute! / Winnie l'Ourson et l'arbre a miel (France) [Team Europe]\nLe Roi Lion / Le Roi Lion II - L'honneur de la Trieu (France) [Team Europe]",
+  "head": "b5753bd97f012154c678de25479894cc75888b7a",
+  "base": "08813903cdac12be0294ad1fd6de57bef20a336b",
+  "artifact": "mame-linux-clang-b5753bd97f012154c678de25479894cc75888b7a",
+  "commit_message": "New systems marked not working\n------------------------------\nKeirin Derby 2 [f205v, TeamEurope]",
   "changed_files": [
-    "hash/telestory_cart.xml",
-    "src/mame/handheld/evolution_handheld.cpp",
-    "src/mame/mame.lst",
-    "src/mame/nintendo/nes_vt32.cpp",
-    "src/mame/tvgames/generalplus_gpl16250_rom.cpp",
-    "src/mame/tvgames/spg110.cpp"
+    "src/mame/excellent/es9606.cpp",
+    "src/mame/mame.lst"
   ],
   "reasons": {
-    "beijuehh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "bornkidh": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "buttdtct": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "conyfght": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "conyping": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "conyteni": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "dgun2573": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "dgun2573a": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "dgunl3201": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "dgunl3202": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "dressmtv": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "easports": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "easportsa": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "easportsu": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "evolhh": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "fcpocket": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "fingerd": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "fpsport": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu108": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu50": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gameu90": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gormiti": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "gp230": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "hoppech": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "imgame": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_bj": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_blue": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_bobb": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_bobbo": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_capb": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_diso": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_dood": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_prr": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_sbdd": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_spdmo": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_spdmoa": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_spmm": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_ssmo": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_thom": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_thomp": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "jak_tpir": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "jak_wpt": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "k10_2l": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "k10_5l": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpc": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcdp": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcfz": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcfzcz": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcg": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcgp": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcli": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcpp": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcs": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "lxpcsp": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "matet100": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "matet220": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "matet300": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "micac250": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "myaasa": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "myaass": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "myac220": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "mymman": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "orb300": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "pokesmqz": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "pokexyqz": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "retror30": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "rminitv": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "smartfp": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smartfpf": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smartfps": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "smkatsum": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "sstarkar": [
-      "driver changed: src/mame/tvgames/spg110.cpp"
-    ],
-    "tkmag220": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "tomyspt": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "tvkunio1": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "typo176": [
-      "driver changed: src/mame/tvgames/generalplus_gpl16250_rom.cpp"
-    ],
-    "typo240": [
-      "driver changed: src/mame/nintendo/nes_vt32.cpp"
-    ],
-    "udrive": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
-    ],
-    "yuleyuan": [
-      "driver changed: src/mame/handheld/evolution_handheld.cpp"
+    "keirind2": [
+      "driver changed: src/mame/excellent/es9606.cpp"
     ]
   },
   "machines": [
@@ -87266,6 +87028,26 @@
           "failure_reason": null,
           "revision": "08813903cdac12be0294ad1fd6de57bef20a336b",
           "artifact": "mame-linux-clang-08813903cdac12be0294ad1fd6de57bef20a336b"
+        }
+      }
+    },
+    {
+      "name": "keirind2",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "b5753bd97f012154c678de25479894cc75888b7a",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.448,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "b5753bd97f012154c678de25479894cc75888b7a",
+          "artifact": "mame-linux-clang-b5753bd97f012154c678de25479894cc75888b7a"
         }
       }
     }
