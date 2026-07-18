@@ -1,14 +1,25 @@
 {
-  "generated_at": "2026-07-18T17:48:41.536267+00:00",
+  "generated_at": "2026-07-18T17:49:09.246382+00:00",
   "title": "MAME quick snaps",
-  "head": "7bd1d8e959e61108eb881045b982214e05b220ae",
-  "base": "00141dc66f66ec0487f3ee8892c14d2124b63395",
-  "artifact": "mame-linux-clang-7bd1d8e959e61108eb881045b982214e05b220ae",
-  "commit_message": "megadriv.xml: Added 40 working items + 2 not working (#15254)\n\nNew working software list additions\n--------------------------------------------\nAlien Cat 2 (2025, free version) [PSCD Games]\nBattleWomen [PSCD Games]\nBio Evil (demo 1.0) [PSCD Games]\nBio Evil (demo v1.6) [PSCD Games]\nBio Evil (demo v2.0) [PSCD Games]\nBone Marrow (demo 2) [PSCD Games]\nCyber Mission (demo 0.3) [PSCD Games]\nCyber Mission (demo 2.0) [PSCD Games]\nCyber Mission (demo 2.1) [PSCD Games]\nDebtor (2025, free version) [PSCD Games]\nFight for Vengeance [No-Intro]\nFight for Vengeance (demo) [No-Intro]\nFoxyLand (2025, free version) [PSCD Games]\nGravibots [RetroSouls]\nGravibots (DMA safe) [RetroSouls]\nHandy Harvy [No-Intro]\nHandy Harvy (digital release) [No-Intro]\nHunter Girls (2023 version) [PSCD Games]\nHunter Girls (demo) [PSCD Games]\nIrena - Genesis Metal Fury (demo 20190619) [No-Intro]\nIrena - Genesis Metal Fury (demo 20210113) [No-Intro]\nIrena - Genesis Metal Fury (demo 20210122) [No-Intro]\nKromasphere: YAGAC MD (digital release) [No-Intro]\nL'Abbaye des Morts (physical release) [No-Intro]\nMega Casanova (v1.2) [PSCD Games]\nMega Casanova (v1.3) [PSCD Games]\nMega Casanova 2: Casanova Jr. Sex Star [PSCD Games]\nMega Casanova 3: Casanova Sex Angels [PSCD Games]\nMega Marble World (v1.90) [No-Intro]\nMega Marble World 2 (v1.03) [No-Intro]\nOld Towers (v1.0) [No-Intro]\nOld Towers (Mega Cat Studios) [No-Intro]\nSumo Slam! (digital release) [No-Intro]\nT\u00e4nzer (Mega Cat Studios) [No-Intro]\nT\u00e4nzer (digital release) [No-Intro]\nT\u00e4nzer (kickstarter demo) [No-Intro]\nT\u00e4nzer (Mega Cat Studios) (demo) [No-Intro]\nThunder Paw (2025, free version) [PSCD Games]\nYazzie (DMA safe) [RetroSouls]\nZPF (demo) [Mega Cat Studios]\n\nNew NOT working software list additions\n--------------------------------------------\nThe Curse of Illmoore Bay [No-Intro]\nThe Curse of Illmoore Bay (digital release) [No-Intro]",
+  "head": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+  "base": "7bd1d8e959e61108eb881045b982214e05b220ae",
+  "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0",
+  "commit_message": "rt1715w: floppy -- attach interrupt output and update GAP3 size. (#14879)\n\nSystems promoted to working\n---------------------------\nRobotron PC-1715W [shattered]",
   "changed_files": [
-    "hash/megadriv.xml"
+    "src/lib/formats/pk8020_dsk.cpp",
+    "src/mame/robotron/rt1715.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "rt1715": [
+      "driver changed: src/mame/robotron/rt1715.cpp"
+    ],
+    "rt1715lc": [
+      "driver changed: src/mame/robotron/rt1715.cpp"
+    ],
+    "rt1715w": [
+      "driver changed: src/mame/robotron/rt1715.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -89169,6 +89180,102 @@
           "failure_reason": "input skipped: 1 Player Start not available",
           "revision": "9a9529670ce5733459415e1b318c3ee303190d26",
           "artifact": "mame-linux-clang-9a9529670ce5733459415e1b318c3ee303190d26"
+        }
+      }
+    },
+    {
+      "name": "rt1715",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.854,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7bd1d8e959e61108eb881045b982214e05b220ae",
+          "artifact": "mame-linux-clang-7bd1d8e959e61108eb881045b982214e05b220ae"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.777,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
+        }
+      }
+    },
+    {
+      "name": "rt1715lc",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.633,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7bd1d8e959e61108eb881045b982214e05b220ae",
+          "artifact": "mame-linux-clang-7bd1d8e959e61108eb881045b982214e05b220ae"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.576,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
+        }
+      }
+    },
+    {
+      "name": "rt1715w",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.963,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7bd1d8e959e61108eb881045b982214e05b220ae",
+          "artifact": "mame-linux-clang-7bd1d8e959e61108eb881045b982214e05b220ae"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.978,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e596c0a3362b2505b3ef58e1556721175d8406f0",
+          "artifact": "mame-linux-clang-e596c0a3362b2505b3ef58e1556721175d8406f0"
         }
       }
     }
