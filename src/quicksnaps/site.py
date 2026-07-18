@@ -16,6 +16,7 @@ h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .build { margin-top: 1.2rem; padding: 1rem; background: #171b20; border: 1px solid #303943; }
 .build h3 { margin-top: 0; overflow-wrap: anywhere; }
+.unchanged { padding: 1rem; border: 1px solid #31503d; background: #17251d; color: #b8d8c3; }
 details { margin-top: 1rem; } summary { cursor: pointer; color: #e7b56d; }
 pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; white-space: pre-wrap; overflow-wrap: anywhere; }
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
@@ -29,6 +30,21 @@ def build_site(output: Path) -> None:
     manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
     cards = []
     reasons = manifest.get("reasons", {})
+
+    def images_changed(machine_name: str, captures: dict[str, object]) -> bool:
+        if "previous" not in captures or "current" not in captures:
+            return True
+        if any(captures[variant].get("status") != "passed" for variant in ("previous", "current")):
+            return True
+        directory = output / "machines" / machine_name
+        for filename in ("before.png", "after.png"):
+            previous = directory / "previous" / filename
+            current = directory / "current" / filename
+            if not previous.is_file() or not current.is_file():
+                return True
+            if previous.read_bytes() != current.read_bytes():
+                return True
+        return False
 
     def capture_html(name: str, machine: dict[str, object], variant: str, capture: dict[str, object]) -> str:
         status = html.escape(str(capture.get("status", "failed")))
@@ -55,10 +71,13 @@ def build_site(output: Path) -> None:
         why = "; ".join(map(str, reasons.get(machine["name"], [])))
         captures = machine.get("captures", {})
         if captures:
-            shots = "".join(
-                capture_html(name, machine, variant, captures[variant])
-                for variant in ("previous", "current") if variant in captures
-            )
+            if images_changed(str(machine["name"]), captures):
+                shots = "".join(
+                    capture_html(name, machine, variant, captures[variant])
+                    for variant in ("previous", "current") if variant in captures
+                )
+            else:
+                shots = f'<p class="unchanged">No screenshot change detected. <a href="machines/{name}/">View machine details</a>.</p>'
             captured = html.escape(str(captures.get("current", {}).get("revision", machine.get("revision", "unknown"))))
         elif status == "passed":
             captured = html.escape(str(machine.get("revision", "unknown")))
