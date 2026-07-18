@@ -1,39 +1,19 @@
 {
-  "generated_at": "2026-07-18T16:40:08.618542+00:00",
+  "generated_at": "2026-07-18T16:40:29.003112+00:00",
   "title": "MAME quick snaps",
-  "head": "f40748146bfaed4f71eb9ee0bfd9e82e15b04182",
-  "base": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
-  "artifact": "mame-linux-clang-f40748146bfaed4f71eb9ee0bfd9e82e15b04182",
-  "commit_message": "misc: address some gcc16.1 warnings",
+  "head": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
+  "base": "f40748146bfaed4f71eb9ee0bfd9e82e15b04182",
+  "artifact": "mame-linux-clang-4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
+  "commit_message": "sony/smc777_kbd.cpp: hookup keyboard LEDs to a layout",
   "changed_files": [
-    "src/devices/machine/wd2010.cpp",
-    "src/devices/video/pc_vga.cpp",
-    "src/devices/video/x1_020_dx_101.cpp",
-    "src/mame/atari/irobot_m.cpp",
-    "src/mame/ramtek/hitme.cpp",
-    "src/mame/teamconcepts/comquest.cpp"
+    "src/mame/layout/smc777.lay",
+    "src/mame/sony/smc777.cpp",
+    "src/mame/sony/smc777_kbd.cpp",
+    "src/mame/sony/smc777_kbd.h"
   ],
   "reasons": {
-    "barricad": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
-    ],
-    "brickyrd": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
-    ],
-    "comquest": [
-      "driver changed: src/mame/teamconcepts/comquest.cpp"
-    ],
-    "hitme": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
-    ],
-    "hitme1": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
-    ],
-    "mirco21": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
-    ],
-    "super21": [
-      "driver changed: src/mame/ramtek/hitme.cpp"
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
     ]
   },
   "machines": [
@@ -14667,31 +14647,31 @@
       "name": "smc777",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "3a2f91ce16b5dfa5852bcbb381cea6ef469a67aa",
+      "revision": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 4.368,
+          "duration_seconds": 1.499,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "55f2882692b47100786625e410d16cd08c2cd8ed",
-          "artifact": "mame-linux-clang-55f2882692b47100786625e410d16cd08c2cd8ed"
+          "revision": "f40748146bfaed4f71eb9ee0bfd9e82e15b04182",
+          "artifact": "mame-linux-clang-f40748146bfaed4f71eb9ee0bfd9e82e15b04182"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 2.846,
+          "duration_seconds": 1.576,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "3a2f91ce16b5dfa5852bcbb381cea6ef469a67aa",
-          "artifact": "mame-linux-clang-3a2f91ce16b5dfa5852bcbb381cea6ef469a67aa"
+          "revision": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
+          "artifact": "mame-linux-clang-4c3baee20f15c296afe850f01479d4dbc2c6ea8d"
         }
       }
     },
