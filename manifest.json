@@ -1,365 +1,17 @@
 {
-  "generated_at": "2026-07-18T16:35:20.726110+00:00",
+  "generated_at": "2026-07-18T16:36:26.333923+00:00",
   "title": "MAME quick snaps",
-  "head": "a8a155d33a986f0dcce705c6a95a7ee860586ba7",
-  "base": "95701e3dfefe3b867e8464afc6b5978fb05c630f",
-  "artifact": "mame-linux-clang-a8a155d33a986f0dcce705c6a95a7ee860586ba7",
-  "commit_message": "hegenerglaser: remove the extra m prefix from mmdisplay/mmboard",
+  "head": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+  "base": "a8a155d33a986f0dcce705c6a95a7ee860586ba7",
+  "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e",
+  "commit_message": "driveyes: disable sound output for left and right pcbs",
   "changed_files": [
-    "src/mame/hegenerglaser/academy.cpp",
-    "src/mame/hegenerglaser/amsterdam.cpp",
-    "src/mame/hegenerglaser/berlin.cpp",
-    "src/mame/hegenerglaser/brikett.cpp",
-    "src/mame/hegenerglaser/excalibur.cpp",
-    "src/mame/hegenerglaser/glasgow.cpp",
-    "src/mame/hegenerglaser/mboard.cpp",
-    "src/mame/hegenerglaser/mboard.h",
-    "src/mame/hegenerglaser/mdisplay1.cpp",
-    "src/mame/hegenerglaser/mdisplay1.h",
-    "src/mame/hegenerglaser/mdisplay2.cpp",
-    "src/mame/hegenerglaser/mdisplay2.h",
-    "src/mame/hegenerglaser/milano.cpp",
-    "src/mame/hegenerglaser/mm1.cpp",
-    "src/mame/hegenerglaser/mm2.cpp",
-    "src/mame/hegenerglaser/modena.cpp",
-    "src/mame/hegenerglaser/modular.cpp",
-    "src/mame/hegenerglaser/modular_tm.cpp",
-    "src/mame/hegenerglaser/montec.cpp",
-    "src/mame/hegenerglaser/polgar.cpp",
-    "src/mame/hegenerglaser/risc.cpp",
-    "src/mame/hegenerglaser/roma2.cpp",
-    "src/mame/saitek/risc2500.cpp"
+    "src/mame/namco/namcoio_gearbox.h",
+    "src/mame/namco/namcos21_de.cpp"
   ],
   "reasons": {
-    "academy": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "academyd": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "academyg": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "academyga": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "academygb": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "academytt": [
-      "driver changed: src/mame/hegenerglaser/academy.cpp"
-    ],
-    "alm16": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "alm16a": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "alm32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "amsterd": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "amsterdg": [
-      "driver changed: src/mame/hegenerglaser/glasgow.cpp"
-    ],
-    "berl16": [
-      "driver changed: src/mame/hegenerglaser/berlin.cpp"
-    ],
-    "berl16a": [
-      "driver changed: src/mame/hegenerglaser/berlin.cpp"
-    ],
-    "berl16l": [
-      "driver changed: src/mame/hegenerglaser/berlin.cpp"
-    ],
-    "berl32t8p": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "berlinp": [
-      "driver changed: src/mame/hegenerglaser/berlin.cpp"
-    ],
-    "berlinpl": [
-      "driver changed: src/mame/hegenerglaser/berlin.cpp"
-    ],
-    "bup": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "bup25": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "bupa": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "bupb": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "bupp": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "dallas16": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "dallas16g": [
-      "driver changed: src/mame/hegenerglaser/glasgow.cpp"
-    ],
-    "dallas32": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "dallas32a": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "excal": [
-      "driver changed: src/mame/hegenerglaser/excalibur.cpp"
-    ],
-    "excaltm": [
-      "driver changed: src/mame/hegenerglaser/excalibur.cpp"
-    ],
-    "gen32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "gen32a": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "gen32l": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "glasgow": [
-      "driver changed: src/mame/hegenerglaser/glasgow.cpp"
-    ],
-    "lond16": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "lond32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "lond32t": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "lond32t8": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "lyon16": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "lyon16a": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "lyon32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "lyon32t": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "lyon32t8": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "mephisto": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto1x": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto2": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto2a": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto2b": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto3": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto3a": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto3b": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto3c": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephisto3d": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephistoa": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephistoe2": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephistoe2a": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "mephistoj": [
-      "driver changed: src/mame/hegenerglaser/brikett.cpp"
-    ],
-    "milano": [
-      "driver changed: src/mame/hegenerglaser/milano.cpp"
-    ],
-    "milanoa": [
-      "driver changed: src/mame/hegenerglaser/milano.cpp"
-    ],
-    "mm1": [
-      "driver changed: src/mame/hegenerglaser/mm1.cpp"
-    ],
-    "mm1a": [
-      "driver changed: src/mame/hegenerglaser/mm1.cpp"
-    ],
-    "mm2": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2a": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2b": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2c": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2d": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2e": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2f": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm2nona": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm4": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm4a": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm4b": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm4rebel": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm4tk": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm5": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mm5a": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "mmirage": [
-      "driver changed: src/mame/hegenerglaser/mm1.cpp"
-    ],
-    "modena": [
-      "driver changed: src/mame/hegenerglaser/modena.cpp"
-    ],
-    "modenaa": [
-      "driver changed: src/mame/hegenerglaser/modena.cpp"
-    ],
-    "modenab": [
-      "driver changed: src/mame/hegenerglaser/modena.cpp"
-    ],
-    "montec": [
-      "driver changed: src/mame/hegenerglaser/montec.cpp"
-    ],
-    "montec4": [
-      "driver changed: src/mame/hegenerglaser/montec.cpp"
-    ],
-    "montec4le": [
-      "driver changed: src/mame/hegenerglaser/montec.cpp"
-    ],
-    "monteca": [
-      "driver changed: src/mame/hegenerglaser/montec.cpp"
-    ],
-    "montreal": [
-      "driver changed: src/mame/hegenerglaser/roma2.cpp"
-    ],
-    "montreux": [
-      "driver changed: src/mame/saitek/risc2500.cpp"
-    ],
-    "mrisc": [
-      "driver changed: src/mame/hegenerglaser/risc.cpp"
-    ],
-    "mrisc2": [
-      "driver changed: src/mame/hegenerglaser/risc.cpp"
-    ],
-    "mrisca": [
-      "driver changed: src/mame/hegenerglaser/risc.cpp"
-    ],
-    "nshort": [
-      "driver changed: src/mame/hegenerglaser/milano.cpp"
-    ],
-    "polgar": [
-      "driver changed: src/mame/hegenerglaser/polgar.cpp"
-    ],
-    "polgar10": [
-      "driver changed: src/mame/hegenerglaser/polgar.cpp"
-    ],
-    "polgar101": [
-      "driver changed: src/mame/hegenerglaser/polgar.cpp"
-    ],
-    "polgara": [
-      "driver changed: src/mame/hegenerglaser/polgar.cpp"
-    ],
-    "port16": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "port32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "port32a": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "port32b": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "port32t": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "rebel5": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "rebel5a": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "rebel5b": [
-      "driver changed: src/mame/hegenerglaser/mm2.cpp"
-    ],
-    "risc2500": [
-      "driver changed: src/mame/saitek/risc2500.cpp"
-    ],
-    "risc2500a": [
-      "driver changed: src/mame/saitek/risc2500.cpp"
-    ],
-    "roma16": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "roma16g": [
-      "driver changed: src/mame/hegenerglaser/glasgow.cpp"
-    ],
-    "roma2": [
-      "driver changed: src/mame/hegenerglaser/roma2.cpp"
-    ],
-    "roma32": [
-      "driver changed: src/mame/hegenerglaser/amsterdam.cpp"
-    ],
-    "van16": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "van32": [
-      "driver changed: src/mame/hegenerglaser/modular.cpp"
-    ],
-    "van32t": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
-    ],
-    "van32t8": [
-      "driver changed: src/mame/hegenerglaser/modular_tm.cpp"
+    "driveyes": [
+      "driver changed: src/mame/namco/namcos21_de.cpp"
     ]
   },
   "machines": [
@@ -5283,31 +4935,31 @@
       "name": "driveyes",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
+      "revision": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 35.385,
+          "duration_seconds": 23.86,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "91faf17b0d95d0cfab2f7d6aabf451900afee69b",
-          "artifact": "mame-linux-clang-91faf17b0d95d0cfab2f7d6aabf451900afee69b"
+          "revision": "a8a155d33a986f0dcce705c6a95a7ee860586ba7",
+          "artifact": "mame-linux-clang-a8a155d33a986f0dcce705c6a95a7ee860586ba7"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 34.131,
+          "duration_seconds": 23.533,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
-          "artifact": "mame-linux-clang-421d94b34849b7450f953c46dc506c42093c05b0"
+          "revision": "e156fde73d3a66c303cca038ee5bd07e9287d68e",
+          "artifact": "mame-linux-clang-e156fde73d3a66c303cca038ee5bd07e9287d68e"
         }
       }
     },
