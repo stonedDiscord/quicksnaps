@@ -1,21 +1,14 @@
 {
-  "generated_at": "2026-07-18T18:19:17.686843+00:00",
+  "generated_at": "2026-07-18T18:19:36.501024+00:00",
   "title": "MAME quick snaps",
-  "head": "f3e0cd338e6e0e7810953a15441ea8b0e4034ab2",
-  "base": "932822c16c880e3c51f8d1eb8a2a287851e225d1",
-  "artifact": "mame-linux-clang-f3e0cd338e6e0e7810953a15441ea8b0e4034ab2",
-  "commit_message": "sequential/prophet5.cpp: Emulated polymod and autotune. Promoted to working. (#15316)\n\nAlso, multiple minor changes:\n* Limited logging to just calibration events.\n* Made knob max 240, so that it is a multiple of the knob resolution (120).\n* Adjusted VOLTAGE_TO_AUDIO_SCALER.\n* Corrected the pitch wheel range.\n* Remapped some key bindings.\n* Recalibrated LFO balance.\n* Updated constants for triangle centering circuit, based on improved simulations.\n* Minor layour improvements.\n\nSystems promoted to working\n----------------------------\nSequential Circuits Prophet 5 (Model 1000) Rev 3.0",
+  "head": "7d00b12d641b19a47efbb340d3472e001542f5c0",
+  "base": "f3e0cd338e6e0e7810953a15441ea8b0e4034ab2",
+  "artifact": "mame-linux-clang-7d00b12d641b19a47efbb340d3472e001542f5c0",
+  "commit_message": "mcs51: Fix regression with sfr_map in derived classes",
   "changed_files": [
-    "src/devices/sound/cem3340.cpp",
-    "src/devices/sound/cem3340.h",
-    "src/mame/layout/sequential_prophet5.lay",
-    "src/mame/sequential/prophet5.cpp"
+    "src/devices/cpu/mcs51/i8051.cpp"
   ],
-  "reasons": {
-    "prophet5r30": [
-      "driver changed: src/mame/sequential/prophet5.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
