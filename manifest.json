@@ -1,299 +1,26 @@
 {
-  "generated_at": "2026-07-18T16:39:10.950504+00:00",
+  "generated_at": "2026-07-18T16:39:49.005827+00:00",
   "title": "MAME quick snaps",
-  "head": "ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
-  "base": "b3bc8ac9f427e28c1b96b14159959db05e3fb7c3",
-  "artifact": "mame-linux-clang-ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
-  "commit_message": "- itech/itech32.cpp: added 2.01 sound ROM for the newer revisions, improved ROM labels [anonymous, Brian Troha]\n\n- videogames/looping.cpp: verified the dumped PLD for loopinguc as bad [Porchy]",
+  "head": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
+  "base": "ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
+  "artifact": "mame-linux-clang-83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
+  "commit_message": "namco_c148: make ext read a callback",
   "changed_files": [
-    "src/mame/itech/itech32.cpp",
-    "src/mame/videogames/looping.cpp"
+    "src/mame/hegenerglaser/mdisplay1.cpp",
+    "src/mame/hegenerglaser/mdisplay2.cpp",
+    "src/mame/namco/namco_c148.cpp",
+    "src/mame/namco/namco_c148.h",
+    "src/mame/namco/namcos21.cpp"
   ],
   "reasons": {
-    "bloodstm": [
-      "driver changed: src/mame/itech/itech32.cpp"
+    "winrun": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "bloodstm104": [
-      "driver changed: src/mame/itech/itech32.cpp"
+    "winrun91": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ],
-    "bloodstm110": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "bloodstm210": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "bloodstm216": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "bloodstm220": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "bloodstm221": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "drivedge": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt2k": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt2kp100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt2ks100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt2kt500": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3d": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dl19": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dl191": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dl192": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3ds192": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dt211": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dt230": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dt231": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dv14": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dv15": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dv16": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dv17": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt3dv18": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97s121": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97t240": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97t243": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97v120": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97v121": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt97v122": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98c100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98s100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98t302": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98t303": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt98v100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt99": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt99s100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gt99t400": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtclassc": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtclasscp": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtclasscs": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtdiamond": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtroyal": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "gtsupreme": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "hardyard": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "hardyard10": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "hardyard11": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "hotmemry": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "hotmemry11": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "looping": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "loopingu": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "loopingua": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "loopingub": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "loopinguc": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "pairs": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "pairsa": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "pairsred": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "pubball": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftm": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftm110": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftm111": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftmj112": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftmj114": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "sftmk112": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shoottv": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shufshot": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shufshot135": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shufshot137": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shufshot138": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "shufshot139": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "skybump": [
-      "driver changed: src/mame/videogames/looping.cpp"
-    ],
-    "timekill": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill100": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill120": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill121": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill121a": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill131": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "timekill132i": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl10": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl11": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl12": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl13": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl130": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl13j": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl14": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl140": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl15": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl16": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl161": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowl165": [
-      "driver changed: src/mame/itech/itech32.cpp"
-    ],
-    "wcbowldx": [
-      "driver changed: src/mame/itech/itech32.cpp"
+    "winrungp": [
+      "driver changed: src/mame/namco/namcos21.cpp"
     ]
   },
   "machines": [
@@ -5249,31 +4976,31 @@
       "name": "winrun",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
+      "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 14.812,
+          "duration_seconds": 9.122,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "91faf17b0d95d0cfab2f7d6aabf451900afee69b",
-          "artifact": "mame-linux-clang-91faf17b0d95d0cfab2f7d6aabf451900afee69b"
+          "revision": "ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
+          "artifact": "mame-linux-clang-ea7fe300ea8d454be1d42af85f664bb5e2be0a9e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 15.341,
+          "duration_seconds": 9.594,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
-          "artifact": "mame-linux-clang-421d94b34849b7450f953c46dc506c42093c05b0"
+          "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
+          "artifact": "mame-linux-clang-83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec"
         }
       }
     },
@@ -5281,31 +5008,31 @@
       "name": "winrun91",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
+      "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.907,
+          "duration_seconds": 7.534,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "91faf17b0d95d0cfab2f7d6aabf451900afee69b",
-          "artifact": "mame-linux-clang-91faf17b0d95d0cfab2f7d6aabf451900afee69b"
+          "revision": "ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
+          "artifact": "mame-linux-clang-ea7fe300ea8d454be1d42af85f664bb5e2be0a9e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 12.41,
+          "duration_seconds": 7.381,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
-          "artifact": "mame-linux-clang-421d94b34849b7450f953c46dc506c42093c05b0"
+          "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
+          "artifact": "mame-linux-clang-83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec"
         }
       }
     },
@@ -5313,31 +5040,31 @@
       "name": "winrungp",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
+      "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 12.011,
+          "duration_seconds": 7.507,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "91faf17b0d95d0cfab2f7d6aabf451900afee69b",
-          "artifact": "mame-linux-clang-91faf17b0d95d0cfab2f7d6aabf451900afee69b"
+          "revision": "ea7fe300ea8d454be1d42af85f664bb5e2be0a9e",
+          "artifact": "mame-linux-clang-ea7fe300ea8d454be1d42af85f664bb5e2be0a9e"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 12.554,
+          "duration_seconds": 7.259,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "421d94b34849b7450f953c46dc506c42093c05b0",
-          "artifact": "mame-linux-clang-421d94b34849b7450f953c46dc506c42093c05b0"
+          "revision": "83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec",
+          "artifact": "mame-linux-clang-83b5d1da75e6ff20e67d9adb9ba9ca6442ade4ec"
         }
       }
     },
