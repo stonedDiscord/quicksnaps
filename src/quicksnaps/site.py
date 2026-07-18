@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import struct
 from pathlib import Path
 
 
@@ -26,6 +27,31 @@ input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem
 """
 
 
+def _png_visual_signature(path: Path) -> bytes:
+    data = path.read_bytes()
+    if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+        return data
+    offset = 8
+    visual = bytearray()
+    try:
+        while offset < len(data):
+            length = struct.unpack(">I", data[offset : offset + 4])[0]
+            chunk_type = data[offset + 4 : offset + 8]
+            chunk_data = data[offset + 8 : offset + 8 + length]
+            if len(chunk_data) != length:
+                return data
+            if chunk_type in (b"IHDR", b"PLTE", b"tRNS", b"IDAT"):
+                visual.extend(chunk_type)
+                visual.extend(struct.pack(">I", length))
+                visual.extend(chunk_data)
+            offset += 12 + length
+            if chunk_type == b"IEND":
+                break
+    except (IndexError, struct.error):
+        return data
+    return bytes(visual) if visual else data
+
+
 def build_site(output: Path) -> None:
     manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
     cards = []
@@ -42,7 +68,7 @@ def build_site(output: Path) -> None:
             current = directory / "current" / filename
             if not previous.is_file() or not current.is_file():
                 return True
-            if previous.read_bytes() != current.read_bytes():
+            if _png_visual_signature(previous) != _png_visual_signature(current):
                 return True
         return False
 
@@ -59,9 +85,13 @@ def build_site(output: Path) -> None:
             diagnostics = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/{variant}/mame.log">Open raw log</a></p></details>'
         if status == "passed":
             button = html.escape(str(capture.get("button", machine.get("button", "input"))))
+            if capture.get("button_applied", True):
+                after_caption = f"After {button}"
+            else:
+                after_caption = f"After wait ({button} unavailable; no input pressed)"
             body = f'''<div class="shots">
 <figure><figcaption>Before input</figcaption><a href="machines/{name}/{variant}/before.png"><img loading="lazy" src="machines/{name}/{variant}/before.png" alt="{name} {variant} before input"></a></figure>
-<figure><figcaption>After {button}</figcaption><a href="machines/{name}/{variant}/after.png"><img loading="lazy" src="machines/{name}/{variant}/after.png" alt="{name} {variant} after input"></a></figure>
+<figure><figcaption>{after_caption}</figcaption><a href="machines/{name}/{variant}/after.png"><img loading="lazy" src="machines/{name}/{variant}/after.png" alt="{name} {variant} after wait"></a></figure>
 </div>'''
         return f'<section class="build"><h3>{variant.title()}: {revision}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
 

@@ -43,20 +43,27 @@ emu.register_frame_done(function()
         start_time = manager.machine.time
         field = find_button()
         if field == nil then
-            fail("input field not found: " .. button_name)
-            return
+            print("[quicksnaps] input skipped: " .. button_name .. " not available")
         end
     end
 
     local elapsed = (manager.machine.time - start_time):as_double()
     if state == "warmup" and elapsed >= warmup then
         if not snapshot("before.png") then return end
-        field:set_value(1)
-        state = "pressed"
+        if field ~= nil then
+            field:set_value(1)
+            state = "pressed"
+        else
+            state = "skipped"
+        end
     elseif state == "pressed" and elapsed >= warmup + hold then
         field:clear_value()
         state = "released"
     elseif state == "released" and elapsed >= warmup + hold + after then
+        if not snapshot("after.png") then return end
+        state = "done"
+        manager.machine:exit()
+    elseif state == "skipped" and elapsed >= warmup + hold + after then
         if not snapshot("after.png") then return end
         state = "done"
         manager.machine:exit()

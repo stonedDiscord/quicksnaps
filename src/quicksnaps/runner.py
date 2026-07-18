@@ -95,11 +95,15 @@ def capture_machine(
         if failure_reason is None:
             failure_reason = "Missing screenshot output: " + ", ".join(missing)
     (machine_dir / "mame.log").write_text(log, encoding="utf-8")
+    button_applied = not any(
+        line.startswith("[quicksnaps] input skipped:") for line in log.splitlines()
+    )
     return {
         "name": machine.name,
         "status": status,
         "duration_seconds": round(time.monotonic() - started, 3),
         "button": machine.button,
+        "button_applied": button_applied,
         "warmup_seconds": machine.warmup_seconds,
         "after_seconds": machine.after_seconds,
         "press_seconds": machine.press_seconds,
