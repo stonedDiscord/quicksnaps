@@ -1,113 +1,131 @@
 {
-  "generated_at": "2026-07-18T16:44:46.977515+00:00",
+  "generated_at": "2026-07-18T16:45:05.380756+00:00",
   "title": "MAME quick snaps",
-  "head": "17adb7e5dbf0cd9a095be9550e5f1b3f5f25286f",
-  "base": "927033b5014bc9c77ead6b4209d3fa59213e4e14",
-  "artifact": "mame-linux-clang-17adb7e5dbf0cd9a095be9550e5f1b3f5f25286f",
-  "commit_message": "sega/megadriv_acbl.cpp: add coin NMI for standalone Connie games",
+  "head": "d9b6e5f41af8092cbc7b733db4cff5b04a428e2d",
+  "base": "17adb7e5dbf0cd9a095be9550e5f1b3f5f25286f",
+  "artifact": "mame-linux-clang-d9b6e5f41af8092cbc7b733db4cff5b04a428e2d",
+  "commit_message": "frontend/mame/luaengine.cpp, ui: Patched up some rather disturbing code.",
   "changed_files": [
-    "src/devices/cpu/patinhofeio/patinho_feio.cpp",
-    "src/mame/multitech/mkit09.cpp",
-    "src/mame/sega/megadriv_acbl.cpp",
-    "src/mame/sony/pve500.cpp",
-    "src/mame/ultratec/minicom.cpp",
-    "src/mame/wing/luckgrln.cpp"
+    "src/emu/render.cpp",
+    "src/emu/render.h",
+    "src/emu/uiinput.cpp",
+    "src/emu/uiinput.h",
+    "src/frontend/mame/cheat.cpp",
+    "src/frontend/mame/cheat.h",
+    "src/frontend/mame/luaengine.cpp",
+    "src/frontend/mame/luaengine_render.cpp",
+    "src/frontend/mame/mame.cpp",
+    "src/frontend/mame/ui/about.cpp",
+    "src/frontend/mame/ui/about.h",
+    "src/frontend/mame/ui/analogipt.cpp",
+    "src/frontend/mame/ui/analogipt.h",
+    "src/frontend/mame/ui/audio_effect_compressor.cpp",
+    "src/frontend/mame/ui/audio_effect_compressor.h",
+    "src/frontend/mame/ui/audio_effect_eq.cpp",
+    "src/frontend/mame/ui/audio_effect_eq.h",
+    "src/frontend/mame/ui/audio_effect_filter.cpp",
+    "src/frontend/mame/ui/audio_effect_filter.h",
+    "src/frontend/mame/ui/audio_effect_reverb.cpp",
+    "src/frontend/mame/ui/audio_effect_reverb.h",
+    "src/frontend/mame/ui/audioeffects.cpp",
+    "src/frontend/mame/ui/audioeffects.h",
+    "src/frontend/mame/ui/audiomix.cpp",
+    "src/frontend/mame/ui/audiomix.h",
+    "src/frontend/mame/ui/auditmenu.cpp",
+    "src/frontend/mame/ui/auditmenu.h",
+    "src/frontend/mame/ui/barcode.cpp",
+    "src/frontend/mame/ui/barcode.h",
+    "src/frontend/mame/ui/cheatopt.cpp",
+    "src/frontend/mame/ui/cheatopt.h",
+    "src/frontend/mame/ui/confswitch.cpp",
+    "src/frontend/mame/ui/confswitch.h",
+    "src/frontend/mame/ui/custui.cpp",
+    "src/frontend/mame/ui/custui.h",
+    "src/frontend/mame/ui/datmenu.cpp",
+    "src/frontend/mame/ui/datmenu.h",
+    "src/frontend/mame/ui/devctrl.h",
+    "src/frontend/mame/ui/devopt.cpp",
+    "src/frontend/mame/ui/devopt.h",
+    "src/frontend/mame/ui/dirmenu.cpp",
+    "src/frontend/mame/ui/dirmenu.h",
+    "src/frontend/mame/ui/filecreate.cpp",
+    "src/frontend/mame/ui/filecreate.h",
+    "src/frontend/mame/ui/filemngr.cpp",
+    "src/frontend/mame/ui/filemngr.h",
+    "src/frontend/mame/ui/filesel.cpp",
+    "src/frontend/mame/ui/filesel.h",
+    "src/frontend/mame/ui/floppycntrl.cpp",
+    "src/frontend/mame/ui/floppycntrl.h",
+    "src/frontend/mame/ui/imgcntrl.cpp",
+    "src/frontend/mame/ui/imgcntrl.h",
+    "src/frontend/mame/ui/info.cpp",
+    "src/frontend/mame/ui/info.h",
+    "src/frontend/mame/ui/info_pty.cpp",
+    "src/frontend/mame/ui/info_pty.h",
+    "src/frontend/mame/ui/inputdevices.cpp",
+    "src/frontend/mame/ui/inputdevices.h",
+    "src/frontend/mame/ui/inputmap.cpp",
+    "src/frontend/mame/ui/inputmap.h",
+    "src/frontend/mame/ui/inputopts.cpp",
+    "src/frontend/mame/ui/inputopts.h",
+    "src/frontend/mame/ui/inputtoggle.cpp",
+    "src/frontend/mame/ui/inputtoggle.h",
+    "src/frontend/mame/ui/keyboard.cpp",
+    "src/frontend/mame/ui/keyboard.h",
+    "src/frontend/mame/ui/mainmenu.cpp",
+    "src/frontend/mame/ui/mainmenu.h",
+    "src/frontend/mame/ui/menu.cpp",
+    "src/frontend/mame/ui/menu.h",
+    "src/frontend/mame/ui/midiinout.cpp",
+    "src/frontend/mame/ui/midiinout.h",
+    "src/frontend/mame/ui/miscmenu.cpp",
+    "src/frontend/mame/ui/miscmenu.h",
+    "src/frontend/mame/ui/moptions.cpp",
+    "src/frontend/mame/ui/moptions.h",
+    "src/frontend/mame/ui/optsmenu.cpp",
+    "src/frontend/mame/ui/optsmenu.h",
+    "src/frontend/mame/ui/pluginopt.cpp",
+    "src/frontend/mame/ui/pluginopt.h",
+    "src/frontend/mame/ui/prscntrl.cpp",
+    "src/frontend/mame/ui/prscntrl.h",
+    "src/frontend/mame/ui/quitmenu.cpp",
+    "src/frontend/mame/ui/quitmenu.h",
+    "src/frontend/mame/ui/selector.cpp",
+    "src/frontend/mame/ui/selector.h",
+    "src/frontend/mame/ui/selgame.cpp",
+    "src/frontend/mame/ui/selgame.h",
+    "src/frontend/mame/ui/selmenu.cpp",
+    "src/frontend/mame/ui/selmenu.h",
+    "src/frontend/mame/ui/selsoft.cpp",
+    "src/frontend/mame/ui/selsoft.h",
+    "src/frontend/mame/ui/simpleselgame.cpp",
+    "src/frontend/mame/ui/simpleselgame.h",
+    "src/frontend/mame/ui/sliders.cpp",
+    "src/frontend/mame/ui/sliders.h",
+    "src/frontend/mame/ui/slotopt.cpp",
+    "src/frontend/mame/ui/slotopt.h",
+    "src/frontend/mame/ui/sndmenu.cpp",
+    "src/frontend/mame/ui/sndmenu.h",
+    "src/frontend/mame/ui/state.cpp",
+    "src/frontend/mame/ui/state.h",
+    "src/frontend/mame/ui/submenu.cpp",
+    "src/frontend/mame/ui/submenu.h",
+    "src/frontend/mame/ui/swlist.cpp",
+    "src/frontend/mame/ui/swlist.h",
+    "src/frontend/mame/ui/tapectrl.cpp",
+    "src/frontend/mame/ui/tapectrl.h",
+    "src/frontend/mame/ui/textbox.cpp",
+    "src/frontend/mame/ui/textbox.h",
+    "src/frontend/mame/ui/ui.cpp",
+    "src/frontend/mame/ui/ui.h",
+    "src/frontend/mame/ui/utils.cpp",
+    "src/frontend/mame/ui/utils.h",
+    "src/frontend/mame/ui/videoopt.cpp",
+    "src/frontend/mame/ui/videoopt.h",
+    "src/frontend/mame/ui/viewgfx.cpp",
+    "src/frontend/mame/ui/viewgfx.h"
   ],
-  "reasons": {
-    "3in1mbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "7smash": [
-      "driver changed: src/mame/wing/luckgrln.cpp"
-    ],
-    "7smasha": [
-      "driver changed: src/mame/wing/luckgrln.cpp"
-    ],
-    "aladmdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek2ch": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mba": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barekch": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "biohzdmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "bk3ssrmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "contrambc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "jparkmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "luckgrln": [
-      "driver changed: src/mame/wing/luckgrln.cpp"
-    ],
-    "luckstrn": [
-      "driver changed: src/mame/wing/luckgrln.cpp"
-    ],
-    "luckstrna": [
-      "driver changed: src/mame/wing/luckgrln.cpp"
-    ],
-    "mcom4_02": [
-      "driver changed: src/mame/ultratec/minicom.cpp"
-    ],
-    "mickeycmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "minicom": [
-      "driver changed: src/mame/ultratec/minicom.cpp"
-    ],
-    "mk3mdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "mkit09": [
-      "driver changed: src/mame/multitech/mkit09.cpp"
-    ],
-    "mkit09a": [
-      "driver changed: src/mame/multitech/mkit09.cpp"
-    ],
-    "pve500": [
-      "driver changed: src/mame/sony/pve500.cpp"
-    ],
-    "sidepmbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "sonic2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "sonic3mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "srmdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "srssf2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "ssf2mdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "twinktmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
