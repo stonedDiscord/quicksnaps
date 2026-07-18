@@ -1,35 +1,18 @@
 {
-  "generated_at": "2026-07-18T13:30:02.377582+00:00",
+  "generated_at": "2026-07-18T13:30:20.399957+00:00",
   "title": "MAME quick snaps",
-  "head": "31db58bbe0451a81458998bda8ae97308d5948ee",
-  "base": "a855cb1b62ddc07839aa5da0e5f4432f5c981e49",
-  "artifact": "mame-linux-clang-31db58bbe0451a81458998bda8ae97308d5948ee",
+  "head": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
+  "base": "31db58bbe0451a81458998bda8ae97308d5948ee",
+  "artifact": "mame-linux-clang-85c922b3ba11698bf8c3123240ecee1e69cba6e4",
   "changed_files": [
-    "src/mame/namco/namcos21_c67.cpp"
+    "src/lib/netlist/build/create_devinc.py",
+    "src/lib/netlist/generated/nld_devinc.h",
+    "src/lib/netlist/macro/nlm_ttl74xx_lib.cpp",
+    "src/lib/netlist/nl_setup.cpp",
+    "src/lib/netlist/nl_setup.h",
+    "src/lib/netlist/prg/nltool.cpp"
   ],
-  "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
