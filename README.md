@@ -33,9 +33,9 @@ object deduplication. If the immediately preceding artifact has expired before
 it can be downloaded, the replay records a current-only capture for that range.
 
 Every Pages commit includes `MAME-SHA: <full SHA>` and `MAME-Artifact: <name>`.
-Even an artifact whose source range selects no machines creates an empty commit,
-so Pages history has one commit per processed CI artifact. GitHub's commit and
-compare views can track visual asset changes between any two available builds.
+Empty commits are never created; publishing first verifies that the generated
+tree has staged changes. GitHub's commit and compare views can track visual asset
+changes between available builds without zero-change entries.
 The current SHA and artifact name are also stored in `manifest.json` and shown
 on the generated site.
 

@@ -65,15 +65,26 @@ def download(artifact: Artifact, destination: Path, repository: str) -> Path:
     return binary
 
 
-def commit_pages(pages: Path, artifact: Artifact, base: str | None) -> None:
+def commit_pages(pages: Path, artifact: Artifact, base: str | None) -> bool:
     run("git", "add", "--all", cwd=pages)
+    changed = subprocess.run(
+        ["git", "diff", "--cached", "--quiet"],
+        cwd=pages,
+        check=False,
+    ).returncode
+    if changed == 0:
+        print(f"No generated changes for {artifact.name}; skipping commit", flush=True)
+        return False
+    if changed != 1:
+        raise RuntimeError("unable to inspect staged Pages changes")
     run("git", "config", "user.name", "quicksnaps bot", cwd=pages)
     run("git", "config", "user.email", "quicksnaps@users.noreply.github.com", cwd=pages)
-    message = ["git", "commit", "--allow-empty", "-m", f"MAME {artifact.sha}"]
+    message = ["git", "commit", "-m", f"MAME {artifact.sha}"]
     if base:
         message.extend(("-m", f"MAME-Base: {base}"))
     message.extend(("-m", f"MAME-SHA: {artifact.sha}", "-m", f"MAME-Artifact: {artifact.name}"))
     run(*message, cwd=pages)
+    return True
 
 
 def main() -> int:
@@ -152,8 +163,8 @@ def main() -> int:
                 "--capture-revision", artifact.sha, "--artifact", artifact.name,
                 "--selection-file", str(current_selection), "--catalog",
             )
-        commit_pages(args.pages, artifact, current)
-        if args.push_branch:
+        committed = commit_pages(args.pages, artifact, current)
+        if committed and args.push_branch:
             run("git", "push", "origin", f"HEAD:{args.push_branch}", cwd=args.pages)
         current = artifact.sha
         previous_artifact = artifact
