@@ -1,114 +1,22 @@
 {
-  "generated_at": "2026-07-18T18:58:16.938829+00:00",
+  "generated_at": "2026-07-18T18:58:46.582097+00:00",
   "title": "MAME quick snaps",
-  "head": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
-  "base": "4e8996fafd068310251af31637a1b0bd03ef70f2",
-  "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581",
-  "commit_message": "misc/vamphalf.cpp: hookup FPGA protection devices to misncrft and wyvernwg",
+  "head": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+  "base": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
+  "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb",
+  "commit_message": "taito/gunbustr.cpp: Converted analog inputs to use ADC device, removed IRQ 4 hack. (#15327)",
   "changed_files": [
-    "src/mame/misc/vamphalf.cpp",
-    "src/mame/misc/vamphalf_prot.cpp",
-    "src/mame/misc/vamphalf_prot.h"
+    "src/mame/taito/gunbustr.cpp"
   ],
   "reasons": {
-    "aoh": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
+    "gunbustr": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
     ],
-    "boonggab": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
+    "gunbustrj": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
     ],
-    "coolmini": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "coolminii": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "dquizgo2": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "dtfamily": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "finalgdr": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "jmpbreak": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "jmpbreaka": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "luplup": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "luplup10": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "luplup29": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "misncrft": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "misncrfta": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "mrdig": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "mrkicker": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "mrkickera": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "newxpang": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "newxpanga": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "poosho": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "puzlbang": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "puzlbanga": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "solitaire": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "suplup": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "toyland": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "vamphalf": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "vamphalfk": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "vamphalfr1": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "wivernwg": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "worldadv": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "wyvernwg": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "wyvernwga": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
-    ],
-    "yorijori": [
-      "driver changed: src/mame/misc/vamphalf.cpp"
+    "gunbustru": [
+      "driver changed: src/mame/taito/gunbustr.cpp"
     ]
   },
   "machines": [
@@ -109096,31 +109004,31 @@
       "name": "gunbustr",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
+      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.946,
+          "duration_seconds": 5.729,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f24e8bb3be5a98b3d984135f4bdf88da37c792e9",
-          "artifact": "mame-linux-clang-f24e8bb3be5a98b3d984135f4bdf88da37c792e9"
+          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
+          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.8,
+          "duration_seconds": 5.456,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
-          "artifact": "mame-linux-clang-4e8996fafd068310251af31637a1b0bd03ef70f2"
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
         }
       }
     },
@@ -109128,31 +109036,31 @@
       "name": "gunbustrj",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
+      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.875,
+          "duration_seconds": 5.414,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f24e8bb3be5a98b3d984135f4bdf88da37c792e9",
-          "artifact": "mame-linux-clang-f24e8bb3be5a98b3d984135f4bdf88da37c792e9"
+          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
+          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.371,
+          "duration_seconds": 5.477,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
-          "artifact": "mame-linux-clang-4e8996fafd068310251af31637a1b0bd03ef70f2"
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
         }
       }
     },
@@ -109160,31 +109068,31 @@
       "name": "gunbustru",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
+      "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 5.861,
+          "duration_seconds": 5.248,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f24e8bb3be5a98b3d984135f4bdf88da37c792e9",
-          "artifact": "mame-linux-clang-f24e8bb3be5a98b3d984135f4bdf88da37c792e9"
+          "revision": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
+          "artifact": "mame-linux-clang-ccfda00f541bacbe8cdd449a9649e73268c1a581"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 5.547,
+          "duration_seconds": 5.538,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "4e8996fafd068310251af31637a1b0bd03ef70f2",
-          "artifact": "mame-linux-clang-4e8996fafd068310251af31637a1b0bd03ef70f2"
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
         }
       }
     }
