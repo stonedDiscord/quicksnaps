@@ -81,9 +81,8 @@ the source tree sufficiently for your needs.
 No third-party Python packages are needed:
 
 ```sh
-python3 -m pip install -e .
-quicksnaps affected --base HEAD~1 --head HEAD
-quicksnaps capture --all --mame ../mame/mamed --output site
+PYTHONPATH=src python3 -m quicksnaps.cli affected --base HEAD~1 --head HEAD
+PYTHONPATH=src python3 -m quicksnaps.cli capture --all --mame ../mame/mamed --output site
 ```
 
 Pass `--rompath /path/to/roms` if the MAME defaults do not locate your ROMs.
@@ -94,7 +93,7 @@ For a real MAME range, both `--base` and `--head` refer to revisions in
 the upstream replay can currently use:
 
 ```sh
-quicksnaps artifacts
+PYTHONPATH=src python3 -m quicksnaps.cli artifacts
 ```
 
 ## GitHub setup

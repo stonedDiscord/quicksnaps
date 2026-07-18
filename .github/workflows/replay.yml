@@ -25,6 +25,7 @@ jobs:
       GH_TOKEN: ${{ secrets.UPSTREAM_ARTIFACT_TOKEN }}
       PAGES_BRANCH: ${{ vars.PAGES_BRANCH || 'gh-pages' }}
       ROMPATH: ${{ vars.MAME_ROM_PATH }}
+      PYTHONPATH: ${{ github.workspace }}/quicksnaps/src
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,8 +54,6 @@ jobs:
             git -C pages rm -rf --ignore-unmatch .
             git -C pages clean -fdx
           fi
-      - name: Install quicksnaps
-        run: python3 -m pip install ./quicksnaps
       - name: Replay available artifacts
         shell: bash
         run: |
