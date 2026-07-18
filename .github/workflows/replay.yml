@@ -27,11 +27,11 @@ jobs:
       ROMPATH: ${{ vars.MAME_ROM_PATH }}
       PYTHONPATH: ${{ github.workspace }}/quicksnaps/src
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           path: quicksnaps
           fetch-depth: 0
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: mamedev/mame
           path: mame-source
