@@ -1,267 +1,19 @@
 {
-  "generated_at": "2026-07-18T18:20:44.479282+00:00",
+  "generated_at": "2026-07-18T18:22:28.132856+00:00",
   "title": "MAME quick snaps",
-  "head": "bcc561afdf812eff00e2d7c1a069aec2a2c66694",
-  "base": "7d00b12d641b19a47efbb340d3472e001542f5c0",
-  "artifact": "mame-linux-clang-bcc561afdf812eff00e2d7c1a069aec2a2c66694",
-  "commit_message": "apple2common: debugger improvements (#15313)\n\n* apple2e/apple2gs: prevent various debugger side-effects\n* apple2e/c/gs: fix slot reads disabling Zip acceleration\n* laser128: fix floppy drive disabling Zip acceleration\n* apple2c3/4/p,laser128: fix advancing expansion RAM slinky address\n* apple2c,ace500: fix mouse IRQ resets\n* ace500: fix keyboard strobe reset\n* gameio: fix compeyes advancing x,y address\n\n* apple2gs: make C0xx I/O visible to the debugger\n* also skip FPI sync for fast registers, per GS Hardware Ref\n\n* apple2common: add/correct a few dasm symbols\n* add overloaded //c and IIgs names\n* add missing C06D TESTREG, C08B LCBANK1\n* fix typos, normalize whitespace\n\n* apple2common: add dasm for some missing opcodes\n* complete the simple modes: direct page, absolute, absolute long\n\n* apple2common: perf: skip slow JSL dasm indirection\n\n* apple2common: perf: binary search dasm symbols",
+  "head": "c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212",
+  "base": "bcc561afdf812eff00e2d7c1a069aec2a2c66694",
+  "artifact": "mame-linux-clang-c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212",
+  "commit_message": "pixtermu: Make the system boot and LCD/touchscreen work (#15220)\n\n* pixtermu: Split up the APB peripherals\n* pixtermu: Implement the LH79524 timer\n* pixtermu: Implement dummy SSP\n* pixtermu: Make it boot and LCD/TS work",
   "changed_files": [
-    "src/devices/bus/a2gameio/computereyes.cpp",
-    "src/mame/apple/apple2.cpp",
-    "src/mame/apple/apple2common.cpp",
-    "src/mame/apple/apple2common.h",
-    "src/mame/apple/apple2e.cpp",
-    "src/mame/apple/apple2gs.cpp"
+    "scripts/src/machine.lua",
+    "src/devices/machine/lh79524_timer.cpp",
+    "src/devices/machine/lh79524_timer.h",
+    "src/mame/mattel/pixtermu.cpp"
   ],
   "reasons": {
-    "ace100": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "ace1000": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "ace2200": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "ace500": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "albert": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "am100": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "am64": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "apple2": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "apple2c": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c0": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c0de": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c0fr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c0se": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c0uk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c3": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c3de": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c3fr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c3se": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c3uk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c4": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c4de": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c4fr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c4se": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2c4uk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2cde": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2cfr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2cp": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2cse": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2cuk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2e": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2ede": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2ee": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2eede": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2eefr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2ees": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2eese": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2eeuk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2efr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2ep": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2epde": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2epfr": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2epse": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2epuk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2ese": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2euk": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "apple2gs": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsmt": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsr0": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsr0p": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsr0p2": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsr1": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2gsr3p": [
-      "driver changed: src/mame/apple/apple2gs.cpp"
-    ],
-    "apple2jp": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "apple2p": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "apple2pe": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "basis108": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "cec2000": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "cece": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "cecg": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "ceci": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "cecm": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "craft2p": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "dodo": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "elppa": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "hkc8800a": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "ivelultr": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "las128e2": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "las128ex": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "laser128": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "laser128o": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "laser2c": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "maxxi": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "microeng": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "mprof3": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "prav82": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "prav8c": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "prav8m": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "space84": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "spectred": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "tk3000": [
-      "driver changed: src/mame/apple/apple2e.cpp"
-    ],
-    "uniap2en": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "uniap2pt": [
-      "driver changed: src/mame/apple/apple2.cpp"
-    ],
-    "zijini": [
-      "driver changed: src/mame/apple/apple2e.cpp"
+    "pixtermu": [
+      "driver changed: src/mame/mattel/pixtermu.cpp"
     ]
   },
   "machines": [
@@ -92598,6 +92350,38 @@
           "failure_reason": null,
           "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
           "artifact": "mame-linux-clang-57ddcb41eca6a0d0e48857c6952907794b7306cd"
+        }
+      }
+    },
+    {
+      "name": "pixtermu",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 23.928,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "machine has no emulated screen",
+          "revision": "bcc561afdf812eff00e2d7c1a069aec2a2c66694",
+          "artifact": "mame-linux-clang-bcc561afdf812eff00e2d7c1a069aec2a2c66694"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 60.644,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212",
+          "artifact": "mame-linux-clang-c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212"
         }
       }
     }
