@@ -42,6 +42,7 @@ def capture_machine(
     machine_dir.mkdir(parents=True, exist_ok=True)
 
     script = Path(__file__).with_name("capture.lua").resolve()
+    emulated_limit = machine.warmup_seconds + machine.press_seconds + machine.after_seconds + 5.0
     command = [
         str(mame), machine.name,
         "-autoboot_script", str(script),
@@ -51,6 +52,7 @@ def capture_machine(
         "-state_directory", str((machine_dir / "state").resolve()),
         "-snapview", "native", "-skip_gameinfo", "-noconfirm_quit",
         "-sound", "none", "-video", "none", "-nothrottle", "-noreadconfig",
+        "-seconds_to_run", str(emulated_limit),
         *machine.mame_args,
     ]
     if rompath:
