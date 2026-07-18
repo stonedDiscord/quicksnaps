@@ -1,43 +1,19 @@
 {
-  "generated_at": "2026-07-18T15:26:14.755884+00:00",
+  "generated_at": "2026-07-18T15:26:36.410054+00:00",
   "title": "MAME quick snaps",
-  "head": "9a20965ce119233c14d0664b10f5af6e99058402",
-  "base": "ebfb8a5eb7b4bfab786e445eb8d02fbb3833f4e4",
-  "artifact": "mame-linux-clang-9a20965ce119233c14d0664b10f5af6e99058402",
-  "commit_message": "commodore/plus4: Added Diag264 v0.97 kernal ROMs. [Curt Coder]\n\nmos7360: Fixed input clock handling. [Curt Coder]\n\nNew working software list items\n-------------------------------\nplus4_cart: Diag 264 (v0.97, PAL), Diag 264 (v0.97, NTSC) [Curt Coder]",
+  "head": "24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
+  "base": "9a20965ce119233c14d0664b10f5af6e99058402",
+  "artifact": "mame-linux-clang-24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
+  "commit_message": "sony/smc777_kbd.cpp: overhaul\n* rewrite all key mappings, and add missing keys;\n* add function key command overrides;\n* hookup CTRL modifier;\n* workaround multikey presses;\n* remove ten key handling: it's a separate port not worth supporting unless a MCU LLE dump ever surfaces;",
   "changed_files": [
-    "hash/plus4_cart.xml",
-    "src/devices/sound/mos7360.cpp",
-    "src/devices/sound/mos7360.h",
-    "src/mame/commodore/plus4.cpp"
+    "hash/smc777.xml",
+    "src/mame/sony/smc777.cpp",
+    "src/mame/sony/smc777_kbd.cpp",
+    "src/mame/sony/smc777_kbd.h"
   ],
   "reasons": {
-    "c116": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16_hu": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c16p": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c232": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "c264": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "plus4": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "plus4p": [
-      "driver changed: src/mame/commodore/plus4.cpp"
-    ],
-    "v364": [
-      "driver changed: src/mame/commodore/plus4.cpp"
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
     ]
   },
   "machines": [
@@ -14381,31 +14357,31 @@
       "name": "smc777",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "c331217dffc1f8efde2e5f0e162049e39dd8717d",
+      "revision": "24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.436,
+          "duration_seconds": 1.488,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "70725158b4e9d2e1230c0515faec754f9cee86a2",
-          "artifact": "mame-linux-clang-70725158b4e9d2e1230c0515faec754f9cee86a2"
+          "revision": "9a20965ce119233c14d0664b10f5af6e99058402",
+          "artifact": "mame-linux-clang-9a20965ce119233c14d0664b10f5af6e99058402"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.463,
+          "duration_seconds": 1.499,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "c331217dffc1f8efde2e5f0e162049e39dd8717d",
-          "artifact": "mame-linux-clang-c331217dffc1f8efde2e5f0e162049e39dd8717d"
+          "revision": "24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478",
+          "artifact": "mame-linux-clang-24db213fc1c5d0cf2ecb36adb6ba0ce74e5d7478"
         }
       }
     },
