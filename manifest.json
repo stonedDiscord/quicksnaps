@@ -1,110 +1,20 @@
 {
-  "generated_at": "2026-07-18T14:16:06.967191+00:00",
+  "generated_at": "2026-07-18T14:16:27.704484+00:00",
   "title": "MAME quick snaps",
-  "head": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
-  "base": "875355ef3796cda3f54c8dbfb87ff49ce17e3559",
-  "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
+  "head": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
+  "base": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
+  "artifact": "mame-linux-clang-241b58eb861e3f4649532da17c3bf84bfdb11ded",
   "changed_files": [
-    "scripts/src/video.lua",
-    "src/devices/video/st7735_lcdc.cpp",
-    "src/devices/video/st7735_lcdc.h",
-    "src/mame/handheld/generalplus_gpce4.cpp",
-    "src/mame/handheld/st2302u_bbl_rom.cpp",
-    "src/mame/handheld/st2302u_bbl_spi.cpp"
+    "src/mame/mame.lst",
+    "src/mame/yachiyo/atamanot.cpp",
+    "src/mame/yachiyo/ssingles.cpp"
   ],
   "reasons": {
-    "arcade10": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
+    "atamanot": [
+      "driver changed: src/mame/yachiyo/atamanot.cpp"
     ],
-    "bbl338": [
-      "driver changed: src/mame/handheld/st2302u_bbl_rom.cpp"
-    ],
-    "bbl380": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "class200": [
-      "driver changed: src/mame/handheld/st2302u_bbl_rom.cpp"
-    ],
-    "cutepet": [
-      "driver changed: src/mame/handheld/st2302u_bbl_rom.cpp"
-    ],
-    "dgun2953": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "digicolr": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "dphh8213": [
-      "driver changed: src/mame/handheld/st2302u_bbl_rom.cpp"
-    ],
-    "dphh8630": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "dphh8633": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "dphh8661": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "mapacman": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "mc_cb203": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "parcade": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "pg118": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "ppg118": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "qpet": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "ragc153": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "retro150": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "retro150a": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "rhhc152": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "siddr": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "supreme": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "table108": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "tagalaga": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "taspinv": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "taturtf": [
-      "driver changed: src/mame/handheld/generalplus_gpce4.cpp"
-    ],
-    "throwbck": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "touma560": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "touma568": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
-    ],
-    "toumapet": [
-      "driver changed: src/mame/handheld/st2302u_bbl_spi.cpp"
+    "ssingles": [
+      "driver changed: src/mame/yachiyo/ssingles.cpp"
     ]
   },
   "machines": [
@@ -15966,31 +15876,31 @@
     },
     {
       "name": "atamanot",
-      "status": "passed",
+      "status": "failed",
       "button": "1 Player Start",
-      "revision": "875355ef3796cda3f54c8dbfb87ff49ce17e3559",
+      "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 2.526,
+          "duration_seconds": 1.084,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ff4b93add70a581175aa24ac0357d666c0c1f284",
-          "artifact": "mame-linux-clang-ff4b93add70a581175aa24ac0357d666c0c1f284"
+          "revision": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
+          "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0"
         },
         "current": {
-          "status": "passed",
-          "duration_seconds": 3.17,
+          "status": "failed",
+          "duration_seconds": 0.573,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "875355ef3796cda3f54c8dbfb87ff49ce17e3559",
-          "artifact": "mame-linux-clang-875355ef3796cda3f54c8dbfb87ff49ce17e3559"
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
+          "artifact": "mame-linux-clang-241b58eb861e3f4649532da17c3bf84bfdb11ded"
         }
       }
     },
@@ -17048,29 +16958,29 @@
       "name": "ssingles",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "875355ef3796cda3f54c8dbfb87ff49ce17e3559",
+      "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 2.618,
+          "duration_seconds": 1.282,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "ff4b93add70a581175aa24ac0357d666c0c1f284",
-          "artifact": "mame-linux-clang-ff4b93add70a581175aa24ac0357d666c0c1f284"
+          "revision": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
+          "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 2.641,
+          "duration_seconds": 1.192,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "875355ef3796cda3f54c8dbfb87ff49ce17e3559",
-          "artifact": "mame-linux-clang-875355ef3796cda3f54c8dbfb87ff49ce17e3559"
+          "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
+          "artifact": "mame-linux-clang-241b58eb861e3f4649532da17c3bf84bfdb11ded"
         }
       }
     },
