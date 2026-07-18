@@ -1,15 +1,35 @@
 {
-  "generated_at": "2026-07-18T17:38:04.914310+00:00",
+  "generated_at": "2026-07-18T17:38:47.508020+00:00",
   "title": "MAME quick snaps",
-  "head": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
-  "base": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
-  "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
-  "commit_message": "machine/am9517a.cpp: Implemented V5x DMAU soft reset. [R. Belmont]\n- Fixes mpc2000xl reading SCSI CD-ROMs",
+  "head": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+  "base": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+  "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7",
+  "commit_message": "pipewire: remove PW_STREAM_FLAG_RT_PROCESS flag due to race condition (abuffer get & push)",
   "changed_files": [
-    "src/devices/machine/am9517a.cpp",
-    "src/devices/machine/am9517a.h"
+    "src/mame/namco/namcos21.cpp",
+    "src/mame/novag/sapphire.cpp",
+    "src/osd/modules/sound/pipewire_sound.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "chesstea": [
+      "driver changed: src/mame/novag/sapphire.cpp"
+    ],
+    "sapphire": [
+      "driver changed: src/mame/novag/sapphire.cpp"
+    ],
+    "sapphire2": [
+      "driver changed: src/mame/novag/sapphire.cpp"
+    ],
+    "winrun": [
+      "driver changed: src/mame/namco/namcos21.cpp"
+    ],
+    "winrun91": [
+      "driver changed: src/mame/namco/namcos21.cpp"
+    ],
+    "winrungp": [
+      "driver changed: src/mame/namco/namcos21.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -4963,31 +4983,31 @@
       "name": "winrun",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 13.941,
+          "duration_seconds": 9.824,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "b10481985243b9b596a5151d54f9fa92d3fb98a9",
-          "artifact": "mame-linux-clang-b10481985243b9b596a5151d54f9fa92d3fb98a9"
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 13.828,
+          "duration_seconds": 9.942,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
-          "artifact": "mame-linux-clang-d39e7ca85feaeb9fe909aafab8831e58b4d147a8"
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
         }
       }
     },
@@ -4995,31 +5015,31 @@
       "name": "winrun91",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.395,
+          "duration_seconds": 7.745,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "b10481985243b9b596a5151d54f9fa92d3fb98a9",
-          "artifact": "mame-linux-clang-b10481985243b9b596a5151d54f9fa92d3fb98a9"
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 11.703,
+          "duration_seconds": 7.735,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
-          "artifact": "mame-linux-clang-d39e7ca85feaeb9fe909aafab8831e58b4d147a8"
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
         }
       }
     },
@@ -5027,31 +5047,31 @@
       "name": "winrungp",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.795,
+          "duration_seconds": 8.085,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "b10481985243b9b596a5151d54f9fa92d3fb98a9",
-          "artifact": "mame-linux-clang-b10481985243b9b596a5151d54f9fa92d3fb98a9"
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 12.112,
+          "duration_seconds": 8.001,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "d39e7ca85feaeb9fe909aafab8831e58b4d147a8",
-          "artifact": "mame-linux-clang-d39e7ca85feaeb9fe909aafab8831e58b4d147a8"
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
         }
       }
     },
@@ -84352,6 +84372,102 @@
           "failure_reason": "machine has no emulated screen",
           "revision": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
           "artifact": "mame-linux-clang-cc5d6369f6e9c44155640b3a4342a8bf3c6e4839"
+        }
+      }
+    },
+    {
+      "name": "chesstea",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.756,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.902,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
+        }
+      }
+    },
+    {
+      "name": "sapphire",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.201,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.202,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
+        }
+      }
+    },
+    {
+      "name": "sapphire2",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.544,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+          "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.604,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "427696085b77dc0a03344bf5fd507523e9fd8ce7",
+          "artifact": "mame-linux-clang-427696085b77dc0a03344bf5fd507523e9fd8ce7"
         }
       }
     }
