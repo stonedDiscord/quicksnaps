@@ -1,138 +1,26 @@
 {
-  "generated_at": "2026-07-18T18:36:19.815445+00:00",
+  "generated_at": "2026-07-18T18:36:41.564935+00:00",
   "title": "MAME quick snaps",
-  "head": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
-  "base": "44532ba9c8eed7159ae00e95b2a910511386fc78",
-  "artifact": "mame-linux-clang-a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
-  "commit_message": "sega/megadriv_acbl.cpp: remove bus hack, fix contrambc boot",
+  "head": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+  "base": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
+  "artifact": "mame-linux-clang-e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+  "commit_message": "roland/roland_s50.cpp: Fix typo",
   "changed_files": [
-    "src/mame/excellent/es9606.cpp",
-    "src/mame/sega/megadriv_acbl.cpp",
-    "src/mame/taito/taitojc.cpp"
+    "src/mame/mame.lst",
+    "src/mame/roland/roland_s50.cpp"
   ],
   "reasons": {
-    "3in1mbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
+    "s330": [
+      "driver changed: src/mame/roland/roland_s50.cpp"
     ],
-    "aladmdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
+    "s50": [
+      "driver changed: src/mame/roland/roland_s50.cpp"
     ],
-    "barek2ch": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
+    "s550": [
+      "driver changed: src/mame/roland/roland_s50.cpp"
     ],
-    "barek2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mba": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barek3mbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "barekch": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "biohzdmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "bk3ssrmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "contrambc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "dangcurv": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dangcurvj": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dendego": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dendego2": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dendego23k": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dendegoa": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "dendegox": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "jparkmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "keirind2": [
-      "driver changed: src/mame/excellent/es9606.cpp"
-    ],
-    "landgear": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "landgeara": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "landgearj": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "landgearja": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "mickeycmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "mk3mdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "sidebs": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebs2": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebs2j": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebs2ja": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebs2u": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebsj": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebsja": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidebsjb": [
-      "driver changed: src/mame/taito/taitojc.cpp"
-    ],
-    "sidepmbc": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "sonic2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "sonic3mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "srmdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "srssf2mb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "ssf2mdb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
-    ],
-    "twinktmb": [
-      "driver changed: src/mame/sega/megadriv_acbl.cpp"
+    "w30": [
+      "driver changed: src/mame/roland/roland_s50.cpp"
     ]
   },
   "machines": [
@@ -105353,6 +105241,122 @@
           "failure_reason": null,
           "revision": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
           "artifact": "mame-linux-clang-a2cb3248826f0731e8ac3b862e39b3f8980a94c1"
+        }
+      }
+    },
+    {
+      "name": "s50",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.68,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
+          "artifact": "mame-linux-clang-a2cb3248826f0731e8ac3b862e39b3f8980a94c1"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.962,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+          "artifact": "mame-linux-clang-e336226395ec5b3820ffe469f0ad8ed3a438cbff"
+        }
+      }
+    },
+    {
+      "name": "s550",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.788,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
+          "artifact": "mame-linux-clang-a2cb3248826f0731e8ac3b862e39b3f8980a94c1"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.846,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+          "artifact": "mame-linux-clang-e336226395ec5b3820ffe469f0ad8ed3a438cbff"
+        }
+      }
+    },
+    {
+      "name": "w30",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.284,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "a2cb3248826f0731e8ac3b862e39b3f8980a94c1",
+          "artifact": "mame-linux-clang-a2cb3248826f0731e8ac3b862e39b3f8980a94c1"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.289,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+          "artifact": "mame-linux-clang-e336226395ec5b3820ffe469f0ad8ed3a438cbff"
+        }
+      }
+    },
+    {
+      "name": "s330",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.831,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
+          "artifact": "mame-linux-clang-e336226395ec5b3820ffe469f0ad8ed3a438cbff"
         }
       }
     }
