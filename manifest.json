@@ -1,17 +1,370 @@
 {
-  "generated_at": "2026-07-18T13:30:37.553896+00:00",
+  "generated_at": "2026-07-18T13:34:49.391536+00:00",
   "title": "MAME quick snaps",
-  "head": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
-  "base": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
-  "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b",
+  "head": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+  "base": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+  "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
   "changed_files": [
+    "src/devices/machine/pseudovia.cpp",
+    "src/devices/sound/asc.cpp",
+    "src/devices/sound/asc.h",
+    "src/mame/apple/macii.cpp",
+    "src/mame/apple/macquadra700.cpp",
     "src/mame/canon/x07.cpp",
-    "src/mame/canon/x07.h"
+    "src/mame/canon/x07.h",
+    "src/mame/igs/igs011.cpp",
+    "src/mame/igs/igs011_video.cpp",
+    "src/mame/igs/igs011_video.h",
+    "src/mame/jaleco/bnstars.cpp",
+    "src/mame/jaleco/megasys1.cpp",
+    "src/mame/jaleco/ms32.cpp",
+    "src/mame/roland/roland_cm32p.cpp",
+    "src/mame/roland/roland_r8.cpp"
   ],
   "reasons": {
+    "64street": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "64streetj": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "64streetja": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "akiss": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "astyanax": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "astyanaxa": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "avspirit": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "bbbxing": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "bigstrik": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "bnstars": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "bnstars1": [
+      "driver changed: src/mame/jaleco/bnstars.cpp"
+    ],
+    "chimerab": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "chimeraba": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "cm32p": [
+      "driver changed: src/mame/roland/roland_cm32p.cpp"
+    ],
+    "cybattlr": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "dbc": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "desertwr": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "drgnwrld": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv10c": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv11h": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv11ha": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv20j": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv21": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv21j": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv30": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "drgnwrldv40k": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "edf": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "edfa": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "edfb": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "edfbl": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "edfp": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "edfu": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "f1superb": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "gametngk": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "gratia": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "gratiaa": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "hachoo": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "hachooa": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "hachooj": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "hayaosi1": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "hayaosi2": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "hayaosi3": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "hayaosi3a": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "iganinju": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "iganinjub": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "inyourfa": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "jitsupro": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "kazan": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "kickoff": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "kickoffb": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "kirarast": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "lhb": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "lhb2": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "lhb2cpgs": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "lhb3": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "lhbv33c": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "lomakai": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "lordofk": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "lordofkb": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "lordofkbp": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "mac2fdhd": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "macii": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "maciicx": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "maciihmu": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "maciix": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "macqd700": [
+      "driver changed: src/mame/apple/macquadra700.cpp"
+    ],
+    "macqd900": [
+      "driver changed: src/mame/apple/macquadra700.cpp"
+    ],
+    "macqd950": [
+      "driver changed: src/mame/apple/macquadra700.cpp"
+    ],
+    "macse30": [
+      "driver changed: src/mame/apple/macii.cpp"
+    ],
+    "makaiden": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "monkelf": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "nkishusp": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "p47": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "p47a": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "p47aces": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "p47acesa": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "p47bl": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "p47j": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "p47je": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "peekaboo": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "peekaboou": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "phantasm": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "plusalph": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "r8": [
+      "driver changed: src/mame/roland/roland_r8.cpp"
+    ],
+    "r8m": [
+      "driver changed: src/mame/roland/roland_r8.cpp"
+    ],
+    "r8mk2": [
+      "driver changed: src/mame/roland/roland_r8.cpp"
+    ],
+    "rittam": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "rodland": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "rodlanda": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "rodlandj": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "rodlandjb": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "rodlandjb2": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "ryukobou": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "soldam": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "soldamj": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "stdragon": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "stdragona": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "stdragonb": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "suchie2": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "suchie2o": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "tetrisp": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "tp2m32": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
+    "tshingen": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "tshingena": [
+      "driver changed: src/mame/jaleco/megasys1.cpp"
+    ],
+    "tygn": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "vbowl": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "vbowlhk": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "vbowlj": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "wlcc": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "wpksocv2": [
+      "driver changed: src/mame/jaleco/ms32.cpp"
+    ],
     "x07": [
       "driver changed: src/mame/canon/x07.cpp",
       "driver changed: src/mame/canon/x07.h"
+    ],
+    "xymg": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "xymga": [
+      "driver changed: src/mame/igs/igs011.cpp"
+    ],
+    "igs011": [
+      "driver changed: src/mame/igs/igs011_video.cpp",
+      "driver changed: src/mame/igs/igs011_video.h"
     ]
   },
   "machines": [
@@ -215,17 +568,2425 @@
       "name": "x07",
       "status": "failed",
       "button": "P1 Button 1",
-      "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.538,
+          "duration_seconds": 0.549,
           "button": "P1 Button 1",
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
-          "revision": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
-          "artifact": "mame-linux-clang-85c922b3ba11698bf8c3123240ecee1e69cba6e4"
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.541,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "64street",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.596,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.55,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "64streetj",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.603,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.58,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "64streetja",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.647,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.585,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "akiss",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.581,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.584,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "astyanax",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.992,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.984,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "astyanaxa",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.964,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.001,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "avspirit",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.212,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.133,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "bbbxing",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.231,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.224,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "bigstrik",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.604,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.589,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "bnstars",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.577,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.566,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "bnstars1",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.676,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.674,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "chimerab",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.64,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.588,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "chimeraba",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.291,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.284,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "cm32p",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.548,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.55,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "cybattlr",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.606,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.606,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "dbc",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.545,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.554,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "desertwr",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.117,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.081,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrld",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.198,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.183,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv10c",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.19,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.236,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv11h",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.173,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.266,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv11ha",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.17,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.254,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv20j",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.201,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.274,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv21",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.201,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.222,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv21j",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.221,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.224,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv30",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.182,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.18,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "drgnwrldv40k",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.225,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.194,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edf",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.324,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.363,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edfa",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.324,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.352,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edfb",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.319,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.321,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edfbl",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.551,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.578,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edfp",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.028,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.097,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "edfu",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.332,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.329,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "f1superb",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.869,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.813,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "gametngk",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.351,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.329,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "gratia",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.075,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.089,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "gratiaa",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.092,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.074,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hachoo",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.055,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.077,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hachooa",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.034,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.069,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hachooj",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.114,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.071,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hayaosi1",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.251,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.231,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hayaosi2",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.129,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.154,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hayaosi3",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.15,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.171,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "hayaosi3a",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.919,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.89,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "iganinju",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.344,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.306,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "iganinjub",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.277,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.281,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "inyourfa",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.557,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.56,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "jitsupro",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.94,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.877,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "kazan",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.293,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.299,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "kickoff",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.858,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.855,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "kickoffb",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.933,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.909,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "kirarast",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.567,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lhb",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.56,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.559,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lhb2",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.551,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.567,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lhb2cpgs",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.542,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lhb3",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.541,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.554,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lhbv33c",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.543,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.547,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lomakai",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.696,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.698,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lordofk",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.959,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.99,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lordofkb",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.946,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.985,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "lordofkbp",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.043,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.977,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "mac2fdhd",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.57,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "macii",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.548,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.559,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "maciicx",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.558,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.56,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "maciihmu",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.556,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.558,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "maciix",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.556,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.574,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "macqd700",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.552,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.567,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "macqd900",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.557,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.563,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "macqd950",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.566,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.56,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "macse30",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.55,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "makaiden",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.69,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.691,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "monkelf",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.13,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.115,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "nkishusp",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.554,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.553,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.673,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.664,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47a",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.686,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.67,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47aces",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.22,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.191,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47acesa",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 2.203,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.21,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47bl",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.967,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.957,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47j",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.612,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.612,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "p47je",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.613,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.602,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "peekaboo",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.567,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.571,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "peekaboou",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.568,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.577,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "phantasm",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.06,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.029,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "plusalph",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.99,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.95,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "r8",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.55,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.549,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "r8m",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.553,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.556,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "r8mk2",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.543,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
         },
         "current": {
           "status": "failed",
@@ -234,8 +2995,764 @@
           "warmup_seconds": 10.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rittam",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.985,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
           "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
           "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.972,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rodland",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.998,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.99,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rodlanda",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.035,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.003,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rodlandj",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.995,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.995,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rodlandjb",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.975,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.983,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "rodlandjb2",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.972,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.99,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "ryukobou",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.55,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "soldam",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.031,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.042,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "soldamj",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.019,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.053,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "stdragon",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.644,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.622,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "stdragona",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.621,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.612,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "stdragonb",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.588,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.594,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "suchie2",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.561,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.563,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "suchie2o",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.567,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.565,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "tetrisp",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.693,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.705,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "tp2m32",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.985,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.984,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "tshingen",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.144,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.173,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "tshingena",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.181,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.167,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "tygn",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.09,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.132,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "vbowl",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.314,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.301,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "vbowlhk",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.303,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.301,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "vbowlj",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.275,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.341,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "wlcc",
+      "status": "passed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.053,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.047,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "wpksocv2",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.566,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.557,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "xymg",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.56,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.549,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "xymga",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.544,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.561,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
+        }
+      }
+    },
+    {
+      "name": "igs011",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.174,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.173,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "fa2deb3e353f680ade2db9c19b4e2619f9475aa3",
+          "artifact": "mame-linux-clang-fa2deb3e353f680ade2db9c19b4e2619f9475aa3"
         }
       }
     }
