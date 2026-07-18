@@ -1,26 +1,21 @@
 {
-  "generated_at": "2026-07-18T18:18:11.857024+00:00",
+  "generated_at": "2026-07-18T18:18:35.700988+00:00",
   "title": "MAME quick snaps",
-  "head": "87e1ede50020d7b1a2adc6517f55cf3c9aa96485",
-  "base": "114dc0944ce4bac081c99a5d961ae24e148d18c0",
-  "artifact": "mame-linux-clang-87e1ede50020d7b1a2adc6517f55cf3c9aa96485",
-  "commit_message": "namcos21: small tweak to analog controls",
+  "head": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
+  "base": "87e1ede50020d7b1a2adc6517f55cf3c9aa96485",
+  "artifact": "mame-linux-clang-57ddcb41eca6a0d0e48857c6952907794b7306cd",
+  "commit_message": "New systems marked not working\n------------------------------\nPro Bowl (v5.15) [Hammy]",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_de.cpp"
+    "src/mame/excellent/es9606.cpp",
+    "src/mame/mame.lst",
+    "src/mame/skeleton/probowl.cpp"
   ],
   "reasons": {
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
+    "keirind2": [
+      "driver changed: src/mame/excellent/es9606.cpp"
     ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "probowl": [
+      "driver changed: src/mame/skeleton/probowl.cpp"
     ]
   },
   "machines": [
@@ -87166,19 +87161,31 @@
       "name": "keirind2",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "b5753bd97f012154c678de25479894cc75888b7a",
+      "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
       "captures": {
         "current": {
           "status": "passed",
-          "duration_seconds": 1.448,
+          "duration_seconds": 1.414,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "b5753bd97f012154c678de25479894cc75888b7a",
-          "artifact": "mame-linux-clang-b5753bd97f012154c678de25479894cc75888b7a"
+          "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
+          "artifact": "mame-linux-clang-57ddcb41eca6a0d0e48857c6952907794b7306cd"
+        },
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.415,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "87e1ede50020d7b1a2adc6517f55cf3c9aa96485",
+          "artifact": "mame-linux-clang-87e1ede50020d7b1a2adc6517f55cf3c9aa96485"
         }
       }
     },
@@ -92299,6 +92306,26 @@
           "failure_reason": null,
           "revision": "ff6fea5156ac4d68f0fab3a957638eb6625aa354",
           "artifact": "mame-linux-clang-ff6fea5156ac4d68f0fab3a957638eb6625aa354"
+        }
+      }
+    },
+    {
+      "name": "probowl",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.822,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
+          "artifact": "mame-linux-clang-57ddcb41eca6a0d0e48857c6952907794b7306cd"
         }
       }
     }
