@@ -1,19 +1,15 @@
 {
-  "generated_at": "2026-07-18T17:37:45.276936+00:00",
+  "generated_at": "2026-07-18T17:38:04.914310+00:00",
   "title": "MAME quick snaps",
-  "head": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
-  "base": "9a2971e7572cf0dbfff2dffe7131e749b4b6b641",
-  "artifact": "mame-linux-clang-cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
-  "commit_message": "sequential/prophet5.cpp: Added handcrafted factory patch nvram. (#15306)\n\n* sequential/prophet5.cpp: Added handcrafted default patch nvram.\n\n* prophet5: Updated nvram.\nMax knob value corresponds to 120, not 127.\n\n* prophet5.cpp: Using BAD_DUMP for the nvram.",
+  "head": "aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+  "base": "cc5d6369f6e9c44155640b3a4342a8bf3c6e4839",
+  "artifact": "mame-linux-clang-aaacdb9962ca1bb7a0ff60b04ffc7c292f58981a",
+  "commit_message": "machine/am9517a.cpp: Implemented V5x DMAU soft reset. [R. Belmont]\n- Fixes mpc2000xl reading SCSI CD-ROMs",
   "changed_files": [
-    "src/mame/mame.lst",
-    "src/mame/sequential/prophet5.cpp"
+    "src/devices/machine/am9517a.cpp",
+    "src/devices/machine/am9517a.h"
   ],
-  "reasons": {
-    "prophet5r30": [
-      "driver changed: src/mame/sequential/prophet5.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
