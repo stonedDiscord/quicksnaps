@@ -17,8 +17,11 @@ def capture_machine(
     output: Path,
     rompath: str | None = None,
     timeout: float | None = None,
+    variant: str | None = None,
 ) -> dict[str, object]:
     machine_dir = output / "machines" / machine.name
+    if variant:
+        machine_dir /= variant
     if machine_dir.exists():
         shutil.rmtree(machine_dir)
     machine_dir.mkdir(parents=True, exist_ok=True)
@@ -86,7 +89,10 @@ def write_manifest(
     if merge_existing and (output / "manifest.json").is_file():
         existing = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
         previous = {item["name"]: item for item in existing.get("machines", [])}
-        previous.update({item["name"]: item for item in machines})
+        for item in machines:
+            old = previous.get(item["name"], {})
+            captures = {**old.get("captures", {}), **item.get("captures", {})}
+            previous[item["name"]] = {**old, **item, "captures": captures}
         machines = list(previous.values())
     manifest = {
         "generated_at": datetime.now(UTC).isoformat(),

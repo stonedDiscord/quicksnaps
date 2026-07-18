@@ -17,13 +17,20 @@ The default development binary is `../mame/mamed`.
 3. Direct driver changes select their machines. Configured glob rules cover
    shared devices and cores. An unmatched file selects every configured machine
    by default, prioritizing safety over runtime.
-4. MAME's Lua API schedules screenshots and an I/O port field press using
+4. Each selected machine is run with both the preceding artifact and the new
+   artifact. MAME's Lua API schedules screenshots and an I/O port field press using
    emulated time. It does not depend on window focus or desktop automation.
 5. A rolling static site is committed to this repository's `gh-pages` branch.
    Unaffected machine folders remain unchanged.
 
 The first publish captures every configured machine to establish a complete
 baseline, regardless of which files changed in that MAME commit.
+
+Each affected machine normally shows four images: before/after the configured
+input on the previous build, and before/after on the current build. This slowly
+builds the machine index as drivers are touched. Identical PNGs are left to Git's
+object deduplication. If the immediately preceding artifact has expired before
+it can be downloaded, the replay records a current-only capture for that range.
 
 Every Pages commit includes `MAME-SHA: <full SHA>` and `MAME-Artifact: <name>`.
 Even an artifact whose source range selects no machines creates an empty commit,

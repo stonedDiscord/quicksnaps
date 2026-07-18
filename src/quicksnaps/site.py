@@ -14,6 +14,8 @@ h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
 .status { padding: .2rem .55rem; border-radius: 99px; background: #234c35; }
 .failed { background: #642d34; } .reason { color: #b7c2cc; }
 .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.build { margin-top: 1.2rem; padding: 1rem; background: #171b20; border: 1px solid #303943; }
+.build h3 { margin-top: 0; overflow-wrap: anywhere; }
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
@@ -25,17 +27,40 @@ def build_site(output: Path) -> None:
     manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
     cards = []
     reasons = manifest.get("reasons", {})
+
+    def capture_html(name: str, machine: dict[str, object], variant: str, capture: dict[str, object]) -> str:
+        status = html.escape(str(capture.get("status", "failed")))
+        revision = html.escape(str(capture.get("revision", "unknown")))
+        artifact = html.escape(str(capture.get("artifact") or "local build"))
+        body = f'<p><span class="status {status}">{status}</span></p>'
+        if status == "passed":
+            button = html.escape(str(capture.get("button", machine.get("button", "input"))))
+            body = f'''<div class="shots">
+<figure><figcaption>Before input</figcaption><a href="machines/{name}/{variant}/before.png"><img loading="lazy" src="machines/{name}/{variant}/before.png" alt="{name} {variant} before input"></a></figure>
+<figure><figcaption>After {button}</figcaption><a href="machines/{name}/{variant}/after.png"><img loading="lazy" src="machines/{name}/{variant}/after.png" alt="{name} {variant} after input"></a></figure>
+</div>'''
+        return f'<section class="build"><h3>{variant.title()}: {revision}</h3><div class="meta">{artifact}</div>{body}</section>'
+
     for machine in manifest["machines"]:
         name = html.escape(str(machine["name"]))
         status = html.escape(str(machine["status"]))
         why = "; ".join(map(str, reasons.get(machine["name"], [])))
-        captured = html.escape(str(machine.get("revision", "unknown")))
-        shots = ""
-        if status == "passed":
+        captures = machine.get("captures", {})
+        if captures:
+            shots = "".join(
+                capture_html(name, machine, variant, captures[variant])
+                for variant in ("previous", "current") if variant in captures
+            )
+            captured = html.escape(str(captures.get("current", {}).get("revision", machine.get("revision", "unknown"))))
+        elif status == "passed":
+            captured = html.escape(str(machine.get("revision", "unknown")))
             shots = f'''<div class="shots">
 <figure><figcaption>Before input</figcaption><a href="machines/{name}/before.png"><img loading="lazy" src="machines/{name}/before.png" alt="{name} before input"></a></figure>
 <figure><figcaption>After {html.escape(str(machine['button']))}</figcaption><a href="machines/{name}/after.png"><img loading="lazy" src="machines/{name}/after.png" alt="{name} after input"></a></figure>
 </div>'''
+        else:
+            captured = html.escape(str(machine.get("revision", "unknown")))
+            shots = ""
         cards.append(f'''<article class="machine" data-name="{name}">
 <h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
 <div class="reason">Captured at {captured}. {html.escape(why)}</div>{shots}</article>''')
@@ -56,6 +81,15 @@ def build_site(output: Path) -> None:
 
     for machine in manifest["machines"]:
         directory = output / "machines" / str(machine["name"])
-        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(str(machine['name']))}</title><link rel="stylesheet" href="../../style.css"></head><body><a href="../../">&lt;- all machines</a><h1>{html.escape(str(machine['name']))}</h1><div class="shots"><figure><figcaption>Before input</figcaption><img src="before.png"></figure><figure><figcaption>After input</figcaption><img src="after.png"></figure></div><p><a href="mame.log">MAME log</a></p></body></html>'''
+        name = html.escape(str(machine["name"]))
+        captures = machine.get("captures", {})
+        if captures:
+            content = "".join(
+                capture_html(name, machine, variant, captures[variant]).replace(f'machines/{name}/', "")
+                for variant in ("previous", "current") if variant in captures
+            )
+        else:
+            content = '<div class="shots"><figure><figcaption>Before input</figcaption><img src="before.png"></figure><figure><figcaption>After input</figcaption><img src="after.png"></figure></div>'
+        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name}</title><link rel="stylesheet" href="../../style.css"></head><body><a href="../../">&lt;- all machines</a><h1>{name}</h1>{content}</body></html>'''
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(page, encoding="utf-8")

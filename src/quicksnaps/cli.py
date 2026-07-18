@@ -27,6 +27,13 @@ def _revision(repo: Path, revision: str) -> str:
 
 def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], list[str]]:
     config = load_config(args.config)
+    if args.selection_file:
+        selection = json.loads(args.selection_file.read_text(encoding="utf-8"))
+        selected = {str(name): list(map(str, reasons)) for name, reasons in selection["machines"].items()}
+        unknown = set(selected) - set(config.machine_names)
+        if unknown:
+            raise ValueError(f"selection references unknown configured machines: {sorted(unknown)}")
+        return selected, list(map(str, selection.get("changed_files", [])))
     if args.all:
         return {name: ["all machines requested"] for name in config.machine_names}, []
     if args.machine:
@@ -58,8 +65,21 @@ def cmd_capture(args: argparse.Namespace) -> int:
     results = []
     for name in selected:
         print(f"Capturing {name}...", flush=True)
-        result = capture_machine(args.mame, configured[name], args.output, args.rompath, args.timeout)
-        result["revision"] = head
+        result = capture_machine(
+            args.mame, configured[name], args.output, args.rompath, args.timeout, args.variant
+        )
+        revision = args.capture_revision or head
+        result["revision"] = revision
+        result["artifact"] = args.artifact
+        if args.variant:
+            capture = {key: value for key, value in result.items() if key != "name"}
+            result = {
+                "name": name,
+                "status": capture["status"],
+                "button": capture["button"],
+                "revision": revision,
+                "captures": {args.variant: capture},
+            }
         results.append(result)
         print(f"{name}: {result['status']}", flush=True)
 
@@ -97,6 +117,7 @@ def common_selection(parser: argparse.ArgumentParser) -> None:
     group.add_argument("--machine", action="append")
     parser.add_argument("--base")
     parser.add_argument("--head")
+    parser.add_argument("--selection-file", type=_path, help="reuse an affected command JSON result")
 
 
 def make_parser() -> argparse.ArgumentParser:
@@ -114,6 +135,8 @@ def make_parser() -> argparse.ArgumentParser:
     capture.add_argument("--timeout", type=float)
     capture.add_argument("--title", default="MAME quick snaps")
     capture.add_argument("--artifact", help="CI artifact name used for this capture")
+    capture.add_argument("--variant", choices=("previous", "current"))
+    capture.add_argument("--capture-revision", help="revision of the capture binary")
     capture.set_defaults(func=cmd_capture)
 
     site = subparsers.add_parser("site", help="rebuild HTML from an existing manifest")

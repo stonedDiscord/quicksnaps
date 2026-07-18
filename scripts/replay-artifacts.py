@@ -45,6 +45,7 @@ def order_artifacts(artifacts: list[Artifact], mame_repo: Path, current: str | N
 
 
 def download(artifact: Artifact, destination: Path, repository: str) -> Path:
+    destination.mkdir(parents=True, exist_ok=True)
     archive = destination / "artifact.zip"
     with archive.open("wb") as output:
         subprocess.run(
@@ -88,6 +89,8 @@ def main() -> int:
 
     artifacts = available_artifacts(args.repository)
     current = pages_head(args.pages)
+    available_by_sha = {artifact.sha: artifact for artifact in artifacts}
+    previous_artifact = available_by_sha.get(current) if current else None
     artifacts = order_artifacts(artifacts, args.mame_repo, current)
     if args.limit is not None:
         artifacts = artifacts[: args.limit]
@@ -99,24 +102,53 @@ def main() -> int:
         print(f"Processing {artifact.name}", flush=True)
         run("git", "-C", str(args.mame_repo), "cat-file", "-e", f"{artifact.sha}^{{commit}}")
         with tempfile.TemporaryDirectory(prefix="quicksnaps-artifact-") as temporary:
-            binary = download(artifact, Path(temporary), args.repository)
-            command = [
+            temporary_path = Path(temporary)
+            binary = download(artifact, temporary_path / "current", args.repository)
+            common = [
                 sys.executable, "-m", "quicksnaps.cli", "capture",
-                "--config", str(args.config), "--mame", str(binary),
-                "--mame-repo", str(args.mame_repo), "--head", artifact.sha,
-                "--output", str(args.pages), "--artifact", artifact.name,
+                "--config", str(args.config), "--mame-repo", str(args.mame_repo),
+                "--head", artifact.sha, "--output", str(args.pages),
             ]
             if current:
-                command.extend(("--base", current))
+                common.extend(("--base", current))
             else:
-                command.append("--all")
+                common.append("--all")
             if args.rompath:
-                command.extend(("--rompath", args.rompath))
-            run(*command)
+                common.extend(("--rompath", args.rompath))
+
+            selection = temporary_path / "selection.json"
+            affected = [
+                sys.executable, "-m", "quicksnaps.cli", "affected",
+                "--config", str(args.config), "--mame", str(binary),
+                "--mame-repo", str(args.mame_repo), "--head", artifact.sha,
+            ]
+            if current:
+                affected.extend(("--base", current))
+            else:
+                affected.append("--all")
+            selection.write_text(run(*affected, capture=True) + "\n", encoding="utf-8")
+            common.extend(("--selection-file", str(selection)))
+
+            if current and previous_artifact:
+                previous_binary = download(
+                    previous_artifact, temporary_path / "previous", args.repository
+                )
+                run(
+                    *common, "--mame", str(previous_binary), "--variant", "previous",
+                    "--capture-revision", current, "--artifact", previous_artifact.name,
+                )
+            elif current:
+                print(f"Previous artifact for {current} has expired; capturing current only", flush=True)
+
+            run(
+                *common, "--mame", str(binary), "--variant", "current",
+                "--capture-revision", artifact.sha, "--artifact", artifact.name,
+            )
         commit_pages(args.pages, artifact, current)
         if args.push_branch:
             run("git", "push", "origin", f"HEAD:{args.push_branch}", cwd=args.pages)
         current = artifact.sha
+        previous_artifact = artifact
     return 0
 
 
