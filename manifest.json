@@ -1,392 +1,19 @@
 {
-  "generated_at": "2026-07-18T14:51:14.839424+00:00",
+  "generated_at": "2026-07-18T14:51:34.169650+00:00",
   "title": "MAME quick snaps",
-  "head": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
-  "base": "25a10e0d600494370e4cb7e005cf88f4bf1b4b36",
-  "artifact": "mame-linux-clang-2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
+  "head": "66777c37dea0da72ae78f76be1e96d92606f402a",
+  "base": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
+  "artifact": "mame-linux-clang-66777c37dea0da72ae78f76be1e96d92606f402a",
   "changed_files": [
-    "src/mame/jaleco/cischeat.cpp",
-    "src/mame/jaleco/jaleco_road.cpp",
-    "src/mame/jaleco/jaleco_road.h",
-    "src/mame/jaleco/jaleco_zoomspr.cpp",
-    "src/mame/jaleco/jaleco_zoomspr.h",
-    "src/mame/jaleco/ms1_tmap.cpp",
-    "src/mame/jaleco/ms1_tmap.h",
-    "src/mame/jaleco/scudhamm.cpp",
-    "src/mame/kaneko/galpani3.cpp",
-    "src/mame/kaneko/jchan.cpp",
-    "src/mame/kaneko/kaneko_rlespr.cpp",
-    "src/mame/kaneko/kaneko_rlespr.h",
-    "src/mame/kaneko/suprnova.cpp",
-    "src/mame/kaneko/suprnova.h",
-    "src/mame/kaneko/suprnova_v.cpp",
-    "src/mame/konami/firebeat.cpp",
-    "src/mame/konami/k057714.cpp",
-    "src/mame/konami/k057714.h",
-    "src/mame/mame.lst",
-    "src/mame/shared/mahjong.cpp"
+    "src/mame/akai/akaivx600.cpp",
+    "src/mame/akai/mpc60.cpp"
   ],
   "reasons": {
-    "armchmp2": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "armchmp2o": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "armchmp2o2": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "bigrun": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "bigrunu": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "bm3": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "bm36th": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "bm37th": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "bm3core": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "bm3final": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "captflag": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "cischeat": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "cyvern": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "cyvernj": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "f1gpstar": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "f1gpstar2": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "f1gpstar3": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "f1gpstr2": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "galpani3": [
-      "driver changed: src/mame/kaneko/galpani3.cpp"
-    ],
-    "galpani3hk": [
-      "driver changed: src/mame/kaneko/galpani3.cpp"
-    ],
-    "galpani3j": [
-      "driver changed: src/mame/kaneko/galpani3.cpp"
-    ],
-    "galpani3k": [
-      "driver changed: src/mame/kaneko/galpani3.cpp"
-    ],
-    "galpani4": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpani4a": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpani4j": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpani4k": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanidx": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpaniex": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanis": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanisa": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanise": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanisj": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanisk": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpaniska": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpanisu": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpans2": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpans2a": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpans2j": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpans3": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpansu": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "galpansua": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "gutsn": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "jchan": [
-      "driver changed: src/mame/kaneko/jchan.cpp"
-    ],
-    "jchan2": [
-      "driver changed: src/mame/kaneko/jchan.cpp"
-    ],
-    "jchana": [
-      "driver changed: src/mame/kaneko/jchan.cpp"
-    ],
-    "jjparad2": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "jjparads": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "kbh": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "kbm": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "kbm2nd": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "kbm3rd": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "panicstr": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "popn4": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popn5": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popn6": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popn7": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popn8": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanm": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanm2": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanm2a": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanm2ja": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanm2jaa": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnanma": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnmt": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "popnmt2": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "ppd": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "ppp": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "ppp11": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "ppp1mp": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "puzzloop": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloopa": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloope": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloopj": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloopk": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloopkbl": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "puzzloopu": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "ryouran": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "ryourano": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "sarukani": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "scudhamm": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "scudhamma": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "sengekis": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "sengekisj": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "senknow": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "skns": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "teljan": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "vblokbrk": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "vblokbrka": [
-      "driver changed: src/mame/kaneko/suprnova.cpp",
-      "driver changed: src/mame/kaneko/suprnova.h"
-    ],
-    "vscaptfl": [
-      "driver changed: src/mame/jaleco/scudhamm.cpp"
-    ],
-    "wildplt": [
-      "driver changed: src/mame/jaleco/cischeat.cpp"
-    ],
-    "jaleco_road": [
-      "driver changed: src/mame/jaleco/jaleco_road.cpp",
-      "driver changed: src/mame/jaleco/jaleco_road.h"
-    ],
-    "jaleco_zoom_road": [
-      "driver changed: src/mame/jaleco/jaleco_road.cpp",
-      "driver changed: src/mame/jaleco/jaleco_road.h"
-    ],
-    "jaleco_zoomspr": [
-      "driver changed: src/mame/jaleco/jaleco_zoomspr.cpp",
-      "driver changed: src/mame/jaleco/jaleco_zoomspr.h"
-    ],
-    "jaleco_zoomspr_bigrun": [
-      "driver changed: src/mame/jaleco/jaleco_zoomspr.cpp",
-      "driver changed: src/mame/jaleco/jaleco_zoomspr.h"
-    ],
-    "ms1_tmap": [
-      "driver changed: src/mame/jaleco/ms1_tmap.cpp",
-      "driver changed: src/mame/jaleco/ms1_tmap.h"
-    ],
-    "kaneko_rlespr": [
-      "driver changed: src/mame/kaneko/kaneko_rlespr.cpp",
-      "driver changed: src/mame/kaneko/kaneko_rlespr.h"
-    ],
-    "firebeat_spectrum_analyzer": [
-      "driver changed: src/mame/konami/firebeat.cpp"
-    ],
-    "k057714": [
-      "driver changed: src/mame/konami/k057714.cpp",
-      "driver changed: src/mame/konami/k057714.h"
-    ],
-    "mahjong_panel_connector": [
-      "driver changed: src/mame/shared/mahjong.cpp"
-    ],
-    "mahjong_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp"
-    ],
-    "mahjong_medal_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp"
-    ],
-    "hanafuda_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp"
-    ],
-    "hanafuda_medal_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp"
-    ],
-    "hanaroku_panel": [
-      "driver changed: src/mame/shared/mahjong.cpp"
+    "mpc60": [
+      "driver changed: src/mame/akai/mpc60.cpp"
+    ],
+    "vx600": [
+      "driver changed: src/mame/akai/akaivx600.cpp"
     ]
   },
   "machines": [
@@ -33141,6 +32768,66 @@
           "failure_reason": "galpanica         Gals Panic (unprotected)                                            (Kaneko, 1990)",
           "revision": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
           "artifact": "mame-linux-clang-2e34ae2f20de1e0bfcd2c888859af7ae31d938eb"
+        }
+      }
+    },
+    {
+      "name": "mpc60",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "66777c37dea0da72ae78f76be1e96d92606f402a",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.564,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
+          "artifact": "mame-linux-clang-2e34ae2f20de1e0bfcd2c888859af7ae31d938eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.57,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "66777c37dea0da72ae78f76be1e96d92606f402a",
+          "artifact": "mame-linux-clang-66777c37dea0da72ae78f76be1e96d92606f402a"
+        }
+      }
+    },
+    {
+      "name": "vx600",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "66777c37dea0da72ae78f76be1e96d92606f402a",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.555,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "2e34ae2f20de1e0bfcd2c888859af7ae31d938eb",
+          "artifact": "mame-linux-clang-2e34ae2f20de1e0bfcd2c888859af7ae31d938eb"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.566,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "66777c37dea0da72ae78f76be1e96d92606f402a",
+          "artifact": "mame-linux-clang-66777c37dea0da72ae78f76be1e96d92606f402a"
         }
       }
     }
