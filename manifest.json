@@ -1,22 +1,29 @@
 {
-  "generated_at": "2026-07-18T18:58:46.582097+00:00",
+  "generated_at": "2026-07-18T19:00:00.121298+00:00",
   "title": "MAME quick snaps",
-  "head": "e0277efdfa4373af518716ad792b3aa17c563eeb",
-  "base": "ccfda00f541bacbe8cdd449a9649e73268c1a581",
-  "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb",
-  "commit_message": "taito/gunbustr.cpp: Converted analog inputs to use ADC device, removed IRQ 4 hack. (#15327)",
+  "head": "58d60e7c86e09f555ef5afd93057017888499a69",
+  "base": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+  "artifact": "mame-linux-clang-58d60e7c86e09f555ef5afd93057017888499a69",
+  "commit_message": "hash: consistency for AD&D: Pool of Radiance",
   "changed_files": [
-    "src/mame/taito/gunbustr.cpp"
+    "hash/amigaocs_flop.xml",
+    "hash/apple2_flop_misc.xml",
+    "hash/ibm5150.xml",
+    "hash/nes.xml",
+    "hash/pc98.xml",
+    "hash/vgmplay.xml",
+    "src/devices/video/pc_vga_trident.h",
+    "src/mame/ice/calchase.cpp"
   ],
   "reasons": {
-    "gunbustr": [
-      "driver changed: src/mame/taito/gunbustr.cpp"
+    "calchase": [
+      "driver changed: src/mame/ice/calchase.cpp"
     ],
-    "gunbustrj": [
-      "driver changed: src/mame/taito/gunbustr.cpp"
+    "eggsplc": [
+      "driver changed: src/mame/ice/calchase.cpp"
     ],
-    "gunbustru": [
-      "driver changed: src/mame/taito/gunbustr.cpp"
+    "hostinv": [
+      "driver changed: src/mame/ice/calchase.cpp"
     ]
   },
   "machines": [
@@ -109093,6 +109100,102 @@
           "failure_reason": null,
           "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
           "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+        }
+      }
+    },
+    {
+      "name": "calchase",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 26.99,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 27.883,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+          "artifact": "mame-linux-clang-58d60e7c86e09f555ef5afd93057017888499a69"
+        }
+      }
+    },
+    {
+      "name": "eggsplc",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 26.518,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 28.065,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+          "artifact": "mame-linux-clang-58d60e7c86e09f555ef5afd93057017888499a69"
+        }
+      }
+    },
+    {
+      "name": "hostinv",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 26.476,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "e0277efdfa4373af518716ad792b3aa17c563eeb",
+          "artifact": "mame-linux-clang-e0277efdfa4373af518716ad792b3aa17c563eeb"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 28.613,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "58d60e7c86e09f555ef5afd93057017888499a69",
+          "artifact": "mame-linux-clang-58d60e7c86e09f555ef5afd93057017888499a69"
         }
       }
     }
