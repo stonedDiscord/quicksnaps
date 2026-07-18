@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-07-18T13:30:20.399957+00:00",
+  "generated_at": "2026-07-18T13:30:37.553896+00:00",
   "title": "MAME quick snaps",
-  "head": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
-  "base": "31db58bbe0451a81458998bda8ae97308d5948ee",
-  "artifact": "mame-linux-clang-85c922b3ba11698bf8c3123240ecee1e69cba6e4",
+  "head": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+  "base": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
+  "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b",
   "changed_files": [
-    "src/lib/netlist/build/create_devinc.py",
-    "src/lib/netlist/generated/nld_devinc.h",
-    "src/lib/netlist/macro/nlm_ttl74xx_lib.cpp",
-    "src/lib/netlist/nl_setup.cpp",
-    "src/lib/netlist/nl_setup.h",
-    "src/lib/netlist/prg/nltool.cpp"
+    "src/mame/canon/x07.cpp",
+    "src/mame/canon/x07.h"
   ],
-  "reasons": {},
+  "reasons": {
+    "x07": [
+      "driver changed: src/mame/canon/x07.cpp",
+      "driver changed: src/mame/canon/x07.h"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -207,6 +208,34 @@
           "press_seconds": 0.25,
           "revision": "31db58bbe0451a81458998bda8ae97308d5948ee",
           "artifact": "mame-linux-clang-31db58bbe0451a81458998bda8ae97308d5948ee"
+        }
+      }
+    },
+    {
+      "name": "x07",
+      "status": "failed",
+      "button": "P1 Button 1",
+      "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.538,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "85c922b3ba11698bf8c3123240ecee1e69cba6e4",
+          "artifact": "mame-linux-clang-85c922b3ba11698bf8c3123240ecee1e69cba6e4"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.546,
+          "button": "P1 Button 1",
+          "warmup_seconds": 10.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "revision": "879a36f1276e3f95addf71821b603bfdacf0ec9b",
+          "artifact": "mame-linux-clang-879a36f1276e3f95addf71821b603bfdacf0ec9b"
         }
       }
     }
