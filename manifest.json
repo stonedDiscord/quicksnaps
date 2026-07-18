@@ -1,190 +1,83 @@
 {
-  "generated_at": "2026-07-18T17:44:51.629828+00:00",
+  "generated_at": "2026-07-18T17:45:27.951396+00:00",
   "title": "MAME quick snaps",
-  "head": "ff080c3a8811557fd5467aed93c390bd680f8354",
-  "base": "b5753bd97f012154c678de25479894cc75888b7a",
-  "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354",
-  "commit_message": "nec/piet1.cpp: fix ROMREGION (CPU is not 16-bit), hookup irq source, avoid going in sleep mode",
+  "head": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+  "base": "ff080c3a8811557fd5467aed93c390bd680f8354",
+  "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c",
+  "commit_message": "cdi: fix crashes after (de)interlacing was added",
   "changed_files": [
-    "src/mame/jaleco/megasys1.cpp",
-    "src/mame/nec/pc88va_v.cpp",
-    "src/mame/nec/pc98ha.cpp",
-    "src/mame/nec/piet1.cpp"
+    "src/mame/philips/cdi.cpp",
+    "src/mame/philips/mcd212.cpp"
   ],
   "reasons": {
-    "64street": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "cdi490a": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "64streetj": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "cdi910": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "64streetja": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "cdibios": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "astyanax": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "cdimono1": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "astyanaxa": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "cdimono2": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "avspirit": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "gpi1200": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "bigstrik": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "chimerab": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard2": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "chimeraba": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard2_22": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "cybattlr": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard3": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edf": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard3_32": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edfa": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard3a": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edfb": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard4": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edfbl": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard4_40": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edfp": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard4_41": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "edfu": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard4cz": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "hachoo": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard_10": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "hachooa": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard_12": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "hachooj": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizard_17": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "hayaosi1": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizardff": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "iganinju": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizardi": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "iganinjub": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizardi_12": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ],
-    "inyourfa": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "jitsupro": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "kazan": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "kickoff": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "kickoffb": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "lomakai": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "lordofk": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "lordofkb": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "lordofkbp": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "makaiden": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "monkelf": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "p47": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "p47a": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "p47bl": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "p47j": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "p47je": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "pc98ha": [
-      "driver changed: src/mame/nec/pc98ha.cpp"
-    ],
-    "pc98lt": [
-      "driver changed: src/mame/nec/pc98ha.cpp"
-    ],
-    "peekaboo": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "peekaboou": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "phantasm": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "piet1": [
-      "driver changed: src/mame/nec/piet1.cpp"
-    ],
-    "plusalph": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rittam": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rodland": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rodlanda": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rodlandj": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rodlandjb": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "rodlandjb2": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "soldam": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "soldamj": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "stdragon": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "stdragona": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "stdragonb": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "tshingen": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
-    ],
-    "tshingena": [
-      "driver changed: src/mame/jaleco/megasys1.cpp"
+    "quizardi_17": [
+      "driver changed: src/mame/philips/cdi.cpp"
     ]
   },
   "machines": [
@@ -87427,6 +87320,742 @@
           "failure_reason": null,
           "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
           "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        }
+      }
+    },
+    {
+      "name": "cdi490a",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.009,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 2.859,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "cdi910",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 4.173,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input skipped: 1 Player Start not available",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.185,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "cdibios",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.454,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Read callback bound to non-existent I/O port MOUSEBTN of device : (CD-i (Mono-I) (PAL) BIOS)",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.255,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Read callback bound to non-existent I/O port MOUSEBTN of device : (CD-i (Mono-I) (PAL) BIOS)",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "cdimono1",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.934,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.845,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "cdimono2",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 6.225,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input skipped: 1 Player Start not available",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.104,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "gpi1200",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 1.864,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 1.555,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.544,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.258,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard2",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.164,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.424,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard2_22",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 6.5,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 6.295,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard3",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.226,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.15,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard3_32",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.233,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.434,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard3a",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.312,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.549,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard4",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.029,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.085,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard4_40",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.044,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.954,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard4_41",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.074,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.044,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard4cz",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.946,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.888,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard_10",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.905,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.997,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard_12",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.932,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.906,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizard_17",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.879,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.896,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizardff",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 5.328,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 5.276,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizardi",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.833,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.894,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizardi_12",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.915,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.902,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "quizardi_17",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 0.87,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "ff080c3a8811557fd5467aed93c390bd680f8354",
+          "artifact": "mame-linux-clang-ff080c3a8811557fd5467aed93c390bd680f8354"
+        },
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.804,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
         }
       }
     }
