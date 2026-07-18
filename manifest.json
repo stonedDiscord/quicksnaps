@@ -1,17 +1,58 @@
 {
-  "generated_at": "2026-07-18T14:19:58.503814+00:00",
+  "generated_at": "2026-07-18T14:20:18.202221+00:00",
   "title": "MAME quick snaps",
-  "head": "2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
-  "base": "c01cc03f03ec15edd0c9a67cfb654bca75810225",
-  "artifact": "mame-linux-clang-2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
+  "head": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+  "base": "2f6332d2dd858c7a9fb2d396a3d6a47cf5942495",
+  "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
   "changed_files": [
-    "hash/smc777.xml",
-    "src/lib/formats/d88_dsk.cpp",
-    "src/mame/sony/smc777.cpp"
+    "src/mame/gaelco/scalextric.cpp",
+    "src/mame/mame.lst"
   ],
   "reasons": {
-    "smc777": [
-      "driver changed: src/mame/sony/smc777.cpp"
+    "scxam": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxen": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxena": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxfr": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxfra": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxgr": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxit": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxita": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxpt": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxsp": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxspa": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxspb": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxspc": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxspd": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
+    ],
+    "scxus": [
+      "driver changed: src/mame/gaelco/scalextric.cpp"
     ]
   },
   "machines": [
@@ -17942,6 +17983,291 @@
           "failure_reason": null,
           "revision": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
           "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0"
+        }
+      }
+    },
+    {
+      "name": "scxam",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.334,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxen",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.653,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxena",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.509,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxfr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.312,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxfra",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.546,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxgr",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.099,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxit",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.834,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxita",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.38,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxpt",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.659,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxsp",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.759,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxspa",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.518,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxspb",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 1.604,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxspc",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.851,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxspd",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.829,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
+        }
+      }
+    },
+    {
+      "name": "scxus",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.802,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "b8e2cd3d010b16b207e0e9f25c8a31d6b7968284",
+          "artifact": "mame-linux-clang-b8e2cd3d010b16b207e0e9f25c8a31d6b7968284"
         }
       }
     }
