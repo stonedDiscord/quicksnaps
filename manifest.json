@@ -1,1060 +1,25 @@
 {
-  "generated_at": "2026-07-18T18:25:09.179115+00:00",
+  "generated_at": "2026-07-18T18:25:40.369168+00:00",
   "title": "MAME quick snaps",
-  "head": "f60417251c9c9d492d309a62f95e98b377b26187",
-  "base": "c2ffdd5ec1b13c28c4e36049eee879d1b3fb7212",
-  "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187",
-  "commit_message": "New systems marked not working\n------------------------------\nPK Zhiwang [SongJi]\nWu Hujiang Jiaqiang Ban [SongJi]\n\nNew clones marked not working\n-----------------------------\nNew Lucky 8 Lines (set 22, W-4 with MC68705 MCU) [Hammy]\nNew Lucky 8 Lines (set 23, W-4) [Hammy]",
+  "head": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+  "base": "f60417251c9c9d492d309a62f95e98b377b26187",
+  "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea",
+  "commit_message": "excellent/es9606.cpp: hookup Imagetek VDP, hookup basic inputs",
   "changed_files": [
-    "src/mame/igs/goldstar.cpp",
-    "src/mame/mame.lst",
-    "src/mame/skeleton/lanmao.cpp",
-    "src/mame/skeleton/probowl.cpp"
+    "hash/p2000_cart.xml",
+    "hash/p2000_cass.xml",
+    "src/mame/excellent/es9606.cpp",
+    "src/mame/philips/p2000t.cpp"
   ],
   "reasons": {
-    "3cdpoker": [
-      "driver changed: src/mame/igs/goldstar.cpp"
+    "keirind2": [
+      "driver changed: src/mame/excellent/es9606.cpp"
     ],
-    "3cdpokera": [
-      "driver changed: src/mame/igs/goldstar.cpp"
+    "p2000m": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ],
-    "alienatt": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "amaztsk": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalhs": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalhsa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalhsb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalhsc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalw": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "animalwbl": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "aplan": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "bingowng": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "bingownga": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "bonusch": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "bonuscha": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "carb2002": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "carb2003": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb2": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3f": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3g": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3h": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3i": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3j": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3micro": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cb3s51": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cbaai": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cbonus": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cherry96": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cherry96a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cherry98": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cherry98a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chry10": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chryangl": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chryangla": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chryanglb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chrygld": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chryglda": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "chthree": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cll": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "clla": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cllb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cm1codar": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cm1codara": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cm1codarb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cm1spa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast91": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97bl16": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97bl18": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast97i": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast99": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast99b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast99c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast99d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmast99hc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmaster": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterbv": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterd": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmastere": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterf": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterg": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterh": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasteri": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterj": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterk": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterl": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasterm": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmastern": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmasteroid": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmezspin": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmezspina": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmezspinb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmfb55": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmfun": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmpacman": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmpacmana": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmpacmanb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmpap": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetris": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrisa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrisb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrisc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrisd": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrise": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetrisf": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmtetriskr": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv4": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv4a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv4zg": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv4zga": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv801": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmv823": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cmwm": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "crazybon": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "crazybona": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "crazybonb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cutyline": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cutylinea": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cutylineb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "cutylinec": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "eldoraddoa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "eldoraddoab": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "eldoraddoac": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "f16s8l": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fb2010": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fb2010a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "feverch": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fevercha": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "feverchtw": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "feverchw4": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_1000": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_2000": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_2k16": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_3121": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_500": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs01": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs02": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs03": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs04": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs05": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs06": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs07": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs08": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs09": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs10": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs11": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs12": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs13": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs14": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs15": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs16": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs17": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs18": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs19": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs20": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs21": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs22": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs23": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs24": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs25": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs26": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs27": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs28": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs29": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs30": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs31": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs32": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs33": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs34": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs35": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs36": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs37": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs38": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_50_gs39": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_tw": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "fl7_twa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "goldfrui": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "goldstar": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "goldstbl": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "goldstbla": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "gregular": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "halltsk": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "hamhouse": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "hamhouse9": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "jkrmast": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "jkrmasta": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "jkrmastb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "jkrmastc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "jpknight": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "kkotnoli": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinr": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinra": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinrb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinrc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinrd": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ladylinre": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lanmao": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "ll3": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ll3f": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lonestar": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lonestara": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8f": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8g": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8h": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8i": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8j": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8k": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8l": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8m": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8n": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8o": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8p": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8q": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8r": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8s": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8t": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8tet": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8u": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8v": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8w": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8x": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "lucky8y": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "luckybar": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "luckylad": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "magodds": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "magoddsa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "magoddsb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "magoddsc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "magoddsd": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "match98": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "mbs2euro": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "megaline": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "missbingo": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "missbingoc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "moonlght": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "moonlghta": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "moonlghtb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "moonlghtc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "msaiche": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "mtonic2": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96f": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96g": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96h": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96i": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96j": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96k": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96l": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nc96txt": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ncb3": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nd8lines": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96f": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96g": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96h": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96i": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96j": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96k": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96l": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96m": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96se": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96sea": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96seb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96sec": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfb96txt": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfm": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "nfma": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "noved": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8lines": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linesa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linew": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linewa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linewb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linewc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ns8linewd": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "packsystem": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "panda2": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "pkrmast": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "pkrmasta": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "pkzw": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "pokonl97": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "probowl": [
-      "driver changed: src/mame/skeleton/probowl.cpp"
-    ],
-    "reelmagic": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "reelmagica": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "rm_7bonus": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "rm_7bonusa": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "rolling": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "roypok96": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "roypok96a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "roypok96b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "roypok96c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "schery97": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "schery97a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "scmaster": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "scmastera": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skdelux2k": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skdelux99": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skill98": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skillch": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skillcha": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skillchb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skillmst": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "skillmsta": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "special7": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "special7a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "special7b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "srmagic": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "star100": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "super7": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "super9": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "super972": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "super9a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "superdrg": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "tcl": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99b": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99c": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99d": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99e": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "texas99hc": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "tonypok": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "top7": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "top7a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "ttactoe": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "tzwang": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "unkch1": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "unkch2": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "unkch3": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "unkch4": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "war3cb": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "wcat": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "wcat3": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "wcat3a": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "wcherry": [
-      "driver changed: src/mame/igs/goldstar.cpp"
-    ],
-    "whujiang": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
-    ],
-    "whujijqb": [
-      "driver changed: src/mame/skeleton/lanmao.cpp"
+    "p2000t": [
+      "driver changed: src/mame/philips/p2000t.cpp"
     ]
   },
   "machines": [
@@ -71634,31 +70599,31 @@
       "name": "p2000m",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "114dc0944ce4bac081c99a5d961ae24e148d18c0",
+      "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.156,
+          "duration_seconds": 0.842,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "a256c9a038198adaf986b9309fb1818ae7fb1114",
-          "artifact": "mame-linux-clang-a256c9a038198adaf986b9309fb1818ae7fb1114"
+          "revision": "f60417251c9c9d492d309a62f95e98b377b26187",
+          "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 0.852,
+          "duration_seconds": 0.935,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "114dc0944ce4bac081c99a5d961ae24e148d18c0",
-          "artifact": "mame-linux-clang-114dc0944ce4bac081c99a5d961ae24e148d18c0"
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
         }
       }
     },
@@ -71666,31 +70631,31 @@
       "name": "p2000t",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "114dc0944ce4bac081c99a5d961ae24e148d18c0",
+      "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 2.13,
+          "duration_seconds": 3.601,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "a256c9a038198adaf986b9309fb1818ae7fb1114",
-          "artifact": "mame-linux-clang-a256c9a038198adaf986b9309fb1818ae7fb1114"
+          "revision": "f60417251c9c9d492d309a62f95e98b377b26187",
+          "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 3.686,
+          "duration_seconds": 3.656,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "114dc0944ce4bac081c99a5d961ae24e148d18c0",
-          "artifact": "mame-linux-clang-114dc0944ce4bac081c99a5d961ae24e148d18c0"
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
         }
       }
     },
@@ -88250,31 +87215,31 @@
       "name": "keirind2",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
+      "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
       "captures": {
         "current": {
           "status": "passed",
-          "duration_seconds": 1.414,
+          "duration_seconds": 3.461,
           "button": "1 Player Start",
-          "button_applied": false,
+          "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "57ddcb41eca6a0d0e48857c6952907794b7306cd",
-          "artifact": "mame-linux-clang-57ddcb41eca6a0d0e48857c6952907794b7306cd"
+          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
         },
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.415,
+          "duration_seconds": 1.428,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "87e1ede50020d7b1a2adc6517f55cf3c9aa96485",
-          "artifact": "mame-linux-clang-87e1ede50020d7b1a2adc6517f55cf3c9aa96485"
+          "revision": "f60417251c9c9d492d309a62f95e98b377b26187",
+          "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187"
         }
       }
     },
