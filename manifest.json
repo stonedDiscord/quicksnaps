@@ -1,48 +1,22 @@
 {
-  "generated_at": "2026-07-18T15:32:05.683623+00:00",
+  "generated_at": "2026-07-18T15:32:26.481216+00:00",
   "title": "MAME quick snaps",
-  "head": "032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
-  "base": "74bed4bcbd8852267f62b2e050ee8d971cca3196",
-  "artifact": "mame-linux-clang-032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
-  "commit_message": "namcos21_c67: small improvement to sprite layer 0 priority",
+  "head": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+  "base": "032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
+  "artifact": "mame-linux-clang-7fb66bceb6c981eb5708f88afa77bc61457341a0",
+  "commit_message": "Sanyo phc25 - fix VBL interrupt timing and VBL polarity in port $40 (#15265)",
   "changed_files": [
-    "src/mame/namco/namco_c148.cpp",
-    "src/mame/namco/namco_c148.h",
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_3d.cpp",
-    "src/mame/namco/namcos21_3d.h",
-    "src/mame/namco/namcos21_c67.cpp"
+    "src/mame/sanyo/phc25.cpp"
   ],
   "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "map1010": [
+      "driver changed: src/mame/sanyo/phc25.cpp"
     ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
+    "phc25": [
+      "driver changed: src/mame/sanyo/phc25.cpp"
     ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "winrun": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrun91": [
-      "driver changed: src/mame/namco/namcos21.cpp"
-    ],
-    "winrungp": [
-      "driver changed: src/mame/namco/namcos21.cpp"
+    "phc25j": [
+      "driver changed: src/mame/sanyo/phc25.cpp"
     ]
   },
   "machines": [
@@ -40216,6 +40190,102 @@
           "failure_reason": null,
           "revision": "b70b33acaf906ba6f79b59e53cf3a70c74bc3587",
           "artifact": "mame-linux-clang-b70b33acaf906ba6f79b59e53cf3a70c74bc3587"
+        }
+      }
+    },
+    {
+      "name": "map1010",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.836,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
+          "artifact": "mame-linux-clang-032b35e2dcb9eff47aaf01bfb134ae44af0762ca"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.887,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+          "artifact": "mame-linux-clang-7fb66bceb6c981eb5708f88afa77bc61457341a0"
+        }
+      }
+    },
+    {
+      "name": "phc25",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.817,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
+          "artifact": "mame-linux-clang-032b35e2dcb9eff47aaf01bfb134ae44af0762ca"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.881,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+          "artifact": "mame-linux-clang-7fb66bceb6c981eb5708f88afa77bc61457341a0"
+        }
+      }
+    },
+    {
+      "name": "phc25j",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 0.79,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "032b35e2dcb9eff47aaf01bfb134ae44af0762ca",
+          "artifact": "mame-linux-clang-032b35e2dcb9eff47aaf01bfb134ae44af0762ca"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 0.797,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "7fb66bceb6c981eb5708f88afa77bc61457341a0",
+          "artifact": "mame-linux-clang-7fb66bceb6c981eb5708f88afa77bc61457341a0"
         }
       }
     }
