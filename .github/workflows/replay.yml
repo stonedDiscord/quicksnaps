@@ -39,12 +39,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Self-hosted runners retain sibling directories from failed jobs.
+          git -C quicksnaps worktree remove --force "$GITHUB_WORKSPACE/pages" 2>/dev/null || true
+          git -C quicksnaps worktree prune
+          rm -rf -- "$GITHUB_WORKSPACE/pages"
           if git -C quicksnaps ls-remote --exit-code --heads origin "$PAGES_BRANCH" >/dev/null 2>&1; then
             git -C quicksnaps fetch origin "$PAGES_BRANCH"
-            git -C quicksnaps worktree add ../pages "origin/$PAGES_BRANCH"
+            git -C quicksnaps worktree add "$GITHUB_WORKSPACE/pages" "origin/$PAGES_BRANCH"
             git -C pages switch -C "$PAGES_BRANCH"
           else
-            git -C quicksnaps worktree add --detach ../pages
+            git -C quicksnaps worktree add --detach "$GITHUB_WORKSPACE/pages"
             git -C pages switch --orphan "$PAGES_BRANCH"
             git -C pages rm -rf --ignore-unmatch .
             git -C pages clean -fdx
