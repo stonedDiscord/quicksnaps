@@ -46,7 +46,8 @@ jobs:
           else
             git -C quicksnaps worktree add --detach ../pages
             git -C pages switch --orphan "$PAGES_BRANCH"
-            git -C pages rm -rf .
+            git -C pages rm -rf --ignore-unmatch .
+            git -C pages clean -fdx
           fi
       - name: Install quicksnaps
         run: python3 -m pip install ./quicksnaps
