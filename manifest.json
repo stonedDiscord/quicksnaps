@@ -1,83 +1,16 @@
 {
-  "generated_at": "2026-07-18T17:45:27.951396+00:00",
+  "generated_at": "2026-07-18T17:45:51.383293+00:00",
   "title": "MAME quick snaps",
-  "head": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
-  "base": "ff080c3a8811557fd5467aed93c390bd680f8354",
-  "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c",
-  "commit_message": "cdi: fix crashes after (de)interlacing was added",
+  "head": "c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c",
+  "base": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+  "artifact": "mame-linux-clang-c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c",
+  "commit_message": "news_38xx: fix scsi typo",
   "changed_files": [
-    "src/mame/philips/cdi.cpp",
-    "src/mame/philips/mcd212.cpp"
+    "src/mame/sony/news_38xx.cpp"
   ],
   "reasons": {
-    "cdi490a": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "cdi910": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "cdibios": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "cdimono1": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "cdimono2": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "gpi1200": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard2": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard2_22": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard3": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard3_32": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard3a": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard4": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard4_40": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard4_41": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard4cz": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard_10": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard_12": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizard_17": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizardff": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizardi": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizardi_12": [
-      "driver changed: src/mame/philips/cdi.cpp"
-    ],
-    "quizardi_17": [
-      "driver changed: src/mame/philips/cdi.cpp"
+    "nws3860": [
+      "driver changed: src/mame/sony/news_38xx.cpp"
     ]
   },
   "machines": [
@@ -88056,6 +87989,38 @@
           "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
           "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
           "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        }
+      }
+    },
+    {
+      "name": "nws3860",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c",
+      "captures": {
+        "previous": {
+          "status": "failed",
+          "duration_seconds": 1.149,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "WARNING: the machine might not run correctly.",
+          "revision": "0732a4a0b063801d2cc3093d5dd3954e3731285c",
+          "artifact": "mame-linux-clang-0732a4a0b063801d2cc3093d5dd3954e3731285c"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.118,
+          "button": "1 Player Start",
+          "button_applied": false,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c",
+          "artifact": "mame-linux-clang-c1c2aabdbf3ab59eacda1ec8384dcb89672fa51c"
         }
       }
     }
