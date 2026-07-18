@@ -1,13 +1,27 @@
 {
-  "generated_at": "2026-07-18T14:24:42.299186+00:00",
+  "generated_at": "2026-07-18T14:25:01.909647+00:00",
   "title": "MAME quick snaps",
-  "head": "789e49108dfda46814c82b42945edb8764d8fbb5",
-  "base": "55a64a57ea7821f38241aa4287d29e95aae87001",
-  "artifact": "mame-linux-clang-789e49108dfda46814c82b42945edb8764d8fbb5",
+  "head": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+  "base": "789e49108dfda46814c82b42945edb8764d8fbb5",
+  "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d",
   "changed_files": [
-    "src/devices/machine/i7110.cpp"
+    "src/mame/gaelco/sralslot.cpp",
+    "src/mame/mame.lst"
   ],
-  "reasons": {},
+  "reasons": {
+    "sralslot": [
+      "driver changed: src/mame/gaelco/sralslot.cpp"
+    ],
+    "sralslota": [
+      "driver changed: src/mame/gaelco/sralslot.cpp"
+    ],
+    "sralslotb": [
+      "driver changed: src/mame/gaelco/sralslot.cpp"
+    ],
+    "sralslotc": [
+      "driver changed: src/mame/gaelco/sralslot.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -22470,6 +22484,82 @@
           "failure_reason": "videopina         Video Pinball (4 ROMs version)                                  (Atari, 1979)",
           "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
           "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+        }
+      }
+    },
+    {
+      "name": "sralslot",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.623,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
+        }
+      }
+    },
+    {
+      "name": "sralslota",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.613,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
+        }
+      }
+    },
+    {
+      "name": "sralslotb",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.635,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
+        }
+      }
+    },
+    {
+      "name": "sralslotc",
+      "status": "failed",
+      "button": "1 Player Start",
+      "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+      "captures": {
+        "current": {
+          "status": "failed",
+          "duration_seconds": 0.637,
+          "button": "1 Player Start",
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": "input field not found: 1 Player Start",
+          "revision": "e870aafc7601f385e5a79b40b129c3df0e7b275d",
+          "artifact": "mame-linux-clang-e870aafc7601f385e5a79b40b129c3df0e7b275d"
         }
       }
     }
