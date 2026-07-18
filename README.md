@@ -140,8 +140,10 @@ resumable even if a later artifact fails.
 
 ## Failure behavior
 
-A missing ROM, unknown input field, timeout, or missing screenshot marks the
-machine failed and preserves `machines/<name>/mame.log`. The capture command
-returns non-zero, so the workflow does not commit a misleading successful
-snapshot. Re-run the same dispatch after fixing the host; idempotency only takes
-effect once the SHA has actually been committed.
+A missing ROM, unknown input field, timeout, or missing screenshot marks that
+machine and artifact side failed and preserves its `mame.log`. Artifact replay
+continues with the remaining machines and the other artifact side, then commits
+the mixed pass/fail result so one unsupported machine cannot stall history.
+Direct local capture still returns non-zero for machine failures unless
+`--allow-failures` is supplied. Structural errors such as invalid configuration,
+artifact downloads, or source-history failures always stop replay.

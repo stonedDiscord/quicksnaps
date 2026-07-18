@@ -107,7 +107,7 @@ def main() -> int:
             common = [
                 sys.executable, "-m", "quicksnaps.cli", "capture",
                 "--config", str(args.config), "--mame-repo", str(args.mame_repo),
-                "--head", artifact.sha, "--output", str(args.pages),
+                "--head", artifact.sha, "--output", str(args.pages), "--allow-failures",
             ]
             if current:
                 common.extend(("--base", current))

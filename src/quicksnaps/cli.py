@@ -100,7 +100,9 @@ def cmd_capture(args: argparse.Namespace) -> int:
     write_manifest(args.output, results, metadata, merge_existing=True)
     build_site(args.output)
     failures = sum(result["status"] != "passed" for result in results)
-    return 1 if failures else 0
+    if failures:
+        print(f"{failures} machine capture(s) failed", file=sys.stderr)
+    return 0 if args.allow_failures else (1 if failures else 0)
 
 
 def cmd_site(args: argparse.Namespace) -> int:
@@ -144,6 +146,11 @@ def make_parser() -> argparse.ArgumentParser:
     capture.add_argument("--artifact", help="CI artifact name used for this capture")
     capture.add_argument("--variant", choices=("previous", "current"))
     capture.add_argument("--capture-revision", help="revision of the capture binary")
+    capture.add_argument(
+        "--allow-failures",
+        action="store_true",
+        help="record failed machines without failing the overall capture command",
+    )
     capture.set_defaults(func=cmd_capture)
 
     site = subparsers.add_parser("site", help="rebuild HTML from an existing manifest")
