@@ -1,21 +1,20 @@
 {
-  "generated_at": "2026-07-18T14:20:57.882256+00:00",
+  "generated_at": "2026-07-18T14:21:20.431996+00:00",
   "title": "MAME quick snaps",
-  "head": "96fd98bc643aa64ea61739e423e385227f377c06",
-  "base": "3b1bc6244cc68a929d6a6f6b7ca0289cdfc3cd4a",
-  "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06",
+  "head": "d3bc34b1a55745af194427bef20871841152f4a9",
+  "base": "96fd98bc643aa64ea61739e423e385227f377c06",
+  "artifact": "mame-linux-clang-d3bc34b1a55745af194427bef20871841152f4a9",
   "changed_files": [
-    "src/mame/kaneko/kaneko_spr.cpp",
-    "src/mame/kaneko/kaneko_spr.h"
+    "src/mame/layout/novag_obsidian.lay",
+    "src/mame/yachiyo/atamanot.cpp",
+    "src/mame/yachiyo/ssingles.cpp"
   ],
   "reasons": {
-    "kaneko_vu002": [
-      "driver changed: src/mame/kaneko/kaneko_spr.cpp",
-      "driver changed: src/mame/kaneko/kaneko_spr.h"
+    "atamanot": [
+      "driver changed: src/mame/yachiyo/atamanot.cpp"
     ],
-    "kaneko_kc002": [
-      "driver changed: src/mame/kaneko/kaneko_spr.cpp",
-      "driver changed: src/mame/kaneko/kaneko_spr.h"
+    "ssingles": [
+      "driver changed: src/mame/yachiyo/ssingles.cpp"
     ]
   },
   "machines": [
@@ -15883,29 +15882,29 @@
       "name": "atamanot",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "0e4c3900755d14e3ad112eda023a784fe2590fdf",
+      "revision": "d3bc34b1a55745af194427bef20871841152f4a9",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.561,
+          "duration_seconds": 0.632,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "3ba734e93110240ee0779f528504ea6e6c114062",
-          "artifact": "mame-linux-clang-3ba734e93110240ee0779f528504ea6e6c114062"
+          "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+          "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.595,
+          "duration_seconds": 0.623,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "input field not found: 1 Player Start",
-          "revision": "0e4c3900755d14e3ad112eda023a784fe2590fdf",
-          "artifact": "mame-linux-clang-0e4c3900755d14e3ad112eda023a784fe2590fdf"
+          "revision": "d3bc34b1a55745af194427bef20871841152f4a9",
+          "artifact": "mame-linux-clang-d3bc34b1a55745af194427bef20871841152f4a9"
         }
       }
     },
@@ -16963,29 +16962,29 @@
       "name": "ssingles",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
+      "revision": "d3bc34b1a55745af194427bef20871841152f4a9",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.282,
+          "duration_seconds": 1.157,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0",
-          "artifact": "mame-linux-clang-0bee32b2169004cbc8c953aaa3bcaf4a5dae90d0"
+          "revision": "96fd98bc643aa64ea61739e423e385227f377c06",
+          "artifact": "mame-linux-clang-96fd98bc643aa64ea61739e423e385227f377c06"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.192,
+          "duration_seconds": 1.167,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "241b58eb861e3f4649532da17c3bf84bfdb11ded",
-          "artifact": "mame-linux-clang-241b58eb861e3f4649532da17c3bf84bfdb11ded"
+          "revision": "d3bc34b1a55745af194427bef20871841152f4a9",
+          "artifact": "mame-linux-clang-d3bc34b1a55745af194427bef20871841152f4a9"
         }
       }
     },
