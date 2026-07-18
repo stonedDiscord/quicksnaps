@@ -1,43 +1,14 @@
 {
-  "generated_at": "2026-07-18T16:41:59.517441+00:00",
+  "generated_at": "2026-07-18T16:42:36.726411+00:00",
   "title": "MAME quick snaps",
-  "head": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
-  "base": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
-  "artifact": "mame-linux-clang-aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
-  "commit_message": "namcos21_dsp: improve dsp comram",
+  "head": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
+  "base": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
+  "artifact": "mame-linux-clang-8945f05060c1ea53fb2c56bc8408242c42c99b92",
+  "commit_message": "namcos21: gpu c148 ext input is screen field",
   "changed_files": [
-    "src/mame/namco/namcos21.cpp",
-    "src/mame/namco/namcos21_3d.cpp",
-    "src/mame/namco/namcos21_c67.cpp",
-    "src/mame/namco/namcos21_de.cpp",
-    "src/mame/namco/namcos21_dsp.cpp",
-    "src/mame/namco/namcos21_dsp.h"
+    "src/mame/namco/namcos21.cpp"
   ],
   "reasons": {
-    "aircomb": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "aircombj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsled": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "cybsleda": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "driveyes": [
-      "driver changed: src/mame/namco/namcos21_de.cpp"
-    ],
-    "solvalou": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starblad": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
-    "starbladj": [
-      "driver changed: src/mame/namco/namcos21_c67.cpp"
-    ],
     "winrun": [
       "driver changed: src/mame/namco/namcos21.cpp"
     ],
@@ -5001,23 +4972,11 @@
       "name": "winrun",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
+      "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 12.964,
-          "button": "1 Player Start",
-          "button_applied": true,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
-          "artifact": "mame-linux-clang-4c3baee20f15c296afe850f01479d4dbc2c6ea8d"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 14.339,
+          "duration_seconds": 9.761,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
@@ -5026,6 +4985,18 @@
           "failure_reason": null,
           "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
           "artifact": "mame-linux-clang-aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 9.396,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
+          "artifact": "mame-linux-clang-8945f05060c1ea53fb2c56bc8408242c42c99b92"
         }
       }
     },
@@ -5033,23 +5004,11 @@
       "name": "winrun91",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
+      "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.146,
-          "button": "1 Player Start",
-          "button_applied": true,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
-          "artifact": "mame-linux-clang-4c3baee20f15c296afe850f01479d4dbc2c6ea8d"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 11.517,
+          "duration_seconds": 7.427,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
@@ -5058,6 +5017,18 @@
           "failure_reason": null,
           "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
           "artifact": "mame-linux-clang-aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 7.62,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
+          "artifact": "mame-linux-clang-8945f05060c1ea53fb2c56bc8408242c42c99b92"
         }
       }
     },
@@ -5065,23 +5036,11 @@
       "name": "winrungp",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
+      "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 11.123,
-          "button": "1 Player Start",
-          "button_applied": true,
-          "warmup_seconds": 30.0,
-          "after_seconds": 2.0,
-          "press_seconds": 0.25,
-          "failure_reason": null,
-          "revision": "4c3baee20f15c296afe850f01479d4dbc2c6ea8d",
-          "artifact": "mame-linux-clang-4c3baee20f15c296afe850f01479d4dbc2c6ea8d"
-        },
-        "current": {
-          "status": "passed",
-          "duration_seconds": 11.602,
+          "duration_seconds": 7.41,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
@@ -5090,6 +5049,18 @@
           "failure_reason": null,
           "revision": "aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8",
           "artifact": "mame-linux-clang-aca38a7e6ffbeb1e050befa574ec64ea0acb1ac8"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 7.414,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "8945f05060c1ea53fb2c56bc8408242c42c99b92",
+          "artifact": "mame-linux-clang-8945f05060c1ea53fb2c56bc8408242c42c99b92"
         }
       }
     },
