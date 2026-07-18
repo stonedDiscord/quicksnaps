@@ -1,26 +1,19 @@
 {
-  "generated_at": "2026-07-18T15:34:59.455998+00:00",
+  "generated_at": "2026-07-18T15:35:19.660565+00:00",
   "title": "MAME quick snaps",
-  "head": "1810633dcc067261ed629aaaf7ca54a2e3638aea",
-  "base": "797381847f762ac985c34bea84c0b7aeef4c3360",
-  "artifact": "mame-linux-clang-1810633dcc067261ed629aaaf7ca54a2e3638aea",
-  "commit_message": "3rdparty: Retired softfloat2. (#15270)\n\ncpu/i386, machine/i8087.cpp: Migrated to SoftFloat 3.",
+  "head": "06a594ad76ccaeb6278a4a5a3623f95291910f81",
+  "base": "1810633dcc067261ed629aaaf7ca54a2e3638aea",
+  "artifact": "mame-linux-clang-06a594ad76ccaeb6278a4a5a3623f95291910f81",
+  "commit_message": "sony/smc777_kbd.cpp: add CAP(S) and KANA LOCKs",
   "changed_files": [
-    "3rdparty/README.md",
-    "3rdparty/softfloat3/bochs_ext/isNaN.c",
-    "3rdparty/softfloat3/bochs_ext/softfloat3_ext.h",
-    "scripts/src/3rdparty.lua",
-    "scripts/src/main.lua",
-    "src/devices/cpu/i386/i386.cpp",
-    "src/devices/cpu/i386/i386.h",
-    "src/devices/cpu/i386/i386priv.h",
-    "src/devices/cpu/i386/pentops.hxx",
-    "src/devices/cpu/i386/x87ops.hxx",
-    "src/devices/cpu/i386/x87priv.h",
-    "src/devices/machine/i8087.cpp",
-    "src/devices/machine/i8087.h"
+    "src/mame/sony/smc777.cpp",
+    "src/mame/sony/smc777_kbd.cpp"
   ],
-  "reasons": {},
+  "reasons": {
+    "smc777": [
+      "driver changed: src/mame/sony/smc777.cpp"
+    ]
+  },
   "machines": [
     {
       "name": "aircomb",
@@ -14488,31 +14481,31 @@
       "name": "smc777",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "797381847f762ac985c34bea84c0b7aeef4c3360",
+      "revision": "06a594ad76ccaeb6278a4a5a3623f95291910f81",
       "captures": {
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.538,
+          "duration_seconds": 1.537,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "67bbb92cf19042cd0776bff9f2b175af5867d9bc",
-          "artifact": "mame-linux-clang-67bbb92cf19042cd0776bff9f2b175af5867d9bc"
+          "revision": "1810633dcc067261ed629aaaf7ca54a2e3638aea",
+          "artifact": "mame-linux-clang-1810633dcc067261ed629aaaf7ca54a2e3638aea"
         },
         "current": {
           "status": "passed",
-          "duration_seconds": 1.489,
+          "duration_seconds": 1.52,
           "button": "1 Player Start",
           "button_applied": false,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "797381847f762ac985c34bea84c0b7aeef4c3360",
-          "artifact": "mame-linux-clang-797381847f762ac985c34bea84c0b7aeef4c3360"
+          "revision": "06a594ad76ccaeb6278a4a5a3623f95291910f81",
+          "artifact": "mame-linux-clang-06a594ad76ccaeb6278a4a5a3623f95291910f81"
         }
       }
     },
