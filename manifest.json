@@ -1,254 +1,26 @@
 {
-  "generated_at": "2026-07-18T14:37:35.193433+00:00",
+  "generated_at": "2026-07-18T14:48:34.445112+00:00",
   "title": "MAME quick snaps",
-  "head": "120007e241d2f20384313e78e76d413e81982e12",
-  "base": "bfed12cda93402fcd5962e2d657ab0f29b71fdd6",
-  "artifact": "mame-linux-clang-120007e241d2f20384313e78e76d413e81982e12",
+  "head": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+  "base": "120007e241d2f20384313e78e76d413e81982e12",
+  "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
   "changed_files": [
-    "src/mame/namco/namcos2.cpp",
-    "src/mame/namco/namcos2.h",
-    "src/mame/namco/namcos2_m.cpp"
+    "src/devices/bus/a2bus/a2eauxslot.h",
+    "src/devices/bus/a2bus/a2eext80col.h",
+    "src/devices/bus/a2bus/a2eramworks3.h",
+    "src/devices/bus/a2bus/a2estd80col.cpp",
+    "src/devices/bus/a2bus/a2estd80col.h",
+    "src/mame/apple/apple2video.cpp"
   ],
   "reasons": {
-    "assault": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
+    "a2video": [
+      "driver changed: src/mame/apple/apple2video.cpp"
     ],
-    "assaultj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
+    "a2video_comp": [
+      "driver changed: src/mame/apple/apple2video.cpp"
     ],
-    "assaultp": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "bubbletr": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "bubbletrj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "burnforc": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "burnforco": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "cosmogng": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "cosmogngj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "dirtfoxj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "dsaber": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "dsabera": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "dsaberj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap2": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap2j": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap3": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap3a": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap3bl": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap3j": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finalap3jc": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finallap": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finallapc": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finallapd": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finallapjb": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finallapjc": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "finehour": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "fourtrax": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "fourtraxa": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "fourtraxj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "gollygho": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "kyukaidk": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "kyukaidko": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "luckywld": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "luckywldj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "marvland": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "marvlandup": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "metlhawk": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "metlhawkj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "mirninja": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "mirninjaa": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "ordyne": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "ordynej": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "ordyneje": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "phelios": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "pheliosj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "rthun2": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "rthun2j": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sgunner": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sgunner2": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sgunner2j": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sgunnerj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "suzuk8h2": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "suzuk8h2j": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "suzuka8h": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "suzuka8hj": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sws": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sws92": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sws92g": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "sws93": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
-    ],
-    "valkyrie": [
-      "driver changed: src/mame/namco/namcos2.cpp",
-      "driver changed: src/mame/namco/namcos2.h"
+    "a2video_comprgb": [
+      "driver changed: src/mame/apple/apple2video.cpp"
     ]
   },
   "machines": [
@@ -22740,29 +22512,29 @@
       "name": "a2video",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.278,
+          "duration_seconds": 0.183,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "av20dev           Acorn V20 (Development)                  (Acorn Computers, 1992)",
-          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
-          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+          "revision": "120007e241d2f20384313e78e76d413e81982e12",
+          "artifact": "mame-linux-clang-120007e241d2f20384313e78e76d413e81982e12"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.292,
+          "duration_seconds": 0.182,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "av20dev           Acorn V20 (Development)                  (Acorn Computers, 1992)",
-          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
-          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+          "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+          "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054"
         }
       }
     },
@@ -22770,29 +22542,29 @@
       "name": "a2video_comp",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.273,
+          "duration_seconds": 0.204,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "gatedoom          Gate of Doom (US revision 4)                                 (Data East Corporation, 1990)",
-          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
-          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+          "revision": "120007e241d2f20384313e78e76d413e81982e12",
+          "artifact": "mame-linux-clang-120007e241d2f20384313e78e76d413e81982e12"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.284,
+          "duration_seconds": 0.211,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "gatedoom          Gate of Doom (US revision 4)                                 (Data East Corporation, 1990)",
-          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
-          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+          "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+          "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054"
         }
       }
     },
@@ -22800,29 +22572,29 @@
       "name": "a2video_comprgb",
       "status": "failed",
       "button": "1 Player Start",
-      "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
+      "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
       "captures": {
         "previous": {
           "status": "failed",
-          "duration_seconds": 0.235,
+          "duration_seconds": 0.213,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "videopina         Video Pinball (4 ROMs version)                                  (Atari, 1979)",
-          "revision": "0fa3532209ee1cddff2738c09100404f7ded15eb",
-          "artifact": "mame-linux-clang-0fa3532209ee1cddff2738c09100404f7ded15eb"
+          "revision": "120007e241d2f20384313e78e76d413e81982e12",
+          "artifact": "mame-linux-clang-120007e241d2f20384313e78e76d413e81982e12"
         },
         "current": {
           "status": "failed",
-          "duration_seconds": 0.241,
+          "duration_seconds": 0.211,
           "button": "1 Player Start",
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": "videopina         Video Pinball (4 ROMs version)                                  (Atari, 1979)",
-          "revision": "55a64a57ea7821f38241aa4287d29e95aae87001",
-          "artifact": "mame-linux-clang-55a64a57ea7821f38241aa4287d29e95aae87001"
+          "revision": "d3c426df8f0baed9379f6425fdd6c7cdf17b3054",
+          "artifact": "mame-linux-clang-d3c426df8f0baed9379f6425fdd6c7cdf17b3054"
         }
       }
     },
