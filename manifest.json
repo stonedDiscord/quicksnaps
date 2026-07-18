@@ -1,22 +1,26 @@
 {
-  "generated_at": "2026-07-18T15:34:42.479489+00:00",
+  "generated_at": "2026-07-18T15:34:59.455998+00:00",
   "title": "MAME quick snaps",
-  "head": "797381847f762ac985c34bea84c0b7aeef4c3360",
-  "base": "67bbb92cf19042cd0776bff9f2b175af5867d9bc",
-  "artifact": "mame-linux-clang-797381847f762ac985c34bea84c0b7aeef4c3360",
-  "commit_message": "sony/smc777.cpp: misc fixes:\n* reverse palette offsets and add gfx pal bank (demofd4)\n* add default palette for non-color board pal bank (side effect of above)\n* add reverse hookup for text layer (amazon), add FRC hookup\n* disable cursor if out of range (sys12j:BIRD, transitt)\n* add set_raw in place of legacy screen setup (makes transitt scroll less jerky)\n* BREAKING CHANGE: replace floppy option from ssdd to 35ssdd string\n\nSystems promoted to working\n---------------------------\nSMC-777 [Angelo Salese]",
+  "head": "1810633dcc067261ed629aaaf7ca54a2e3638aea",
+  "base": "797381847f762ac985c34bea84c0b7aeef4c3360",
+  "artifact": "mame-linux-clang-1810633dcc067261ed629aaaf7ca54a2e3638aea",
+  "commit_message": "3rdparty: Retired softfloat2. (#15270)\n\ncpu/i386, machine/i8087.cpp: Migrated to SoftFloat 3.",
   "changed_files": [
-    "hash/pc8801_flop.xml",
-    "hash/smc777.xml",
-    "src/mame/sony/smc777.cpp",
-    "src/mame/sony/smc777_kbd.cpp",
-    "src/mame/sony/smc777_kbd.h"
+    "3rdparty/README.md",
+    "3rdparty/softfloat3/bochs_ext/isNaN.c",
+    "3rdparty/softfloat3/bochs_ext/softfloat3_ext.h",
+    "scripts/src/3rdparty.lua",
+    "scripts/src/main.lua",
+    "src/devices/cpu/i386/i386.cpp",
+    "src/devices/cpu/i386/i386.h",
+    "src/devices/cpu/i386/i386priv.h",
+    "src/devices/cpu/i386/pentops.hxx",
+    "src/devices/cpu/i386/x87ops.hxx",
+    "src/devices/cpu/i386/x87priv.h",
+    "src/devices/machine/i8087.cpp",
+    "src/devices/machine/i8087.h"
   ],
-  "reasons": {
-    "smc777": [
-      "driver changed: src/mame/sony/smc777.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
