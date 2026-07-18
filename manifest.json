@@ -1,47 +1,14 @@
 {
-  "generated_at": "2026-07-18T16:43:33.812080+00:00",
+  "generated_at": "2026-07-18T16:43:51.243472+00:00",
   "title": "MAME quick snaps",
-  "head": "891eebbd29b24a375f1f60c2921a22d0f6cd5d8a",
-  "base": "67b67f83d7be409132832611ecdf191dbd4e7d01",
-  "artifact": "mame-linux-clang-891eebbd29b24a375f1f60c2921a22d0f6cd5d8a",
-  "commit_message": "saitek_osa: added brute force module [hap, Berger, Mr. Lars]",
+  "head": "927033b5014bc9c77ead6b4209d3fa59213e4e14",
+  "base": "891eebbd29b24a375f1f60c2921a22d0f6cd5d8a",
+  "artifact": "mame-linux-clang-927033b5014bc9c77ead6b4209d3fa59213e4e14",
+  "commit_message": "bruteforce: fix include guard",
   "changed_files": [
-    "scripts/src/bus.lua",
-    "src/devices/bus/saitek_osa/bruteforce.cpp",
-    "src/devices/bus/saitek_osa/bruteforce.h",
-    "src/devices/bus/saitek_osa/expansion.cpp",
-    "src/devices/bus/saitek_osa/maestro.cpp",
-    "src/devices/bus/saitek_osa/maestro.h",
-    "src/devices/bus/saitek_osa/maestroa.cpp",
-    "src/devices/bus/saitek_osa/maestroa.h",
-    "src/devices/bus/saitek_osa/sparc.cpp",
-    "src/devices/bus/saitek_osa/sparc.h",
-    "src/mame/saitek/leonardo.cpp",
-    "src/mame/saitek/renaissance.cpp"
+    "src/devices/bus/saitek_osa/bruteforce.h"
   ],
-  "reasons": {
-    "galileo": [
-      "driver changed: src/mame/saitek/leonardo.cpp"
-    ],
-    "leonardo": [
-      "driver changed: src/mame/saitek/leonardo.cpp"
-    ],
-    "leonardoa": [
-      "driver changed: src/mame/saitek/leonardo.cpp"
-    ],
-    "leonardob": [
-      "driver changed: src/mame/saitek/leonardo.cpp"
-    ],
-    "renaissa": [
-      "driver changed: src/mame/saitek/renaissance.cpp"
-    ],
-    "renaissaa": [
-      "driver changed: src/mame/saitek/renaissance.cpp"
-    ],
-    "renaissab": [
-      "driver changed: src/mame/saitek/renaissance.cpp"
-    ]
-  },
+  "reasons": {},
   "machines": [
     {
       "name": "aircomb",
