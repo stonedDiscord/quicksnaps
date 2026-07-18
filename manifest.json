@@ -1,33 +1,16 @@
 {
-  "generated_at": "2026-07-18T18:26:01.530147+00:00",
+  "generated_at": "2026-07-18T18:26:26.145949+00:00",
   "title": "MAME quick snaps",
-  "head": "db9d90747189c016d0a988235efba824562258d7",
-  "base": "a65269129c37e0570c4d18bbba1e46791fa928ea",
-  "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7",
-  "commit_message": "smondial2: correct year",
+  "head": "454e61af8af79f363b7c5738ff0303ec393ea5e9",
+  "base": "db9d90747189c016d0a988235efba824562258d7",
+  "artifact": "mame-linux-clang-454e61af8af79f363b7c5738ff0303ec393ea5e9",
+  "commit_message": "excellent/es9606.cpp: add coin counters, fix flip screen, add work RAM and sound chip mirrors",
   "changed_files": [
-    "hash/mephisto_smondial2.xml",
-    "src/mame/hegenerglaser/smondial.cpp",
-    "src/mame/namco/namcos21_3d.cpp"
+    "src/mame/excellent/es9606.cpp"
   ],
   "reasons": {
-    "mega4": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
-    ],
-    "mega4a": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
-    ],
-    "smondial": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
-    ],
-    "smondial2": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
-    ],
-    "smondialab": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
-    ],
-    "smondialb": [
-      "driver changed: src/mame/hegenerglaser/smondial.cpp"
+    "keirind2": [
+      "driver changed: src/mame/excellent/es9606.cpp"
     ]
   },
   "machines": [
@@ -87223,31 +87206,31 @@
       "name": "keirind2",
       "status": "passed",
       "button": "1 Player Start",
-      "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
+      "revision": "454e61af8af79f363b7c5738ff0303ec393ea5e9",
       "captures": {
         "current": {
           "status": "passed",
-          "duration_seconds": 3.461,
+          "duration_seconds": 3.292,
           "button": "1 Player Start",
           "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "a65269129c37e0570c4d18bbba1e46791fa928ea",
-          "artifact": "mame-linux-clang-a65269129c37e0570c4d18bbba1e46791fa928ea"
+          "revision": "454e61af8af79f363b7c5738ff0303ec393ea5e9",
+          "artifact": "mame-linux-clang-454e61af8af79f363b7c5738ff0303ec393ea5e9"
         },
         "previous": {
           "status": "passed",
-          "duration_seconds": 1.428,
+          "duration_seconds": 3.305,
           "button": "1 Player Start",
-          "button_applied": false,
+          "button_applied": true,
           "warmup_seconds": 30.0,
           "after_seconds": 2.0,
           "press_seconds": 0.25,
           "failure_reason": null,
-          "revision": "f60417251c9c9d492d309a62f95e98b377b26187",
-          "artifact": "mame-linux-clang-f60417251c9c9d492d309a62f95e98b377b26187"
+          "revision": "db9d90747189c016d0a988235efba824562258d7",
+          "artifact": "mame-linux-clang-db9d90747189c016d0a988235efba824562258d7"
         }
       }
     },
