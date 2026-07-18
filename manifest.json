@@ -1,47 +1,41 @@
 {
-  "generated_at": "2026-07-18T18:37:02.882019+00:00",
+  "generated_at": "2026-07-18T18:37:29.006985+00:00",
   "title": "MAME quick snaps",
-  "head": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
-  "base": "e336226395ec5b3820ffe469f0ad8ed3a438cbff",
-  "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
-  "commit_message": "New clones marked not working\n-----------------------------\nThe Aladdin (V1.1U) [Hammy]",
+  "head": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+  "base": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+  "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774",
+  "commit_message": "New systems marked not working\n------------------------------\nFour Jokers [Hammy]",
   "changed_files": [
     "src/mame/mame.lst",
-    "src/mame/skeleton/dyna_dc4000.cpp"
+    "src/mame/wing/pinkiri8.cpp"
   ],
   "reasons": {
-    "aladdin": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "4jokers": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "aladdina": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "janmu": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "aladdinb": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "janshi": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "cmast92": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "pinkiri8": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "cmast92a": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "ronjan": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "dynamj": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "ronjana": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "eldoradd": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "ronjans": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "eldoraddo": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "ronjansa": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ],
-    "eldoraddob": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
-    ],
-    "eldoraddoc": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
-    ],
-    "eldoraddod": [
-      "driver changed: src/mame/skeleton/dyna_dc4000.cpp"
+    "ronjansb": [
+      "driver changed: src/mame/wing/pinkiri8.cpp"
     ]
   },
   "machines": [
@@ -105718,6 +105712,282 @@
           "failure_reason": null,
           "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
           "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        }
+      }
+    },
+    {
+      "name": "janmu",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.037,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.05,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "janshi",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.515,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.079,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "pinkiri8",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.404,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.679,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "ronjan",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.185,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.247,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "ronjana",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.144,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.257,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "ronjans",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 4.083,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.429,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "ronjansa",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.254,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 4.265,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "ronjansb",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "previous": {
+          "status": "passed",
+          "duration_seconds": 3.874,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221",
+          "artifact": "mame-linux-clang-6f77e8256cb77ee61fa71ec03ee3bb7cb23e9221"
+        },
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.607,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
+        }
+      }
+    },
+    {
+      "name": "4jokers",
+      "status": "passed",
+      "button": "1 Player Start",
+      "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+      "captures": {
+        "current": {
+          "status": "passed",
+          "duration_seconds": 3.823,
+          "button": "1 Player Start",
+          "button_applied": true,
+          "warmup_seconds": 30.0,
+          "after_seconds": 2.0,
+          "press_seconds": 0.25,
+          "failure_reason": null,
+          "revision": "329df5374d4e680cc8b7e894083b715b1d8ee774",
+          "artifact": "mame-linux-clang-329df5374d4e680cc8b7e894083b715b1d8ee774"
         }
       }
     }
