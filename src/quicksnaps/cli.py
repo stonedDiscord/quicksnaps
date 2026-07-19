@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -11,9 +12,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from .artifacts import available_artifacts
-from .config import load_config
+from .config import Machine, load_config
 from .impact import changed_files, resolve, resolve_catalog, runnable_machines, source_map
-from .runner import capture_machine, write_manifest
+from .runner import (
+    capture_machine,
+    load_capture_checkpoint,
+    write_capture_checkpoint,
+    write_manifest,
+)
 from .site import build_site
 
 
@@ -37,6 +43,38 @@ def _commit_message(repo: Path, revision: str) -> str:
         stdout=subprocess.PIPE,
     )
     return result.stdout.strip()
+
+
+def _capture_request(
+    machine: Machine,
+    revision: str,
+    artifact: str | None,
+    variant: str | None,
+    rompath: str | None,
+    timeout: float | None,
+) -> dict[str, object]:
+    inputs = {
+        "machine": {
+            "name": machine.name,
+            "warmup_seconds": machine.warmup_seconds,
+            "after_seconds": machine.after_seconds,
+            "press_seconds": machine.press_seconds,
+            "button": machine.button,
+            "mame_args": list(machine.mame_args),
+        },
+        "rompath": rompath,
+        "timeout": timeout,
+    }
+    fingerprint = hashlib.sha256(
+        json.dumps(inputs, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+    return {
+        "checkpoint_version": 1,
+        "revision": revision,
+        "artifact": artifact,
+        "variant": variant,
+        "input_fingerprint": fingerprint,
+    }
 
 
 def _resolve_selection(args: argparse.Namespace) -> tuple[dict[str, list[str]], list[str]]:
@@ -89,11 +127,20 @@ def cmd_capture(args: argparse.Namespace) -> int:
         selected = {name: ["initial Pages snapshot"] for name in config.machine_names}
     head = _revision(args.mame_repo, args.head) if args.head else os.environ.get("MAME_SHA", "manual")
     def run_machine(name: str) -> dict[str, object]:
+        machine = config.machine(name)
+        revision = args.capture_revision or head
+        request = _capture_request(
+            machine, revision, args.artifact, args.variant, args.rompath, args.timeout
+        )
+        if not getattr(args, "force", False):
+            cached = load_capture_checkpoint(args.output, name, args.variant, request)
+            if cached is not None:
+                print(f"{name}: already captured, skipping", flush=True)
+                return cached
         print(f"Capturing {name}...", flush=True)
         result = capture_machine(
-            args.mame, config.machine(name), args.output, args.rompath, args.timeout, args.variant
+            args.mame, machine, args.output, args.rompath, args.timeout, args.variant
         )
-        revision = args.capture_revision or head
         result["revision"] = revision
         result["artifact"] = args.artifact
         if args.variant:
@@ -105,6 +152,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
                 "revision": revision,
                 "captures": {args.variant: capture},
             }
+        write_capture_checkpoint(args.output, name, args.variant, request, result)
         print(f"{name}: {result['status']}", flush=True)
         return result
 
@@ -196,6 +244,9 @@ def make_parser() -> argparse.ArgumentParser:
     capture.add_argument("--artifact", help="CI artifact name used for this capture")
     capture.add_argument("--variant", choices=("previous", "current"))
     capture.add_argument("--capture-revision", help="revision of the capture binary")
+    capture.add_argument(
+        "--force", action="store_true", help="rerun machines even when a matching checkpoint exists"
+    )
     capture.add_argument(
         "--allow-failures",
         action="store_true",

@@ -13,6 +13,55 @@ from .config import Machine
 
 
 PNG_NONVISUAL_CHUNKS = {b"tEXt", b"zTXt", b"iTXt", b"tIME", b"eXIf"}
+CAPTURE_CHECKPOINT = "capture.json"
+
+
+def capture_directory(output: Path, machine_name: str, variant: str | None = None) -> Path:
+    directory = output / "machines" / machine_name
+    return directory / variant if variant else directory
+
+
+def load_capture_checkpoint(
+    output: Path,
+    machine_name: str,
+    variant: str | None,
+    request: dict[str, object],
+) -> dict[str, object] | None:
+    directory = capture_directory(output, machine_name, variant)
+    path = directory / CAPTURE_CHECKPOINT
+    try:
+        checkpoint = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return None
+    if checkpoint.get("request") != request or not isinstance(checkpoint.get("result"), dict):
+        return None
+    result = checkpoint["result"]
+    if not (directory / "mame.log").is_file():
+        return None
+    capture = result.get("captures", {}).get(variant, {}) if variant else result
+    if capture.get("status") == "passed" and not all(
+        (directory / name).is_file() for name in ("before.png", "after.png")
+    ):
+        return None
+    return result
+
+
+def write_capture_checkpoint(
+    output: Path,
+    machine_name: str,
+    variant: str | None,
+    request: dict[str, object],
+    result: dict[str, object],
+) -> None:
+    directory = capture_directory(output, machine_name, variant)
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / CAPTURE_CHECKPOINT
+    temporary = path.with_suffix(".json.tmp")
+    temporary.write_text(
+        json.dumps({"request": request, "result": result}, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    os.replace(temporary, path)
 
 
 def normalize_png(path: Path) -> None:
@@ -59,9 +108,7 @@ def capture_machine(
     timeout: float | None = None,
     variant: str | None = None,
 ) -> dict[str, object]:
-    machine_dir = output / "machines" / machine.name
-    if variant:
-        machine_dir /= variant
+    machine_dir = capture_directory(output, machine.name, variant)
     if machine_dir.exists():
         shutil.rmtree(machine_dir)
     machine_dir.mkdir(parents=True, exist_ok=True)

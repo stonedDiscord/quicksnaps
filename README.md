@@ -94,6 +94,11 @@ PYTHONPATH=src python3 -m quicksnaps.cli capture --all --mame ../mame/mamed --ou
 Pass `--rompath /path/to/roms` if the MAME defaults do not locate your ROMs.
 The generated `site/index.html` can be served by any static HTTP server.
 
+Each completed game writes a `capture.json` checkpoint in its machine folder
+(or variant subfolder). Repeating the same capture skips games whose revision,
+artifact, configuration, log, and screenshots still match, allowing an
+interrupted long run to resume. Pass `--force` to deliberately rerun them.
+
 For a real MAME range, both `--base` and `--head` refer to revisions in
 `--mame-repo`. `--mame` must be the binary built from `--head`. To inspect what
 the upstream replay can currently use:

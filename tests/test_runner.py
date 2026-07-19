@@ -5,10 +5,39 @@ import unittest
 import zlib
 from pathlib import Path
 
-from quicksnaps.runner import _failure_from_log, normalize_png, write_manifest
+from quicksnaps.runner import (
+    _failure_from_log,
+    load_capture_checkpoint,
+    normalize_png,
+    write_capture_checkpoint,
+    write_manifest,
+)
 
 
 class ManifestTests(unittest.TestCase):
+    def test_capture_checkpoint_requires_matching_request_and_outputs(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            directory = output / "machines" / "pacman" / "current"
+            directory.mkdir(parents=True)
+            (directory / "mame.log").write_text("done")
+            (directory / "before.png").write_bytes(b"png")
+            (directory / "after.png").write_bytes(b"png")
+            request = {"revision": "abc", "variant": "current"}
+            result = {
+                "name": "pacman",
+                "captures": {"current": {"status": "passed"}},
+            }
+            write_capture_checkpoint(output, "pacman", "current", request, result)
+            self.assertEqual(
+                result, load_capture_checkpoint(output, "pacman", "current", request)
+            )
+            self.assertIsNone(
+                load_capture_checkpoint(output, "pacman", "current", {"revision": "new"})
+            )
+            (directory / "after.png").unlink()
+            self.assertIsNone(load_capture_checkpoint(output, "pacman", "current", request))
+
     def test_png_normalization_removes_metadata_but_preserves_pixels(self):
         def chunk(kind: bytes, payload: bytes) -> bytes:
             crc = zlib.crc32(kind + payload) & 0xFFFFFFFF
