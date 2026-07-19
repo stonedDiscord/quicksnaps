@@ -92,6 +92,32 @@ class SiteComparisonTests(unittest.TestCase):
         build_site(output)
         self.assertIn("unavailable; no input pressed", (output / "index.html").read_text())
 
+    def test_failure_links_log_without_embedding_it(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        output = Path(temporary.name)
+        directory = output / "machines" / "game" / "current"
+        directory.mkdir(parents=True)
+        marker = "VERY-LONG-CONSOLE-OUTPUT" * 1000
+        (directory / "mame.log").write_text(marker)
+        manifest = {
+            "generated_at": "now", "head": "sha", "reasons": {"game": ["driver changed"]},
+            "machines": [{
+                "name": "game", "status": "failed", "captures": {"current": {
+                    "status": "failed", "revision": "sha", "failure_reason": "Missing ROM",
+                }},
+            }],
+        }
+        (output / "manifest.json").write_text(json.dumps(manifest))
+        build_site(output)
+        index = (output / "index.html").read_text()
+        details = (directory.parent / "index.html").read_text()
+        self.assertNotIn(marker, index)
+        self.assertNotIn(marker, details)
+        self.assertIn('href="machines/game/current/mame.log"', index)
+        self.assertIn('href="current/mame.log"', details)
+        self.assertIn("Failure: Missing ROM", index)
+
     def test_past_machine_is_only_a_name_link_on_index(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)

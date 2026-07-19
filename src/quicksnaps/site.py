@@ -104,9 +104,10 @@ def build_site(output: Path) -> None:
         diagnostics = ""
         if status != "passed":
             reason = html.escape(str(capture.get("failure_reason") or "Unknown capture failure"))
-            log_path = output / "machines" / str(machine["name"]) / variant / "mame.log"
-            log = html.escape(log_path.read_text(encoding="utf-8", errors="replace")) if log_path.is_file() else "Log unavailable"
-            diagnostics = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/{variant}/mame.log">Open raw log</a></p></details>'
+            diagnostics = (
+                f'<p class="failure">Failure: {reason}. '
+                f'<a href="machines/{name}/{variant}/mame.log">Open console log</a></p>'
+            )
         if status == "passed":
             button = html.escape(str(capture.get("button", machine.get("button", "input"))))
             if capture.get("button_applied", True):
@@ -154,11 +155,11 @@ def build_site(output: Path) -> None:
 </div>'''
         else:
             captured = str(machine.get("revision", "unknown"))
-            shots = ""
             reason = html.escape(str(machine.get("failure_reason") or "Unknown capture failure"))
-            log_path = output / "machines" / str(machine["name"]) / "mame.log"
-            log = html.escape(log_path.read_text(encoding="utf-8", errors="replace")) if log_path.is_file() else "Log unavailable"
-            shots = f'<details><summary>Failure: {reason}</summary><pre>{log}</pre><p><a href="machines/{name}/mame.log">Open raw log</a></p></details>'
+            shots = (
+                f'<p class="failure">Failure: {reason}. '
+                f'<a href="machines/{name}/mame.log">Open console log</a></p>'
+            )
         cards.append(f'''<article class="machine" data-name="{name}">
 <h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
 <div class="reason">Captured at {_commit_link(captured)}. {why}</div>{shots}</article>''')
