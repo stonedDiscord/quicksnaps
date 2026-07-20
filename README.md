@@ -158,7 +158,5 @@ Direct local capture still returns non-zero for machine failures unless
 artifact downloads, or source-history failures always stop replay.
 
 MAME runs with `-nothrottle`, so configured timings are emulated seconds rather
-than wall-clock delays. By default, an individual MAME process is terminated if
-its wall time exceeds its emulated `-seconds_to_run` limit; local captures can
-override that limit with `--timeout`. Affected machines run concurrently; use
-`CAPTURE_JOBS` or local `--jobs` to limit CPU and memory use on the runner.
+than wall-clock delays. Affected machines run concurrently; use `CAPTURE_JOBS`
+or local `--jobs` to limit CPU and memory use on the runner.

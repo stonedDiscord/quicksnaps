@@ -140,7 +140,7 @@ def capture_machine(
         QUICKSNAPS_BUTTON=machine.button,
     )
     started = time.monotonic()
-    limit = timeout if timeout is not None else emulated_limit
+    limit = timeout or max(60.0, (machine.warmup_seconds + machine.after_seconds + machine.press_seconds) * 5)
     failure_reason: str | None = None
     try:
         result = subprocess.run(command, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=env, timeout=limit)
