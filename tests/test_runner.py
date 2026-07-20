@@ -1,12 +1,16 @@
 import json
 import struct
+import subprocess
 import tempfile
 import unittest
 import zlib
 from pathlib import Path
+from unittest.mock import patch
 
+from quicksnaps.config import Machine
 from quicksnaps.runner import (
     _failure_from_log,
+    capture_machine,
     load_capture_checkpoint,
     normalize_png,
     write_capture_checkpoint,
@@ -15,6 +19,16 @@ from quicksnaps.runner import (
 
 
 class ManifestTests(unittest.TestCase):
+    @patch("quicksnaps.runner.subprocess.run")
+    def test_default_wall_timeout_matches_emulated_run_limit(self, run):
+        machine = Machine("pacman", 1, 2, 0.25, "P1 Button 1")
+        run.side_effect = subprocess.TimeoutExpired(["mame"], 8.25, output="still running")
+        with tempfile.TemporaryDirectory() as temporary:
+            result = capture_machine(Path("mame"), machine, Path(temporary))
+        self.assertEqual(8.25, run.call_args.kwargs["timeout"])
+        self.assertEqual("failed", result["status"])
+        self.assertEqual("MAME timed out after 8.2 wall-clock seconds", result["failure_reason"])
+
     def test_capture_checkpoint_requires_matching_request_and_outputs(self):
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary)
