@@ -90,7 +90,8 @@ def capture_in_batches(
 ) -> None:
     selected = json.loads(selection.read_text(encoding="utf-8"))
     names = list(selected.get("machines", {}))
-    batch_size = max(1, jobs or (os.cpu_count() or 1))
+    workers = max(1, jobs or (os.cpu_count() or 1))
+    batch_size = workers * workers + 20
     for offset in range(0, len(names), batch_size):
         batch = dict(selected)
         batch["machines"] = {name: selected["machines"][name] for name in names[offset : offset + batch_size]}
