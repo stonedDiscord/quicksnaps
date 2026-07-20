@@ -97,7 +97,9 @@ The generated `site/index.html` can be served by any static HTTP server.
 Each completed game writes a `capture.json` checkpoint in its machine folder
 (or variant subfolder). Repeating the same capture skips games whose revision,
 artifact, configuration, log, and screenshots still match, allowing an
-interrupted long run to resume. Pass `--force` to deliberately rerun them.
+interrupted long run to resume. The Actions replay also mirrors partial work to
+a temporary remote resume branch so it survives a fresh runner workspace. Pass
+`--force` to deliberately rerun captures.
 
 For a real MAME range, both `--base` and `--head` refer to revisions in
 `--mame-repo`. `--mame` must be the binary built from `--head`. To inspect what

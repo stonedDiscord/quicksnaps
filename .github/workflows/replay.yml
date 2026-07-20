@@ -63,6 +63,7 @@ jobs:
             --mame-repo "$GITHUB_WORKSPACE/mame-source"
             --config "$GITHUB_WORKSPACE/quicksnaps/quicksnaps.json"
             --push-branch "$PAGES_BRANCH"
+            --resume-branch "${PAGES_BRANCH}-resume"
           )
           if [[ -n "${ROMPATH:-}" ]]; then args+=(--rompath "$ROMPATH"); fi
           if [[ -n "${CAPTURE_JOBS:-}" ]]; then args+=(--jobs "$CAPTURE_JOBS"); fi
