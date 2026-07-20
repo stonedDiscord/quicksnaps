@@ -2,7 +2,7 @@ name: Replay MAME CI artifacts
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */8 * * *"
   repository_dispatch:
     types: [mame-updated]
   workflow_dispatch:
