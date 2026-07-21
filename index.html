@@ -1,8 +1,26 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/c2b9fd3932d9ac602044b077910424d75ebf2288">c2b9fd3932d9ac602044b077910424d75ebf2288</a> from <a href="https://github.com/mamedev/mame/commit/64504fa08e1779735f373caaf8bcc07f9cc3e37d">64504fa08e1779735f373caaf8bcc07f9cc3e37d</a> - mame-linux-clang-c2b9fd3932d9ac602044b077910424d75ebf2288 - generated 2026-07-21T18:09:50.097598+00:00</div>
-<div class="commit-message">handheld/evolution_handheld.cpp: Do some DMA</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/512387f04a364ace36e64535890ff29fc952b4ea">512387f04a364ace36e64535890ff29fc952b4ea</a> from <a href="https://github.com/mamedev/mame/commit/c2b9fd3932d9ac602044b077910424d75ebf2288">c2b9fd3932d9ac602044b077910424d75ebf2288</a> - mame-linux-clang-512387f04a364ace36e64535890ff29fc952b4ea - generated 2026-07-21T18:10:27.872694+00:00</div>
+<div class="commit-message">mc68681: fix transmitter deadlock in tra_complete (#15564)
+
+The transmit-complete handler chose the next transmitter state from the TxRDY
+status bit rather than from whether another byte was queued in the THR.  On a
+race between a CPU THR write and the final bit-time of the byte being shifted
+out, two cases could permanently wedge the transmitter:
+
+ - completion with TxRDY set and a byte buffered took the &quot;else&quot; path, set
+   TxEMT, and dropped the buffered byte;
+ - completion with TxRDY clear and nothing buffered did nothing, leaving the
+   transmitter idle with both TxRDY and TxEMT clear.
+
+In either case TxRDY never re-asserts and the transmit clock stays stopped, so
+a byte never drains and a polled transmitter spins forever waiting on TxRDY.
+
+Decide from the queue instead: load a buffered byte if one is present,
+otherwise mark the transmitter idle by setting both TxRDY (THR empty) and TxEMT
+(shift register empty).  This is a no-op on the normal path, where tra_callback
+has already set TxRDY by the time completion is reached.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/roundup5/">roundup5</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/1fff85eec5d03e8335668d8ecc4b3aa0d5128433">1fff85eec5d03e8335668d8ecc4b3aa0d5128433</a></div>
