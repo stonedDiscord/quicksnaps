@@ -1,8 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3c9dc04eb1848ae0da666e5f43f1b2fe457c31fd">3c9dc04eb1848ae0da666e5f43f1b2fe457c31fd</a> from <a href="https://github.com/mamedev/mame/commit/51bfc6be517820596feb602752a8f7ef86b8614c">51bfc6be517820596feb602752a8f7ef86b8614c</a> - mame-linux-clang-3c9dc04eb1848ae0da666e5f43f1b2fe457c31fd - generated 2026-07-21T20:32:03.310828+00:00</div>
-<div class="commit-message">nec/pc8001.cpp: Fix clang error: &#x27;ram_w&#x27; is a protected member of &#x27;pc8001_state&#x27;</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/b5b8d9510058023e80ec3495ad8b2f749344257f">b5b8d9510058023e80ec3495ad8b2f749344257f</a> from <a href="https://github.com/mamedev/mame/commit/3c9dc04eb1848ae0da666e5f43f1b2fe457c31fd">3c9dc04eb1848ae0da666e5f43f1b2fe457c31fd</a> - mame-linux-clang-b5b8d9510058023e80ec3495ad8b2f749344257f - generated 2026-07-21T20:32:40.174455+00:00</div>
+<div class="commit-message">osd/sound/coreaudio_sound.cpp: fix a deadlock on exit (#15669)
+
+coreaudio_stream::close() took m_stream_mutex before calling AUGraphStop.
+AUGraphStop blocks until the CoreAudio I/O thread finishes any in-flight
+sink_render callback, and that callback also takes m_stream_mutex -- so
+holding the mutex across AUGraphStop deadlocks: this thread waits for the
+callback to finish, the callback waits for the mutex.
+
+Stop the graph first (which quiesces the I/O thread, so no further callbacks
+fire), then take the mutex for the rest of the teardown.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/carmarty/">carmarty</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fa04c58bc59dbfae83ecddfae345a2262e39b078">fa04c58bc59dbfae83ecddfae345a2262e39b078</a></div>
