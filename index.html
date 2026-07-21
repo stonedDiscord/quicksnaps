@@ -1,8 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/450f053baae7250b0ab5f3cf8608be6b837ac12f">450f053baae7250b0ab5f3cf8608be6b837ac12f</a> from <a href="https://github.com/mamedev/mame/commit/c1b5d74cab512d4399034ec350d8012456aa2114">c1b5d74cab512d4399034ec350d8012456aa2114</a> - mame-linux-clang-450f053baae7250b0ab5f3cf8608be6b837ac12f - generated 2026-07-21T19:37:53.633861+00:00</div>
-<div class="commit-message">sonix16: Fix decoding of BCLR and BSET</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/72341908be821a89624463eede90dc2328a36095">72341908be821a89624463eede90dc2328a36095</a> from <a href="https://github.com/mamedev/mame/commit/450f053baae7250b0ab5f3cf8608be6b837ac12f">450f053baae7250b0ab5f3cf8608be6b837ac12f</a> - mame-linux-clang-72341908be821a89624463eede90dc2328a36095 - generated 2026-07-21T19:39:42.078998+00:00</div>
+<div class="commit-message">cpu/drcbeut.cpp: Add support for invalidating code blocks in a specific logical address range without flushing the entire cache. [R. Belmont]
+* This allows TLB/MMU page invalidations to do targeted generated-code flushes without the performance hit of flushing the entire DRC.  PowerPC DRC changes which use this are currently being regression tested and will follow.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/x168/">x168</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/ecd58bf39a6779167340f5fca13cec197eaa4815">ecd58bf39a6779167340f5fca13cec197eaa4815</a></div>
