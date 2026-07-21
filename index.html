@@ -1,17 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/6da5e1f1c04a2188b9d722af9ea4787430a49424">6da5e1f1c04a2188b9d722af9ea4787430a49424</a> from <a href="https://github.com/mamedev/mame/commit/bfb7c203621febfe8dc54de8adc0a4b1524b969a">bfb7c203621febfe8dc54de8adc0a4b1524b969a</a> - mame-linux-clang-6da5e1f1c04a2188b9d722af9ea4787430a49424 - generated 2026-07-21T19:09:17.594393+00:00</div>
-<div class="commit-message">apple2/e/gs: fix slot arbitration (#15619)
-
-* apple2gs: implement INTCXROM (it overrides SLOTC3ROM and SLTROMSEL.)
-* apple2gs: implement INTC8ROM (propagate 8bf4bac) replacing
-  CNXX_INTROM, so slot3 internal firmware works like hardware.
-* apple2gs: undo 9dee876, unpopulated C800 returns floating bus.
-* apple2/e/gs: stop special-casing CFFF reads; allow the
-  (slot/internal/floating) read to happen during the cycle disabling
-  any expansion ROM.  This allows matching card-specific behavior.
-* also some tidying to make the three drivers more similar.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/88e9111e8e3a4261e075154813798a7fdc8a8c5f">88e9111e8e3a4261e075154813798a7fdc8a8c5f</a> from <a href="https://github.com/mamedev/mame/commit/6da5e1f1c04a2188b9d722af9ea4787430a49424">6da5e1f1c04a2188b9d722af9ea4787430a49424</a> - mame-linux-clang-88e9111e8e3a4261e075154813798a7fdc8a8c5f - generated 2026-07-21T19:09:54.391549+00:00</div>
+<div class="commit-message">osd/sdl: enable SDL3 macOS click-to-focus behavior (#15606)</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/crszonev2b/">crszonev2b</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14">fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14</a></div>
