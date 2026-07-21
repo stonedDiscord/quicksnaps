@@ -1,28 +1,28 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "553bbc0bb6cb4606826f31b51821f25377b61673",
+    "artifact": "mame-linux-clang-553bbc0bb6cb4606826f31b51821f25377b61673",
     "variant": "current",
     "input_fingerprint": "7a3dd4b4f513243b5d440d407214dc598566aa04096cd89eda4649ca6b3955a2"
   },
   "result": {
     "name": "macpb160",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "553bbc0bb6cb4606826f31b51821f25377b61673",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 0.877,
+        "status": "passed",
+        "duration_seconds": 11.833,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Error performing a late bind of function expecting type 10asc_device to instance of type 15asc_easc_device",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "553bbc0bb6cb4606826f31b51821f25377b61673",
+        "artifact": "mame-linux-clang-553bbc0bb6cb4606826f31b51821f25377b61673"
       }
     }
   }
