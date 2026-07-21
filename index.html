@@ -1,8 +1,29 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e1e75e70be631addabeae0d268defe7f4616e6b3">e1e75e70be631addabeae0d268defe7f4616e6b3</a> from <a href="https://github.com/mamedev/mame/commit/8f8a99bb5f94a19aa2e5c31d9ae19d3485275190">8f8a99bb5f94a19aa2e5c31d9ae19d3485275190</a> - mame-linux-clang-e1e75e70be631addabeae0d268defe7f4616e6b3 - generated 2026-07-21T20:02:25.848392+00:00</div>
-<div class="commit-message">konami/konamigv.cpp: Added freshly initialised Flash content for Dead Eye.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098">baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098</a> from <a href="https://github.com/mamedev/mame/commit/e1e75e70be631addabeae0d268defe7f4616e6b3">e1e75e70be631addabeae0d268defe7f4616e6b3</a> - mame-linux-clang-baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098 - generated 2026-07-21T20:08:53.499869+00:00</div>
+<div class="commit-message">sega/model1: repair 2-bit corruption in 315-5711 TGP copro ROM (Wing War, SWA, NetMerc) (#15649)
+
+The 315-5711.bin dump has two single-bit corruptions (spurious bit 1 in the
+low byte, likely a D1 line fault during ROM capture):
+
+- PC 0x8B: brif alw #0x59e → #0x59c (op 0x34 dispatch)
+  The handler for the specialised affine inverse begins at 0x59c with
+  setup instructions (mov $7,x1; mov $4,d). Jumping to 0x59e skips
+  this setup, leaving x1=0x100 from the previous slot, reading
+  data[0x301]=ZERO → division by zero → 270 NaN words leak to FIFO.
+
+- PC 0x67e: lia #2 → lia #0 (op 0x38 record loop)
+  Op 0x38 performs segment-vs-collision-model tests. The loop at
+  0x67d-0x685 calls subroutine 0x686 (returns 0=hit, 1..4=miss) and
+  adds a constant via addd. With lia #2, every result was offset by 2,
+  so the V60 host always saw 2..6 and never detected hits (brif zrd).
+  The twin idiom in op 0x18 (same subroutine, same handler pattern)
+  confirms lia #0 is the intended value.
+
+Both games and MAME itself run the unrepaired dump, so the arcade
+machine is the oracle. Wing War&#x27;s machine gun now registers damage
+correctly after this fix.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rcorsair/">rcorsair</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/63f49746869d1e1398cd5f348c982637cb38c21e">63f49746869d1e1398cd5f348c982637cb38c21e</a></div>
@@ -117,66 +138,6 @@
 <div class="comparison">
 <figure><a href="machines/crszone/previous/before.png"><img loading="lazy" src="machines/crszone/previous/before.png" alt="crszone previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/crszone/current/before.png"><img loading="lazy" src="machines/crszone/current/before.png" alt="crszone current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vr/">vr</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vr/previous/after.png"><img loading="lazy" src="machines/vr/previous/after.png" alt="vr previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vr/current/after.png"><img loading="lazy" src="machines/vr/current/after.png" alt="vr current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vr/">vr</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vr/previous/before.png"><img loading="lazy" src="machines/vr/previous/before.png" alt="vr previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vr/current/before.png"><img loading="lazy" src="machines/vr/current/before.png" alt="vr current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vformula/">vformula</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vformula/previous/after.png"><img loading="lazy" src="machines/vformula/previous/after.png" alt="vformula previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vformula/current/after.png"><img loading="lazy" src="machines/vformula/current/after.png" alt="vformula current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vformula/">vformula</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vformula/previous/before.png"><img loading="lazy" src="machines/vformula/previous/before.png" alt="vformula previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vformula/current/before.png"><img loading="lazy" src="machines/vformula/current/before.png" alt="vformula current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vf/">vf</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vf/previous/after.png"><img loading="lazy" src="machines/vf/previous/after.png" alt="vf previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vf/current/after.png"><img loading="lazy" src="machines/vf/current/after.png" alt="vf current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vf/">vf</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/vf/previous/before.png"><img loading="lazy" src="machines/vf/previous/before.png" alt="vf previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vf/current/before.png"><img loading="lazy" src="machines/vf/current/before.png" alt="vf current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/swaj/">swaj</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/swaj/previous/after.png"><img loading="lazy" src="machines/swaj/previous/after.png" alt="swaj previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/swaj/current/after.png"><img loading="lazy" src="machines/swaj/current/after.png" alt="swaj current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/swaj/">swaj</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/swaj/previous/before.png"><img loading="lazy" src="machines/swaj/previous/before.png" alt="swaj previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/swaj/current/before.png"><img loading="lazy" src="machines/swaj/current/before.png" alt="swaj current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/swa/">swa</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/swa/previous/after.png"><img loading="lazy" src="machines/swa/previous/after.png" alt="swa previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/swa/current/after.png"><img loading="lazy" src="machines/swa/current/after.png" alt="swa current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/swa/">swa</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/70e0c03dadafe7e30b6ccc116e885aeb026e60d8">70e0c03dadafe7e30b6ccc116e885aeb026e60d8</a></div>
-<div class="comparison">
-<figure><a href="machines/swa/previous/before.png"><img loading="lazy" src="machines/swa/previous/before.png" alt="swa previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/swa/current/before.png"><img loading="lazy" src="machines/swa/current/before.png" alt="swa current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/roundup5/">roundup5</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/1fff85eec5d03e8335668d8ecc4b3aa0d5128433">1fff85eec5d03e8335668d8ecc4b3aa0d5128433</a></div>
@@ -603,6 +564,66 @@
 <div class="comparison">
 <figure><a href="machines/sist1/previous/after.png"><img loading="lazy" src="machines/sist1/previous/after.png" alt="sist1 previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/sist1/current/after.png"><img loading="lazy" src="machines/sist1/current/after.png" alt="sist1 current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/sist1/">sist1</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/sist1/previous/before.png"><img loading="lazy" src="machines/sist1/previous/before.png" alt="sist1 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/sist1/current/before.png"><img loading="lazy" src="machines/sist1/current/before.png" alt="sist1 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/saturnkr/">saturnkr</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/saturnkr/previous/after.png"><img loading="lazy" src="machines/saturnkr/previous/after.png" alt="saturnkr previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/saturnkr/current/after.png"><img loading="lazy" src="machines/saturnkr/current/after.png" alt="saturnkr current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/saturnkr/">saturnkr</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/saturnkr/previous/before.png"><img loading="lazy" src="machines/saturnkr/previous/before.png" alt="saturnkr previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/saturnkr/current/before.png"><img loading="lazy" src="machines/saturnkr/current/before.png" alt="saturnkr current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/saturnjp/">saturnjp</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/saturnjp/previous/after.png"><img loading="lazy" src="machines/saturnjp/previous/after.png" alt="saturnjp previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/saturnjp/current/after.png"><img loading="lazy" src="machines/saturnjp/current/after.png" alt="saturnjp current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/saturnjp/">saturnjp</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/saturnjp/previous/before.png"><img loading="lazy" src="machines/saturnjp/previous/before.png" alt="saturnjp previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/saturnjp/current/before.png"><img loading="lazy" src="machines/saturnjp/current/before.png" alt="saturnjp current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/roadriotb/">roadriotb</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/roadriotb/previous/after.png"><img loading="lazy" src="machines/roadriotb/previous/after.png" alt="roadriotb previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/roadriotb/current/after.png"><img loading="lazy" src="machines/roadriotb/current/after.png" alt="roadriotb current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/roadriotb/">roadriotb</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/roadriotb/previous/before.png"><img loading="lazy" src="machines/roadriotb/previous/before.png" alt="roadriotb previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/roadriotb/current/before.png"><img loading="lazy" src="machines/roadriotb/current/before.png" alt="roadriotb current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/roadriota/">roadriota</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/roadriota/previous/after.png"><img loading="lazy" src="machines/roadriota/previous/after.png" alt="roadriota previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/roadriota/current/after.png"><img loading="lazy" src="machines/roadriota/current/after.png" alt="roadriota current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/roadriota/">roadriota</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/roadriota/previous/before.png"><img loading="lazy" src="machines/roadriota/previous/before.png" alt="roadriota previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/roadriota/current/before.png"><img loading="lazy" src="machines/roadriota/current/before.png" alt="roadriota current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/roadriot/">roadriot</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/roadriot/previous/after.png"><img loading="lazy" src="machines/roadriot/previous/after.png" alt="roadriot previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/roadriot/current/after.png"><img loading="lazy" src="machines/roadriot/current/after.png" alt="roadriot current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
