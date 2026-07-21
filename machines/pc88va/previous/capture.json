@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "5e91041951c9d49f1ca03cc9645a068f22ba5ecc",
-    "artifact": "mame-linux-clang-5e91041951c9d49f1ca03cc9645a068f22ba5ecc",
+    "revision": "1518ff6cc2480a7c663ebda542429d16e9a623df",
+    "artifact": "mame-linux-clang-1518ff6cc2480a7c663ebda542429d16e9a623df",
     "variant": "previous",
     "input_fingerprint": "a5fd1dcbf9d5bbbbd5c5d745bd1a3dfb3fcfcfe2db443333669b7066715fc003"
   },
   "result": {
     "name": "pc88va",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "5e91041951c9d49f1ca03cc9645a068f22ba5ecc",
+    "revision": "1518ff6cc2480a7c663ebda542429d16e9a623df",
     "captures": {
       "previous": {
-        "status": "failed",
-        "captured_at": "2026-07-21T16:13:32.646970+00:00",
-        "duration_seconds": 1.36,
+        "status": "passed",
+        "captured_at": "2026-07-21T16:40:13.919724+00:00",
+        "duration_seconds": 3.584,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Error performing a late bind of function expecting type 19pc8801fh_kbd_device to instance of type 17pc88va_kbd_device",
-        "revision": "5e91041951c9d49f1ca03cc9645a068f22ba5ecc",
-        "artifact": "mame-linux-clang-5e91041951c9d49f1ca03cc9645a068f22ba5ecc"
+        "failure_reason": null,
+        "revision": "1518ff6cc2480a7c663ebda542429d16e9a623df",
+        "artifact": "mame-linux-clang-1518ff6cc2480a7c663ebda542429d16e9a623df"
       }
     }
   }
