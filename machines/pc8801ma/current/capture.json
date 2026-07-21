@@ -1,28 +1,28 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "e509909bd5916ebbcb6cc97aed5b67c2e9f546eb",
-    "artifact": "mame-linux-clang-e509909bd5916ebbcb6cc97aed5b67c2e9f546eb",
+    "revision": "a7920cbed9101c97dba1b76ea8e8e658370cc097",
+    "artifact": "mame-linux-clang-a7920cbed9101c97dba1b76ea8e8e658370cc097",
     "variant": "current",
     "input_fingerprint": "a6cf36c8485b21d6041da9e1aa87d10d30aebfab05bdda26a1a13cb451392d18"
   },
   "result": {
     "name": "pc8801ma",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "e509909bd5916ebbcb6cc97aed5b67c2e9f546eb",
+    "revision": "a7920cbed9101c97dba1b76ea8e8e658370cc097",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 12.383,
+        "status": "failed",
+        "duration_seconds": 1.083,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "e509909bd5916ebbcb6cc97aed5b67c2e9f546eb",
-        "artifact": "mame-linux-clang-e509909bd5916ebbcb6cc97aed5b67c2e9f546eb"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "a7920cbed9101c97dba1b76ea8e8e658370cc097",
+        "artifact": "mame-linux-clang-a7920cbed9101c97dba1b76ea8e8e658370cc097"
       }
     }
   }
