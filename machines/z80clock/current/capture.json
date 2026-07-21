@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "a88d9695e0b9225aade7bad26d8574cf1af7ec79",
+    "artifact": "mame-linux-clang-a88d9695e0b9225aade7bad26d8574cf1af7ec79",
+    "variant": "current",
+    "input_fingerprint": "dc4614abede5969e9f0c85fe78d498d1ac9c653f6719931426312e1771ae772f"
+  },
+  "result": {
+    "name": "z80clock",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "a88d9695e0b9225aade7bad26d8574cf1af7ec79",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 1.047,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge1",
+        "revision": "a88d9695e0b9225aade7bad26d8574cf1af7ec79",
+        "artifact": "mame-linux-clang-a88d9695e0b9225aade7bad26d8574cf1af7ec79"
+      }
+    }
+  }
+}
