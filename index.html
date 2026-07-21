@@ -1,20 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/9a2cf2453e150149b7b88c3760f226dbcbd7ae75">9a2cf2453e150149b7b88c3760f226dbcbd7ae75</a> from <a href="https://github.com/mamedev/mame/commit/03d35a722634bc224427221093d886e4fc7491c6">03d35a722634bc224427221093d886e4fc7491c6</a> - mame-linux-clang-9a2cf2453e150149b7b88c3760f226dbcbd7ae75 - generated 2026-07-21T17:16:55.546851+00:00</div>
-<div class="commit-message">Cleaned up various stuff:
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/a22f35281fe8e0063d400e83119a0baf11cc5f90">a22f35281fe8e0063d400e83119a0baf11cc5f90</a> from <a href="https://github.com/mamedev/mame/commit/9a2cf2453e150149b7b88c3760f226dbcbd7ae75">9a2cf2453e150149b7b88c3760f226dbcbd7ae75</a> - mame-linux-clang-a22f35281fe8e0063d400e83119a0baf11cc5f90 - generated 2026-07-21T17:17:35.993624+00:00</div>
+<div class="commit-message">sega/model1: fix Virtua Fighter collision via TGP copro-RAM port model (#15582)
 
-* bus/nscsi/sa1403d.cpp: It&#x27;s unsafe to register vectors that may be
-  resized or reallocated for save states.
-* machine/am9517a.cpp: A default argument value for a protected
-  constructor is a bug waiting to happen, a default zero clock for a
-  device_execute_interface is a bug waiting to happen.
-* video/ym7101.cpp: Make some effort to return a realistic value from
-  data_port_r when side effects are suppressed.
-* konami/zr107.cpp: Refactored out common address map, added TODO for
-  area where Midnight Run EAC tests SRAM.
-* sega/model3.cpp: Got rid of a trampoline for UART reads.  There&#x27;s
-  still a hacky UART write handler.</div></header>
+The copro RAM data port (TGP side) had a bug that broke VF&#x27;s collision pre-filter (op 0x63), causing skipped knockdowns and the characteristic &quot;both fighters fall on one hit&quot; double-knockdown.
+
+VF stores each vertex to check as 4 bytes (X/Y/Z/radius) and bits 16 &amp; 17 of the address select the stride for the address auto-increment.  VF is the only game that sets the stride to anything other than 1 so this is a no-op for the other games.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/vs299/">vs299</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/9a2cf2453e150149b7b88c3760f226dbcbd7ae75">9a2cf2453e150149b7b88c3760f226dbcbd7ae75</a></div>
