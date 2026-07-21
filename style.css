@@ -1,6 +1,19 @@
 :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #111418; color: #e8edf2; }
 body { max-width: 1500px; margin: auto; padding: 2rem; }
-h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
+h1 { margin-bottom: .3rem; } h2 { margin-top: 2.5rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
+a { color: #8fc7ff; } a:hover { color: #c7e4ff; }
+.hero { padding: 1.5rem 0 1rem; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.2rem; }
+.gallery-card { overflow: hidden; border: 1px solid #38414b; border-radius: .7rem; background: #171b20; box-shadow: 0 .4rem 1.3rem #080a0c80; }
+.gallery-card h3 { margin: 0; padding: .9rem 1rem .3rem; }
+.gallery-card .reason { padding: 0 1rem .9rem; font-size: .85rem; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: #38414b; }
+.comparison figure { background: #080a0c; }
+.comparison figcaption { padding: .45rem .7rem; margin: 0; }
+.comparison img { display: block; border: 0; }
+.game-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .45rem; }
+.game-link { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: .7rem .8rem; border: 1px solid #303943; border-radius: .35rem; background: #171b20; }
+.game-link .status { font-size: .7rem; }
 .machine { border-top: 1px solid #38414b; padding: 1.5rem 0 2rem; }
 .machine h2 { display: inline-block; margin: 0 1rem .8rem 0; }
 .machine.archived { padding: .65rem 0; } .machine.archived h2 { margin: 0; font-size: 1rem; }
@@ -16,4 +29,4 @@ pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; whi
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
-@media (max-width: 750px) { .shots { grid-template-columns: 1fr; } body { padding: 1rem; } }
+@media (max-width: 750px) { .shots { grid-template-columns: 1fr; } .gallery { grid-template-columns: 1fr; } body { padding: 1rem; } }
