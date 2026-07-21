@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "61a19a707955a4e51de5a0398caa19c05ed4d9c4",
+    "artifact": "mame-linux-clang-61a19a707955a4e51de5a0398caa19c05ed4d9c4",
     "variant": "current",
     "input_fingerprint": "60b0050279f7f875a405040b9a178ed4b72a3c1433f4bbb813bb797db184740c"
   },
   "result": {
     "name": "upyoural",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "61a19a707955a4e51de5a0398caa19c05ed4d9c4",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 3.63,
+        "status": "failed",
+        "captured_at": "2026-07-21T20:40:10.640325+00:00",
+        "duration_seconds": 1.036,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "61a19a707955a4e51de5a0398caa19c05ed4d9c4",
+        "artifact": "mame-linux-clang-61a19a707955a4e51de5a0398caa19c05ed4d9c4"
       }
     }
   }
