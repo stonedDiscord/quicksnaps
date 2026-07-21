@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "37399a5e529a432cb0538ec1dbce539f4fc95a7b",
-    "artifact": "mame-linux-clang-37399a5e529a432cb0538ec1dbce539f4fc95a7b",
+    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37",
     "variant": "previous",
     "input_fingerprint": "627aa58ee5c6e2ae30bae99d11cd3fec0188d28870b07d514736b9028c51c0cf"
   },
   "result": {
     "name": "punij1m",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "37399a5e529a432cb0538ec1dbce539f4fc95a7b",
+    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
     "captures": {
       "previous": {
-        "status": "passed",
-        "duration_seconds": 68.343,
+        "status": "failed",
+        "captured_at": "2026-07-21T19:50:58.686247+00:00",
+        "duration_seconds": 0.828,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "37399a5e529a432cb0538ec1dbce539f4fc95a7b",
-        "artifact": "mame-linux-clang-37399a5e529a432cb0538ec1dbce539f4fc95a7b"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
+        "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37"
       }
     }
   }

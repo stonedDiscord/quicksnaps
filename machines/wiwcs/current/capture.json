@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-    "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "88985f39b1adce56827e80e40d92deeda013618f",
+    "artifact": "mame-linux-clang-88985f39b1adce56827e80e40d92deeda013618f",
     "variant": "current",
     "input_fingerprint": "bfeb118c73db1e194991183502978acd8394aaa6a38c21568b2a824d66dc7016"
   },
   "result": {
     "name": "wiwcs",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "88985f39b1adce56827e80e40d92deeda013618f",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 21.81,
+        "status": "failed",
+        "captured_at": "2026-07-21T19:52:11.357726+00:00",
+        "duration_seconds": 0.83,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-        "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "88985f39b1adce56827e80e40d92deeda013618f",
+        "artifact": "mame-linux-clang-88985f39b1adce56827e80e40d92deeda013618f"
       }
     }
   }

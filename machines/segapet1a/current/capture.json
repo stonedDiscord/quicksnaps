@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-    "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "88985f39b1adce56827e80e40d92deeda013618f",
+    "artifact": "mame-linux-clang-88985f39b1adce56827e80e40d92deeda013618f",
     "variant": "current",
     "input_fingerprint": "a698ea85a58b704e76942839ad9656af17234b65f54723d1e2194107c15708cb"
   },
   "result": {
     "name": "segapet1a",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "88985f39b1adce56827e80e40d92deeda013618f",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 12.206,
+        "status": "failed",
+        "captured_at": "2026-07-21T19:52:10.870993+00:00",
+        "duration_seconds": 1.122,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-        "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "88985f39b1adce56827e80e40d92deeda013618f",
+        "artifact": "mame-linux-clang-88985f39b1adce56827e80e40d92deeda013618f"
       }
     }
   }
