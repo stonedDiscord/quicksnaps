@@ -1,23 +1,40 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d35289f412bd40f1d9791108b8426e95b39c3895">d35289f412bd40f1d9791108b8426e95b39c3895</a> from <a href="https://github.com/mamedev/mame/commit/e67e4b6d371d6366bd718513a5898a0850de6357">e67e4b6d371d6366bd718513a5898a0850de6357</a> - mame-linux-clang-d35289f412bd40f1d9791108b8426e95b39c3895 - generated 2026-07-21T20:26:47.006168+00:00</div>
-<div class="commit-message">devices/machine/wd1002_05.cpp: Support all documented floppy sector sizes (#15665)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/aefacfa750e8b103c7504f05c4a93c7ce994a4d8">aefacfa750e8b103c7504f05c4a93c7ce994a4d8</a> from <a href="https://github.com/mamedev/mame/commit/d35289f412bd40f1d9791108b8426e95b39c3895">d35289f412bd40f1d9791108b8426e95b39c3895</a> - mame-linux-clang-aefacfa750e8b103c7504f05c4a93c7ce994a4d8 - generated 2026-07-21T20:27:56.497918+00:00</div>
+<div class="commit-message">`esq5505.cpp,{vfx,vfxsd,sd1,sd132}.lay`: add footswitch support and update button documentation. (#15638)
 
-The WD1015 front-end selects the floppy sector size from SDH bits 6-5
-(00=256, 01=512, 10=1024, 11=128) and routes the command to the WD2797.
-The floppy read/write/format paths were fixed at 512 bytes and encoded
-the WD2797 sector length without the length (L) bit, so real Xerox 16/8
-media (IBM 128&lt;&lt;N, ID N=2 = 512) read back as 1024 and the Expansion
-Module II INIT utility could not format a disk.
+* esq5505.cpp: Update button documentation comments.
 
-- derive the selected sector length from SDH bits 6-5 for the host
-  read/write/format byte counts and the buffer bound
-- issue WD2797 read/write with the L bit set (128&lt;&lt;N), matching 16/8 media
-- clear the per-command floppy error before each command: the box ROM&#x27;s
-  geometry probe issues SEEK-then-READ through a shared status poll, so a
-  stale record-not-found must not abort the following command
-- widen the shared WD1002-HD0 board sector buffer to 1K, per the manual</div></header>
+Update names to match labels on the actual keyboards.
+
+- Adds entries for &quot;buttons&quot; 0 and 1.
+  These correspond to the &quot;Foot Switch&quot; (&quot;Ft. Sw.&quot;) jack input for connecting
+  Sustain / Sostenuto pedals such as Ensoniq&#x27;s own SW-1 basic foot Switch
+  or their SW-5 Dual foot switch.
+
+- Button 29 is &quot;Replace Program&quot;.
+- Buttons 30 and 31 are labeled &#x27;Multi A&#x27; and &#x27;Multi B&#x27; on VFX.
+- Button 52 is labeled &quot;BankSet&quot; on SD-1 and SD-1/32.
+
+Also slightly reformat the entries for the buttons that are not present on the
+VFX, putting their label when present first, and documenting the error second.
+
+* {vfx,vfxsd,sd1,sd132}.lay: Regenerate layouts.
+
+Regenerated layouts now include optional foot switches in the Full and Compact views.
+
+These are mapped to &quot;buttons&quot; 0 and 1.
+
+On the &quot;Master&quot; page, the second line allows assigning `FOOTSWITCH`es,
+with `FS1` being the left footswitch and `FS2` the right one;
+they can be assigned to sostenuto&amp;sustain, patch selects,
+and the left (`FS1`) to preset-changing and a few sequencer-editing functions.
+
+Pedals are hidden by default, but can be enabled in MAME&#x27;s Video Options menu.
+
+Also, buttons now use a single SVG `&lt;image&gt;` with one `&lt;color&gt;` per state,
+rather than one `&lt;image&gt;` per state.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/carmarty/">carmarty</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fa04c58bc59dbfae83ecddfae345a2262e39b078">fa04c58bc59dbfae83ecddfae345a2262e39b078</a></div>
