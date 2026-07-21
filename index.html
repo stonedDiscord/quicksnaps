@@ -1,22 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/77afcdd8f5bca9c02f1615602adba988e240888b">77afcdd8f5bca9c02f1615602adba988e240888b</a> from <a href="https://github.com/mamedev/mame/commit/c9d4e7d3e5e5798ec2334d2cd4eb6c81f7ca6c3d">c9d4e7d3e5e5798ec2334d2cd4eb6c81f7ca6c3d</a> - mame-linux-clang-77afcdd8f5bca9c02f1615602adba988e240888b - generated 2026-07-21T19:03:24.629910+00:00</div>
-<div class="commit-message">mc68681: assert TxRDY at the THR-&gt;shift transfer (#15613)
-
-GitHub PR #15564 cured a transmitter deadlock but asserted TxRDY (together
-with TxEMT) only in tra_complete&#x27;s idle branch, i.e. at end-of-transmission.
-Per the SCN2681/MC68681 datasheet TxRDY is asserted at the THR-&gt;shift-register
-transfer, one full character time earlier, so firmware that pipelines on TxRDY
-(the Ensoniq VFX inter-board link and MIDI, e.g. sd132) saw the ready window a
-character time late and dropped bytes, tripping SYSTEM ERROR 144.
-
-Assert TxRDY in the reload branch where the queued THR byte transfers into the
-shift register; the idle branch sets TxEMT only. This keeps #15564&#x27;s deadlock
-cure (TxRDY still re-asserts whenever a byte is queued) while restoring the
-correct one-character buffering window.
-
-Tested on sd132 (VFX) and pc532 System V (4x SCN2681 console).</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/40d0f1125befade5edc08ec5699442ca3a229c01">40d0f1125befade5edc08ec5699442ca3a229c01</a> from <a href="https://github.com/mamedev/mame/commit/77afcdd8f5bca9c02f1615602adba988e240888b">77afcdd8f5bca9c02f1615602adba988e240888b</a> - mame-linux-clang-40d0f1125befade5edc08ec5699442ca3a229c01 - generated 2026-07-21T19:04:14.052197+00:00</div>
+<div class="commit-message">src/devices: Use std::has_single_bit in various assertions and sanity checks</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/crszonev2b/">crszonev2b</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14">fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14</a></div>
