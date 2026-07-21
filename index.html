@@ -1,16 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2f09baf036f4c95b6a86407f7e826e6ca7dbaf78">2f09baf036f4c95b6a86407f7e826e6ca7dbaf78</a> from <a href="https://github.com/mamedev/mame/commit/dc9e363f4e51fbf0bbde35dd252e8bab24874486">dc9e363f4e51fbf0bbde35dd252e8bab24874486</a> - mame-linux-clang-2f09baf036f4c95b6a86407f7e826e6ca7dbaf78 - generated 2026-07-21T21:21:41.099441+00:00</div>
-<div class="commit-message">GPL16250 cleanup checkpoint / milestone (#15654)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d2b8c3de14a62d434098f0d9894922719fc1efe6">d2b8c3de14a62d434098f0d9894922719fc1efe6</a> from <a href="https://github.com/mamedev/mame/commit/2f09baf036f4c95b6a86407f7e826e6ca7dbaf78">2f09baf036f4c95b6a86407f7e826e6ca7dbaf78</a> - mame-linux-clang-d2b8c3de14a62d434098f0d9894922719fc1efe6 - generated 2026-07-21T21:22:15.085660+00:00</div>
+<div class="commit-message">h8: update active DMA channel on start/stop (#15678)
 
-- added 2 internal ROMs from GPL16250 devices (assumed to be generic for GPL16250 parts for the time being) [cyanic]
-- removed sketchy NAND handling logic from gpl16250_soc and pump through the nandflash.cpp device instead [David Haywood]
-- removed the NAND/SPI split from gpl16250_soc, all GPL16250 chips support both (as do some earlier chips) [David Haywood]
-- added some NAND types needed for the JAKKS games etc. to nandflash.cpp [David Haywood]
-- added a few getters to nandflash.cpp so that we can manually get data out of the device for the existing bootstrap simulations now that a device is being used [David Haywood]
-- attempted to identify which GPL162xx model a few sets are [David Haywood]
-- misc cleanups [David Haywood]</div></header>
+Notify the H8 CPU when DMA channel active state changes so newly-started transfers are considered for execution.
+
+For H8H full address mode, restore completion behavior that clears DTCRA. This lets Brother LW-840ic and LW-700i firmware observe DMA completion instead of polling indefinitely.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/holddraw/">holddraw</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/3e27dd430f958eaeb6043ca40028486f9961ee5d">3e27dd430f958eaeb6043ca40028486f9961ee5d</a></div>
