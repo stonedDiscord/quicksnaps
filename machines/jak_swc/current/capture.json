@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "1a5a30d938b04c78a130ade4b7f9811ca422503c",
-    "artifact": "mame-linux-clang-1a5a30d938b04c78a130ade4b7f9811ca422503c",
+    "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
+    "artifact": "mame-linux-clang-2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
     "variant": "current",
     "input_fingerprint": "f10c5ed1a2f493f357750205ea681833ca4db185856beb692a8d50b8bdfa3ad6"
   },
   "result": {
     "name": "jak_swc",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "1a5a30d938b04c78a130ade4b7f9811ca422503c",
+    "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 31.201,
+        "status": "failed",
+        "captured_at": "2026-07-21T21:19:46.158883+00:00",
+        "duration_seconds": 2.038,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "1a5a30d938b04c78a130ade4b7f9811ca422503c",
-        "artifact": "mame-linux-clang-1a5a30d938b04c78a130ade4b7f9811ca422503c"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
+        "artifact": "mame-linux-clang-2f09baf036f4c95b6a86407f7e826e6ca7dbaf78"
       }
     }
   }
