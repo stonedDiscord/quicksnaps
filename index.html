@@ -1,10 +1,35 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d49f9396da7619143d16e8eeabd25629f98658b6">d49f9396da7619143d16e8eeabd25629f98658b6</a> from <a href="https://github.com/mamedev/mame/commit/b1c0b0f1aa1b4784da4abdf72b50207c93fe5af0">b1c0b0f1aa1b4784da4abdf72b50207c93fe5af0</a> - mame-linux-clang-d49f9396da7619143d16e8eeabd25629f98658b6 - generated 2026-07-21T17:25:27.845289+00:00</div>
-<div class="commit-message">cpu/powerpc/ppcdrc.cpp: Fixed little endian mode selection the 601. (#15592)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/9b6324cbe4c8a04e581afcbdec17ab776d69371e">9b6324cbe4c8a04e581afcbdec17ab776d69371e</a> from <a href="https://github.com/mamedev/mame/commit/d49f9396da7619143d16e8eeabd25629f98658b6">d49f9396da7619143d16e8eeabd25629f98658b6</a> - mame-linux-clang-9b6324cbe4c8a04e581afcbdec17ab776d69371e - generated 2026-07-21T17:25:59.261056+00:00</div>
+<div class="commit-message">imagedev/floppy: derive twosid_r() from media variant (#15418)
 
-PowerPC 601 uses a bit in HID0 to enable little endian mode.</div></header>
+* imagedev/floppy: derive twosid_r() from media variant
+
+Read media-sided-ness from the floppy_image variant tag rather than
+from observed track data via get_actual_geometry().  Drives sense
+single- vs double-sided media physically (e.g. 8&quot; Shugart TS# on pin
+30, from the index-hole position) so the answer must come from the
+media itself, not from whether the host happens to have written to
+head 1.  An unformatted SSSD diskette is still single-sided.
+
+Before this change, twosid_r() reported TWO-SIDED to a host BIOS for
+any freshly-mounted unformatted media (heads==0 from
+get_actual_geometry returns false) and could permanently mis-report
+after a host wrote spurious noise to head 1 of a single-sided
+diskette.
+
+No call-site changes needed: all 17 twosid_r() callers and the uPD765
+ST3 plumbing already do the right thing once this returns correctly.
+
+* imagedev/floppy: fall back to geometry when variant is untagged
+
+twosid_r() switched on the variant tag with default=two-sided, which
+relied on every format setting the variant.  Formats that never call
+set_variant() leave it 0 and were silently reported two-sided.  Treat
+variant 0 as &#x27;unknown&#x27; and fall back to the previous get_actual_geometry()
+result, so untagged formats keep their old behaviour while tagged media
+get the deterministic answer.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/vs299/">vs299</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/9a2cf2453e150149b7b88c3760f226dbcbd7ae75">9a2cf2453e150149b7b88c3760f226dbcbd7ae75</a></div>
