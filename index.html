@@ -1,12 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d2b8c3de14a62d434098f0d9894922719fc1efe6">d2b8c3de14a62d434098f0d9894922719fc1efe6</a> from <a href="https://github.com/mamedev/mame/commit/2f09baf036f4c95b6a86407f7e826e6ca7dbaf78">2f09baf036f4c95b6a86407f7e826e6ca7dbaf78</a> - mame-linux-clang-d2b8c3de14a62d434098f0d9894922719fc1efe6 - generated 2026-07-21T21:22:15.085660+00:00</div>
-<div class="commit-message">h8: update active DMA channel on start/stop (#15678)
-
-Notify the H8 CPU when DMA channel active state changes so newly-started transfers are considered for execution.
-
-For H8H full address mode, restore completion behavior that clears DTCRA. This lets Brother LW-840ic and LW-700i firmware observe DMA completion instead of polling indefinitely.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ebd3218f55c1d7216489cf6a0fc251f44bac9903">ebd3218f55c1d7216489cf6a0fc251f44bac9903</a> from <a href="https://github.com/mamedev/mame/commit/d2b8c3de14a62d434098f0d9894922719fc1efe6">d2b8c3de14a62d434098f0d9894922719fc1efe6</a> - mame-linux-clang-ebd3218f55c1d7216489cf6a0fc251f44bac9903 - generated 2026-07-21T21:22:52.098650+00:00</div>
+<div class="commit-message">h8/h8_timer8.cpp: if an IRQ is pending when you enable it, fire the IRQ.  tg100 demo playback needs this. [R. Belmont]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/holddraw/">holddraw</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/3e27dd430f958eaeb6043ca40028486f9961ee5d">3e27dd430f958eaeb6043ca40028486f9961ee5d</a></div>
