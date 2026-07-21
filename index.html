@@ -1,10 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/70bc57d0842c10c53f1ce33eb751b05c683aefd6">70bc57d0842c10c53f1ce33eb751b05c683aefd6</a> from <a href="https://github.com/mamedev/mame/commit/671e198428ecb65fe1e7f9b7c07068d0ef66e0d7">671e198428ecb65fe1e7f9b7c07068d0ef66e0d7</a> - mame-linux-clang-70bc57d0842c10c53f1ce33eb751b05c683aefd6 - generated 2026-07-21T22:26:38.049455+00:00</div>
-<div class="commit-message">roland/boss_se70.cpp: Add RAM
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/4515e9a34ebc278d6e2a8aa29775bdb606ffc64b">4515e9a34ebc278d6e2a8aa29775bdb606ffc64b</a> from <a href="https://github.com/mamedev/mame/commit/70bc57d0842c10c53f1ce33eb751b05c683aefd6">70bc57d0842c10c53f1ce33eb751b05c683aefd6</a> - mame-linux-clang-4515e9a34ebc278d6e2a8aa29775bdb606ffc64b - generated 2026-07-21T22:28:00.978340+00:00</div>
+<div class="commit-message">sound/cem3394.cpp: removed unecessary stream updates. (#15688)
 
-* h8500: Minor flag fix for disassembler</div></header>
+Some simplificatioms:
+* Removed no-longer-necessary stream updates.
+* Moved route gain updates that only happen in one place out of update_mix().
+* Simplified pulse width computation.
+* Removed on/off state for pulse waveform. Similar to the real hardware, the
+  pulse waveform is always &quot;on&quot;, but it effectively becomes 0 at both pulse-width
+  extremes due to the pulse dc compensation (configured in `device_add_mconfig()`).</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/revo_fr/">revo_fr</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
