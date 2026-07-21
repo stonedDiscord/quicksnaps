@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "7e7179fc448cd940c729360ba4c003d137797547",
+    "artifact": "mame-linux-clang-7e7179fc448cd940c729360ba4c003d137797547",
+    "variant": "current",
+    "input_fingerprint": "0b3a0ee6f73066afbc378af2c83fa845decc962ff88e22a2638c9cb83892b2fd"
+  },
+  "result": {
+    "name": "genie3de",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "7e7179fc448cd940c729360ba4c003d137797547",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-07-21T22:43:18.006796+00:00",
+        "duration_seconds": 0.507,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "7e7179fc448cd940c729360ba4c003d137797547",
+        "artifact": "mame-linux-clang-7e7179fc448cd940c729360ba4c003d137797547"
+      }
+    }
+  }
+}
