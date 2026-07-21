@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "6e05adef683297f82359f1400db677a6095779d0",
-    "artifact": "mame-linux-clang-6e05adef683297f82359f1400db677a6095779d0",
+    "revision": "ecd58bf39a6779167340f5fca13cec197eaa4815",
+    "artifact": "mame-linux-clang-ecd58bf39a6779167340f5fca13cec197eaa4815",
     "variant": "current",
     "input_fingerprint": "bad1d1c2e2291df34c83432bbb564c7de7f8491960b85f1c7b6922ca3823fb20"
   },
   "result": {
     "name": "x820ii",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "6e05adef683297f82359f1400db677a6095779d0",
+    "revision": "ecd58bf39a6779167340f5fca13cec197eaa4815",
     "captures": {
       "current": {
-        "status": "passed",
-        "captured_at": "2026-07-21T16:32:29.989321+00:00",
-        "duration_seconds": 1.641,
+        "status": "failed",
+        "captured_at": "2026-07-21T19:30:03.852785+00:00",
+        "duration_seconds": 0.993,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "6e05adef683297f82359f1400db677a6095779d0",
-        "artifact": "mame-linux-clang-6e05adef683297f82359f1400db677a6095779d0"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "ecd58bf39a6779167340f5fca13cec197eaa4815",
+        "artifact": "mame-linux-clang-ecd58bf39a6779167340f5fca13cec197eaa4815"
       }
     }
   }
