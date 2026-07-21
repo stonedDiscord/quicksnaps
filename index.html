@@ -1,64 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/abdec314f13565be62844deb421a7b6b398fee7a">abdec314f13565be62844deb421a7b6b398fee7a</a> from <a href="https://github.com/mamedev/mame/commit/ce6dcdcb01995270c83f98b158bf10ddb75d0558">ce6dcdcb01995270c83f98b158bf10ddb75d0558</a> - mame-linux-clang-abdec314f13565be62844deb421a7b6b398fee7a - generated 2026-07-21T20:19:46.268136+00:00</div>
-<div class="commit-message">machine/ncr5380.cpp: initiator DMA, data bus and reset fixes (#15658)
-
-* machine/ncr5380.cpp: implement target mode
-
-The target role (the file&#x27;s standing TODO): in target mode the Target
-Command Register drives the phase lines and, outside DMA, REQ (SP-1051
-6.4); Start DMA Send sends to the initiator and Start DMA Target Receive
-is implemented (6.8.1, 6.8.2); a new REQ/ACK-handshake state group moves
-the data.  The Select Enable Register now latches and raises the
-selection/reselection interrupt on a bus ID match (6.6, 8.1), with a
-guard so a chip selecting outward never matches its own ID.  All target
-paths are gated on MODE_TARGET, which no existing machine sets; initiator
-behavior is unchanged.
-
-First consumer: the ET532 SCSI coprocessor card (NS32532 board operating
-as a target on the pc532 532SC bus), including target-initiated
-reselection.
-
-* machine/ncr5380.cpp: initiator DMA, data bus and reset fixes
-
-Four corrections to initiator behavior, each against SP-1051 (the design
-manual already cited in the header):
-
-- DMA phase mismatch and DRQ (6.7, 10.3, 10.5.2): a send leaves the
-  request for the next, never-transferred byte pending across the
-  mismatch (&quot;the DRQ signal does not reset when a phase mismatch
-  interrupt occurs&quot;); the host completes the transfer by cycling DACK
-  once more so ACK can release.  A receive has no pending request, so
-  raising DRQ there fed pseudo-DMA read loops a garbage byte.  DRQ is
-  now raised at a mismatch only for OUT transfers.
-
-- Initiator data-bus release (ICR bit 0, 8.5): the data drivers are
-  enabled only while the phase lines match the target-command register;
-  on a mismatch &quot;DB0-DB7, DBP will not be driven even though the ASSERT
-  DATA BUS bit is active&quot;.  Previously the last data byte stayed
-  wire-OR&#x27;d over the target&#x27;s STATUS byte.  Release-only; the
-  drivers re-enable through the normal register paths.
-
-- Self-initiated bus reset (8.3, 9.3): the base 5380 interrupts on any
-  RST transition including its own (&quot;this interrupt cannot be
-  disabled&quot;) -- that behavior is unchanged.  The DP8490 EASI diverges:
-  firmware written for the real part (the NetBSD/pc532 ROM monitor)
-  asserts RST and treats a resulting interrupt as a fault, so the
-  suppression is scoped to dp8490_device only.
-
-- A DMA wait state that made no progress and requested no delay now
-  re-arms at the SCSI REQ/ACK period instead of zero, so emulated time
-  advances and the target can respond (previously hung the emulation).
-
-Validated together: Macintosh Plus/SE boot System 6.0.8 from SCSI to the
-Finder (with an AppleCD attached); NetBSD 1.5.3 and System V on pc532
-(DP8490) boot with disk I/O exercise; ET532 target-mode suite.
-
----------
-
-Co-authored-by: AJR &lt;ajrhacker@users.noreply.github.com&gt;</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/923fb9f3656c42a11865c04ab6e10fb13a5c0427">923fb9f3656c42a11865c04ab6e10fb13a5c0427</a> from <a href="https://github.com/mamedev/mame/commit/abdec314f13565be62844deb421a7b6b398fee7a">abdec314f13565be62844deb421a7b6b398fee7a</a> - mame-linux-clang-923fb9f3656c42a11865c04ab6e10fb13a5c0427 - generated 2026-07-21T20:20:47.125610+00:00</div>
+<div class="commit-message">nec/pc6001.cpp: implement pc6001mk2sr/pc6601sr text mode CLUT</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/pc6001mk2sr/">pc6001mk2sr</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/923fb9f3656c42a11865c04ab6e10fb13a5c0427">923fb9f3656c42a11865c04ab6e10fb13a5c0427</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001mk2sr/previous/after.png"><img loading="lazy" src="machines/pc6001mk2sr/previous/after.png" alt="pc6001mk2sr previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001mk2sr/current/after.png"><img loading="lazy" src="machines/pc6001mk2sr/current/after.png" alt="pc6001mk2sr current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pc6001mk2sr/">pc6001mk2sr</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/923fb9f3656c42a11865c04ab6e10fb13a5c0427">923fb9f3656c42a11865c04ab6e10fb13a5c0427</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001mk2sr/previous/before.png"><img loading="lazy" src="machines/pc6001mk2sr/previous/before.png" alt="pc6001mk2sr previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001mk2sr/current/before.png"><img loading="lazy" src="machines/pc6001mk2sr/current/before.png" alt="pc6001mk2sr current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/carmarty/">carmarty</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fa04c58bc59dbfae83ecddfae345a2262e39b078">fa04c58bc59dbfae83ecddfae345a2262e39b078</a></div>
 <div class="comparison">
@@ -646,18 +603,6 @@ Co-authored-by: AJR &lt;ajrhacker@users.noreply.github.com&gt;</div></header>
 <div class="comparison">
 <figure><a href="machines/roadriotb/previous/after.png"><img loading="lazy" src="machines/roadriotb/previous/after.png" alt="roadriotb previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/roadriotb/current/after.png"><img loading="lazy" src="machines/roadriotb/current/after.png" alt="roadriotb current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/roadriotb/">roadriotb</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
-<div class="comparison">
-<figure><a href="machines/roadriotb/previous/before.png"><img loading="lazy" src="machines/roadriotb/previous/before.png" alt="roadriotb previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/roadriotb/current/before.png"><img loading="lazy" src="machines/roadriotb/current/before.png" alt="roadriotb current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/roadriota/">roadriota</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
-<div class="comparison">
-<figure><a href="machines/roadriota/previous/after.png"><img loading="lazy" src="machines/roadriota/previous/after.png" alt="roadriota previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/roadriota/current/after.png"><img loading="lazy" src="machines/roadriota/current/after.png" alt="roadriota current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
