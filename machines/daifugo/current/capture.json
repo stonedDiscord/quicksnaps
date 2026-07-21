@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "027c5332d95ab8fe4b018c6446932b4e48f013a4",
-    "artifact": "mame-linux-clang-027c5332d95ab8fe4b018c6446932b4e48f013a4",
+    "revision": "a07932d4a71d4204a31c3cc241ca8fcce40aa2db",
+    "artifact": "mame-linux-clang-a07932d4a71d4204a31c3cc241ca8fcce40aa2db",
     "variant": "current",
     "input_fingerprint": "f06ebb5977729d74479fe21b597c76ef0c657a13d6b31972728f970a5d63b702"
   },
   "result": {
     "name": "daifugo",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "027c5332d95ab8fe4b018c6446932b4e48f013a4",
+    "revision": "a07932d4a71d4204a31c3cc241ca8fcce40aa2db",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 1.189,
+        "status": "failed",
+        "captured_at": "2026-07-21T23:41:08.622491+00:00",
+        "duration_seconds": 0.685,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "027c5332d95ab8fe4b018c6446932b4e48f013a4",
-        "artifact": "mame-linux-clang-027c5332d95ab8fe4b018c6446932b4e48f013a4"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "a07932d4a71d4204a31c3cc241ca8fcce40aa2db",
+        "artifact": "mame-linux-clang-a07932d4a71d4204a31c3cc241ca8fcce40aa2db"
       }
     }
   }
