@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "03d35a722634bc224427221093d886e4fc7491c6",
+    "artifact": "mame-linux-clang-03d35a722634bc224427221093d886e4fc7491c6",
+    "variant": "previous",
+    "input_fingerprint": "e2efb6ff4e7bac045d47e1ff429809d0c37a7d1640443ab55c26d3a2c524c8ed"
+  },
+  "result": {
+    "name": "s900",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "03d35a722634bc224427221093d886e4fc7491c6",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-07-21T17:07:03.660245+00:00",
+        "duration_seconds": 1.004,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "03d35a722634bc224427221093d886e4fc7491c6",
+        "artifact": "mame-linux-clang-03d35a722634bc224427221093d886e4fc7491c6"
+      }
+    }
+  }
+}
