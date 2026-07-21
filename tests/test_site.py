@@ -46,19 +46,18 @@ class SiteComparisonTests(unittest.TestCase):
 
     def test_unchanged_pair_is_collapsed_on_index(self):
         index, details = self.make_site(changed=False)
-        self.assertIn("No screenshot change detected", index)
+        self.assertIn("No visual changes captured yet", index)
         self.assertNotIn("previous/before.png", index)
         self.assertIn("previous/before.png", details)
         self.assertIn("current/after.png", details)
 
     def test_changed_pair_shows_images_on_index(self):
         index, details = self.make_site(changed=True)
-        self.assertNotIn("No screenshot change detected", index)
-        self.assertIn("previous/before.png", index)
+        self.assertNotIn("No visual changes captured yet", index)
+        self.assertIn('class="gallery"', index)
+        self.assertIn("previous/after.png", index)
         self.assertIn("current/after.png", index)
         self.assertIn("https://github.com/mamedev/mame/commit/newsha", index)
-        self.assertIn("https://github.com/mamedev/mame/commit/oldsha", index)
-        self.assertIn("https://github.com/mamedev/mame/blob/newsha/src/mame/test/game.cpp", index)
         self.assertIn("Fix the game video", index)
         self.assertIn("Preserve details &lt;safely&gt;.", index)
         self.assertIn("https://github.com/mamedev/mame/commit/newsha", details)
@@ -66,7 +65,7 @@ class SiteComparisonTests(unittest.TestCase):
 
     def test_png_metadata_difference_is_not_visual_change(self):
         index, details = self.make_site(changed=False, metadata_changed=True)
-        self.assertIn("No screenshot change detected", index)
+        self.assertIn("No visual changes captured yet", index)
         self.assertNotIn("previous/before.png", index)
         self.assertIn("previous/before.png", details)
 
@@ -90,7 +89,7 @@ class SiteComparisonTests(unittest.TestCase):
         }
         (output / "manifest.json").write_text(json.dumps(manifest))
         build_site(output)
-        self.assertIn("unavailable; no input pressed", (output / "index.html").read_text())
+        self.assertIn("unavailable; no input pressed", (directory.parent / "index.html").read_text())
 
     def test_failure_links_log_without_embedding_it(self):
         temporary = tempfile.TemporaryDirectory()
@@ -114,9 +113,9 @@ class SiteComparisonTests(unittest.TestCase):
         details = (directory.parent / "index.html").read_text()
         self.assertNotIn(marker, index)
         self.assertNotIn(marker, details)
-        self.assertIn('href="machines/game/current/mame.log"', index)
+        self.assertNotIn("mame.log", index)
         self.assertIn('href="current/mame.log"', details)
-        self.assertIn("Failure: Missing ROM", index)
+        self.assertIn("Failure: Missing ROM", details)
 
     def test_past_machine_is_only_a_name_link_on_index(self):
         temporary = tempfile.TemporaryDirectory()
@@ -130,12 +129,13 @@ class SiteComparisonTests(unittest.TestCase):
         (output / "manifest.json").write_text(json.dumps(manifest))
         build_site(output)
         index = (output / "index.html").read_text()
-        self.assertIn('<a href="machines/oldgame/">oldgame</a>', index)
-        self.assertIn('class="machine archived"', index)
+        self.assertIn('href="machines/oldgame/"', index)
+        self.assertIn("<span>oldgame</span>", index)
+        self.assertIn('class="game-link"', index)
         self.assertNotIn("Before input", index)
         self.assertNotIn("Captured at", index)
 
-    def test_current_run_machines_appear_before_history(self):
+    def test_game_directory_is_alphabetical(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
         output = Path(temporary.name)
@@ -157,7 +157,43 @@ class SiteComparisonTests(unittest.TestCase):
         (output / "manifest.json").write_text(json.dumps(manifest))
         build_site(output)
         index = (output / "index.html").read_text()
-        self.assertLess(index.index("zzz_current"), index.index("aaa_old"))
+        game_list = index.index('class="game-list"')
+        self.assertLess(
+            index.index("aaa_old", game_list), index.index("zzz_current", game_list)
+        )
+
+    def test_gallery_is_limited_to_100_most_recent_changes(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        output = Path(temporary.name)
+        machines = []
+        for index in range(102):
+            name = f"game{index:03}"
+            for variant in ("previous", "current"):
+                directory = output / "machines" / name / variant
+                directory.mkdir(parents=True)
+                pixel = bytes((index % 256, 0, 0, 255))
+                if variant == "current":
+                    pixel = bytes(((index + 1) % 256, 0, 0, 255))
+                (directory / "after.png").write_bytes(self.png(pixel, b"metadata"))
+            machines.append({
+                "name": name, "status": "passed", "captures": {
+                    "previous": {"status": "passed", "revision": "old"},
+                    "current": {
+                        "status": "passed", "revision": "new",
+                        "captured_at": f"2026-01-01T00:00:{index:03}",
+                    },
+                },
+            })
+        manifest = {"generated_at": "now", "head": "new", "machines": machines}
+        (output / "manifest.json").write_text(json.dumps(manifest))
+        build_site(output)
+        index_html = (output / "index.html").read_text()
+        gallery = index_html[index_html.index('class="gallery"'):index_html.index("</section>")]
+        self.assertEqual(100, gallery.count('class="gallery-card"'))
+        self.assertNotIn("game000", gallery)
+        self.assertNotIn("game001", gallery)
+        self.assertIn("game101", gallery)
 
 
 if __name__ == "__main__":

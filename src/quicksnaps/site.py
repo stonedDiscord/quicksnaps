@@ -13,7 +13,20 @@ MAME_GITHUB = "https://github.com/mamedev/mame"
 CSS = """\
 :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #111418; color: #e8edf2; }
 body { max-width: 1500px; margin: auto; padding: 2rem; }
-h1 { margin-bottom: .3rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
+h1 { margin-bottom: .3rem; } h2 { margin-top: 2.5rem; } .meta { color: #9ba8b5; margin-bottom: 2rem; }
+a { color: #8fc7ff; } a:hover { color: #c7e4ff; }
+.hero { padding: 1.5rem 0 1rem; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.2rem; }
+.gallery-card { overflow: hidden; border: 1px solid #38414b; border-radius: .7rem; background: #171b20; box-shadow: 0 .4rem 1.3rem #080a0c80; }
+.gallery-card h3 { margin: 0; padding: .9rem 1rem .3rem; }
+.gallery-card .reason { padding: 0 1rem .9rem; font-size: .85rem; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: #38414b; }
+.comparison figure { background: #080a0c; }
+.comparison figcaption { padding: .45rem .7rem; margin: 0; }
+.comparison img { display: block; border: 0; }
+.game-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .45rem; }
+.game-link { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: .7rem .8rem; border: 1px solid #303943; border-radius: .35rem; background: #171b20; }
+.game-link .status { font-size: .7rem; }
 .machine { border-top: 1px solid #38414b; padding: 1.5rem 0 2rem; }
 .machine h2 { display: inline-block; margin: 0 1rem .8rem 0; }
 .machine.archived { padding: .65rem 0; } .machine.archived h2 { margin: 0; font-size: 1rem; }
@@ -29,7 +42,7 @@ pre { max-height: 24rem; overflow: auto; padding: 1rem; background: #080a0c; whi
 figure { margin: 0; } figcaption { margin-bottom: .5rem; color: #9ba8b5; }
 img { width: 100%; image-rendering: pixelated; background: #080a0c; border: 1px solid #38414b; }
 input { width: 100%; box-sizing: border-box; padding: .8rem; margin-bottom: 1rem; background: #1a1f25; color: inherit; border: 1px solid #4b5865; }
-@media (max-width: 750px) { .shots { grid-template-columns: 1fr; } body { padding: 1rem; } }
+@media (max-width: 750px) { .shots { grid-template-columns: 1fr; } .gallery { grid-template-columns: 1fr; } body { padding: 1rem; } }
 """
 
 
@@ -78,23 +91,24 @@ def _reason_html(reason: object, revision: object) -> str:
 
 def build_site(output: Path) -> None:
     manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
-    cards = []
     reasons = manifest.get("reasons", {})
 
-    def images_changed(machine_name: str, captures: dict[str, object]) -> bool:
+    def differing_images(machine_name: str, captures: dict[str, object]) -> list[str]:
         if "previous" not in captures or "current" not in captures:
-            return True
+            return []
         if any(captures[variant].get("status") != "passed" for variant in ("previous", "current")):
-            return True
+            return []
         directory = output / "machines" / machine_name
-        for filename in ("before.png", "after.png"):
+        changed = []
+        # Prefer the post-input shot when the 100-item limit cuts through a run.
+        for filename in ("after.png", "before.png"):
             previous = directory / "previous" / filename
             current = directory / "current" / filename
             if not previous.is_file() or not current.is_file():
-                return True
+                continue
             if _png_visual_signature(previous) != _png_visual_signature(current):
-                return True
-        return False
+                changed.append(filename)
+        return changed
 
     def capture_html(name: str, machine: dict[str, object], variant: str, capture: dict[str, object]) -> str:
         status = html.escape(str(capture.get("status", "failed")))
@@ -120,49 +134,41 @@ def build_site(output: Path) -> None:
 </div>'''
         return f'<section class="build"><h3>{variant.title()}: {_commit_link(revision)}</h3><div class="meta">{artifact}</div>{body}{diagnostics}</section>'
 
-    index_machines = sorted(
-        manifest["machines"],
-        key=lambda machine: (machine["name"] not in reasons, str(machine["name"]).lower()),
-    )
-    for machine in index_machines:
+    def gallery_html(machine: dict[str, object], filename: str) -> str:
         name = html.escape(str(machine["name"]))
-        if machine["name"] not in reasons:
-            cards.append(
-                f'<article class="machine archived" data-name="{name}">'
-                f'<h2><a href="machines/{name}/">{name}</a></h2></article>'
-            )
-            continue
-        status = html.escape(str(machine["status"]))
-        why = "; ".join(
-            _reason_html(reason, manifest.get("head", "master"))
-            for reason in reasons.get(machine["name"], [])
-        )
         captures = machine.get("captures", {})
-        if captures:
-            if images_changed(str(machine["name"]), captures):
-                shots = "".join(
-                    capture_html(name, machine, variant, captures[variant])
-                    for variant in ("previous", "current") if variant in captures
-                )
-            else:
-                shots = f'<p class="unchanged">No screenshot change detected. <a href="machines/{name}/">View machine details</a>.</p>'
-            captured = str(captures.get("current", {}).get("revision", machine.get("revision", "unknown")))
-        elif status == "passed":
-            captured = str(machine.get("revision", "unknown"))
-            shots = f'''<div class="shots">
-<figure><figcaption>Before input</figcaption><a href="machines/{name}/before.png"><img loading="lazy" src="machines/{name}/before.png" alt="{name} before input"></a></figure>
-<figure><figcaption>After {html.escape(str(machine['button']))}</figcaption><a href="machines/{name}/after.png"><img loading="lazy" src="machines/{name}/after.png" alt="{name} after input"></a></figure>
-</div>'''
-        else:
-            captured = str(machine.get("revision", "unknown"))
-            reason = html.escape(str(machine.get("failure_reason") or "Unknown capture failure"))
-            shots = (
-                f'<p class="failure">Failure: {reason}. '
-                f'<a href="machines/{name}/mame.log">Open console log</a></p>'
-            )
-        cards.append(f'''<article class="machine" data-name="{name}">
-<h2><a href="machines/{name}/">{name}</a></h2><span class="status {status}">{status}</span>
-<div class="reason">Captured at {_commit_link(captured)}. {why}</div>{shots}</article>''')
+        current = captures["current"]
+        revision = current.get("revision", machine.get("revision", "unknown"))
+        label = "After input" if filename == "after.png" else "Before input"
+        return f'''<article class="gallery-card">
+<h3><a href="machines/{name}/">{name}</a></h3>
+<div class="reason">{label} changed at {_commit_link(revision)}</div>
+<div class="comparison">
+<figure><a href="machines/{name}/previous/{filename}"><img loading="lazy" src="machines/{name}/previous/{filename}" alt="{name} previous {label.lower()}"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/{name}/current/{filename}"><img loading="lazy" src="machines/{name}/current/{filename}" alt="{name} current {label.lower()}"></a><figcaption>Current</figcaption></figure>
+</div></article>'''
+
+    featured = []
+    for index, machine in enumerate(manifest["machines"]):
+        for image_index, filename in enumerate(
+            differing_images(str(machine["name"]), machine.get("captures", {}))
+        ):
+            current = machine["captures"]["current"]
+            recency = str(current.get("captured_at") or machine.get("captured_at") or "")
+            featured.append((recency, index, -image_index, machine, filename))
+    featured.sort(key=lambda item: (item[0], item[1], item[2]), reverse=True)
+    gallery = "".join(
+        gallery_html(machine, filename) for _, _, _, machine, filename in featured[:100]
+    )
+
+    game_links = []
+    for machine in sorted(manifest["machines"], key=lambda item: str(item["name"]).lower()):
+        name = html.escape(str(machine["name"]))
+        status = html.escape(str(machine.get("status", "unknown")))
+        game_links.append(
+            f'<a class="game-link" data-name="{name.lower()}" href="machines/{name}/">'
+            f'<span>{name}</span><span class="status {status}">{status}</span></a>'
+        )
 
     title = html.escape(str(manifest.get("title", "MAME quick snaps")))
     revision = manifest.get("head", "manual run")
@@ -171,11 +177,13 @@ def build_site(output: Path) -> None:
     commit_message = html.escape(str(manifest.get("commit_message") or "Commit message unavailable"))
     document = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>
-<link rel="stylesheet" href="style.css"></head><body><h1>{title}</h1>
+<link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>{title}</h1>
 <div class="meta">Revision {_commit_link(revision)}{f' from {_commit_link(base)}' if base else ''} - {artifact} - generated {html.escape(manifest['generated_at'])}</div>
-<div class="commit-message">{commit_message}</div>
+<div class="commit-message">{commit_message}</div></header>
+<main><section><h2>Latest visual changes</h2><div class="gallery">{gallery or '<p>No visual changes captured yet.</p>'}</div></section>
+<section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
-<main>{''.join(cards)}</main><script>document.querySelector('#filter').addEventListener('input',e=>{{for(const card of document.querySelectorAll('.machine'))card.hidden=!card.dataset.name.includes(e.target.value.toLowerCase())}})</script>
+<div class="game-list">{''.join(game_links)}</div></section></main><script>document.querySelector('#filter').addEventListener('input',e=>{{for(const game of document.querySelectorAll('.game-link'))game.hidden=!game.dataset.name.includes(e.target.value.toLowerCase())}})</script>
 </body></html>'''
     (output / "index.html").write_text(document, encoding="utf-8")
     (output / "style.css").write_text(CSS, encoding="utf-8")

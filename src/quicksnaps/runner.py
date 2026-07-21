@@ -177,6 +177,7 @@ def capture_machine(
     return {
         "name": machine.name,
         "status": status,
+        "captured_at": datetime.now(UTC).isoformat(),
         "duration_seconds": round(time.monotonic() - started, 3),
         "button": machine.button,
         "button_applied": button_applied,
@@ -197,7 +198,9 @@ def write_manifest(
         existing = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
         previous = {item["name"]: item for item in existing.get("machines", [])}
         for item in machines:
-            old = previous.get(item["name"], {})
+            # Reinsert updated machines so manifest order remains a recency fallback
+            # for captures created before captured_at was recorded.
+            old = previous.pop(item["name"], {})
             captures = {**old.get("captures", {}), **item.get("captures", {})}
             previous[item["name"]] = {**old, **item, "captures": captures}
         machines = list(previous.values())
