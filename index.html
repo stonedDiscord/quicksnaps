@@ -1,11 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/1df3c9c5895c20b4ab8d95eec9ffa32a4af50e8f">1df3c9c5895c20b4ab8d95eec9ffa32a4af50e8f</a> from <a href="https://github.com/mamedev/mame/commit/ccfc6319d9049636eb9f3d1471eda259620ddc57">ccfc6319d9049636eb9f3d1471eda259620ddc57</a> - mame-linux-clang-1df3c9c5895c20b4ab8d95eec9ffa32a4af50e8f - generated 2026-07-21T18:18:48.547347+00:00</div>
-<div class="commit-message">swa: Removed &quot;Arcade&quot; and added manufacturer name to title, corrected year (#15595)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3092c7dbc7825c427865e557f554c5b420c290d5">3092c7dbc7825c427865e557f554c5b420c290d5</a> from <a href="https://github.com/mamedev/mame/commit/1df3c9c5895c20b4ab8d95eec9ffa32a4af50e8f">1df3c9c5895c20b4ab8d95eec9ffa32a4af50e8f</a> - mame-linux-clang-3092c7dbc7825c427865e557f554c5b420c290d5 - generated 2026-07-21T18:19:57.096655+00:00</div>
+<div class="commit-message">homebrew/pc532: wire the AIC6250 pseudo-DMA; boot System V; mark working (#15607)
 
-- starwars: Added manufacturer to title
-- stwr_106 and clones: Added manufacturer to title</div></header>
+Wire the AIC6250 SCSI controller&#x27;s BREQ/BACK pseudo-DMA, mirroring the existing
+DP8490 path: a CPU-RDY-gated doubleword transfer through the 0x3800&#x27;0000 window,
+each byte acknowledged with back_w(1).  Add the AIC6250 DMA window, hook breq_cb
+(resolving the prior drq TODO), and a 10 us quantum for the CPU&lt;-&gt;DUART/ICU
+interleave.  Add a dual-boot BIOS (AIC6250/System V + DP8490/NetBSD loader).
+
+With the disk path working the board boots System V Release 2.0 to login off the
+AIC6250 SCSI disk; mark the driver working.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/roundup5/">roundup5</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/1fff85eec5d03e8335668d8ecc4b3aa0d5128433">1fff85eec5d03e8335668d8ecc4b3aa0d5128433</a></div>
