@@ -1,8 +1,8 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
+    "artifact": "mame-linux-clang-1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
     "variant": "current",
     "input_fingerprint": "cbcb7595ce0b6929bacc768c475e87123f7dd997a2fbcac00d071bbee3cb1ed6"
   },
@@ -10,19 +10,19 @@
     "name": "jackuse",
     "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
     "captures": {
       "current": {
         "status": "failed",
-        "duration_seconds": 0.99,
+        "duration_seconds": 0.754,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "MAME exited with status -11",
+        "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
+        "artifact": "mame-linux-clang-1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7"
       }
     }
   }

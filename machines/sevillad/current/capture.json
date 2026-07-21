@@ -1,8 +1,8 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
+    "artifact": "mame-linux-clang-1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
     "variant": "current",
     "input_fingerprint": "e4f4ad427a81e22d6e9807874eaed2a2548a94ac48c8b41489f6efce138f80d6"
   },
@@ -10,19 +10,19 @@
     "name": "sevillad",
     "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
     "captures": {
       "current": {
         "status": "failed",
-        "duration_seconds": 1.104,
+        "duration_seconds": 0.645,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "MAME exited with status -11",
+        "revision": "1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7",
+        "artifact": "mame-linux-clang-1ace0bc4617b8a9fe5f5fce7026c784b2ef368f7"
       }
     }
   }
