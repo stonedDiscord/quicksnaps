@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "aa11a7b9c8488434e51ed5b5267bba9d156b88ec",
+    "artifact": "mame-linux-clang-aa11a7b9c8488434e51ed5b5267bba9d156b88ec",
+    "variant": "current",
+    "input_fingerprint": "f324fa150f95031f0d5c427b86ee8d5a5af33855f2f14b92a7dad811e560935e"
+  },
+  "result": {
+    "name": "csesame",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "aa11a7b9c8488434e51ed5b5267bba9d156b88ec",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-07-21T17:54:17.154793+00:00",
+        "duration_seconds": 1.617,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "aa11a7b9c8488434e51ed5b5267bba9d156b88ec",
+        "artifact": "mame-linux-clang-aa11a7b9c8488434e51ed5b5267bba9d156b88ec"
+      }
+    }
+  }
+}
