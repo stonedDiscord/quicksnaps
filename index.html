@@ -1,18 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/6595b21585970e87b8ba54671035918fdbdd3374">6595b21585970e87b8ba54671035918fdbdd3374</a> from <a href="https://github.com/mamedev/mame/commit/370e45f26b21216dae0678ef4f129eef7fdb3634">370e45f26b21216dae0678ef4f129eef7fdb3634</a> - mame-linux-clang-6595b21585970e87b8ba54671035918fdbdd3374 - generated 2026-07-21T19:56:05.757892+00:00</div>
-<div class="commit-message">bus/xerox820: Restored card-interface device_finder instantiations. (#15641)
-
-The copro and disk-daughterboard card device types are exposed through their
-abstract interfaces via DEFINE_DEVICE_TYPE_PRIVATE, which does not instantiate
-the device_finder templates. Without an explicit instantiation, a
-required_device/optional_device of device_xerox820_copro_card_interface or
-device_xerox820_dbslot_card_interface fails with an undefined symbol at link
-time, so instantiate them in each interface&#x27;s source file.
-
-Also define the identical x820ii5/x820iis/x820iilp ROM sets in terms of
-x820ii&#x27;s rather than repeating the shared content macro.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/4f1b513aa2760f5a3a3c6977e3646a5348137cde">4f1b513aa2760f5a3a3c6977e3646a5348137cde</a> from <a href="https://github.com/mamedev/mame/commit/6595b21585970e87b8ba54671035918fdbdd3374">6595b21585970e87b8ba54671035918fdbdd3374</a> - mame-linux-clang-4f1b513aa2760f5a3a3c6977e3646a5348137cde - generated 2026-07-21T19:56:44.248235+00:00</div>
+<div class="commit-message">hash/apple2_rom.xml: Correct release year for Programmer&#x27;s Aid #1</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rcorsair/">rcorsair</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/63f49746869d1e1398cd5f348c982637cb38c21e">63f49746869d1e1398cd5f348c982637cb38c21e</a></div>
