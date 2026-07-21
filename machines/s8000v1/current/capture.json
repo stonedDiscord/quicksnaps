@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "5cfdb0721414ba6ebcbf803516ce65778ec96b71",
+    "artifact": "mame-linux-clang-5cfdb0721414ba6ebcbf803516ce65778ec96b71",
+    "variant": "current",
+    "input_fingerprint": "7e23cac3cc5df413e2eb780798a81cca06040de1de840f2be2e3e761d49cd660"
+  },
+  "result": {
+    "name": "s8000v1",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "5cfdb0721414ba6ebcbf803516ce65778ec96b71",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-07-21T19:59:14.983697+00:00",
+        "duration_seconds": 0.553,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "5cfdb0721414ba6ebcbf803516ce65778ec96b71",
+        "artifact": "mame-linux-clang-5cfdb0721414ba6ebcbf803516ce65778ec96b71"
+      }
+    }
+  }
+}
