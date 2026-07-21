@@ -1,20 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/b7c9e20c67b1337ed12e899e91ed0385e318221d">b7c9e20c67b1337ed12e899e91ed0385e318221d</a> from <a href="https://github.com/mamedev/mame/commit/459ad3b01dba3cbca72b883b0c6ba3dcf23c9127">459ad3b01dba3cbca72b883b0c6ba3dcf23c9127</a> - mame-linux-clang-b7c9e20c67b1337ed12e899e91ed0385e318221d - generated 2026-07-21T19:07:03.924885+00:00</div>
-<div class="commit-message">cpu/powerpc: Updates [R. Belmont]
-- Fixed 601-specific corner cases in DIVWUx/DIVWUOx/DIVWx/DIVWOx [hardware testing thanks to DingusDev]
-- Fixed typo in 601-specific ABS/NABS that was causing incorrect decimal number printing
-- Make the forced DRC cache flush on ICBI optional, it was killing Mac OS 9 performance
-- Track at a 4K page granularity which logical pages have compiled code and flush only when necessary
-
-apple/macpdm.cpp: Updates [R. Belmont]
-- Use modern logging instead of spamming everything all the time
-- SCC DMA register minimal functionality to get past the LocalTalk check in Mac OS 8.5 and later
-- RAM mapping (and the nanokernel heap layout) now matches DingusPPC
-- All supported Mac OS versions (7.1.2P, 7.5, 7.5.3, 7.5.5, 7.6.1, 8.0, 8.1, 8.5, 8.6, 9.0, 9.0.4, and 9.1) now boot to Finder
-
-AI disclosure: Claude Opus 4.8 assisted in finding the bugs and suggested some of the fixes, all of which I implemented and tested.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bfb7c203621febfe8dc54de8adc0a4b1524b969a">bfb7c203621febfe8dc54de8adc0a4b1524b969a</a> from <a href="https://github.com/mamedev/mame/commit/b7c9e20c67b1337ed12e899e91ed0385e318221d">b7c9e20c67b1337ed12e899e91ed0385e318221d</a> - mame-linux-clang-bfb7c203621febfe8dc54de8adc0a4b1524b969a - generated 2026-07-21T19:07:40.173062+00:00</div>
+<div class="commit-message">cpu/powerpc: Move UML-accessible variable into the DRC cache. [R. Belmont]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/crszonev2b/">crszonev2b</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14">fff11e52b8d1a12378fcfbbc21fafbdb0dba0d14</a></div>
