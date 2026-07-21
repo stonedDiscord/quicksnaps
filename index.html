@@ -1,29 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098">baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098</a> from <a href="https://github.com/mamedev/mame/commit/e1e75e70be631addabeae0d268defe7f4616e6b3">e1e75e70be631addabeae0d268defe7f4616e6b3</a> - mame-linux-clang-baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098 - generated 2026-07-21T20:08:53.499869+00:00</div>
-<div class="commit-message">sega/model1: repair 2-bit corruption in 315-5711 TGP copro ROM (Wing War, SWA, NetMerc) (#15649)
-
-The 315-5711.bin dump has two single-bit corruptions (spurious bit 1 in the
-low byte, likely a D1 line fault during ROM capture):
-
-- PC 0x8B: brif alw #0x59e → #0x59c (op 0x34 dispatch)
-  The handler for the specialised affine inverse begins at 0x59c with
-  setup instructions (mov $7,x1; mov $4,d). Jumping to 0x59e skips
-  this setup, leaving x1=0x100 from the previous slot, reading
-  data[0x301]=ZERO → division by zero → 270 NaN words leak to FIFO.
-
-- PC 0x67e: lia #2 → lia #0 (op 0x38 record loop)
-  Op 0x38 performs segment-vs-collision-model tests. The loop at
-  0x67d-0x685 calls subroutine 0x686 (returns 0=hit, 1..4=miss) and
-  adds a constant via addd. With lia #2, every result was offset by 2,
-  so the V60 host always saw 2..6 and never detected hits (brif zrd).
-  The twin idiom in op 0x18 (same subroutine, same handler pattern)
-  confirms lia #0 is the intended value.
-
-Both games and MAME itself run the unrepaired dump, so the arcade
-machine is the oracle. Wing War&#x27;s machine gun now registers damage
-correctly after this fix.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/eeeb6d040533b42a8aab531250c28b67f3ac8616">eeeb6d040533b42a8aab531250c28b67f3ac8616</a> from <a href="https://github.com/mamedev/mame/commit/baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098">baf9dd2fb3f1a21d58bdb3177eaf595db9ef5098</a> - mame-linux-clang-eeeb6d040533b42a8aab531250c28b67f3ac8616 - generated 2026-07-21T20:09:58.626373+00:00</div>
+<div class="commit-message">nec/pc88_kbd.cpp: refine pc88va_kbd_device i/f a bit</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rcorsair/">rcorsair</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/63f49746869d1e1398cd5f348c982637cb38c21e">63f49746869d1e1398cd5f348c982637cb38c21e</a></div>
