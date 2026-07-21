@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
-    "artifact": "mame-linux-clang-dc9e363f4e51fbf0bbde35dd252e8bab24874486",
+    "revision": "b937c2e7fa50ff4e74386d2cf071382b2f37af4b",
+    "artifact": "mame-linux-clang-b937c2e7fa50ff4e74386d2cf071382b2f37af4b",
     "variant": "previous",
     "input_fingerprint": "e78f8795269c4645b83204e2e7c08753629dd35546c0e27606e2227b1fd1f314"
   },
   "result": {
     "name": "pokegac2y",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
+    "revision": "b937c2e7fa50ff4e74386d2cf071382b2f37af4b",
     "captures": {
       "previous": {
-        "status": "passed",
-        "captured_at": "2026-07-21T21:17:18.117217+00:00",
-        "duration_seconds": 11.738,
+        "status": "failed",
+        "captured_at": "2026-07-21T22:19:41.834801+00:00",
+        "duration_seconds": 0.897,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
-        "artifact": "mame-linux-clang-dc9e363f4e51fbf0bbde35dd252e8bab24874486"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "b937c2e7fa50ff4e74386d2cf071382b2f37af4b",
+        "artifact": "mame-linux-clang-b937c2e7fa50ff4e74386d2cf071382b2f37af4b"
       }
     }
   }

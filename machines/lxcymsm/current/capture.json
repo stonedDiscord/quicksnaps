@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
-    "artifact": "mame-linux-clang-2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
+    "revision": "b2c2e3d00e49140685bc640c1f7b5f1f7321d07f",
+    "artifact": "mame-linux-clang-b2c2e3d00e49140685bc640c1f7b5f1f7321d07f",
     "variant": "current",
     "input_fingerprint": "b616cf7842738a1e9e587b4ceb59ef9c91b380c2c993d1a2d49fc96b5fb6be59"
   },
   "result": {
     "name": "lxcymsm",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
+    "revision": "b2c2e3d00e49140685bc640c1f7b5f1f7321d07f",
     "captures": {
       "current": {
-        "status": "failed",
-        "captured_at": "2026-07-21T21:19:47.050496+00:00",
-        "duration_seconds": 1.048,
+        "status": "passed",
+        "captured_at": "2026-07-21T22:21:22.284336+00:00",
+        "duration_seconds": 1.131,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
-        "revision": "2f09baf036f4c95b6a86407f7e826e6ca7dbaf78",
-        "artifact": "mame-linux-clang-2f09baf036f4c95b6a86407f7e826e6ca7dbaf78"
+        "failure_reason": null,
+        "revision": "b2c2e3d00e49140685bc640c1f7b5f1f7321d07f",
+        "artifact": "mame-linux-clang-b2c2e3d00e49140685bc640c1f7b5f1f7321d07f"
       }
     }
   }
