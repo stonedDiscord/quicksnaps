@@ -1,20 +1,22 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ed64f3d4b2aede15cf2e2e4fada65792f3ac0b9a">ed64f3d4b2aede15cf2e2e4fada65792f3ac0b9a</a> from <a href="https://github.com/mamedev/mame/commit/e229cde40132d8f01f80aeefc909736a33f8ca62">e229cde40132d8f01f80aeefc909736a33f8ca62</a> - mame-linux-clang-ed64f3d4b2aede15cf2e2e4fada65792f3ac0b9a - generated 2026-07-21T20:18:45.959111+00:00</div>
-<div class="commit-message">Revert &quot;ns32000: fetch module static base after PSR restore on RETT/RETI (#15633)&quot; (#15656)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ce6dcdcb01995270c83f98b158bf10ddb75d0558">ce6dcdcb01995270c83f98b158bf10ddb75d0558</a> from <a href="https://github.com/mamedev/mame/commit/ed64f3d4b2aede15cf2e2e4fada65792f3ac0b9a">ed64f3d4b2aede15cf2e2e4fada65792f3ac0b9a</a> - mame-linux-clang-ce6dcdcb01995270c83f98b158bf10ddb75d0558 - generated 2026-07-21T20:19:15.013289+00:00</div>
+<div class="commit-message">machine/ncr5380.cpp: implement target mode (#15657)
 
-This reverts commit dbc43a938114322ef0dc8afd7e2207b0e69b74a4.
+The target role (the file&#x27;s standing TODO): in target mode the Target
+Command Register drives the phase lines and, outside DMA, REQ (SP-1051
+6.4); Start DMA Send sends to the initiator and Start DMA Target Receive
+is implemented (6.8.1, 6.8.2); a new REQ/ACK-handshake state group moves
+the data.  The Select Enable Register now latches and raises the
+selection/reselection interrupt on a bus ID match (6.6, 8.1), with a
+guard so a chip selecting outward never matches its own ID.  All target
+paths are gated on MODE_TARGET, which no existing machine sets; initiator
+behavior is unchanged.
 
-Module descriptors reside in supervisor space: fetching SB through user
-translation on a return to user mode reads memory where no module table
-exists, clobbering SB on every interrupt or trap return.  Dual-space
-NS32000 System V (ICM-3216, PD32, Opus - all binaries proven on real
-hardware) fails at the first interrupt taken by a user process.  The
-PC-MX2 behavior that motivated #15633 was ordinary demand paging, not a
-user-space fetch requirement; it boots correctly with the restored
-order.  The NS32532 pc532 (NetBSD and System V) is unaffected either
-way.</div></header>
+First consumer: the ET532 SCSI coprocessor card (NS32532 board operating
+as a target on the pc532 532SC bus), including target-initiated
+reselection.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/carmarty/">carmarty</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/fa04c58bc59dbfae83ecddfae345a2262e39b078">fa04c58bc59dbfae83ecddfae345a2262e39b078</a></div>
