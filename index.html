@@ -1,11 +1,33 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/7f5d0f3d01e9346d3fe03774318ca3b24d8045f3">7f5d0f3d01e9346d3fe03774318ca3b24d8045f3</a> from <a href="https://github.com/mamedev/mame/commit/16806c43ec237b6559c3eae97536d1be586e5572">16806c43ec237b6559c3eae97536d1be586e5572</a> - mame-linux-clang-7f5d0f3d01e9346d3fe03774318ca3b24d8045f3 - generated 2026-07-21T23:30:35.573980+00:00</div>
-<div class="commit-message">New clones marked not working
------------------------------
-Magical Jack (VI 1.1C) [Pinballarcadedruid]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/593693c7b180455ad9eebb94dccf31bc368c943f">593693c7b180455ad9eebb94dccf31bc368c943f</a> from <a href="https://github.com/mamedev/mame/commit/7f5d0f3d01e9346d3fe03774318ca3b24d8045f3">7f5d0f3d01e9346d3fe03774318ca3b24d8045f3</a> - mame-linux-clang-593693c7b180455ad9eebb94dccf31bc368c943f - generated 2026-07-21T23:31:36.767729+00:00</div>
+<div class="commit-message">nec/pc6001.cpp: hookup tape play, stop and baud select commands</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/pc6001a/">pc6001a</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/593693c7b180455ad9eebb94dccf31bc368c943f">593693c7b180455ad9eebb94dccf31bc368c943f</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001a/previous/after.png"><img loading="lazy" src="machines/pc6001a/previous/after.png" alt="pc6001a previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001a/current/after.png"><img loading="lazy" src="machines/pc6001a/current/after.png" alt="pc6001a current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pc6001a/">pc6001a</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/593693c7b180455ad9eebb94dccf31bc368c943f">593693c7b180455ad9eebb94dccf31bc368c943f</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001a/previous/before.png"><img loading="lazy" src="machines/pc6001a/previous/before.png" alt="pc6001a previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001a/current/before.png"><img loading="lazy" src="machines/pc6001a/current/before.png" alt="pc6001a current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pc6001/">pc6001</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/593693c7b180455ad9eebb94dccf31bc368c943f">593693c7b180455ad9eebb94dccf31bc368c943f</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001/previous/after.png"><img loading="lazy" src="machines/pc6001/previous/after.png" alt="pc6001 previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001/current/after.png"><img loading="lazy" src="machines/pc6001/current/after.png" alt="pc6001 current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pc6001/">pc6001</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/593693c7b180455ad9eebb94dccf31bc368c943f">593693c7b180455ad9eebb94dccf31bc368c943f</a></div>
+<div class="comparison">
+<figure><a href="machines/pc6001/previous/before.png"><img loading="lazy" src="machines/pc6001/previous/before.png" alt="pc6001 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pc6001/current/before.png"><img loading="lazy" src="machines/pc6001/current/before.png" alt="pc6001 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/dkmb/">dkmb</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/378c2be4bbd04de53314b6947864e58fefe50813">378c2be4bbd04de53314b6947864e58fefe50813</a></div>
 <div class="comparison">
@@ -17,30 +39,6 @@ Magical Jack (VI 1.1C) [Pinballarcadedruid]</div></header>
 <div class="comparison">
 <figure><a href="machines/dkmb/previous/before.png"><img loading="lazy" src="machines/dkmb/previous/before.png" alt="dkmb previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/dkmb/current/before.png"><img loading="lazy" src="machines/dkmb/current/before.png" alt="dkmb current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/pc6001/">pc6001</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/df9063eb75aef587334a42f0d5f6306aeffed942">df9063eb75aef587334a42f0d5f6306aeffed942</a></div>
-<div class="comparison">
-<figure><a href="machines/pc6001/previous/after.png"><img loading="lazy" src="machines/pc6001/previous/after.png" alt="pc6001 previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/pc6001/current/after.png"><img loading="lazy" src="machines/pc6001/current/after.png" alt="pc6001 current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/pc6001/">pc6001</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/df9063eb75aef587334a42f0d5f6306aeffed942">df9063eb75aef587334a42f0d5f6306aeffed942</a></div>
-<div class="comparison">
-<figure><a href="machines/pc6001/previous/before.png"><img loading="lazy" src="machines/pc6001/previous/before.png" alt="pc6001 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/pc6001/current/before.png"><img loading="lazy" src="machines/pc6001/current/before.png" alt="pc6001 current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/pc6001a/">pc6001a</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/df9063eb75aef587334a42f0d5f6306aeffed942">df9063eb75aef587334a42f0d5f6306aeffed942</a></div>
-<div class="comparison">
-<figure><a href="machines/pc6001a/previous/after.png"><img loading="lazy" src="machines/pc6001a/previous/after.png" alt="pc6001a previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/pc6001a/current/after.png"><img loading="lazy" src="machines/pc6001a/current/after.png" alt="pc6001a current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/pc6001a/">pc6001a</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/df9063eb75aef587334a42f0d5f6306aeffed942">df9063eb75aef587334a42f0d5f6306aeffed942</a></div>
-<div class="comparison">
-<figure><a href="machines/pc6001a/previous/before.png"><img loading="lazy" src="machines/pc6001a/previous/before.png" alt="pc6001a previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/pc6001a/current/before.png"><img loading="lazy" src="machines/pc6001a/current/before.png" alt="pc6001a current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/strider2a/">strider2a</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/f767605bff06da7d103f79c55944938063c4bdb0">f767605bff06da7d103f79c55944938063c4bdb0</a></div>
