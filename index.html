@@ -1,14 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/4558f8751ebf0231987a57052f4ec5c54962263c">4558f8751ebf0231987a57052f4ec5c54962263c</a> from <a href="https://github.com/mamedev/mame/commit/23f59e944d102a2d7154862f5523fb33daa67edf">23f59e944d102a2d7154862f5523fb33daa67edf</a> - mame-linux-clang-4558f8751ebf0231987a57052f4ec5c54962263c - generated 2026-07-21T22:56:01.694660+00:00</div>
-<div class="commit-message">gaelco3d.cpp: graphics off-by-one fixes (#15676)
-
-* gaelco3d: fix MT03342
-
-Use an exact reciprocal for zbase, rather than recip_approx().  On SSE2 builds, recip_approx uses the SSE rcpss approximation, which shifted texel sampling by ~1 pixel.
-
-* gaelco3d: snap outer-edge verts to screen edge</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/160d9c29522eab85e30f00157a09987989900697">160d9c29522eab85e30f00157a09987989900697</a> from <a href="https://github.com/mamedev/mame/commit/4558f8751ebf0231987a57052f4ec5c54962263c">4558f8751ebf0231987a57052f4ec5c54962263c</a> - mame-linux-clang-160d9c29522eab85e30f00157a09987989900697 - generated 2026-07-21T22:56:31.459417+00:00</div>
+<div class="commit-message">emu: Add -rtc command-line option for fixed baseline time overrides (#15670)</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/janshin/">janshin</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/23f59e944d102a2d7154862f5523fb33daa67edf">23f59e944d102a2d7154862f5523fb33daa67edf</a></div>
