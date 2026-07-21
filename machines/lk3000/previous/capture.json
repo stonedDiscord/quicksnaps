@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "49a8ca9220b8e91c3dca983edbb29192eea62f44",
+    "artifact": "mame-linux-clang-49a8ca9220b8e91c3dca983edbb29192eea62f44",
+    "variant": "previous",
+    "input_fingerprint": "e1dcbe9c555ff94b6a83f8f806015af6209ad1aad07eaf809ca51d6e6e279028"
+  },
+  "result": {
+    "name": "lk3000",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "49a8ca9220b8e91c3dca983edbb29192eea62f44",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-07-21T16:03:55.435368+00:00",
+        "duration_seconds": 1.225,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "49a8ca9220b8e91c3dca983edbb29192eea62f44",
+        "artifact": "mame-linux-clang-49a8ca9220b8e91c3dca983edbb29192eea62f44"
+      }
+    }
+  }
+}
