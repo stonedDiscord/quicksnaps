@@ -1,8 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/23f59e944d102a2d7154862f5523fb33daa67edf">23f59e944d102a2d7154862f5523fb33daa67edf</a> from <a href="https://github.com/mamedev/mame/commit/b69de0cef0b36dcdc15744206e4f4e8924df261f">b69de0cef0b36dcdc15744206e4f4e8924df261f</a> - mame-linux-clang-23f59e944d102a2d7154862f5523fb33daa67edf - generated 2026-07-21T22:55:25.088969+00:00</div>
-<div class="commit-message">11beat, kabukikl, neobombe, panicbom, starsldr: Changed manufacturer name (&quot;Hudson&quot;) to &quot;Hudson Soft&quot; (#15682)</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/4558f8751ebf0231987a57052f4ec5c54962263c">4558f8751ebf0231987a57052f4ec5c54962263c</a> from <a href="https://github.com/mamedev/mame/commit/23f59e944d102a2d7154862f5523fb33daa67edf">23f59e944d102a2d7154862f5523fb33daa67edf</a> - mame-linux-clang-4558f8751ebf0231987a57052f4ec5c54962263c - generated 2026-07-21T22:56:01.694660+00:00</div>
+<div class="commit-message">gaelco3d.cpp: graphics off-by-one fixes (#15676)
+
+* gaelco3d: fix MT03342
+
+Use an exact reciprocal for zbase, rather than recip_approx().  On SSE2 builds, recip_approx uses the SSE rcpss approximation, which shifted texel sampling by ~1 pixel.
+
+* gaelco3d: snap outer-edge verts to screen edge</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/janshin/">janshin</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/23f59e944d102a2d7154862f5523fb33daa67edf">23f59e944d102a2d7154862f5523fb33daa67edf</a></div>
