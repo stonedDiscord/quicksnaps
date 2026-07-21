@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "variant": "previous",
+    "input_fingerprint": "94617b7d1a2dd1395b2e173a8d64a05c38dd6cfc936a44472f98f09935c7c895"
+  },
+  "result": {
+    "name": "pasogo",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "duration_seconds": 1.022,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+      }
+    }
+  }
+}

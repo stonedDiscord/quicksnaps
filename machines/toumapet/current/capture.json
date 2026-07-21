@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "variant": "current",
+    "input_fingerprint": "c136c7bd7d9fbb234f4e165b6c5d728958cee95dc503661f89ecd4fcc32f77e7"
+  },
+  "result": {
+    "name": "toumapet",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 0.928,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: SPI set to unknown/unhandled command 27",
+        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+      }
+    }
+  }
+}

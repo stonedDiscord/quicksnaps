@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "variant": "previous",
+    "input_fingerprint": "74390a4ada80c3a177ce6f3b1db0354b43173dba20c45031bad656f9bb658fef"
+  },
+  "result": {
+    "name": "genesis",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "duration_seconds": 0.855,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+      }
+    }
+  }
+}

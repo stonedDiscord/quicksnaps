@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "variant": "current",
+    "input_fingerprint": "9d1a4c1d895534f903ea641c956d3f2f950507a4479bdb1549b43c142c5be6e1"
+  },
+  "result": {
+    "name": "vs29915",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 9.706,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "what():  LSI53C810: reg_w: Unknown reg F0, 00",
+        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+      }
+    }
+  }
+}

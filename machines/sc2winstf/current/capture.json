@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "variant": "current",
+    "input_fingerprint": "38d0b0d7c69f913964c6c5a7bc42ee8037d2d4d23702dd5f6d10f8bc11935032"
+  },
+  "result": {
+    "name": "sc2winstf",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 1.804,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "machine has no emulated screen",
+        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+      }
+    }
+  }
+}

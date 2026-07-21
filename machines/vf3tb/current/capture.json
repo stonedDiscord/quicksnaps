@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "variant": "current",
+    "input_fingerprint": "232d6973dacc32be459a1e100d98f83d0b7112566f05b1069b9387d5c16d1580"
+  },
+  "result": {
+    "name": "vf3tb",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 16.125,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "what():  Unknown texture type: E5 (E594DC4B)",
+        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+      }
+    }
+  }
+}

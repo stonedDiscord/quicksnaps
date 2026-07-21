@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "variant": "previous",
+    "input_fingerprint": "a9842d91c4823a60882f8259c88f5ef039c86a668ccb7622f38d50b89d8a7095"
+  },
+  "result": {
+    "name": "nextc",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "duration_seconds": 1.114,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: M68kFPU: FSAVE unhandled mode 0 reg 2 at e",
+        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+      }
+    }
+  }
+}

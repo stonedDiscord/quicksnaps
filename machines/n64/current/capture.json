@@ -1,0 +1,29 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "variant": "current",
+    "input_fingerprint": "1709a14692231f4033d127868b2088477975716c2165de5ccfa380a298e2a5d3"
+  },
+  "result": {
+    "name": "n64",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "duration_seconds": 1.079,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+      }
+    }
+  }
+}
