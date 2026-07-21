@@ -1,20 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ed59c15fe78596ec6ff8fe04482ede78e6122e34">ed59c15fe78596ec6ff8fe04482ede78e6122e34</a> from <a href="https://github.com/mamedev/mame/commit/549438c634d86673972f987d27ccc74d478b8a4c">549438c634d86673972f987d27ccc74d478b8a4c</a> - mame-linux-clang-ed59c15fe78596ec6ff8fe04482ede78e6122e34 - generated 2026-07-21T15:39:09.896695+00:00</div>
-<div class="commit-message">machine/ncr5380: make ICR-issued SCSI reset interrupt chip-specific (#15571)
-
-A host-issued SCSI reset (writing the ICR ASSERT /RST bit) raises an
-interrupt on the base NCR5380/53C80: &quot;SCSI reset RST is similar to a chip
-reset, but generates an interrupt&quot;, and the chip monitors /RST including
-the one it drives.  The DP8490 EASI is the exception -- its ICR-issued
-reset performs the chip-reset actions, which &quot;[do] not create an
-interrupt&quot; (DP8490 datasheet 6.4 -&gt; 6.2), unlike an externally applied
-reset (6.3), which does.
-
-Gate the self-reset interrupt on the device type so the base 53C80
-interrupts while the DP8490 does not.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ac9965ab7f9c6a5611e03dfab86faf1727c03afc">ac9965ab7f9c6a5611e03dfab86faf1727c03afc</a> from <a href="https://github.com/mamedev/mame/commit/ed59c15fe78596ec6ff8fe04482ede78e6122e34">ed59c15fe78596ec6ff8fe04482ede78e6122e34</a> - mame-linux-clang-ac9965ab7f9c6a5611e03dfab86faf1727c03afc - generated 2026-07-21T15:40:07.903062+00:00</div>
+<div class="commit-message">nec/pc88va_v.cpp: implement backdrop color</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/gigatron/">gigatron</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/ac9965ab7f9c6a5611e03dfab86faf1727c03afc">ac9965ab7f9c6a5611e03dfab86faf1727c03afc</a></div>
+<div class="comparison">
+<figure><a href="machines/gigatron/previous/after.png"><img loading="lazy" src="machines/gigatron/previous/after.png" alt="gigatron previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/gigatron/current/after.png"><img loading="lazy" src="machines/gigatron/current/after.png" alt="gigatron current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/gigatron/">gigatron</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/ac9965ab7f9c6a5611e03dfab86faf1727c03afc">ac9965ab7f9c6a5611e03dfab86faf1727c03afc</a></div>
+<div class="comparison">
+<figure><a href="machines/gigatron/previous/before.png"><img loading="lazy" src="machines/gigatron/previous/before.png" alt="gigatron previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/gigatron/current/before.png"><img loading="lazy" src="machines/gigatron/current/before.png" alt="gigatron current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/1942iti/">1942iti</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/1038bd51b5425ef213671c0b6edf3b0f94da0722">1038bd51b5425ef213671c0b6edf3b0f94da0722</a></div>
 <div class="comparison">
@@ -602,18 +603,6 @@ interrupts while the DP8490 does not.</div></header>
 <div class="comparison">
 <figure><a href="machines/dcproto/previous/before.png"><img loading="lazy" src="machines/dcproto/previous/before.png" alt="dcproto previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/dcproto/current/before.png"><img loading="lazy" src="machines/dcproto/current/before.png" alt="dcproto current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/comt386/">comt386</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/dab2400953cdf818bfb5033a2e8bfd734e1d8fe1">dab2400953cdf818bfb5033a2e8bfd734e1d8fe1</a></div>
-<div class="comparison">
-<figure><a href="machines/comt386/previous/after.png"><img loading="lazy" src="machines/comt386/previous/after.png" alt="comt386 previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/comt386/current/after.png"><img loading="lazy" src="machines/comt386/current/after.png" alt="comt386 current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/comt386/">comt386</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/dab2400953cdf818bfb5033a2e8bfd734e1d8fe1">dab2400953cdf818bfb5033a2e8bfd734e1d8fe1</a></div>
-<div class="comparison">
-<figure><a href="machines/comt386/previous/before.png"><img loading="lazy" src="machines/comt386/previous/before.png" alt="comt386 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/comt386/current/before.png"><img loading="lazy" src="machines/comt386/current/before.png" alt="comt386 current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
