@@ -1,9 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/75f8b2b1f81c161373a2eef4626ed66b415264ff">75f8b2b1f81c161373a2eef4626ed66b415264ff</a> from <a href="https://github.com/mamedev/mame/commit/5940119c8562c44cb9b6f9a9512a46e16dd8509a">5940119c8562c44cb9b6f9a9512a46e16dd8509a</a> - mame-linux-clang-75f8b2b1f81c161373a2eef4626ed66b415264ff - generated 2026-07-21T19:42:19.884495+00:00</div>
-<div class="commit-message">devices/cpu: Invalidate up to the max length of a sequence prior to the starting address to catch sequences extending into the window. [R. Belmont]
-* Not 100% ideal, but it performs well inside the constraints of the existing DRC data structures.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/6f741835f8570a860c0d9d9c242a11f5cc5e2f21">6f741835f8570a860c0d9d9c242a11f5cc5e2f21</a> from <a href="https://github.com/mamedev/mame/commit/75f8b2b1f81c161373a2eef4626ed66b415264ff">75f8b2b1f81c161373a2eef4626ed66b415264ff</a> - mame-linux-clang-6f741835f8570a860c0d9d9c242a11f5cc5e2f21 - generated 2026-07-21T19:42:48.461041+00:00</div>
+<div class="commit-message">bus/a2bus/a2applicard.cpp: Updates and refinements [AJR]
+- Add maximum quantum to allow CP/M to boot reasonably quickly
+- Use a memory view to bank out the Z80 boot ROM
+- Add dump of the Franklin ACE 80 CPU Card [Internet Archive]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rcorsair/">rcorsair</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/63f49746869d1e1398cd5f348c982637cb38c21e">63f49746869d1e1398cd5f348c982637cb38c21e</a></div>
