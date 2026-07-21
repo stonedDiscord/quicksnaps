@@ -1,22 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/72341908be821a89624463eede90dc2328a36095">72341908be821a89624463eede90dc2328a36095</a> from <a href="https://github.com/mamedev/mame/commit/450f053baae7250b0ab5f3cf8608be6b837ac12f">450f053baae7250b0ab5f3cf8608be6b837ac12f</a> - mame-linux-clang-72341908be821a89624463eede90dc2328a36095 - generated 2026-07-21T19:39:42.078998+00:00</div>
-<div class="commit-message">cpu/drcbeut.cpp: Add support for invalidating code blocks in a specific logical address range without flushing the entire cache. [R. Belmont]
-* This allows TLB/MMU page invalidations to do targeted generated-code flushes without the performance hit of flushing the entire DRC.  PowerPC DRC changes which use this are currently being regression tested and will follow.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0b6a816705d9513e02bd664ee1ed5726bfc25d6a">0b6a816705d9513e02bd664ee1ed5726bfc25d6a</a> from <a href="https://github.com/mamedev/mame/commit/72341908be821a89624463eede90dc2328a36095">72341908be821a89624463eede90dc2328a36095</a> - mame-linux-clang-0b6a816705d9513e02bd664ee1ed5726bfc25d6a - generated 2026-07-21T19:40:46.532281+00:00</div>
+<div class="commit-message">machine/wd1002_hd0.cpp: Fix build after a14a0c1a000e7e68387abc3040783b472fc366c7</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
-<h3><a href="machines/x168/">x168</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/ecd58bf39a6779167340f5fca13cec197eaa4815">ecd58bf39a6779167340f5fca13cec197eaa4815</a></div>
-<div class="comparison">
-<figure><a href="machines/x168/previous/after.png"><img loading="lazy" src="machines/x168/previous/after.png" alt="x168 previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/x168/current/after.png"><img loading="lazy" src="machines/x168/current/after.png" alt="x168 current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/x168/">x168</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/ecd58bf39a6779167340f5fca13cec197eaa4815">ecd58bf39a6779167340f5fca13cec197eaa4815</a></div>
-<div class="comparison">
-<figure><a href="machines/x168/previous/before.png"><img loading="lazy" src="machines/x168/previous/before.png" alt="x168 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/x168/current/before.png"><img loading="lazy" src="machines/x168/current/before.png" alt="x168 current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
 <h3><a href="machines/rcorsair/">rcorsair</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/63f49746869d1e1398cd5f348c982637cb38c21e">63f49746869d1e1398cd5f348c982637cb38c21e</a></div>
 <div class="comparison">
@@ -604,6 +591,18 @@
 <div class="comparison">
 <figure><a href="machines/spchecksrv/previous/after.png"><img loading="lazy" src="machines/spchecksrv/previous/after.png" alt="spchecksrv previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/spchecksrv/current/after.png"><img loading="lazy" src="machines/spchecksrv/current/after.png" alt="spchecksrv current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/spchecksrv/">spchecksrv</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/spchecksrv/previous/before.png"><img loading="lazy" src="machines/spchecksrv/previous/before.png" alt="spchecksrv previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/spchecksrv/current/before.png"><img loading="lazy" src="machines/spchecksrv/current/before.png" alt="spchecksrv current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/sist1/">sist1</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923">4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923</a></div>
+<div class="comparison">
+<figure><a href="machines/sist1/previous/after.png"><img loading="lazy" src="machines/sist1/previous/after.png" alt="sist1 previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/sist1/current/after.png"><img loading="lazy" src="machines/sist1/current/after.png" alt="sist1 current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
