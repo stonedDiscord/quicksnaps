@@ -1,49 +1,34 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0b8926dc26f21452a16f73a59e0ab0947a947d61">0b8926dc26f21452a16f73a59e0ab0947a947d61</a> from <a href="https://github.com/mamedev/mame/commit/0db76a99440ab06d9966f4b94483a3dbfb3dee20">0db76a99440ab06d9966f4b94483a3dbfb3dee20</a> - mame-linux-clang-0b8926dc26f21452a16f73a59e0ab0947a947d61 - generated 2026-07-22T00:56:13.217084+00:00</div>
-<div class="commit-message">compis.xml - Add 36 new dumps (#15717)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a> from <a href="https://github.com/mamedev/mame/commit/0b8926dc26f21452a16f73a59e0ab0947a947d61">0b8926dc26f21452a16f73a59e0ab0947a947d61</a> - mame-linux-clang-2badb97436c9ad7c32cb8f29757834efefde52a1 - generated 2026-07-22T00:57:50.069494+00:00</div>
+<div class="commit-message">m68k: Even more fixes for A/UX [R. Belmont]
+* The 68020+ bf* instructions all had a bug where they could trash the next byte in memory
+* Fixed disassembly of PMOVE
+* Consolidated handling of unimplemented coprocessor instructions
 
-## New working software list items (compis.xml)
-Användbara procedurer i Pascal 1.5 (nät/skollicens) [FakeShemp]
-Compis Pascal 3.12 [FakeShemp]
-CompisNet 2.0 (version 5314) [FakeShemp]
-CompisNet II Plus (CPMBOOT, version 7244) [FakeShemp]
-Datorn i början (enanvändare) [FakeShemp]
-Enter 1.3 (demo, nät/skollicens) [FakeShemp]
-HarmoniEtt 2.0 (gamma) [FakeShemp]
-HarmoniTvå 2.0 (alfa) [FakeShemp]
-Skriv lätt, skriv rätt (version 6401) [FakeShemp]
-Spara-låna-vinna (enanvändare) [FakeShemp]
-Systemskiva I (version 6245) [FakeShemp]
-Systemskiva 2.0 [FakeShemp]
-Systemskiva för hårdskiveenhet 2.01 (version 6335) [FakeShemp]
-Systemskiva för hårdskiveenhet 1.00 (version 7242) [FakeShemp]
-Turbo Pascal 3.01 [FakeShemp]
-Uppgraderingspaket 1 för Compis I (version 6262) [FakeShemp]
+apple/djmemc.cpp: A/UX wants the memory controller registers to read back or else it blows up [R. Belmont]
+* A/UX 3.1.1 now boots to multiuser on macqd800, macqd610, and macqd650
 
-## New not working software list items (compis.xml)
-CompisNet IB 2.01 (version 6191) [FakeShemp]
-Skatteprogram S91 [FakeShemp]
-Compis Kommunikation 1.2 [FakeShemp]
-CompisNet I PASBOOT med nyteknik [FakeShemp]
-Distributionskunskap (version 8014) [FakeShemp]
-GraphMaster 2.0 (nät/skollicens) [FakeShemp]
-IBM DOS 3.00 [FakeShemp]
-Intresse-fallenhet-yrkesval (enanvändare) [FakeShemp]
-Kemi 1 (nät/skollicens) [FakeShemp]
-Matematikverkstad I (beta 19860606) [FakeShemp]
-Mät absorption (nät/skollicens) [FakeShemp]
-Mät halveringstid (nät/skollicens) [FakeShemp]
-Mät med fotoceller 1.0 (enanvändare) [FakeShemp]
-MätEtt (nät-skollicens) [FakeShemp]
-Mätvärdesinsamling 1.0 (alfa, enanvändare) [FakeShemp]
-ProfiRange (version 6181) [FakeShemp]
-ProfiText: Textbehandling med Compis (version 6181) [FakeShemp]
-Skriv lätt, skriv rätt (version 8101, ekonomiredaktionen) [FakeShemp]
-StatEtt (beta, nät/skollicens) [FakeShemp]
-Tabba lätt (version 7235) [FakeShemp]</div></header>
+apple/scsidma.cpp: As theorized long ago, A/UX uses full real DMA mode.  Implemented it. [R. Belmont]
+* A/UX 3.1.1 now boots to multiuser on maciifx
+
+apple/maciici.cpp: Hooked up SCSI IRQ and DRQ to VIA2 to try and get m68k Linux unstuck, but no go. [R. Belmont]
+
+AI disclosure: Claude Opus 4.8 assisted with the bug hunting.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/maciifx/">maciifx</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a></div>
+<div class="comparison">
+<figure><a href="machines/maciifx/previous/after.png"><img loading="lazy" src="machines/maciifx/previous/after.png" alt="maciifx previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/maciifx/current/after.png"><img loading="lazy" src="machines/maciifx/current/after.png" alt="maciifx current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/maciifx/">maciifx</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a></div>
+<div class="comparison">
+<figure><a href="machines/maciifx/previous/before.png"><img loading="lazy" src="machines/maciifx/previous/before.png" alt="maciifx previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/maciifx/current/before.png"><img loading="lazy" src="machines/maciifx/current/before.png" alt="maciifx current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/pspikesm/">pspikesm</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/ba76d3f7075417edbc8808172a08f7de163439e6">ba76d3f7075417edbc8808172a08f7de163439e6</a></div>
 <div class="comparison">
@@ -631,18 +616,6 @@ Tabba lätt (version 7235) [FakeShemp]</div></header>
 <div class="comparison">
 <figure><a href="machines/shienryu/previous/before.png"><img loading="lazy" src="machines/shienryu/previous/before.png" alt="shienryu previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/shienryu/current/before.png"><img loading="lazy" src="machines/shienryu/current/before.png" alt="shienryu current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/shanhigw/">shanhigw</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/shanhigw/previous/after.png"><img loading="lazy" src="machines/shanhigw/previous/after.png" alt="shanhigw previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/shanhigw/current/after.png"><img loading="lazy" src="machines/shanhigw/current/after.png" alt="shanhigw current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/shanhigw/">shanhigw</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/shanhigw/previous/before.png"><img loading="lazy" src="machines/shanhigw/previous/before.png" alt="shanhigw previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/shanhigw/current/before.png"><img loading="lazy" src="machines/shanhigw/current/before.png" alt="shanhigw current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
