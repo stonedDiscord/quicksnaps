@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "5446223573f548a7fcb98ce624e4590649403221",
-    "artifact": "mame-linux-clang-5446223573f548a7fcb98ce624e4590649403221",
+    "revision": "0ae8de510bdd7dfc5f83a710cbee2dfa03c92d7f",
+    "artifact": "mame-linux-clang-0ae8de510bdd7dfc5f83a710cbee2dfa03c92d7f",
     "variant": "current",
     "input_fingerprint": "b91b817e1f908a793c95abfecd2c6202ae7b1335b674bf54b5b21c4bb29dcd1f"
   },
   "result": {
     "name": "pyuuta",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "5446223573f548a7fcb98ce624e4590649403221",
+    "revision": "0ae8de510bdd7dfc5f83a710cbee2dfa03c92d7f",
     "captures": {
       "current": {
-        "status": "failed",
-        "captured_at": "2026-07-22T01:21:08.052911+00:00",
-        "duration_seconds": 0.677,
+        "status": "passed",
+        "captured_at": "2026-07-22T01:30:53.121426+00:00",
+        "duration_seconds": 3.32,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "MAME exited with status -11",
-        "revision": "5446223573f548a7fcb98ce624e4590649403221",
-        "artifact": "mame-linux-clang-5446223573f548a7fcb98ce624e4590649403221"
+        "failure_reason": null,
+        "revision": "0ae8de510bdd7dfc5f83a710cbee2dfa03c92d7f",
+        "artifact": "mame-linux-clang-0ae8de510bdd7dfc5f83a710cbee2dfa03c92d7f"
       }
     }
   }
