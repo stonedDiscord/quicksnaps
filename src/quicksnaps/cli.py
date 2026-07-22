@@ -61,6 +61,7 @@ def _capture_request(
             "press_seconds": machine.press_seconds,
             "button": machine.button,
             "mame_args": list(machine.mame_args),
+            "rtc_time": machine.rtc_time,
         },
         "rompath": rompath,
         "timeout": timeout,
@@ -69,7 +70,7 @@ def _capture_request(
         json.dumps(inputs, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
     return {
-        "checkpoint_version": 2,
+        "checkpoint_version": 3,
         "revision": revision,
         "artifact": artifact,
         "variant": variant,

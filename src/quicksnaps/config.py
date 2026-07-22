@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,7 @@ class Defaults:
     press_seconds: float = 0.25
     button: str = "1 Player Start"
     mame_args: tuple[str, ...] = ()
+    rtc_time: str = "20100101000000"
 
 
 @dataclass(frozen=True)
@@ -24,6 +26,7 @@ class Machine:
     press_seconds: float
     button: str
     mame_args: tuple[str, ...] = ()
+    rtc_time: str = "20100101000000"
 
 
 @dataclass(frozen=True)
@@ -55,6 +58,7 @@ class Config:
             press_seconds=self.defaults.press_seconds,
             button=self.defaults.button,
             mame_args=self.defaults.mame_args,
+            rtc_time=self.defaults.rtc_time,
         )
 
 
@@ -62,6 +66,17 @@ def _number(data: dict[str, Any], key: str, default: float) -> float:
     value = float(data.get(key, default))
     if value < 0:
         raise ValueError(f"{key} must be non-negative")
+    return value
+
+
+def _rtc_time(data: dict[str, Any], default: str) -> str:
+    value = str(data.get("rtc_time", default))
+    if not re.fullmatch(r"\d{14}", value):
+        raise ValueError("rtc_time must be a valid YYYYMMDDhhmmss timestamp")
+    try:
+        datetime.strptime(value, "%Y%m%d%H%M%S")
+    except ValueError as error:
+        raise ValueError("rtc_time must be a valid YYYYMMDDhhmmss timestamp") from error
     return value
 
 
@@ -74,6 +89,7 @@ def load_config(path: Path) -> Config:
         press_seconds=_number(default_raw, "press_seconds", 0.25),
         button=str(default_raw.get("button", "1 Player Start")),
         mame_args=tuple(map(str, default_raw.get("mame_args", []))),
+        rtc_time=_rtc_time(default_raw, "20100101000000"),
     )
 
     machines: list[Machine] = []
@@ -95,6 +111,7 @@ def load_config(path: Path) -> Config:
                 press_seconds=_number(item, "press_seconds", defaults.press_seconds),
                 button=str(item.get("button", defaults.button)),
                 mame_args=defaults.mame_args + tuple(map(str, item.get("mame_args", []))),
+                rtc_time=_rtc_time(item, defaults.rtc_time),
             )
         )
     if not machines:

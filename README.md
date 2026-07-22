@@ -6,6 +6,9 @@ time, captures a screenshot, presses a configured emulated input, and captures a
 second screenshot. The generated static site is committed to a dedicated GitHub
 Pages branch once per available upstream MAME CI artifact.
 
+MAME's emulated real-time clock starts at `2010-01-01 00:00:00` by default,
+preventing host clock differences from appearing as visual changes.
+
 The default development binary is `../mame/mamed`.
 
 ## How it works
@@ -65,6 +68,7 @@ machine:
       "name": "galaga",
       "warmup_seconds": 30,
       "button": "1 Player Start",
+      "rtc_time": "20100101000000",
       "mame_args": []
     }
   ]
@@ -74,6 +78,8 @@ machine:
 Input names are MAME I/O field names (for example `1 Player Start`), not host
 key names. The default is `1 Player Start`, captured after 30 emulated seconds. A
 machine requiring media can put its device arguments in `mame_args`.
+Set `defaults.rtc_time`, or a machine's `rtc_time`, using MAME's
+`YYYYMMDDhhmmss` format to choose a deterministic boot date and time.
 ROMs are deliberately not part of either repository.
 
 Local/test mode supports `impact_rules` and the safe unmatched fallback. Catalog

@@ -124,6 +124,7 @@ def capture_machine(
         "-state_directory", str((machine_dir / "state").resolve()),
         "-snapview", "auto", "-skip_gameinfo", "-noconfirm_quit",
         "-sound", "none", "-video", "none", "-nothrottle", "-noreadconfig",
+        "-rtc", machine.rtc_time,
         "-seconds_to_run", str(emulated_limit),
         *machine.mame_args,
     ]

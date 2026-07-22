@@ -22,11 +22,12 @@ class ManifestTests(unittest.TestCase):
     def test_capture_configures_layout_snapshot_view(self, run):
         run.return_value.returncode = 1
         run.return_value.stdout = "capture stopped"
-        machine = Machine("disc2000", 0, 0, 0, "Start")
+        machine = Machine("disc2000", 0, 0, 0, "Start", rtc_time="20150708123456")
         with tempfile.TemporaryDirectory() as temporary:
             capture_machine(Path("mame"), machine, Path(temporary))
         command = run.call_args.args[0]
         self.assertEqual("auto", command[command.index("-snapview") + 1])
+        self.assertEqual(machine.rtc_time, command[command.index("-rtc") + 1])
 
     def test_lua_uses_layout_snapshot_for_screenless_machines(self):
         script = Path(__file__).parents[1] / "src" / "quicksnaps" / "capture.lua"
