@@ -1,10 +1,34 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d6422d71cd72a1e7d742a86f991bdf86e8939f99">d6422d71cd72a1e7d742a86f991bdf86e8939f99</a> from <a href="https://github.com/mamedev/mame/commit/4f2d2bb3d902c151e75888acc158d2cdb6b5e323">4f2d2bb3d902c151e75888acc158d2cdb6b5e323</a> - mame-linux-clang-d6422d71cd72a1e7d742a86f991bdf86e8939f99 - generated 2026-07-22T00:20:54.259223+00:00</div>
-<div class="commit-message">New software list items marked not working
-------------------------------------------
-pc6001mk2_flop: PC-6601 Nihongo Word Processor, PC-6601 Utility Disk [Neo Kobe]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8b78d81440bc5a60ae5f8eb5e12e963120859993">8b78d81440bc5a60ae5f8eb5e12e963120859993</a> from <a href="https://github.com/mamedev/mame/commit/d6422d71cd72a1e7d742a86f991bdf86e8939f99">d6422d71cd72a1e7d742a86f991bdf86e8939f99</a> - mame-linux-clang-8b78d81440bc5a60ae5f8eb5e12e963120859993 - generated 2026-07-22T00:21:28.301263+00:00</div>
+<div class="commit-message">M68k: MMU fixes and updates [R. Belmont]
+- 68040 form of PTEST fixed and handled (previously didn’t decode correctly)
+- Fixed PFLUSH decoding so incorrect F-line traps don&#x27;t occur
+- Indirect page descriptors write back U/M bits properly instead of potentially corrupting the page table
+- Reset now properly clears ITTx/DTTx
+- MMUSR now shown in the debugger to help track failed translations
+- PFLUSH on 68881/68030 now properly compare the ATC tag
+- Fixed typo causing misinterpretation of long-format descriptors
+- Indirect descriptors now are handled properly
+- PTEST on 68881/68030 properly handles levels shallower than the table depth
+- PMOVE to TTx now properly flushes the ATC
+- TC consistency check no longer throws exceptions on valid TC values with junk in the TI fields
+- MMU EA decoding now only accepts forms the real MMUs do
+- Added some guards against invalid page tables
+
+M68k: FPU fixes and updates [R. Belmont]
+- FPU opcode now validated before doing any EA calculations
+- 68040-specific FSxxx/FDxxx instructions implemented
+- 68881 transcendentals implemented and verified
+
+M68k: cycle counting overhauled for 68030 and 68040.  Timings are significantly better but still inaccurate, especially on 68040. [R. Belmont]
+
+3rdparty/softfloat3: Fixed several errors in the transcendental helpers, including wrong parameter order [R. Belmont]
+
+AI disclosure: MMU and FPU debug/tracing and fix planning assisted by Claude Fable 5.  Cycle count refactor assisted by GPT 5.6 Terra.
+
+Testing: A/UX 3.1.1 now boots properly on a range of 68030 and 68040 machines (with some driver changes not included here).  It previously was impossible to boot on 68040.  A generated Lua boot script hijacked 68030 and 68040 Macs to run a variety of synthetic FPU and MMU tests.  Tested taitojc, Marathon, Wolfenstein 3D, and Jigsaw Puzzle on Mac OS.  Tested NeXTSTEP on 68030 and 68040.  Tested HP/UX m68k.  Tested funkball on x86 to verify x87 is unhurt by the softfloat3 helper fixes.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/pspikesm/">pspikesm</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/ba76d3f7075417edbc8808172a08f7de163439e6">ba76d3f7075417edbc8808172a08f7de163439e6</a></div>
