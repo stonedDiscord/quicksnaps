@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
-    "artifact": "mame-linux-clang-dc9e363f4e51fbf0bbde35dd252e8bab24874486",
+    "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
+    "artifact": "mame-linux-clang-97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
     "variant": "previous",
     "input_fingerprint": "cc1e87977d2b0f648e4972bf6248ff8dd3355f62ec4f11e0bafda0f2f004e23b"
   },
   "result": {
     "name": "jak_umdf",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
+    "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
     "captures": {
       "previous": {
-        "status": "passed",
-        "captured_at": "2026-07-21T21:16:59.049112+00:00",
-        "duration_seconds": 22.613,
+        "status": "failed",
+        "captured_at": "2026-07-22T00:11:51.799124+00:00",
+        "duration_seconds": 3.723,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "dc9e363f4e51fbf0bbde35dd252e8bab24874486",
-        "artifact": "mame-linux-clang-dc9e363f4e51fbf0bbde35dd252e8bab24874486"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
+        "artifact": "mame-linux-clang-97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2"
       }
     }
   }
