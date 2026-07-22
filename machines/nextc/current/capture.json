@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "5446223573f548a7fcb98ce624e4590649403221",
+    "artifact": "mame-linux-clang-5446223573f548a7fcb98ce624e4590649403221",
     "variant": "current",
     "input_fingerprint": "a9842d91c4823a60882f8259c88f5ef039c86a668ccb7622f38d50b89d8a7095"
   },
   "result": {
     "name": "nextc",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "5446223573f548a7fcb98ce624e4590649403221",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.034,
+        "status": "passed",
+        "captured_at": "2026-07-22T01:20:42.183562+00:00",
+        "duration_seconds": 17.904,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: M68kFPU: FSAVE unhandled mode 0 reg 2 at e",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "5446223573f548a7fcb98ce624e4590649403221",
+        "artifact": "mame-linux-clang-5446223573f548a7fcb98ce624e4590649403221"
       }
     }
   }
