@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
-    "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d",
+    "revision": "4fee2341e31eb55f378ca64a02ac2d4b9a78047f",
+    "artifact": "mame-linux-clang-4fee2341e31eb55f378ca64a02ac2d4b9a78047f",
     "variant": "current",
     "input_fingerprint": "2ec44b5b78a0cbc3d12624997acebc7213800f3e22df1b4fb85da16da31c9be1"
   },
   "result": {
     "name": "gatedoom",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
+    "revision": "4fee2341e31eb55f378ca64a02ac2d4b9a78047f",
     "captures": {
       "current": {
-        "status": "failed",
-        "captured_at": "2026-07-22T01:15:24.945124+00:00",
-        "duration_seconds": 1.058,
+        "status": "passed",
+        "captured_at": "2026-07-22T01:29:52.146645+00:00",
+        "duration_seconds": 4.218,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: palette_device(:palette): Palette has memory share but no format specified",
-        "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
-        "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d"
+        "failure_reason": null,
+        "revision": "4fee2341e31eb55f378ca64a02ac2d4b9a78047f",
+        "artifact": "mame-linux-clang-4fee2341e31eb55f378ca64a02ac2d4b9a78047f"
       }
     }
   }
