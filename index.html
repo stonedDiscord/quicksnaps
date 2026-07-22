@@ -1,18 +1,31 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/697106eba03e746657bf8e89e24454451acdd882">697106eba03e746657bf8e89e24454451acdd882</a> from <a href="https://github.com/mamedev/mame/commit/f5eb5eed675d62c01dc7f72ed10c95feb1ff2099">f5eb5eed675d62c01dc7f72ed10c95feb1ff2099</a> - mame-linux-clang-697106eba03e746657bf8e89e24454451acdd882 - generated 2026-07-22T00:01:35.952064+00:00</div>
-<div class="commit-message">machine/dimm_spd.cpp: Don&#x27;t respond on the I2C bus if size is set to empty. [R. Belmont]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2194d88adc5172c316e0eda805c61ded7e9e1810">2194d88adc5172c316e0eda805c61ded7e9e1810</a> from <a href="https://github.com/mamedev/mame/commit/697106eba03e746657bf8e89e24454451acdd882">697106eba03e746657bf8e89e24454451acdd882</a> - mame-linux-clang-2194d88adc5172c316e0eda805c61ded7e9e1810 - generated 2026-07-22T00:02:14.146019+00:00</div>
+<div class="commit-message">sega/model1: Clip wireframe lines to the viewport (#15712)
 
-machine/i2chle.cpp: Add overridable method so configured devices that don&#x27;t wish to respond may (not) do so. [R. Belmont]
+The wireframe rasterizer walked its Bresenham from raw projected
+coordinates. Those come from the unclipped projection, and a degenerate
+projection (z ~ 0 with the boot-time zoom still 0) yields inf/NaN,
+whose float-&gt;int conversion is undefined behaviour: x86 hosts get
+INT32_MIN where arm64 saturates and maps NaN to 0. wingwar generates
+such vertices while booting, and on x86 the resulting (INT32_MIN,
+INT32_MIN) pairs matched the two-distinct-vertices wireframe case and
+walked a ~2^31-pixel line with overflowing error terms - the gray
+screen boot lockup reported against GitHub PR #15597 (Windows only,
+and only when the below-HUD pass draws, since the above-HUD pass
+pushes no geometry there).
 
-machine/mpc106.cpp: Fixed a bunch of issues with RAM mapping which combined to make imac trash MAME&#x27;s heap. [R. Belmont]
-
-apple/burgundy.cpp: Fixed a bunch of uninitialized variables and an inaccuracy in the DMA handling. [R. Belmont]
-
-apple/imac.cpp: Report the correct sizes for the RAM DIMMs now that they&#x27;re mapped properly by the mpc106. [R. Belmont]
-
-AI disclosure: Debugging/tracing assistance by Claude Fable 5.</div></header>
+Before that rasterizer existed these quads went through the scanline
+filler, which fill_slope()/fill_line() clamp to the viewport, so the
+same garbage stayed harmless and bounded. Give the line rasterizer the
+same property: Liang-Barsky clip the segment to the viewport before
+walking it. In-view lines are untouched; wires that used to leak a few
+pixels past the viewport edge now stop at it like every other
+primitive. Attract snapshots of vf, vr, vformula, swa, wingwar and
+netmerc are pixel-identical to master apart from one such leak.
+Verified against the boot hang by mimicking x86 conversion semantics
+on arm64: hangs before, completes after.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/dkmb/">dkmb</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/378c2be4bbd04de53314b6947864e58fefe50813">378c2be4bbd04de53314b6947864e58fefe50813</a></div>
