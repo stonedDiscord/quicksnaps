@@ -1,22 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/1be3f1e23938d5e0bba51b9841f2e16677e027e1">1be3f1e23938d5e0bba51b9841f2e16677e027e1</a> from <a href="https://github.com/mamedev/mame/commit/eff0810ed96833775c59f1970f5be4e5c8a58c3a">eff0810ed96833775c59f1970f5be4e5c8a58c3a</a> - mame-linux-clang-1be3f1e23938d5e0bba51b9841f2e16677e027e1 - generated 2026-07-22T01:00:09.901629+00:00</div>
-<div class="commit-message">dataeast/deco32.cpp: Split and renaming due to hardware differences, Updates (#15726)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/eff56bad57e6c1840d9dc881ead1a386940cfdaf">eff56bad57e6c1840d9dc881ead1a386940cfdaf</a> from <a href="https://github.com/mamedev/mame/commit/1be3f1e23938d5e0bba51b9841f2e16677e027e1">1be3f1e23938d5e0bba51b9841f2e16677e027e1</a> - mame-linux-clang-eff56bad57e6c1840d9dc881ead1a386940cfdaf - generated 2026-07-22T01:01:10.575885+00:00</div>
+<div class="commit-message">xerox/xerox820.cpp: mark bigboard5 as working (#15725)
 
-* dataeast/*: Split driver due to hardware differences
-  - captaven* into dataeast/captaven.cpp
-  - fghthist*, tattass*, nslasher* into dataeast/fghthist.cpp, Fix naming of machine configuration related name of fghthist and clones
-  - dragngun*, lockload* and clones into dataeast/dragngun.cpp
-* dataeast/deco156.cpp: Rename driver to dataeast/hvysmsh.cpp
-  - Split driver state via hardware configurations
-  - Fix namings
-  - Reduce duplicates
-  - Fix metadata via in-game version information screen and title screen
-  - Fix notes for version information screen
-* dataeast/backfire.cpp, dataeast/hvysmsh.cpp, dataeast/wcvol95.cpp, dataeast/simpl156.cpp: Fix bitmap fill behaviour (restricted into cliprect)
-* Fix namings of dataeast/deco156_m.* into dataeast/deco156.*
-* dataeast/simpl156.cpp: Reduce duplicates</div></header>
+The Big Board 5.25&quot; variant boots CP/M from the Xerox 820 software list
+(the machine already inherits flop_list from xerox820()).  Verified with
+the &quot;cpm&quot; entry (130s22100ds_cpmrev3.imd, 40/18/128 FM): the ROM monitor
+B command loads CP/M, DIR reads the directory, and a Ctrl-C warm boot
+reloads the CCP and returns to the prompt.
+
+No 5.25&quot; media was previously present in the tree to exercise it, which
+is likely why the flag was never revisited.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/maciifx/">maciifx</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a></div>
