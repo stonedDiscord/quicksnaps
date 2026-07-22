@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "a1cc14b91f7633ebe12f44a64fa447ddfe363d7e",
-    "artifact": "mame-linux-clang-a1cc14b91f7633ebe12f44a64fa447ddfe363d7e",
+    "revision": "05510133322a32da664134d1ebfde32b1a82df31",
+    "artifact": "mame-linux-clang-05510133322a32da664134d1ebfde32b1a82df31",
     "variant": "previous",
     "input_fingerprint": "b19de3a67b69d7f7d9c0615182168c17ae71848d31088c4477dcf433c9307b67"
   },
   "result": {
     "name": "motoxgo",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "a1cc14b91f7633ebe12f44a64fa447ddfe363d7e",
+    "revision": "05510133322a32da664134d1ebfde32b1a82df31",
     "captures": {
       "previous": {
-        "status": "passed",
-        "captured_at": "2026-07-21T18:49:36.083299+00:00",
-        "duration_seconds": 94.905,
+        "status": "failed",
+        "captured_at": "2026-07-22T00:42:28.211285+00:00",
+        "duration_seconds": 161.36,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "a1cc14b91f7633ebe12f44a64fa447ddfe363d7e",
-        "artifact": "mame-linux-clang-a1cc14b91f7633ebe12f44a64fa447ddfe363d7e"
+        "failure_reason": "MAME timed out after 161.2 wall-clock seconds",
+        "revision": "05510133322a32da664134d1ebfde32b1a82df31",
+        "artifact": "mame-linux-clang-05510133322a32da664134d1ebfde32b1a82df31"
       }
     }
   }
