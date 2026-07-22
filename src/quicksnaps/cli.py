@@ -69,7 +69,7 @@ def _capture_request(
         json.dumps(inputs, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
     return {
-        "checkpoint_version": 1,
+        "checkpoint_version": 2,
         "revision": revision,
         "artifact": artifact,
         "variant": variant,

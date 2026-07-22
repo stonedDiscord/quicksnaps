@@ -122,7 +122,7 @@ def capture_machine(
         "-cfg_directory", str((machine_dir / "cfg").resolve()),
         "-nvram_directory", str((machine_dir / "nvram").resolve()),
         "-state_directory", str((machine_dir / "state").resolve()),
-        "-snapview", "native", "-skip_gameinfo", "-noconfirm_quit",
+        "-snapview", "auto", "-skip_gameinfo", "-noconfirm_quit",
         "-sound", "none", "-video", "none", "-nothrottle", "-noreadconfig",
         "-seconds_to_run", str(emulated_limit),
         *machine.mame_args,

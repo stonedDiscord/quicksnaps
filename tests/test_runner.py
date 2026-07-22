@@ -4,9 +4,12 @@ import tempfile
 import unittest
 import zlib
 from pathlib import Path
+from unittest.mock import patch
 
+from quicksnaps.config import Machine
 from quicksnaps.runner import (
     _failure_from_log,
+    capture_machine,
     load_capture_checkpoint,
     normalize_png,
     write_capture_checkpoint,
@@ -15,6 +18,24 @@ from quicksnaps.runner import (
 
 
 class ManifestTests(unittest.TestCase):
+    @patch("quicksnaps.runner.subprocess.run")
+    def test_capture_configures_layout_snapshot_view(self, run):
+        run.return_value.returncode = 1
+        run.return_value.stdout = "capture stopped"
+        machine = Machine("disc2000", 0, 0, 0, "Start")
+        with tempfile.TemporaryDirectory() as temporary:
+            capture_machine(Path("mame"), machine, Path(temporary))
+        command = run.call_args.args[0]
+        self.assertEqual("auto", command[command.index("-snapview") + 1])
+
+    def test_lua_uses_layout_snapshot_for_screenless_machines(self):
+        script = Path(__file__).parents[1] / "src" / "quicksnaps" / "capture.lua"
+        source = script.read_text()
+        self.assertIn('view.unqualified_name == "None"', source)
+        self.assertIn("machine has no emulated screen or artwork layout", source)
+        self.assertIn("manager.machine.options.entries.snapname:value(filename)", source)
+        self.assertIn("manager.machine.video:snapshot()", source)
+
     def test_capture_checkpoint_requires_matching_request_and_outputs(self):
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary)

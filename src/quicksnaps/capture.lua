@@ -27,8 +27,14 @@ end
 local function snapshot(filename)
     local screen = manager.machine.screens:at(1)
     if screen == nil then
-        fail("machine has no emulated screen")
-        return false
+        local view = manager.machine.video.snapshot_target.current_view
+        if view.unqualified_name == "None" then
+            fail("machine has no emulated screen or artwork layout")
+            return false
+        end
+        manager.machine.options.entries.snapname:value(filename)
+        manager.machine.video:snapshot()
+        return true
     end
     local result = screen:snapshot(filename)
     if result ~= nil then
