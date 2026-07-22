@@ -1,28 +1,29 @@
 {
   "request": {
     "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
+    "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d",
     "variant": "current",
     "input_fingerprint": "fa846bc456dd8fc283c1f1432a1b07de353652f8b8b3278f13b4004dab46aec2"
   },
   "result": {
     "name": "vaportra",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 4.633,
+        "status": "failed",
+        "captured_at": "2026-07-22T01:16:05.746341+00:00",
+        "duration_seconds": 0.818,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "Fatal error: palette_device(:palette): Palette has memory share but no format specified",
+        "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
+        "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d"
       }
     }
   }
