@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+    "artifact": "mame-linux-clang-d48e05468c078a25873749618995ad3a5f314acb",
+    "variant": "current",
+    "input_fingerprint": "f7918d94fec3f5207b7e91acb93aedae406f9b2625603dd9c4423552d03fdb15"
+  },
+  "result": {
+    "name": "bg_ddb",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-07-22T00:18:27.747801+00:00",
+        "duration_seconds": 3.602,
+        "button": "1 Player Start",
+        "button_applied": false,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "machine has no emulated screen",
+        "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+        "artifact": "mame-linux-clang-d48e05468c078a25873749618995ad3a5f314acb"
+      }
+    }
+  }
+}

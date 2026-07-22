@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 1,
+    "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+    "artifact": "mame-linux-clang-d48e05468c078a25873749618995ad3a5f314acb",
+    "variant": "current",
+    "input_fingerprint": "7b246e72efc91d792b7dcb11f18b5b75624c5c9fd120ebdbf9219a13c86e8a13"
+  },
+  "result": {
+    "name": "bg_barmy",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-07-22T00:18:27.753973+00:00",
+        "duration_seconds": 3.61,
+        "button": "1 Player Start",
+        "button_applied": false,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "machine has no emulated screen",
+        "revision": "d48e05468c078a25873749618995ad3a5f314acb",
+        "artifact": "mame-linux-clang-d48e05468c078a25873749618995ad3a5f314acb"
+      }
+    }
+  }
+}
