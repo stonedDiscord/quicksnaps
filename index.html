@@ -1,12 +1,22 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/eff0810ed96833775c59f1970f5be4e5c8a58c3a">eff0810ed96833775c59f1970f5be4e5c8a58c3a</a> from <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a> - mame-linux-clang-eff0810ed96833775c59f1970f5be4e5c8a58c3a - generated 2026-07-22T00:58:24.453819+00:00</div>
-<div class="commit-message">debugger/osx/debugview.mm: Fixed a race condition and a QoL issue. [R. Belmont]
-- The Cocoa debugger could push stale scroll position information back to the core.  This manifested most often as the disassembly view refusing to update after stepping into a large PC move (JSR/JMP/TRAP or an IRQ gets taken), or the debugger console not scrolling automatically.
-- QoL: disassembly views that track curpc (like the one in the main debugger window) should not restore to the saved PC from the .CFG file.  Fixes the disassembly view not showing where the real PC is on debugger startup.
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/1be3f1e23938d5e0bba51b9841f2e16677e027e1">1be3f1e23938d5e0bba51b9841f2e16677e027e1</a> from <a href="https://github.com/mamedev/mame/commit/eff0810ed96833775c59f1970f5be4e5c8a58c3a">eff0810ed96833775c59f1970f5be4e5c8a58c3a</a> - mame-linux-clang-1be3f1e23938d5e0bba51b9841f2e16677e027e1 - generated 2026-07-22T01:00:09.901629+00:00</div>
+<div class="commit-message">dataeast/deco32.cpp: Split and renaming due to hardware differences, Updates (#15726)
 
-AI disclosure: the race condition was traced with assistance from Claude Fable 5.</div></header>
+* dataeast/*: Split driver due to hardware differences
+  - captaven* into dataeast/captaven.cpp
+  - fghthist*, tattass*, nslasher* into dataeast/fghthist.cpp, Fix naming of machine configuration related name of fghthist and clones
+  - dragngun*, lockload* and clones into dataeast/dragngun.cpp
+* dataeast/deco156.cpp: Rename driver to dataeast/hvysmsh.cpp
+  - Split driver state via hardware configurations
+  - Fix namings
+  - Reduce duplicates
+  - Fix metadata via in-game version information screen and title screen
+  - Fix notes for version information screen
+* dataeast/backfire.cpp, dataeast/hvysmsh.cpp, dataeast/wcvol95.cpp, dataeast/simpl156.cpp: Fix bitmap fill behaviour (restricted into cliprect)
+* Fix namings of dataeast/deco156_m.* into dataeast/deco156.*
+* dataeast/simpl156.cpp: Reduce duplicates</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/maciifx/">maciifx</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a></div>
