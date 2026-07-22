@@ -1,21 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a> from <a href="https://github.com/mamedev/mame/commit/0b8926dc26f21452a16f73a59e0ab0947a947d61">0b8926dc26f21452a16f73a59e0ab0947a947d61</a> - mame-linux-clang-2badb97436c9ad7c32cb8f29757834efefde52a1 - generated 2026-07-22T00:57:50.069494+00:00</div>
-<div class="commit-message">m68k: Even more fixes for A/UX [R. Belmont]
-* The 68020+ bf* instructions all had a bug where they could trash the next byte in memory
-* Fixed disassembly of PMOVE
-* Consolidated handling of unimplemented coprocessor instructions
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/eff0810ed96833775c59f1970f5be4e5c8a58c3a">eff0810ed96833775c59f1970f5be4e5c8a58c3a</a> from <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a> - mame-linux-clang-eff0810ed96833775c59f1970f5be4e5c8a58c3a - generated 2026-07-22T00:58:24.453819+00:00</div>
+<div class="commit-message">debugger/osx/debugview.mm: Fixed a race condition and a QoL issue. [R. Belmont]
+- The Cocoa debugger could push stale scroll position information back to the core.  This manifested most often as the disassembly view refusing to update after stepping into a large PC move (JSR/JMP/TRAP or an IRQ gets taken), or the debugger console not scrolling automatically.
+- QoL: disassembly views that track curpc (like the one in the main debugger window) should not restore to the saved PC from the .CFG file.  Fixes the disassembly view not showing where the real PC is on debugger startup.
 
-apple/djmemc.cpp: A/UX wants the memory controller registers to read back or else it blows up [R. Belmont]
-* A/UX 3.1.1 now boots to multiuser on macqd800, macqd610, and macqd650
-
-apple/scsidma.cpp: As theorized long ago, A/UX uses full real DMA mode.  Implemented it. [R. Belmont]
-* A/UX 3.1.1 now boots to multiuser on maciifx
-
-apple/maciici.cpp: Hooked up SCSI IRQ and DRQ to VIA2 to try and get m68k Linux unstuck, but no go. [R. Belmont]
-
-AI disclosure: Claude Opus 4.8 assisted with the bug hunting.</div></header>
+AI disclosure: the race condition was traced with assistance from Claude Fable 5.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/maciifx/">maciifx</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/2badb97436c9ad7c32cb8f29757834efefde52a1">2badb97436c9ad7c32cb8f29757834efefde52a1</a></div>
