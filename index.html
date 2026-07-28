@@ -1,10 +1,18 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/cacad3c9adea37fb992e570c2048fecc6f05988a">cacad3c9adea37fb992e570c2048fecc6f05988a</a> from <a href="https://github.com/mamedev/mame/commit/c9e7ea3381e5dba7e08b7f7e5ec6549d45fe7d29">c9e7ea3381e5dba7e08b7f7e5ec6549d45fe7d29</a> - mame-linux-clang-cacad3c9adea37fb992e570c2048fecc6f05988a - generated 2026-07-28T17:50:35.691363+00:00</div>
-<div class="commit-message">New clones marked not working
------------------------------
-Sistema 600 [Datassette]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/9e6ec0873e6770bc79d4532bf4436e0f1d8a3fa6">9e6ec0873e6770bc79d4532bf4436e0f1d8a3fa6</a> from <a href="https://github.com/mamedev/mame/commit/cacad3c9adea37fb992e570c2048fecc6f05988a">cacad3c9adea37fb992e570c2048fecc6f05988a</a> - mame-linux-clang-9e6ec0873e6770bc79d4532bf4436e0f1d8a3fa6 - generated 2026-07-28T17:51:16.110738+00:00</div>
+<div class="commit-message">amiga/zorro/adscsi: Add firmware version 3.5r1 [Guru]
+
+The newer firmware handles status a bit differently, so status bit 7
+can&#x27;t be IRQ. Handling it as pseudo-DMA latch status works for all
+firmware versions.
+
+Also added a LUN check to SC_READ_6 for nscsi/hd, required for the
+oldest firmware version.
+
+AI disclosure: gpt-5.6-sol was used as a research and debugging tool,
+all code was written by me.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/finlarch/">finlarch</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/301607569c87625d42c1feff520d93a35fd96b71">301607569c87625d42c1feff520d93a35fd96b71</a></div>
