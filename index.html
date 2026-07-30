@@ -1,8 +1,24 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/649184229af08817bef79a8eb0850d2460bc4ff0">649184229af08817bef79a8eb0850d2460bc4ff0</a> from <a href="https://github.com/mamedev/mame/commit/f9c03003576933f0dce5114a0ce0f72b77922e19">f9c03003576933f0dce5114a0ce0f72b77922e19</a> - mame-linux-clang-649184229af08817bef79a8eb0850d2460bc4ff0 - generated 2026-07-30T17:55:56.832078+00:00</div>
-<div class="commit-message">cpu/ns32000/ns32000.cpp: fix carry flag bug</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0b267eface23aaa785db7a0d75eec795d413bee5">0b267eface23aaa785db7a0d75eec795d413bee5</a> from <a href="https://github.com/mamedev/mame/commit/649184229af08817bef79a8eb0850d2460bc4ff0">649184229af08817bef79a8eb0850d2460bc4ff0</a> - mame-linux-clang-0b267eface23aaa785db7a0d75eec795d413bee5 - generated 2026-07-30T17:56:33.075719+00:00</div>
+<div class="commit-message">wswan.xml: swap Trump Collection alt_title values (#15799)
+
+The two Trump Collection entries carry each other&#x27;s Japanese titles, in both
+the software definitions and the header comment table.
+
+SWJ-BTM001 (trumpcol, 1999) is Trump Collection - Bottom-Up Teki Trump
+Seikatsu = トランプコレクション ボトムアップ的トランプ生活, and SWJ-BTM002
+(trumpcl2, 2000) is Trump Collection 2 - Bottom-Up Teki Sekaiisshuu no Tabi =
+トランプコレクション2 ボトムアップ的世界一周の旅. Note the volume number: the
+alt_title on trumpcol reads トランプコレクション2 while its description and
+serial are both volume 1.
+
+Confirmed against the GAME Data Room release tables, which list
+SWJ-BTM001 on 1999-07-01 and SWJ-BTM002 on 2000-09-28 with these titles.
+
+The romanised descriptions, serials, years and CRCs are all already correct;
+only the four alt_title/comment strings are transposed.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/finlarch/">finlarch</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/301607569c87625d42c1feff520d93a35fd96b71">301607569c87625d42c1feff520d93a35fd96b71</a></div>
