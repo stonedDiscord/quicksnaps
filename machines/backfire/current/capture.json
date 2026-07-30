@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
-    "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d",
+    "checkpoint_version": 3,
+    "revision": "916e8dd94ab3ff2016e0cd9a634e267e78b14ecc",
+    "artifact": "mame-linux-clang-916e8dd94ab3ff2016e0cd9a634e267e78b14ecc",
     "variant": "current",
-    "input_fingerprint": "6d0b25ca8c1cc33fef14e836ddbbb83010ff30eeda68dd983809b9a3e7f70d13"
+    "input_fingerprint": "a9a8505aa2b9d2bc58e57eb58d8a52cd982ca92a0c173897d47900f5653a75b0"
   },
   "result": {
     "name": "backfire",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
+    "revision": "916e8dd94ab3ff2016e0cd9a634e267e78b14ecc",
     "captures": {
       "current": {
-        "status": "failed",
-        "captured_at": "2026-07-22T01:14:54.750517+00:00",
-        "duration_seconds": 1.319,
+        "status": "passed",
+        "captured_at": "2026-07-30T07:54:43.349950+00:00",
+        "duration_seconds": 2.519,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: Requested input 1 on sound device :rspeaker which only has 1.",
-        "revision": "2494da599abb1c176048b31ec13a8fdba66c778d",
-        "artifact": "mame-linux-clang-2494da599abb1c176048b31ec13a8fdba66c778d"
+        "failure_reason": null,
+        "revision": "916e8dd94ab3ff2016e0cd9a634e267e78b14ecc",
+        "artifact": "mame-linux-clang-916e8dd94ab3ff2016e0cd9a634e267e78b14ecc"
       }
     }
   }
