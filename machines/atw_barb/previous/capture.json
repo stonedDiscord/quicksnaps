@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "805d0f37e093cdef8c3d04b7196d7c52b6d8e88d",
+    "artifact": "mame-linux-clang-805d0f37e093cdef8c3d04b7196d7c52b6d8e88d",
+    "variant": "previous",
+    "input_fingerprint": "7175a27323664cae3108270c3dad71485fdc3ec38152e0bc4a219fbb0b4efea6"
+  },
+  "result": {
+    "name": "atw_barb",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "805d0f37e093cdef8c3d04b7196d7c52b6d8e88d",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-07-30T07:53:15.439097+00:00",
+        "duration_seconds": 1.222,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "805d0f37e093cdef8c3d04b7196d7c52b6d8e88d",
+        "artifact": "mame-linux-clang-805d0f37e093cdef8c3d04b7196d7c52b6d8e88d"
+      }
+    }
+  }
+}
