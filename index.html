@@ -1,25 +1,39 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0b267eface23aaa785db7a0d75eec795d413bee5">0b267eface23aaa785db7a0d75eec795d413bee5</a> from <a href="https://github.com/mamedev/mame/commit/649184229af08817bef79a8eb0850d2460bc4ff0">649184229af08817bef79a8eb0850d2460bc4ff0</a> - mame-linux-clang-0b267eface23aaa785db7a0d75eec795d413bee5 - generated 2026-07-30T17:56:33.075719+00:00</div>
-<div class="commit-message">wswan.xml: swap Trump Collection alt_title values (#15799)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a> from <a href="https://github.com/mamedev/mame/commit/0b267eface23aaa785db7a0d75eec795d413bee5">0b267eface23aaa785db7a0d75eec795d413bee5</a> - mame-linux-clang-8f21e978d0bd54971145e08ab5fab6c3c3d4ba81 - generated 2026-07-30T17:58:43.224882+00:00</div>
+<div class="commit-message">amiga: A4000 updates
 
-The two Trump Collection entries carry each other&#x27;s Japanese titles, in both
-the software definitions and the header comment table.
+- Hook up IDE interrupt
+- Make motherboard Fast-RAM configurable
+- Add Kickstart 3.2 (commented out)
 
-SWJ-BTM001 (trumpcol, 1999) is Trump Collection - Bottom-Up Teki Trump
-Seikatsu = トランプコレクション ボトムアップ的トランプ生活, and SWJ-BTM002
-(trumpcl2, 2000) is Trump Collection 2 - Bottom-Up Teki Sekaiisshuu no Tabi =
-トランプコレクション2 ボトムアップ的世界一周の旅. Note the volume number: the
-alt_title on trumpcol reads トランプコレクション2 while its description and
-serial are both volume 1.
-
-Confirmed against the GAME Data Room release tables, which list
-SWJ-BTM001 on 1999-07-01 and SWJ-BTM002 on 2000-09-28 with these titles.
-
-The romanised descriptions, serials, years and CRCs are all already correct;
-only the four alt_title/comment strings are transposed.</div></header>
+Also use consistent variable types.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/a400030n/">a400030n</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a></div>
+<div class="comparison">
+<figure><a href="machines/a400030n/previous/before.png"><img loading="lazy" src="machines/a400030n/previous/before.png" alt="a400030n previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a400030n/current/before.png"><img loading="lazy" src="machines/a400030n/current/before.png" alt="a400030n current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a4000n/">a4000n</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000n/previous/before.png"><img loading="lazy" src="machines/a4000n/previous/before.png" alt="a4000n previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000n/current/before.png"><img loading="lazy" src="machines/a4000n/current/before.png" alt="a4000n current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a400030/">a400030</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a></div>
+<div class="comparison">
+<figure><a href="machines/a400030/previous/before.png"><img loading="lazy" src="machines/a400030/previous/before.png" alt="a400030 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a400030/current/before.png"><img loading="lazy" src="machines/a400030/current/before.png" alt="a400030 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a4000/">a4000</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000/previous/before.png"><img loading="lazy" src="machines/a4000/previous/before.png" alt="a4000 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000/current/before.png"><img loading="lazy" src="machines/a4000/current/before.png" alt="a4000 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/finlarch/">finlarch</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/301607569c87625d42c1feff520d93a35fd96b71">301607569c87625d42c1feff520d93a35fd96b71</a></div>
 <div class="comparison">
@@ -595,30 +609,6 @@ only the four alt_title/comment strings are transposed.</div></header>
 <div class="comparison">
 <figure><a href="machines/mako/previous/before.png"><img loading="lazy" src="machines/mako/previous/before.png" alt="mako previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/mako/current/before.png"><img loading="lazy" src="machines/mako/current/before.png" alt="mako current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vs299/">vs299</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/vs299/previous/before.png"><img loading="lazy" src="machines/vs299/previous/before.png" alt="vs299 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vs299/current/before.png"><img loading="lazy" src="machines/vs299/current/before.png" alt="vs299 current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vs298/">vs298</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/vs298/previous/after.png"><img loading="lazy" src="machines/vs298/previous/after.png" alt="vs298 previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vs298/current/after.png"><img loading="lazy" src="machines/vs298/current/after.png" alt="vs298 current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/vs298/">vs298</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/vs298/previous/before.png"><img loading="lazy" src="machines/vs298/previous/before.png" alt="vs298 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/vs298/current/before.png"><img loading="lazy" src="machines/vs298/current/before.png" alt="vs298 current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/swtrilgyp/">swtrilgyp</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/458507e06bce2e10501e406f0867bc8830435fad">458507e06bce2e10501e406f0867bc8830435fad</a></div>
-<div class="comparison">
-<figure><a href="machines/swtrilgyp/previous/after.png"><img loading="lazy" src="machines/swtrilgyp/previous/after.png" alt="swtrilgyp previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/swtrilgyp/current/after.png"><img loading="lazy" src="machines/swtrilgyp/current/after.png" alt="swtrilgyp current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
