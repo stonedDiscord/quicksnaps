@@ -1,11 +1,38 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/eca6f68d5f96b4eed1d29ee95b320e0a5d195e31">eca6f68d5f96b4eed1d29ee95b320e0a5d195e31</a> from <a href="https://github.com/mamedev/mame/commit/e129e8d93953891488876f34355d9e46fa2585c0">e129e8d93953891488876f34355d9e46fa2585c0</a> - mame-linux-clang-eca6f68d5f96b4eed1d29ee95b320e0a5d195e31 - generated 2026-07-31T10:54:20.840115+00:00</div>
-<div class="commit-message">Merge tag &#x27;mame0289&#x27; into HEAD
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/7f126c1e82f5ffcc5d622e67f872f10b00e97092">7f126c1e82f5ffcc5d622e67f872f10b00e97092</a> from <a href="https://github.com/mamedev/mame/commit/eca6f68d5f96b4eed1d29ee95b320e0a5d195e31">eca6f68d5f96b4eed1d29ee95b320e0a5d195e31</a> - mame-linux-clang-7f126c1e82f5ffcc5d622e67f872f10b00e97092 - generated 2026-07-31T10:56:31.694470+00:00</div>
+<div class="commit-message">apple/pippin.cpp: Pippin emulation updates [R. Belmont]
+* Added	SCSI bus and hooked up software	list
+* Added	options	for 5, 13, and 21 MiB of RAM
 
-MAME 0.289</div></header>
+apple/awacs_macrisc.cpp: Fixed many errors caused by my	head getting endianness	twisted	around [R. Belmont]
+
+apple/bandit.cpp: Added	system ROM in PCI space	for DMA	[R. Belmont]
+
+apple/dbdma.cpp: Added a traditional DRQ mode in addition to the self-service mode the CODECs use, fixed many bugs, and added completion IRQs [R. Belmont\
+]
+
+apple/heathrow.cpp: Added plumbing to attach SCSI controllers and IOBUS devices. [R. Belmont]
+
+apple/mesh.cpp: Implemented the Macintosh Enhanced SCSI Handler (MESH). [R. Belmont, based on ncr53c90.cpp by Olivier Galibert]
+
+apple/taos.cpp:	Fixed stride in	8bpp mode. [R. Belmont]
+
+AI disclosure: Debugging assisted by Claude Opus 4.8.  MESH planning and debugging assisted by GPT-5.6 Terra.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/pippin/">pippin</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/7f126c1e82f5ffcc5d622e67f872f10b00e97092">7f126c1e82f5ffcc5d622e67f872f10b00e97092</a></div>
+<div class="comparison">
+<figure><a href="machines/pippin/previous/after.png"><img loading="lazy" src="machines/pippin/previous/after.png" alt="pippin previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pippin/current/after.png"><img loading="lazy" src="machines/pippin/current/after.png" alt="pippin current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pippin/">pippin</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/7f126c1e82f5ffcc5d622e67f872f10b00e97092">7f126c1e82f5ffcc5d622e67f872f10b00e97092</a></div>
+<div class="comparison">
+<figure><a href="machines/pippin/previous/before.png"><img loading="lazy" src="machines/pippin/previous/before.png" alt="pippin previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pippin/current/before.png"><img loading="lazy" src="machines/pippin/current/before.png" alt="pippin current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/a400030n/">a400030n</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8f21e978d0bd54971145e08ab5fab6c3c3d4ba81">8f21e978d0bd54971145e08ab5fab6c3c3d4ba81</a></div>
 <div class="comparison">
@@ -593,18 +620,6 @@ MAME 0.289</div></header>
 <div class="comparison">
 <figure><a href="machines/revo/previous/before.png"><img loading="lazy" src="machines/revo/previous/before.png" alt="revo previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/revo/current/before.png"><img loading="lazy" src="machines/revo/current/before.png" alt="revo current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/mako/">mako</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
-<div class="comparison">
-<figure><a href="machines/mako/previous/after.png"><img loading="lazy" src="machines/mako/previous/after.png" alt="mako previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/mako/current/after.png"><img loading="lazy" src="machines/mako/current/after.png" alt="mako current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/mako/">mako</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
-<div class="comparison">
-<figure><a href="machines/mako/previous/before.png"><img loading="lazy" src="machines/mako/previous/before.png" alt="mako previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/mako/current/before.png"><img loading="lazy" src="machines/mako/current/before.png" alt="mako current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
