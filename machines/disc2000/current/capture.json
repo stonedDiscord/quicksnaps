@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+    "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0",
     "variant": "current",
-    "input_fingerprint": "398f14581938cb76c179f0dc999271d0cd3144abfb6295bbb3c913ed1201839c"
+    "input_fingerprint": "20350f318810799c0cc27e36db5357d1807cdbfdf2e54f973cb0443fd6a8bcaf"
   },
   "result": {
     "name": "disc2000",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 0.86,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:22.334267+00:00",
+        "duration_seconds": 1.553,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+        "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0"
       }
     }
   }

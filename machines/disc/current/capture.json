@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+    "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0",
     "variant": "current",
-    "input_fingerprint": "d0912a425a521d0ae1140fbe7b9aebf1abde437a38525d993087125c4e32fcfd"
+    "input_fingerprint": "885a95e6548f939a888e8c3e1edb2f45735c970989c5be1540fbef0cd4603719"
   },
   "result": {
     "name": "disc",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 0.874,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:22.047138+00:00",
+        "duration_seconds": 1.267,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+        "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0"
       }
     }
   }

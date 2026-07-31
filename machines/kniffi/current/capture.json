@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+    "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0",
     "variant": "current",
-    "input_fingerprint": "af5bcee578e0e0cb7b054869ee40b5a587e2bc56075f8ea896ffdeb9efc00f18"
+    "input_fingerprint": "9fba79168253838aa288620f56b2f64b3a5770192e13669892fd3a2b59725fae"
   },
   "result": {
     "name": "kniffi",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.192,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:23.390977+00:00",
+        "duration_seconds": 0.917,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+        "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0"
       }
     }
   }

@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "checkpoint_version": 3,
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+    "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271",
     "variant": "previous",
-    "input_fingerprint": "570dfc319855bc4be2f361de99b7a718b1f27040c11b5783cf5e1193cfe7fef7"
+    "input_fingerprint": "8783b29f25d869e7235e55b05e9f0c00a2477b26b2011b38447b3af0837c1c2f"
   },
   "result": {
     "name": "dicemstr",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.145,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:00.314498+00:00",
+        "duration_seconds": 1.41,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+        "failure_reason": null,
+        "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+        "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271"
       }
     }
   }

@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "checkpoint_version": 3,
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+    "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271",
     "variant": "previous",
-    "input_fingerprint": "d728f16cec3b3062aa2645d18cf135eb242a2b8c14d54ab7d320b8b4541f8618"
+    "input_fingerprint": "fb44f08c36177df56a529d46ce8d4c6bfc4e36fd854d986be3d9a13bc37bd677"
   },
   "result": {
     "name": "discryl",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 0.935,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:00.690894+00:00",
+        "duration_seconds": 1.778,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+        "failure_reason": null,
+        "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+        "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271"
       }
     }
   }

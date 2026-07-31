@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "checkpoint_version": 3,
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+    "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271",
     "variant": "previous",
-    "input_fingerprint": "54d127a68ce2066ba4b4305c07243d493725aa90ec24d480b2230847e9ee935b"
+    "input_fingerprint": "252efe5265a89a7eda1ffb0816f6669dadc9cfab7bed363b2a41e5a90c212f82"
   },
   "result": {
     "name": "macao",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.243,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:03.058819+00:00",
+        "duration_seconds": 1.312,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+        "failure_reason": null,
+        "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+        "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271"
       }
     }
   }

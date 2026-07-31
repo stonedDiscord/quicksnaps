@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+    "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0",
     "variant": "current",
-    "input_fingerprint": "3b97df41316567a17c4a510382766d193302d8e12cfe3b2fc55ad6010a69e169"
+    "input_fingerprint": "7330a8824c8957eadbed7b92feb3634a20235e142d102b7994424d687bddb887"
   },
   "result": {
     "name": "discoly",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.03,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:22.410880+00:00",
+        "duration_seconds": 1.631,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+        "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0"
       }
     }
   }

@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "checkpoint_version": 3,
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+    "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271",
     "variant": "previous",
-    "input_fingerprint": "f4db422e54d07f8d79c9e99822577cc67fc78aaf7359d65c071bbfe16a37ae2a"
+    "input_fingerprint": "68fa3a0dc70873aa0dda40b038f5f88a635b0ccf715a15cff708b8d0494e081d"
   },
   "result": {
     "name": "rasant",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.005,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:03.181785+00:00",
+        "duration_seconds": 1.042,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+        "failure_reason": null,
+        "revision": "69e7f6959a67efd0091cc68f36817806672b1271",
+        "artifact": "mame-linux-clang-69e7f6959a67efd0091cc68f36817806672b1271"
       }
     }
   }

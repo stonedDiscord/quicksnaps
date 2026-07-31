@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+    "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0",
     "variant": "current",
-    "input_fingerprint": "1e4e9626ac77d37000b567b45bfc61f95cdc7e2ca1d05e2769d66e8207196ba4"
+    "input_fingerprint": "5796ad0d3495daae8ff76e802bed9e45e0c1615611c34588b420bc07b33134a8"
   },
   "result": {
     "name": "sprmlti",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 0.974,
+        "status": "passed",
+        "captured_at": "2026-07-31T10:53:25.765330+00:00",
+        "duration_seconds": 1.199,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "e129e8d93953891488876f34355d9e46fa2585c0",
+        "artifact": "mame-linux-clang-e129e8d93953891488876f34355d9e46fa2585c0"
       }
     }
   }
