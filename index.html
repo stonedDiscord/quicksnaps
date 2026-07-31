@@ -1,9 +1,27 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/c35bfdf3ec73d88d240362f443c7f18146b95d7f">c35bfdf3ec73d88d240362f443c7f18146b95d7f</a> from <a href="https://github.com/mamedev/mame/commit/ed80ee64677480f044a7fcd9993d83636b69252e">ed80ee64677480f044a7fcd9993d83636b69252e</a> - mame-linux-clang-c35bfdf3ec73d88d240362f443c7f18146b95d7f - generated 2026-07-31T11:09:08.462613+00:00</div>
-<div class="commit-message">sega/model3.cpp: redumped vs298 bad ROM [trol]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a> from <a href="https://github.com/mamedev/mame/commit/c35bfdf3ec73d88d240362f443c7f18146b95d7f">c35bfdf3ec73d88d240362f443c7f18146b95d7f</a> - mame-linux-clang-520f88a7990ad14e0425c27bc958d465af5526ac - generated 2026-07-31T11:10:26.859264+00:00</div>
+<div class="commit-message">sega/system16.cpp: emulated beautyb / iqpipe protection. AI disclosure: reverse engineering by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/iqpipe/">iqpipe</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
+<div class="comparison">
+<figure><a href="machines/iqpipe/previous/after.png"><img loading="lazy" src="machines/iqpipe/previous/after.png" alt="iqpipe previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/iqpipe/current/after.png"><img loading="lazy" src="machines/iqpipe/current/after.png" alt="iqpipe current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/beautyb/">beautyb</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
+<div class="comparison">
+<figure><a href="machines/beautyb/previous/after.png"><img loading="lazy" src="machines/beautyb/previous/after.png" alt="beautyb previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/beautyb/current/after.png"><img loading="lazy" src="machines/beautyb/current/after.png" alt="beautyb current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/beautyb/">beautyb</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
+<div class="comparison">
+<figure><a href="machines/beautyb/previous/before.png"><img loading="lazy" src="machines/beautyb/previous/before.png" alt="beautyb previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/beautyb/current/before.png"><img loading="lazy" src="machines/beautyb/current/before.png" alt="beautyb current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/pippin/">pippin</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/7f126c1e82f5ffcc5d622e67f872f10b00e97092">7f126c1e82f5ffcc5d622e67f872f10b00e97092</a></div>
 <div class="comparison">
@@ -585,24 +603,6 @@
 <div class="comparison">
 <figure><a href="machines/revo_de/previous/after.png"><img loading="lazy" src="machines/revo_de/previous/after.png" alt="revo_de previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/revo_de/current/after.png"><img loading="lazy" src="machines/revo_de/current/after.png" alt="revo_de current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/revo_de/">revo_de</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
-<div class="comparison">
-<figure><a href="machines/revo_de/previous/before.png"><img loading="lazy" src="machines/revo_de/previous/before.png" alt="revo_de previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/revo_de/current/before.png"><img loading="lazy" src="machines/revo_de/current/before.png" alt="revo_de current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/revo/">revo</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
-<div class="comparison">
-<figure><a href="machines/revo/previous/after.png"><img loading="lazy" src="machines/revo/previous/after.png" alt="revo previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/revo/current/after.png"><img loading="lazy" src="machines/revo/current/after.png" alt="revo current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/revo/">revo</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/e2f26dd04ae8ab970520a8abef2e4a782816e149">e2f26dd04ae8ab970520a8abef2e4a782816e149</a></div>
-<div class="comparison">
-<figure><a href="machines/revo/previous/before.png"><img loading="lazy" src="machines/revo/previous/before.png" alt="revo previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/revo/current/before.png"><img loading="lazy" src="machines/revo/current/before.png" alt="revo current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
