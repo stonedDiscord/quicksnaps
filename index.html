@@ -1,21 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/f2525ccfefed331a8835c5f079bd8be752b1d796">f2525ccfefed331a8835c5f079bd8be752b1d796</a> from <a href="https://github.com/mamedev/mame/commit/b2eb4eb8c6f5d816daea1f500e5a932ae18b6531">b2eb4eb8c6f5d816daea1f500e5a932ae18b6531</a> - mame-linux-clang-f2525ccfefed331a8835c5f079bd8be752b1d796 - generated 2026-08-01T14:57:50.668174+00:00</div>
-<div class="commit-message">machine/ncr5380: make SCSI bus reset edge-triggered (#15812)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2e8d4fcecae282b78e36f1bda827bfd16a0334d1">2e8d4fcecae282b78e36f1bda827bfd16a0334d1</a> from <a href="https://github.com/mamedev/mame/commit/f2525ccfefed331a8835c5f079bd8be752b1d796">f2525ccfefed331a8835c5f079bd8be752b1d796</a> - mame-linux-clang-2e8d4fcecae282b78e36f1bda827bfd16a0334d1 - generated 2026-08-01T14:58:23.223016+00:00</div>
+<div class="commit-message">sound/sdl3_sound.cpp: open device at emu rate to avoid resampler drift, and compare queue bytes against bytes in backpressure check (#15817)
 
-The SCSI bus reset (chip reset + interrupt) is triggered by the /RST line
-transitioning to true, not by it merely being asserted. 
-
-The previous code triggered on the level (icmd_w reset unconditionally on
-ASSERT RST; scsi_ctrl_changed on ctrl &amp; S_RST), so a device asserting RST
-while another device already held it would reset and interrupt a second
-time. 
-
-Follow-up to 15806; raised by Olivier Galibert in review.
-
-Claude Opus 4.8 (via Claude Code) assisted with datasheet analysis and
-implementation; reviewed and validated by me.</div></header>
+assisted: GLM-5.1</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
