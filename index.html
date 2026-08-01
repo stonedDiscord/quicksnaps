@@ -1,15 +1,15 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d310a09d78029346be498965c2e646fda353c6a0">d310a09d78029346be498965c2e646fda353c6a0</a> from <a href="https://github.com/mamedev/mame/commit/04c3fc118c4c0ff694ea752a8677e8fe924f0b5c">04c3fc118c4c0ff694ea752a8677e8fe924f0b5c</a> - mame-linux-clang-d310a09d78029346be498965c2e646fda353c6a0 - generated 2026-08-01T15:03:48.980411+00:00</div>
-<div class="commit-message">bus/coco/meb_rtime: Fix Disto RTIME RTC emulation (#15624)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e">8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e</a> from <a href="https://github.com/mamedev/mame/commit/d310a09d78029346be498965c2e646fda353c6a0">d310a09d78029346be498965c2e646fda353c6a0</a> - mame-linux-clang-8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e - generated 2026-08-01T15:04:23.223209+00:00</div>
+<div class="commit-message">cpu/powerpc: Help performance on PCI PowerMacs with a 68K DRC. [R. Belmont]
+* Apple&#x27;s 68k DRC frequently generates a code sequence, flushes it, and then regenerates the exact same thing at the exact same address.  So we now cache small sequences and can restore them without the overhead of a recompile.  This required adding some accessors to the 3 DRC backends.
+* The entire vTLB (a MAME DRC implementation detail, *not* the 603&#x27;s architectural TLB) was being used as a comparison for deciding to flush a block rather than just the actual mapping.  In particular, the access count bits were causing unnecessary recompiles.
+* The vTLB was also too small: at its original size it covered just 512K of working set.  By trial and error stepping through powers of 2, 4096 was found to give the best results running real Mac software.
 
-• bus/coco/meb_rtime: Change RTIME to use the MSM58321 rtc.
-• bus/coco/coco_fdc: Add Extended A-DOS 3 v2.00 ROM entry to the SCII
-• bus/coco/coco_fdc: Add generic RSDOS v1.1 entry to the SCII
-• machine/wd_fdc: Disable LOG_DESC verbose logging left enabled during development
-• Improve centronics parallel implementation
-• AI disclosure: Google Gemini 3.5 Flash was used to assist in writing and debugging code in this PR</div></header>
+With these changes, pwrmacg3 went from roughly 160,000 block flushes and recompiles per second to 0 when idling at the Mac OS 8.1 Finder.  This also smoothed out regular audio breakups on pippin caused by recompile storms and seems to have even sped up a few of the PPC arcade games by a few ticks.
+
+AI disclosure: Claude Opus 5 assisted with measuring and isolating the performance issues.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
