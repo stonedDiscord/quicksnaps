@@ -1,15 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e">8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e</a> from <a href="https://github.com/mamedev/mame/commit/d310a09d78029346be498965c2e646fda353c6a0">d310a09d78029346be498965c2e646fda353c6a0</a> - mame-linux-clang-8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e - generated 2026-08-01T15:04:23.223209+00:00</div>
-<div class="commit-message">cpu/powerpc: Help performance on PCI PowerMacs with a 68K DRC. [R. Belmont]
-* Apple&#x27;s 68k DRC frequently generates a code sequence, flushes it, and then regenerates the exact same thing at the exact same address.  So we now cache small sequences and can restore them without the overhead of a recompile.  This required adding some accessors to the 3 DRC backends.
-* The entire vTLB (a MAME DRC implementation detail, *not* the 603&#x27;s architectural TLB) was being used as a comparison for deciding to flush a block rather than just the actual mapping.  In particular, the access count bits were causing unnecessary recompiles.
-* The vTLB was also too small: at its original size it covered just 512K of working set.  By trial and error stepping through powers of 2, 4096 was found to give the best results running real Mac software.
-
-With these changes, pwrmacg3 went from roughly 160,000 block flushes and recompiles per second to 0 when idling at the Mac OS 8.1 Finder.  This also smoothed out regular audio breakups on pippin caused by recompile storms and seems to have even sped up a few of the PPC arcade games by a few ticks.
-
-AI disclosure: Claude Opus 5 assisted with measuring and isolating the performance issues.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/dcc9f33c59815103994534a85d2f70d77b2ca862">dcc9f33c59815103994534a85d2f70d77b2ca862</a> from <a href="https://github.com/mamedev/mame/commit/8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e">8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e</a> - mame-linux-clang-dcc9f33c59815103994534a85d2f70d77b2ca862 - generated 2026-08-01T15:05:28.996734+00:00</div>
+<div class="commit-message">apple2.cpp: correct behaviour of joystick-button soft-switches [Peter Ferrie]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
