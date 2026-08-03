@@ -1,8 +1,23 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/dcc9f33c59815103994534a85d2f70d77b2ca862">dcc9f33c59815103994534a85d2f70d77b2ca862</a> from <a href="https://github.com/mamedev/mame/commit/8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e">8f158369e6a4e8b9b5ee3c7aee68f4e6ab1c2c1e</a> - mame-linux-clang-dcc9f33c59815103994534a85d2f70d77b2ca862 - generated 2026-08-01T15:05:28.996734+00:00</div>
-<div class="commit-message">apple2.cpp: correct behaviour of joystick-button soft-switches [Peter Ferrie]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/475a236c38fb38bc9ab8d3af21009efa57fb3bab">475a236c38fb38bc9ab8d3af21009efa57fb3bab</a> from <a href="https://github.com/mamedev/mame/commit/dcc9f33c59815103994534a85d2f70d77b2ca862">dcc9f33c59815103994534a85d2f70d77b2ca862</a> - mame-linux-clang-475a236c38fb38bc9ab8d3af21009efa57fb3bab - generated 2026-08-03T21:32:34.129132+00:00</div>
+<div class="commit-message">machine/aic6250: restart the state machine on a bus-control change (#15826)
+
+The AIC6250 state machine has several states (arbitration and the DMA
+handshake) that wait for a SCSI bus-control line to change. state_loop
+reschedules the step at delay == 0 even when it made no progress, so a
+waiting state re-fires at the same instant and spins the scheduler with
+emulated time frozen. This hangs the machine whenever the target needs
+CPU time to respond (a bus-sharing coprocessor, unlike a synchronous
+disk that answers in the same time slice).
+
+Restart the engine from scsi_ctrl_changed() when a bus-control line
+changes (as the TODO there already anticipated), and stop rescheduling a
+step that made no progress so it parks until that restart.
+
+Claude Opus 4.8 (via Claude Code) assisted with regression testing and
+PR preparation; reviewed and validated by me.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/520f88a7990ad14e0425c27bc958d465af5526ac">520f88a7990ad14e0425c27bc958d465af5526ac</a></div>
