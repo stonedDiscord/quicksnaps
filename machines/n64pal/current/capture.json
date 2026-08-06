@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "bba94e4ae9777d37fe3d725946bdbb143795a24c4e532ddc44785c8c81097785"
+    "input_fingerprint": "6f3aae759cffa7d7ac6e2b4d1f5c79c5b16acf3f1390dd182b8095759446ac13"
   },
   "result": {
     "name": "n64pal",
     "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
         "status": "failed",
-        "duration_seconds": 0.919,
+        "captured_at": "2026-08-05T23:34:31.553737+00:00",
+        "duration_seconds": 0.839,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
         "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

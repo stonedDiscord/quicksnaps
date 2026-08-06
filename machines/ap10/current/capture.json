@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "4d209d0fa0bea1188f35dfd3fbc439c1790353bdb35ac60d920a2790fca05345"
+    "input_fingerprint": "83f3a57fe9f360f1d062c0223b225b4e68b01377e2948910e2072a286e2fa244"
   },
   "result": {
     "name": "ap10",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 3.205,
+        "status": "passed",
+        "captured_at": "2026-08-05T18:44:01.520973+00:00",
+        "duration_seconds": 4.298,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

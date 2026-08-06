@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-    "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "b55ccffab1a565acba2ca33daa85294b9871586cc8a755eba55fe27383697c20"
+    "input_fingerprint": "79431a9fc807774b6f1b6a192511420a35ff8c702d00f36c8831556a9eb4349e"
   },
   "result": {
     "name": "mmarvin",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.532,
+        "status": "passed",
+        "captured_at": "2026-08-04T18:57:02.310707+00:00",
+        "duration_seconds": 1.522,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-        "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

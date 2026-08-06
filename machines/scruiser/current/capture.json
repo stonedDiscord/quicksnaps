@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-    "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "c26e70a1c37054b6e40b4a5c3fb368dfcfcc1d34e0f71ca0afd3ef346295b275"
+    "input_fingerprint": "04c3b0cd24d96d92c3980c8cb55b474c8549c6bf8c15d2454d9869bdab53d274"
   },
   "result": {
     "name": "scruiser",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.427,
+        "status": "passed",
+        "captured_at": "2026-08-06T00:49:08.753409+00:00",
+        "duration_seconds": 1.518,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-        "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

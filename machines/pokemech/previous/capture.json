@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-    "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "d02774e4fe1cced0c556bb7cf6f9c7bd893dcc51bd645d224ef608f9873a1226"
+    "input_fingerprint": "eba7ecdc71b57e68d58d375a6bcf5bd144c21b80d6a6d3431bbbff6b01166f6e"
   },
   "result": {
     "name": "pokemech",
     "status": "failed",
     "button": "1 Player Start",
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
         "status": "failed",
-        "captured_at": "2026-07-21T19:50:50.194389+00:00",
-        "duration_seconds": 0.983,
+        "captured_at": "2026-08-04T19:48:55.235661+00:00",
+        "duration_seconds": 1.157,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: SPI set to unknown/unhandled command b7",
-        "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-        "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

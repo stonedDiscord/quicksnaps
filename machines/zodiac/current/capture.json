@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-    "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "177c9d93365a3705e5c8eb34838d43878214872cc133f648a6c55b2ef208895c"
+    "input_fingerprint": "dfe33a1319d6e24d70dfed8c4d5550f9b5fc2bf5b0e07245850d393f0bc63e29"
   },
   "result": {
     "name": "zodiac",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.181,
+        "status": "passed",
+        "captured_at": "2026-08-06T07:23:22.509574+00:00",
+        "duration_seconds": 1.358,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-        "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

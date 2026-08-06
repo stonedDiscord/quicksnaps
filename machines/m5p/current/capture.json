@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
+    "variant": "current",
+    "input_fingerprint": "a0c153a446ff2b888969b410a5032738f98e9d3dd5605888e51d8fe461aefb0d"
+  },
+  "result": {
+    "name": "m5p",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-05T23:08:54.435960+00:00",
+        "duration_seconds": 0.881,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: No cartridge inserted. M5 cannot run.",
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
+      }
+    }
+  }
+}

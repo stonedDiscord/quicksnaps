@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-    "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "f6c3b32e9bbce87020136505dc5e086b67bdc4b5735a10157c539a53d3e0553d"
+    "input_fingerprint": "6dc872fb96415ebde89f6ce66d89da9f266c1e223eef0af795a971963f09ba0e"
   },
   "result": {
     "name": "cnfball2",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.441,
+        "status": "passed",
+        "captured_at": "2026-08-05T19:29:28.033978+00:00",
+        "duration_seconds": 1.798,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-        "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

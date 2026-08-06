@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
+    "variant": "current",
+    "input_fingerprint": "11827afa52128ccb328b52208d2f8e2c13cdd65b7747edb4755cf48687a86297"
+  },
+  "result": {
+    "name": "pockchal",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-06T00:11:28.750386+00:00",
+        "duration_seconds": 1.001,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
+      }
+    }
+  }
+}

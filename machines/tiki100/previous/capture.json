@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-    "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "73ebb675a2e91e5a93d9a95c7c6929123fdfa7dae3fa451081097d240a307129"
+    "input_fingerprint": "4d1865713585e6e564b14c4aa9fe15784a8ed083803c82cc0a5d8c50a5f585e0"
   },
   "result": {
     "name": "tiki100",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 12.007,
+        "status": "passed",
+        "captured_at": "2026-08-04T21:25:04.146860+00:00",
+        "duration_seconds": 10.595,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "input skipped: 1 Player Start not available",
-        "revision": "6051419ef039ea70fdfd10e3c2791b19ccfa8eba",
-        "artifact": "mame-linux-clang-6051419ef039ea70fdfd10e3c2791b19ccfa8eba"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

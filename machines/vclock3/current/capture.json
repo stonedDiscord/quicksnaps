@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-    "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "9d01a1f7aac522c63b0fccc3e5cc8fecc8fc86c5f582c88eb084e98113fc2a46"
+    "input_fingerprint": "44b203a7dd503432a644caa2483e9408dffd62824417f98fa90e009041bca686"
   },
   "result": {
     "name": "vclock3",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 1.262,
+        "status": "passed",
+        "captured_at": "2026-08-06T06:58:24.059983+00:00",
+        "duration_seconds": 1.9,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "cc754fd87c7b093b556b217cb31f2dcae442713d",
-        "artifact": "mame-linux-clang-cc754fd87c7b093b556b217cb31f2dcae442713d"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

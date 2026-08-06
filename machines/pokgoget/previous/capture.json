@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-    "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "6baa440f8036a8a8e3ad6482ee177fb8c9c97ee022c4b8833bdb98436e42f560"
+    "input_fingerprint": "4963db790cb12fae86a101adfc32828e01ef20009615dfe788e922168f694f04"
   },
   "result": {
     "name": "pokgoget",
     "status": "failed",
     "button": "1 Player Start",
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
         "status": "failed",
-        "captured_at": "2026-07-21T19:50:51.377387+00:00",
-        "duration_seconds": 1.182,
+        "captured_at": "2026-08-04T19:49:01.573343+00:00",
+        "duration_seconds": 1.014,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: SPI set to unknown/unhandled command b7",
-        "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-        "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

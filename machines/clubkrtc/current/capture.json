@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-    "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "00b097009c61a3b0a5059776f8859bf471ff4a03c44376e10a6cd36b4e63822f"
+    "input_fingerprint": "3b668bf5745009f3b1743cd0d51a5be110cff101717afa60a7ce873c73a3f2c3"
   },
   "result": {
     "name": "clubkrtc",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 4.363,
+        "status": "passed",
+        "captured_at": "2026-08-05T19:29:08.033677+00:00",
+        "duration_seconds": 24.511,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "MAME exited with status -9",
-        "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-        "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-    "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "29cc0650e98cbae68e67b92cd7d32ee3c425b9737b2d24d8309399d09932276a"
+    "input_fingerprint": "caea214cd24cf9b56e499fc584b2cce1243bbf0ccbe82935d76e02e7f54340bc"
   },
   "result": {
     "name": "ti1000",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.507,
+        "status": "passed",
+        "captured_at": "2026-08-04T21:23:41.940144+00:00",
+        "duration_seconds": 1.358,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-        "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

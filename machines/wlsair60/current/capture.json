@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4e618a304e835f9891ad5836b2fdde4991682947",
-    "artifact": "mame-linux-clang-4e618a304e835f9891ad5836b2fdde4991682947",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "e54716cba2bd9492d60050f2efabc33f37c7080c98c45100ae793c2e265bee60"
+    "input_fingerprint": "b6f688ed88b749676262fd34705c7ed65a196113c2d98943174c0e4b98989d18"
   },
   "result": {
     "name": "wlsair60",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "4e618a304e835f9891ad5836b2fdde4991682947",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "passed",
-        "captured_at": "2026-07-22T00:16:05.570595+00:00",
-        "duration_seconds": 39.655,
+        "status": "failed",
+        "captured_at": "2026-08-06T07:16:00.196793+00:00",
+        "duration_seconds": 59.529,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "4e618a304e835f9891ad5836b2fdde4991682947",
-        "artifact": "mame-linux-clang-4e618a304e835f9891ad5836b2fdde4991682947"
+        "failure_reason": "input skipped: 1 Player Start not available",
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

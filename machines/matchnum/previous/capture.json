@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-    "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "34441d3b305bd0d2da96af6e61d25b20ec8a9e8efe330abc38e27b1a751b5f0a"
+    "input_fingerprint": "5614c439507a00903b31361da3f0e43d7394e16fab9ca130c89a2308a3debefc"
   },
   "result": {
     "name": "matchnum",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.635,
+        "status": "passed",
+        "captured_at": "2026-08-04T18:45:08.728016+00:00",
+        "duration_seconds": 1.438,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-        "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

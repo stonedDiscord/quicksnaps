@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-    "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "d5ad587516866781e98803c63b7ccba69b68c4e6282decdab76e81bf8473eb40"
+    "input_fingerprint": "b28f1597e05e768cbb116fb2a5aab7eb0a172c1638ed035a2af1ce7c7d67f718"
   },
   "result": {
     "name": "lostreas",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 1.436,
+        "status": "passed",
+        "captured_at": "2026-08-04T18:30:52.662862+00:00",
+        "duration_seconds": 1.349,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "machine has no emulated screen",
-        "revision": "e7ea675877254bc4b3c699b6fcf5cb513565dbdf",
-        "artifact": "mame-linux-clang-e7ea675877254bc4b3c699b6fcf5cb513565dbdf"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

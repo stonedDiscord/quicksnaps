@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
-    "artifact": "mame-linux-clang-97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "e54716cba2bd9492d60050f2efabc33f37c7080c98c45100ae793c2e265bee60"
+    "input_fingerprint": "b6f688ed88b749676262fd34705c7ed65a196113c2d98943174c0e4b98989d18"
   },
   "result": {
     "name": "wlsair60",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "captured_at": "2026-07-22T00:12:36.421650+00:00",
-        "duration_seconds": 2.252,
+        "status": "passed",
+        "captured_at": "2026-08-05T17:59:43.211665+00:00",
+        "duration_seconds": 59.968,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
-        "revision": "97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2",
-        "artifact": "mame-linux-clang-97ff7fc0c3639b9b4d6282c3b2c82ac235c763d2"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

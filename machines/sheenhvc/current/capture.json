@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
+    "variant": "current",
+    "input_fingerprint": "281f405bca422e909a21a6a744c79bbb9bd39c236a747737b72e42cf3c771fc2"
+  },
+  "result": {
+    "name": "sheenhvc",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-06T00:55:00.267217+00:00",
+        "duration_seconds": 0.879,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
+      }
+    }
+  }
+}

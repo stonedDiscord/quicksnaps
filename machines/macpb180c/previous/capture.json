@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "de7d2ad6410eee33c7b458b19f283bd3fc48707d",
-    "artifact": "mame-linux-clang-de7d2ad6410eee33c7b458b19f283bd3fc48707d",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "f066a0308976cb4b39ee38235dbda56cb560332f635d90e6f87efc1a137f3016"
+    "input_fingerprint": "03030785ec657cc644a66b3e7b3d40b634b916dcbfb452723e726bddda9430c1"
   },
   "result": {
     "name": "macpb180c",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "de7d2ad6410eee33c7b458b19f283bd3fc48707d",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "duration_seconds": 0.857,
+        "status": "passed",
+        "captured_at": "2026-08-04T18:39:53.648216+00:00",
+        "duration_seconds": 10.974,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Error performing a late bind of function expecting type 10asc_device to instance of type 15asc_easc_device",
-        "revision": "de7d2ad6410eee33c7b458b19f283bd3fc48707d",
-        "artifact": "mame-linux-clang-de7d2ad6410eee33c7b458b19f283bd3fc48707d"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

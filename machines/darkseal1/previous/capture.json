@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
-    "artifact": "mame-linux-clang-ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "85a241aac44b1f3d775b8908b8e0511920ad3228257b73c75614803c2d51207e"
+    "input_fingerprint": "3bec16461b4e6228060316713581fed99f090c40de31e4a6c6c9ca437a8c2894"
   },
   "result": {
     "name": "darkseal1",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "captured_at": "2026-07-22T01:29:34.970222+00:00",
-        "duration_seconds": 0.768,
+        "status": "passed",
+        "captured_at": "2026-08-04T16:43:49.444843+00:00",
+        "duration_seconds": 4.932,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: palette_device(:palette): Palette has memory share but no format specified",
-        "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
-        "artifact": "mame-linux-clang-ecf0add29f06ba131994dca5b88c3a0edf6c2ad8"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

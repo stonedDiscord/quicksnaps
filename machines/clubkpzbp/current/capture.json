@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-    "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "71147ebe739a79d5ae3aa1dfd50ab82e297297943b341be1f48d0bcab3dd46da"
+    "input_fingerprint": "d91daf666199a78b051e1d3d207bfe62a639c1ef0443322cbff72d7fcc91487a"
   },
   "result": {
     "name": "clubkpzbp",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 4.643,
+        "status": "passed",
+        "captured_at": "2026-08-05T19:29:07.264279+00:00",
+        "duration_seconds": 25.001,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "MAME exited with status -9",
-        "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-        "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

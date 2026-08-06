@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 3,
-    "revision": "f4e3e3dbde3fe7fb5fffa949472092288e224c91",
-    "artifact": "mame-linux-clang-f4e3e3dbde3fe7fb5fffa949472092288e224c91",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
     "input_fingerprint": "32cdb7a283a33f52e24aff43a58d53a1f030e80eb9c233993125f3ea24bb02ff"
   },
   "result": {
     "name": "cp500",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "f4e3e3dbde3fe7fb5fffa949472092288e224c91",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "captured_at": "2026-07-29T21:12:00.278459+00:00",
-        "duration_seconds": 0.626,
+        "status": "passed",
+        "captured_at": "2026-08-04T16:35:39.662718+00:00",
+        "duration_seconds": 1.259,
         "button": "1 Player Start",
-        "button_applied": true,
+        "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "MAME exited with status -11",
-        "revision": "f4e3e3dbde3fe7fb5fffa949472092288e224c91",
-        "artifact": "mame-linux-clang-f4e3e3dbde3fe7fb5fffa949472092288e224c91"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

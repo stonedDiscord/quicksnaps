@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
-    "artifact": "mame-linux-clang-ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "2ec44b5b78a0cbc3d12624997acebc7213800f3e22df1b4fb85da16da31c9be1"
+    "input_fingerprint": "89e8febf284d5e8c9a1a1ec8d4a4e7c767830bd06b5c587d40b2c3101df03c5f"
   },
   "result": {
     "name": "gatedoom",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "failed",
-        "captured_at": "2026-07-22T01:29:34.988586+00:00",
-        "duration_seconds": 0.783,
+        "status": "passed",
+        "captured_at": "2026-08-04T17:31:42.209397+00:00",
+        "duration_seconds": 4.672,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "Fatal error: palette_device(:palette): Palette has memory share but no format specified",
-        "revision": "ecf0add29f06ba131994dca5b88c3a0edf6c2ad8",
-        "artifact": "mame-linux-clang-ecf0add29f06ba131994dca5b88c3a0edf6c2ad8"
+        "failure_reason": null,
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

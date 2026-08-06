@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "variant": "previous",
+    "input_fingerprint": "6726bccc1de7d6f946ebd619cdcabfb0bc75145020e1c7eb2737b64dd31e0ae0"
+  },
+  "result": {
+    "name": "advsnha",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-08-03T21:50:44.591429+00:00",
+        "duration_seconds": 0.864,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
+      }
+    }
+  }
+}

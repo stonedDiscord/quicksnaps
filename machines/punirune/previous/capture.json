@@ -1,29 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-    "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "variant": "previous",
-    "input_fingerprint": "8c227155d184f20173c773d34abbf1d22c6eace3c997e6e4a096d82d3e5db15a"
+    "input_fingerprint": "a3707b471416b44b7a1b2090b307da962d16a4a486278476c3cb078d5dabd201"
   },
   "result": {
     "name": "punirune",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
     "captures": {
       "previous": {
-        "status": "passed",
-        "captured_at": "2026-07-21T19:51:29.134136+00:00",
-        "duration_seconds": 24.223,
+        "status": "failed",
+        "captured_at": "2026-08-04T19:57:20.592572+00:00",
+        "duration_seconds": 1.03,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "bf0e5ab71b78a4e2be351b499795e23406e14f37",
-        "artifact": "mame-linux-clang-bf0e5ab71b78a4e2be351b499795e23406e14f37"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
       }
     }
   }

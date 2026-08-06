@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-    "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "checkpoint_version": 3,
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
     "variant": "current",
-    "input_fingerprint": "a84cdc9fd8af23d7ebbf24447ca69b90110ae7069c4dc2f95fa98a87387576bd"
+    "input_fingerprint": "9bd739ba3e924a079893c889c87a3894ead9688ef4df61cb7762cdc94d7d1444"
   },
   "result": {
     "name": "vstrik3c",
-    "status": "failed",
+    "status": "passed",
     "button": "1 Player Start",
-    "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
+    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
     "captures": {
       "current": {
-        "status": "failed",
-        "duration_seconds": 5.645,
+        "status": "passed",
+        "captured_at": "2026-08-06T07:04:08.810618+00:00",
+        "duration_seconds": 20.904,
         "button": "1 Player Start",
         "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": "MAME exited with status -9",
-        "revision": "dab2400953cdf818bfb5033a2e8bfd734e1d8fe1",
-        "artifact": "mame-linux-clang-dab2400953cdf818bfb5033a2e8bfd734e1d8fe1"
+        "failure_reason": null,
+        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
       }
     }
   }

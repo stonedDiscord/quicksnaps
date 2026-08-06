@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "variant": "previous",
+    "input_fingerprint": "f69637d4463b0c186992a454484520c975c36343eadef28c0d13358b6c3fdb56"
+  },
+  "result": {
+    "name": "polyvcg",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-08-04T19:49:30.628176+00:00",
+        "duration_seconds": 0.963,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "f3bd2d2a56c36b567354e44f1db82c63ae49ea22",
+        "artifact": "mame-linux-clang-f3bd2d2a56c36b567354e44f1db82c63ae49ea22"
+      }
+    }
+  }
+}
