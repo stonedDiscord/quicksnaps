@@ -1,16 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ef548b3f1c29d1a128baeaac48c42e95155b2c2e">ef548b3f1c29d1a128baeaac48c42e95155b2c2e</a> from <a href="https://github.com/mamedev/mame/commit/3e62c1fb7ead85c66e8428dec234d82b1646506f">3e62c1fb7ead85c66e8428dec234d82b1646506f</a> - mame-linux-clang-ef548b3f1c29d1a128baeaac48c42e95155b2c2e - generated 2026-08-08T08:57:16.679434+00:00</div>
-<div class="commit-message">z80dma, i8275: Sample RDY at the end of the transfer cycle. [Curt Coder]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/d705952cc8876ecc246df7a49d1f2d47e24a201a">d705952cc8876ecc246df7a49d1f2d47e24a201a</a> from <a href="https://github.com/mamedev/mame/commit/ef548b3f1c29d1a128baeaac48c42e95155b2c2e">ef548b3f1c29d1a128baeaac48c42e95155b2c2e</a> - mame-linux-clang-d705952cc8876ecc246df7a49d1f2d47e24a201a - generated 2026-08-08T08:58:06.326056+00:00</div>
+<div class="commit-message">z8536: various improvements
 
-z80dma decided whether to continue a burst or block in the same callback as the write, using an RDY value the deferred update had not applied yet. A destination that drops RDY while being written was never noticed and a second spurious byte was pushed at it, corrupting abc1600 floppy writes.
-
-RDY now tracks the live pin and the continuation decision moves one clock later, into SEQ_TRANS1_SAMPLE_READY. End of block still releases the bus in the same clock and byte-at-a-time is unchanged. specnext_dma follows the new state.
-
-zorba relied on that extra byte to fill its row buffer in time, which exposed an i8275 pacing bug: the burst space counts character clocks between DMA requests, so measure it from DRQ rather than DACK and do not insert one before the first request of a row.
-
-AI disclosure: debugged and implemented by Claude Opus 5</div></header>
+- NV flag does not affect current vector register read
+- pattern match on port writes
+- add counter 2 linked trigger/count modes</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rc702/">rc702</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/3e62c1fb7ead85c66e8428dec234d82b1646506f">3e62c1fb7ead85c66e8428dec234d82b1646506f</a></div>
