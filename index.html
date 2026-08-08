@@ -1,23 +1,26 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0926d2e5493edef7a435ff0b26b4e1a56519b25b">0926d2e5493edef7a435ff0b26b4e1a56519b25b</a> from <a href="https://github.com/mamedev/mame/commit/ed1dea362141249690b614069812ced417e218f9">ed1dea362141249690b614069812ced417e218f9</a> - mame-linux-clang-0926d2e5493edef7a435ff0b26b4e1a56519b25b - generated 2026-08-08T09:13:02.169251+00:00</div>
-<div class="commit-message">wangpc: make backslash and tilde typable through the natural keyboard (#15783)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/b1c8abc88c1dabf216550e09e743b9d3955ce829">b1c8abc88c1dabf216550e09e743b9d3955ce829</a> from <a href="https://github.com/mamedev/mame/commit/0926d2e5493edef7a435ff0b26b4e1a56519b25b">0926d2e5493edef7a435ff0b26b4e1a56519b25b</a> - mame-linux-clang-b1c8abc88c1dabf216550e09e743b9d3955ce829 - generated 2026-08-08T09:14:29.405276+00:00</div>
+<div class="commit-message">wangpc: fix expansion memory window and EMB card banking (128K -&gt; 640K) (#15780)
 
-The Wang PC keyboard has no dedicated backslash or tilde keys: the
-BIOS keyboard tables produce them with the 2ND modifier, as 2ND+/ and
-2ND+-, which the natural keyboard could not compose because neither
-character was declared and 2ND carried no shift meaning. Declare 2ND
-as the second shift level and add the two characters to their keys,
-so DOS paths can be typed in natural mode regardless of host layout.
+The POST tests the EMB memory expansion boards starting at physical
+0x20000, but the driver mapped the expansion bus window at
+0x40000-0xF3FFF: the test read open bus, failed, and the POST disabled
+the boards, leaving MS-DOS with 128KB only. Start the window at 0x20000
+and adjust the offset bias in wangpcbus_device::mrdc_r/amwc_w to match.
 
-The UCHAR_SHIFT_2 slot previously sat on CTRL and only backed a ^C
-mapping on the C key; typeable path characters are considerably more
-useful in natural mode than one control character.
+wangpc_emb_device::wangpcbus_amwc_w also ignored mem_mask, so 8-bit
+writes clobbered the other half of the 16-bit word and the byte-wide
+POST test patterns never read back correctly; fixed COMBINE_DATA-style.
 
-Verified against the keyboard translation tables in Wang BIOS.SYS and
-by exercising the combinations on the emulated machine (MS-DOS echoes
-and executes &quot;dir c:\&quot; correctly).
+Finally, RAM_SIZE was 256KB but the common PM031-B extended memory
+board is 512KB (four 128KB banks, matching the POST bank walk).
+
+With these changes the POST finds the EMB in slot 1, tests all banks,
+configures the option register on its own (0xCBA9) and MS-DOS reports
+640KB. Verified by booting the Wang MS-DOS 2.10 OEM disk and the
+software list boot disk with: mame wangpc -slot1 emb -flop1 &lt;disk&gt;
 
 Co-authored-by: Claude Fable 5 &lt;noreply@anthropic.com&gt;</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
