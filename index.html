@@ -1,15 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3e62c1fb7ead85c66e8428dec234d82b1646506f">3e62c1fb7ead85c66e8428dec234d82b1646506f</a> from <a href="https://github.com/mamedev/mame/commit/bc0b4dc34b511c229e3b846c5c436dc02388e4d6">bc0b4dc34b511c229e3b846c5c436dc02388e4d6</a> - mame-linux-clang-3e62c1fb7ead85c66e8428dec234d82b1646506f - generated 2026-08-08T08:56:19.110771+00:00</div>
-<div class="commit-message">Systems promoted to working (#15805)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ef548b3f1c29d1a128baeaac48c42e95155b2c2e">ef548b3f1c29d1a128baeaac48c42e95155b2c2e</a> from <a href="https://github.com/mamedev/mame/commit/3e62c1fb7ead85c66e8428dec234d82b1646506f">3e62c1fb7ead85c66e8428dec234d82b1646506f</a> - mame-linux-clang-ef548b3f1c29d1a128baeaac48c42e95155b2c2e - generated 2026-08-08T08:57:16.679434+00:00</div>
+<div class="commit-message">z80dma, i8275: Sample RDY at the end of the transfer cycle. [Curt Coder]
 
----------------------------
-Regnecentralen RC702 Piccolo [ravn]
+z80dma decided whether to continue a burst or block in the same callback as the write, using an RDY value the deferred update had not applied yet. A destination that drops RDY while being written was never noticed and a second spurious byte was pushed at it, corrupting abc1600 floppy writes.
 
-New working systems
--------------------
-Regnecentralen RC703 Piccolo [ravn]</div></header>
+RDY now tracks the live pin and the continuation decision moves one clock later, into SEQ_TRANS1_SAMPLE_READY. End of block still releases the bus in the same clock and byte-at-a-time is unchanged. specnext_dma follows the new state.
+
+zorba relied on that extra byte to fill its row buffer in time, which exposed an i8275 pacing bug: the burst space counts character clocks between DMA requests, so measure it from DRQ rather than DACK and do not insert one before the first request of a row.
+
+AI disclosure: debugged and implemented by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/rc702/">rc702</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/3e62c1fb7ead85c66e8428dec234d82b1646506f">3e62c1fb7ead85c66e8428dec234d82b1646506f</a></div>
