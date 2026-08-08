@@ -1,16 +1,25 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ed1dea362141249690b614069812ced417e218f9">ed1dea362141249690b614069812ced417e218f9</a> from <a href="https://github.com/mamedev/mame/commit/2c4a12bfdc4d05ef8283ca44fb5a7d0959941366">2c4a12bfdc4d05ef8283ca44fb5a7d0959941366</a> - mame-linux-clang-ed1dea362141249690b614069812ced417e218f9 - generated 2026-08-08T09:11:54.001425+00:00</div>
-<div class="commit-message">moog/source.cpp: improved emulation of encoder wheel and made it interactive. (#15802)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0926d2e5493edef7a435ff0b26b4e1a56519b25b">0926d2e5493edef7a435ff0b26b4e1a56519b25b</a> from <a href="https://github.com/mamedev/mame/commit/ed1dea362141249690b614069812ced417e218f9">ed1dea362141249690b614069812ced417e218f9</a> - mame-linux-clang-0926d2e5493edef7a435ff0b26b4e1a56519b25b - generated 2026-08-08T09:13:02.169251+00:00</div>
+<div class="commit-message">wangpc: make backslash and tilde typable through the natural keyboard (#15783)
 
-* `linn_linndrum.lay`: updates to the reference implementation of the &quot;slider&quot; script:
-  * Added support for encoder wheels.
-  * Made interface for adding sprung sliders explicit.
-  * Added more validation for the different control types.
-  * Other tidying.
-* `source.cpp`: Improved emulation of encoder circuit.
-* `moog_source.lay`: Used latest slider script and added interactive control of the encoder wheel.</div></header>
+The Wang PC keyboard has no dedicated backslash or tilde keys: the
+BIOS keyboard tables produce them with the 2ND modifier, as 2ND+/ and
+2ND+-, which the natural keyboard could not compose because neither
+character was declared and 2ND carried no shift meaning. Declare 2ND
+as the second shift level and add the two characters to their keys,
+so DOS paths can be typed in natural mode regardless of host layout.
+
+The UCHAR_SHIFT_2 slot previously sat on CTRL and only backed a ^C
+mapping on the C key; typeable path characters are considerably more
+useful in natural mode than one control character.
+
+Verified against the keyboard translation tables in Wang BIOS.SYS and
+by exercising the combinations on the emulated machine (MS-DOS echoes
+and executes &quot;dir c:\&quot; correctly).
+
+Co-authored-by: Claude Fable 5 &lt;noreply@anthropic.com&gt;</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/50f8bc7f1bdb384fe258833c015c6af17596bd19">50f8bc7f1bdb384fe258833c015c6af17596bd19</a></div>
