@@ -1,33 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/a5cc550d0a2cf7218cbd94c1a0780f7a713f8d8e">a5cc550d0a2cf7218cbd94c1a0780f7a713f8d8e</a> from <a href="https://github.com/mamedev/mame/commit/f1ac7e692924ecbf1e099905402ae44a80221a7c">f1ac7e692924ecbf1e099905402ae44a80221a7c</a> - mame-linux-clang-a5cc550d0a2cf7218cbd94c1a0780f7a713f8d8e - generated 2026-08-09T17:32:22.267773+00:00</div>
-<div class="commit-message">cpu/sh: SH family updates [R. Belmont]
-- Removed shadow m_am member that was causing confusion in favor of the base class’s
-- Exception vector fetches now mask the fetched PC with m_am.
-- Fixed DRC cycle counts for MULS, MULU, BT/BF, TSTM, BSRF, STC/LDC,
-- Fixed interpreter cycle counts for JMP, ORI, and ORM
-- Fixed interpreter MAC.W and MAC.L to generate correct results
-- Illegal instructions now trap when they happen instead of some time later
-- generate_delay_slot() propagates the delay slot&#x27;s cycle count back to the caller.
-- Fixed DRC delay slot behavior for BSRF, BRAF, JSR, JMP, RTS and RTE
-- MOV.W @(disp,PC), MOV.L @(disp,PC) and MOVA now use the correct address when in a delay slot
-- RTE restores PC and SR before the delay slot executes and properly masks SR
-- LDC.L @Rm+,SR masks the loaded value with SH_FLAGS.
-- SLEEP now actually sleeps on the DRC, it was a no-op before
-- The FPU now uses the requested rounding mode for both interpreter and DRC
-- Correctness fixes for the interpreter versions of FTRC, FDIV, FSQRT, FSRRA, FMAC, FTRV, and LDS
-- Fixed 11 cases of copy-pasted very broken UML_TEST(…, m_fpu_pr, 0)
-- DRC FNEG inverts the sign bit in both precisions.
-- DRC FTRC routed to the range-checked implementation.
-- All seven DRC FMOV forms converted to UML via generate_fmov_single / generate_fmov_pair.
-- DRC FLDS, FTRC, FSQRT, FSRRA, FCNVSD, FCNVDS, FIPR and FTRV converted from cfuncs to UML
-- DRC CLRS, SETS, SHAD, SHLD, LDCDBR, the banked STC/LDC forms, the @-Rn/@Rn+ control-register transfers and LDS/LDS.L to FPSCR converted to UML
-- func_FSSCA applies the rounding mode before calling the interpreter
-
-Tested to fix a selection of Saturn software that was marked &quot;doesn&#x27;t work on DRC&quot; and to generate byte-identical 3D frames between the interpreter and DRC with 6 Naomi games.  On both x64 and arm64 hosts, and even x64 vs. arm64.  Additionally, a generated Lua script performed an FPU torture test which found and verified many of these issues.
-
-AI disclosure: Debugging and tracing assistance and some suggestions on fixes were provided by Claude Opus 5</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/a60f95ea04a4f9b4bd950c88068cce1dcdc04b6e">a60f95ea04a4f9b4bd950c88068cce1dcdc04b6e</a> from <a href="https://github.com/mamedev/mame/commit/a5cc550d0a2cf7218cbd94c1a0780f7a713f8d8e">a5cc550d0a2cf7218cbd94c1a0780f7a713f8d8e</a> - mame-linux-clang-a60f95ea04a4f9b4bd950c88068cce1dcdc04b6e - generated 2026-08-09T17:33:12.379544+00:00</div>
+<div class="commit-message">cpu/sh: Fix things that should be in the DRC cache. [R. Belmont]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/50f8bc7f1bdb384fe258833c015c6af17596bd19">50f8bc7f1bdb384fe258833c015c6af17596bd19</a></div>
