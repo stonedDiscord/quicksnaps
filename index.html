@@ -1,8 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bcf19888e2c9f953554a63597f58d411c274bb32">bcf19888e2c9f953554a63597f58d411c274bb32</a> from <a href="https://github.com/mamedev/mame/commit/11a760c765016bdb6c21616be32e52e0a2dce4bd">11a760c765016bdb6c21616be32e52e0a2dce4bd</a> - mame-linux-clang-bcf19888e2c9f953554a63597f58d411c274bb32 - generated 2026-08-11T16:21:30.256041+00:00</div>
-<div class="commit-message">mm58167: put the milliseconds digit in the high nibble of register 0 (#15860)</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3d4ad34487ff4179690703cf7b1111376e65eccc">3d4ad34487ff4179690703cf7b1111376e65eccc</a> from <a href="https://github.com/mamedev/mame/commit/bcf19888e2c9f953554a63597f58d411c274bb32">bcf19888e2c9f953554a63597f58d411c274bb32</a> - mame-linux-clang-3d4ad34487ff4179690703cf7b1111376e65eccc - generated 2026-08-11T16:23:09.983940+00:00</div>
+<div class="commit-message">video/mc6847.cpp: remove implicit screen setup default in device_config_complete (#15855)
+
+* video devices are never intended to have this kind of information, screen_device is an abstraction that emulates a monitor _connection_.
+* In MC6847 case the device is normally paired with a MC6883 Synchronous Address Multiplexer (where the clock is actually generated) and a MC1372 RF modulator.
+* fix recent regression with trs/coco12.cpp at least (setting a screen of 100x100)</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/iqpipe/">iqpipe</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/50f8bc7f1bdb384fe258833c015c6af17596bd19">50f8bc7f1bdb384fe258833c015c6af17596bd19</a></div>
