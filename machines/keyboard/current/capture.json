@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 3,
-    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
-    "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768",
+    "revision": "a30e4c0d7a187fb497e2e346203c276d23a2432e",
+    "artifact": "mame-linux-clang-a30e4c0d7a187fb497e2e346203c276d23a2432e",
     "variant": "current",
     "input_fingerprint": "7fd846fe62209e44bef78e8d075c13d1c1845a0c32d3959542e0bf4ad588c23f"
   },
   "result": {
     "name": "keyboard",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "774a180df2b6ef9c53e48337792256817c50f768",
+    "revision": "a30e4c0d7a187fb497e2e346203c276d23a2432e",
     "captures": {
       "current": {
-        "status": "passed",
-        "captured_at": "2026-08-05T21:36:34.945871+00:00",
-        "duration_seconds": 41.821,
+        "status": "failed",
+        "captured_at": "2026-08-11T17:21:31.394757+00:00",
+        "duration_seconds": 20.031,
         "button": "1 Player Start",
         "button_applied": false,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "774a180df2b6ef9c53e48337792256817c50f768",
-        "artifact": "mame-linux-clang-774a180df2b6ef9c53e48337792256817c50f768"
+        "failure_reason": "input skipped: 1 Player Start not available",
+        "revision": "a30e4c0d7a187fb497e2e346203c276d23a2432e",
+        "artifact": "mame-linux-clang-a30e4c0d7a187fb497e2e346203c276d23a2432e"
       }
     }
   }
