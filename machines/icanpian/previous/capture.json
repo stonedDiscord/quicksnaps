@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "artifact": "mame-linux-clang-1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "variant": "previous",
+    "input_fingerprint": "8488bae219a617f706ec2b6d414d1db21a71571b847cd16bd92aa38cc400071e"
+  },
+  "result": {
+    "name": "icanpian",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-08-14T19:21:04.073299+00:00",
+        "duration_seconds": 0.77,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+        "artifact": "mame-linux-clang-1e1b6ce78a1645805bb5eef4049e3f1d3f926194"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "artifact": "mame-linux-clang-1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "variant": "previous",
+    "input_fingerprint": "d049f295cf11d7d2d326bd8841e30e88de9339f65f5ff4b59aea8fbe40d89dcb"
+  },
+  "result": {
+    "name": "tvgogo",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+    "captures": {
+      "previous": {
+        "status": "failed",
+        "captured_at": "2026-08-14T19:36:01.084853+00:00",
+        "duration_seconds": 1.075,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "1e1b6ce78a1645805bb5eef4049e3f1d3f926194",
+        "artifact": "mame-linux-clang-1e1b6ce78a1645805bb5eef4049e3f1d3f926194"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "fe376047fa0135ae3c35e8b12157d38a2173501f",
+    "artifact": "mame-linux-clang-fe376047fa0135ae3c35e8b12157d38a2173501f",
+    "variant": "current",
+    "input_fingerprint": "7287d4fab1f404e5b4aec96ef595c948f32d97a9d88436ee13bb2d5dcf91fbd0"
+  },
+  "result": {
+    "name": "smartvad",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "fe376047fa0135ae3c35e8b12157d38a2173501f",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-14T20:01:19.867976+00:00",
+        "duration_seconds": 0.919,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Images must be mounted for the following devices: cartridge",
+        "revision": "fe376047fa0135ae3c35e8b12157d38a2173501f",
+        "artifact": "mame-linux-clang-fe376047fa0135ae3c35e8b12157d38a2173501f"
+      }
+    }
+  }
+}
