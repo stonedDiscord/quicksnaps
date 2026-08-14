@@ -1,8 +1,20 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/fe376047fa0135ae3c35e8b12157d38a2173501f">fe376047fa0135ae3c35e8b12157d38a2173501f</a> from <a href="https://github.com/mamedev/mame/commit/1e1b6ce78a1645805bb5eef4049e3f1d3f926194">1e1b6ce78a1645805bb5eef4049e3f1d3f926194</a> - mame-linux-clang-fe376047fa0135ae3c35e8b12157d38a2173501f - generated 2026-08-14T20:10:31.922154+00:00</div>
-<div class="commit-message">tvgames: cleaned up company/titles metadata (#15747)</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3631e85c59bd817d7a139a8bf6231eecab57c9f7">3631e85c59bd817d7a139a8bf6231eecab57c9f7</a> from <a href="https://github.com/mamedev/mame/commit/fe376047fa0135ae3c35e8b12157d38a2173501f">fe376047fa0135ae3c35e8b12157d38a2173501f</a> - mame-linux-clang-3631e85c59bd817d7a139a8bf6231eecab57c9f7 - generated 2026-08-14T20:11:32.948914+00:00</div>
+<div class="commit-message">cpu/m16c: Bugfixes to M16C disassembler found with an Apple PMU99 firmware binary [R. Belmont]
+* ADJNZ/SBJNZ weren&#x27;t handling the imm4 field properly
+* ROT/SHA/SHL count is signed magnitude, not twos-complement
+* 32-bit register pairs were not printed correctly due to order-of-operations
+* BMCnd condition decoding was wrong
+* Long JCnd displacement is not signed
+* bit,base:16[SB] was not showing the bit number correctly
+* PUSHM register order was wrong
+* BNXOR was being called BXNOR
+* UND instruction was not decoded
+* dsp:16[An] / dsp:16[SB] were shown incorrectly
+
+AI disclosure: Grok 4.6 assisted verifying the divergences from the M16C Software Manual</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/maldaiza/">maldaiza</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a></div>
