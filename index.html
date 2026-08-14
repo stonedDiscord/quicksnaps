@@ -1,34 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a> from <a href="https://github.com/mamedev/mame/commit/786c24b2dfd489e6bcd5553e37ca32b54368032d">786c24b2dfd489e6bcd5553e37ca32b54368032d</a> - mame-linux-clang-40b4007861c024d3e34f477f048c015448d9f810 - generated 2026-08-14T18:52:58.688410+00:00</div>
-<div class="commit-message">machine/53c7xx: Initial support for the NCR53C710
-
-- Split the generic ncr53c7xx_device into ncr53c700_device and
-  ncr53c710_device
-- Changed register defines into constants
-- Convert the UNIMPLEMENTED define into a function
-- Correct DCNTL bit definitions and implemented manual-start
-- Corrected SCSI selection to present both initiator and target IDs
-- Added target BSY waiting
-- Corrected SFBR to latch the first byte of each Block Move
-- Added masked SFBR comparisons for Transfer Control instructions
-- Corrected Block Move opcode widths and rejected reserved initiator
-  opcode 0
-- Implemented 53C710 specific software reset and SIGP handling
-- Support big-endian mode on the 53C710
-- Added 53C710 table-indirect Block Move and selection operands
-- Added 53C710 register/SFBR read-modify-write SCRIPTS instructions
-- Added 53C710 memory-to-memory moves
-- Added relative Transfer Control addresses
-- Implemented SIGP wakeup from Wait Reselect
-- Improved logging
-- Added SCRIPTS disassembly for the newly supported 53C710 instructions
-
-Add working SCSI support to the Amiga 4000T driver. The system
-successfully boots now instead of hanging while checking for SCSI.
-
-AI disclosure: gpt-5.6-sol was used as a research and debugging tool.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/b7010dac94436b9e0fc8f0ae98fcacc28a34f0fe">b7010dac94436b9e0fc8f0ae98fcacc28a34f0fe</a> from <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a> - mame-linux-clang-b7010dac94436b9e0fc8f0ae98fcacc28a34f0fe - generated 2026-08-14T18:57:27.956278+00:00</div>
+<div class="commit-message">las128e2: Fix configuration (keyboard MCU was not actually hooked up)</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/a4000tn/">a4000tn</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
