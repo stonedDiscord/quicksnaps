@@ -1,9 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/f88310b318f736493082885709c71b3472894a4b">f88310b318f736493082885709c71b3472894a4b</a> from <a href="https://github.com/mamedev/mame/commit/c8f7357b5c573fd7f236c4747f0f34fafe510c54">c8f7357b5c573fd7f236c4747f0f34fafe510c54</a> - mame-linux-clang-f88310b318f736493082885709c71b3472894a4b - generated 2026-08-14T19:03:09.548211+00:00</div>
-<div class="commit-message">sega/saturn_cd_hle.cpp: fix curfad filter rejection range</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a> from <a href="https://github.com/mamedev/mame/commit/f88310b318f736493082885709c71b3472894a4b">f88310b318f736493082885709c71b3472894a4b</a> - mame-linux-clang-8ccd3f1ad797ac08f4fba9e3a581281cb758f934 - generated 2026-08-14T19:05:38.355475+00:00</div>
+<div class="commit-message">misc/crystal.cpp: completed protection patches for maldaiza. Game boots with wrong inputs. AI disclosure: missing patches found by Claude Opus 5.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/maldaiza/">maldaiza</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a></div>
+<div class="comparison">
+<figure><a href="machines/maldaiza/previous/after.png"><img loading="lazy" src="machines/maldaiza/previous/after.png" alt="maldaiza previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/maldaiza/current/after.png"><img loading="lazy" src="machines/maldaiza/current/after.png" alt="maldaiza current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/maldaiza/">maldaiza</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a></div>
+<div class="comparison">
+<figure><a href="machines/maldaiza/previous/before.png"><img loading="lazy" src="machines/maldaiza/previous/before.png" alt="maldaiza previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/maldaiza/current/before.png"><img loading="lazy" src="machines/maldaiza/current/before.png" alt="maldaiza current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/a4000tn/">a4000tn</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
 <div class="comparison">
@@ -591,18 +603,6 @@
 <div class="comparison">
 <figure><a href="machines/ripoff/previous/before.png"><img loading="lazy" src="machines/ripoff/previous/before.png" alt="ripoff previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/ripoff/current/before.png"><img loading="lazy" src="machines/ripoff/current/before.png" alt="ripoff current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/spaceftr/">spaceftr</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/spaceftr/previous/after.png"><img loading="lazy" src="machines/spaceftr/previous/after.png" alt="spaceftr previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/spaceftr/current/after.png"><img loading="lazy" src="machines/spaceftr/current/after.png" alt="spaceftr current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/spaceftr/">spaceftr</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/spaceftr/previous/before.png"><img loading="lazy" src="machines/spaceftr/previous/before.png" alt="spaceftr previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/spaceftr/current/before.png"><img loading="lazy" src="machines/spaceftr/current/before.png" alt="spaceftr current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
