@@ -1,42 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ab41620cf2d4bace0497922b03cb48e1d5169b50">ab41620cf2d4bace0497922b03cb48e1d5169b50</a> from <a href="https://github.com/mamedev/mame/commit/bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8">bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8</a> - mame-linux-clang-ab41620cf2d4bace0497922b03cb48e1d5169b50 - generated 2026-08-14T18:20:34.795098+00:00</div>
-<div class="commit-message">z8000,z8010,zilog/s8000: correct CPU/MMU behavior and boot ZEUS (#15866)
-
-cpu/z8000: Fixes and updates
-* fix addr_to_reg segment mask to replace full high byte
-* fix MULTW carry-flag boundary
-* preserve DIVW/DIVL quotient on representable overflow
-* toggle H flag in COMFLG
-* write POPL @Rd,@Rs result to memory
-* read indirect MULTL operand from memory
-* fix dynamic shift dispatch and count sign-extension [tpaxia]
-* fix RRDB temp register and RLDB/RRDB S flag
-* accumulate V flag across shift/rotate steps
-* fix compare-string repeat and block-move Z flag
-* fix SOTIRB/SOUTIB source not incrementing (bumped segment word instead of offset)
-* fix block-I/O instruction flags and address increment
-* fix COMB @Rd destination register decode
-* trap the 4F extended EPU family at the correct instruction
-* preserve the indexed LDA operand across an overlapping destination
-* derive the DAB correction table from measured Z8001 behaviour
-* leave the tcc destination alone when the condition is false
-* fix the MULTL carry boundary
-* take the DIV overflow sign flag from the whole quotient
-* order the translate RH1 writeback against the pointer step
-* replace the whole high word when writing a segmented address back
-* do not mask PSAPSEG through LDCTL
-* read a byte for the non-indexed COMB
-* do not mask the FCW written through LDCTL
-* calculate DAB correction directly
-
-cpu/z8010: correct violation semantics per Olivetti UC3003 factory test [tpaxia]
-
-zilog/s8000: fix ZEUS clock, MMU and device handling, support multi-sector SMDC transfers, and fix Series Two interrupt daisy chain [tpaxia]
-
----------
-Co-authored-by: tpaxia &lt;spaxia@notoslab.com&gt;</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/058c9b30250592f67df44a17c2df423e4cf2305c">058c9b30250592f67df44a17c2df423e4cf2305c</a> from <a href="https://github.com/mamedev/mame/commit/ab41620cf2d4bace0497922b03cb48e1d5169b50">ab41620cf2d4bace0497922b03cb48e1d5169b50</a> - mame-linux-clang-058c9b30250592f67df44a17c2df423e4cf2305c - generated 2026-08-14T18:22:42.230905+00:00</div>
+<div class="commit-message">nokia/mikromik: Serial fixes. [Curt Coder]
+nokia/mikromikko2: Serial fixes. [Curt Coder]
+luxor/abc99: Serial fixes. [Curt Coder]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/baoqingt/">baoqingt</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/29a8f622a3f7b053768856260baa96496a81bfff">29a8f622a3f7b053768856260baa96496a81bfff</a></div>
@@ -548,18 +516,6 @@ Co-authored-by: tpaxia &lt;spaxia@notoslab.com&gt;</div></header>
 <figure><a href="machines/cbasebal/previous/after.png"><img loading="lazy" src="machines/cbasebal/previous/after.png" alt="cbasebal previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/cbasebal/current/after.png"><img loading="lazy" src="machines/cbasebal/current/after.png" alt="cbasebal current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
-<h3><a href="machines/mm2m35d/">mm2m35d</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/9a7b1cab84018d6a8eeeba8d27b6e83a3c5bafa2">9a7b1cab84018d6a8eeeba8d27b6e83a3c5bafa2</a></div>
-<div class="comparison">
-<figure><a href="machines/mm2m35d/previous/after.png"><img loading="lazy" src="machines/mm2m35d/previous/after.png" alt="mm2m35d previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/mm2m35d/current/after.png"><img loading="lazy" src="machines/mm2m35d/current/after.png" alt="mm2m35d current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/mm2m35d/">mm2m35d</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/9a7b1cab84018d6a8eeeba8d27b6e83a3c5bafa2">9a7b1cab84018d6a8eeeba8d27b6e83a3c5bafa2</a></div>
-<div class="comparison">
-<figure><a href="machines/mm2m35d/previous/before.png"><img loading="lazy" src="machines/mm2m35d/previous/before.png" alt="mm2m35d previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/mm2m35d/current/before.png"><img loading="lazy" src="machines/mm2m35d/current/before.png" alt="mm2m35d current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
 <h3><a href="machines/free220/">free220</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/c1c49dffb5a9e814bd733c09674e733ee0db9d5f">c1c49dffb5a9e814bd733c09674e733ee0db9d5f</a></div>
 <div class="comparison">
@@ -637,6 +593,18 @@ Co-authored-by: tpaxia &lt;spaxia@notoslab.com&gt;</div></header>
 <div class="comparison">
 <figure><a href="machines/tskelwarr/previous/after.png"><img loading="lazy" src="machines/tskelwarr/previous/after.png" alt="tskelwarr previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/tskelwarr/current/after.png"><img loading="lazy" src="machines/tskelwarr/current/after.png" alt="tskelwarr current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/tskelwarr/">tskelwarr</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/774a180df2b6ef9c53e48337792256817c50f768">774a180df2b6ef9c53e48337792256817c50f768</a></div>
+<div class="comparison">
+<figure><a href="machines/tskelwarr/previous/before.png"><img loading="lazy" src="machines/tskelwarr/previous/before.png" alt="tskelwarr previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/tskelwarr/current/before.png"><img loading="lazy" src="machines/tskelwarr/current/before.png" alt="tskelwarr current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/tsonic/">tsonic</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/774a180df2b6ef9c53e48337792256817c50f768">774a180df2b6ef9c53e48337792256817c50f768</a></div>
+<div class="comparison">
+<figure><a href="machines/tsonic/previous/after.png"><img loading="lazy" src="machines/tsonic/previous/after.png" alt="tsonic previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/tsonic/current/after.png"><img loading="lazy" src="machines/tsonic/current/after.png" alt="tsonic current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
