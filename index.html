@@ -1,16 +1,42 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8">bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8</a> from <a href="https://github.com/mamedev/mame/commit/ed697c3087cfa6f99cfdd722aad27a11266098b6">ed697c3087cfa6f99cfdd722aad27a11266098b6</a> - mame-linux-clang-bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8 - generated 2026-08-14T18:19:11.471106+00:00</div>
-<div class="commit-message">osd/netdev/pcap.cpp: Fix inverted success/failure return from send() (#15874)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ab41620cf2d4bace0497922b03cb48e1d5169b50">ab41620cf2d4bace0497922b03cb48e1d5169b50</a> from <a href="https://github.com/mamedev/mame/commit/bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8">bbe8f5850dd2f4fc1a608dee0a13d4dfa1efd6e8</a> - mame-linux-clang-ab41620cf2d4bace0497922b03cb48e1d5169b50 - generated 2026-08-14T18:20:34.795098+00:00</div>
+<div class="commit-message">z8000,z8010,zilog/s8000: correct CPU/MMU behavior and boot ZEUS (#15866)
 
-* osd/netdev/pcap.cpp: Fix inverted success/failure return from send().
+cpu/z8000: Fixes and updates
+* fix addr_to_reg segment mask to replace full high byte
+* fix MULTW carry-flag boundary
+* preserve DIVW/DIVL quotient on representable overflow
+* toggle H flag in COMFLG
+* write POPL @Rd,@Rs result to memory
+* read indirect MULTL operand from memory
+* fix dynamic shift dispatch and count sign-extension [tpaxia]
+* fix RRDB temp register and RLDB/RRDB S flag
+* accumulate V flag across shift/rotate steps
+* fix compare-string repeat and block-move Z flag
+* fix SOTIRB/SOUTIB source not incrementing (bumped segment word instead of offset)
+* fix block-I/O instruction flags and address increment
+* fix COMB @Rd destination register decode
+* trap the 4F extended EPU family at the correct instruction
+* preserve the indexed LDA operand across an overlapping destination
+* derive the DAB correction table from measured Z8001 behaviour
+* leave the tcc destination alone when the condition is false
+* fix the MULTL carry boundary
+* take the DIV overflow sign flag from the whole quotient
+* order the translate RH1 writeback against the pointer step
+* replace the whole high word when writing a segmented address back
+* do not mask PSAPSEG through LDCTL
+* read a byte for the non-indexed COMB
+* do not mask the FCW written through LDCTL
+* calculate DAB correction directly
 
-pcap_sendpacket() returns 0 on success and PCAP_ERROR on failure, but
-netdev_pcap::send() was returning the byte count only when the call
-failed and 0 on success.
+cpu/z8010: correct violation semantics per Olivetti UC3003 factory test [tpaxia]
 
-* osd/netdev/pcap.cpp: Remove orphaned dead comment in send().</div></header>
+zilog/s8000: fix ZEUS clock, MMU and device handling, support multi-sector SMDC transfers, and fix Series Two interrupt daisy chain [tpaxia]
+
+---------
+Co-authored-by: tpaxia &lt;spaxia@notoslab.com&gt;</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/baoqingt/">baoqingt</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/29a8f622a3f7b053768856260baa96496a81bfff">29a8f622a3f7b053768856260baa96496a81bfff</a></div>
