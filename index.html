@@ -1,23 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/29a8f622a3f7b053768856260baa96496a81bfff">29a8f622a3f7b053768856260baa96496a81bfff</a> from <a href="https://github.com/mamedev/mame/commit/bde244d9d84f4523d4325e71e7f1572c97675bf4">bde244d9d84f4523d4325e71e7f1572c97675bf4</a> - mame-linux-clang-29a8f622a3f7b053768856260baa96496a81bfff - generated 2026-08-14T18:12:37.144474+00:00</div>
-<div class="commit-message">mit/cadr.cpp, cpu/cadr, cadr.xml: Added initial MIT CADR emulation. (#13340)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/99f16f9533a9962fa15d505d285f21fc00f949da">99f16f9533a9962fa15d505d285f21fc00f949da</a> from <a href="https://github.com/mamedev/mame/commit/29a8f622a3f7b053768856260baa96496a81bfff">29a8f622a3f7b053768856260baa96496a81bfff</a> - mame-linux-clang-99f16f9533a9962fa15d505d285f21fc00f949da - generated 2026-08-14T18:14:17.381772+00:00</div>
+<div class="commit-message">vsystem/taotaido.cpp: Fix player 2 controls in taotaido6 (#15879)
 
-AI disclosure: Claude Sonnet 5 assisted with debugging and fixing some small issues.
-
-New systems marked not working
-------------------
-MIT Cadr [Wilbert Pol, Bitsavers]
-
-New software list items marked not working (cadr.xml)
--------------------------
-System 78.48 [ams]
-System 100.0 [ams]
-System 300.0 [ams]
-System 301.0 [ams]
-System 302.0 [ams]
-System 303.0 [ams]</div></header>
+For a long time in `taotaidoa`, player 2&#x27;s kick buttons (4-6) actually causes player 1 to kick in-game, as if they pressed their own corresponding kick buttons. The game checks player 3 and 4 inputs, which are visible in the service mode&#x27;s input test program, and reuses them for kick buttons. As noted in the driver notes, players 3 and 4 aren&#x27;t used at all in the 2-button parent (`taotaido`) or the 2/3-button clone (&#x27;taotaido3`). Adjusting the `P4` port to map buttons 1-3, rather than three of the directions, to player 2&#x27;s buttons 4-6 allows player 2 to kick as expected.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/baoqingt/">baoqingt</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/29a8f622a3f7b053768856260baa96496a81bfff">29a8f622a3f7b053768856260baa96496a81bfff</a></div>
