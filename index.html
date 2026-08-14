@@ -1,8 +1,72 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/638224548b67a2b8f4cbc561b38cfef211f122f6">638224548b67a2b8f4cbc561b38cfef211f122f6</a> from <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a> - mame-linux-clang-638224548b67a2b8f4cbc561b38cfef211f122f6 - generated 2026-08-14T19:06:56.902802+00:00</div>
-<div class="commit-message">sp0256.cpp: adjust divider to achieve 10kHz sample rate [Joe Zibiciak] (#15890)</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/954cbbe49ff16c1bb9617e93a08db2d05e051e61">954cbbe49ff16c1bb9617e93a08db2d05e051e61</a> from <a href="https://github.com/mamedev/mame/commit/638224548b67a2b8f4cbc561b38cfef211f122f6">638224548b67a2b8f4cbc561b38cfef211f122f6</a> - mame-linux-clang-954cbbe49ff16c1bb9617e93a08db2d05e051e61 - generated 2026-08-14T19:07:47.817436+00:00</div>
+<div class="commit-message">util/chd: use modern C++ standard library facilities (#15889)
+
+This updates a few older parts of the CHD code to use standard C++ library features.
+
+Changes:
+
+    use .data() (C++11) when passing the start of a container
+    use std::sort (C++98) instead of qsort
+    use std::bit_width (C++20) instead of the custom bits_for_value function
+    use std::endian (C++20) instead of manually checking the system&#x27;s byte order
+    (I checked the std::endian replacements against the old byte-order detection: the old native_endian == 0x100 check corresponds to big-endian, and native_endian == 1 corresponds to little-endian)
+    add or remove includes as needed for these changes
+* util/chd: use data() instead of &amp;container[0]
+
+Replaces &amp;container[0] with container.data() where a pointer to the start of a standard library container is required. Uses that refer to an offset within a container are left unchanged.
+
+This makes the intent clearer and avoids indexing the first element just to obtain the underlying data pointer. No functional change intended.
+
+AI assistance: GPT-5.6 Sol (OpenAI) was used to help identify applicable instances and review the changes. Grok 4.5 was used as an additional code review.
+
+* Remove unused metadata_hash_compare function declaration
+
+* Refactor sorting and remove unused comparison function
+
+util/chd: replace qsort with std::sort for metadata hashes
+
+Add operator&lt; to metadata_hash and use std::sort instead of the
+C qsort + function pointer. Remove the now-unused
+metadata_hash_compare helper.
+
+* Remove cstdlib include from chd.cpp
+
+Removed unnecessary inclusion of cstdlib header, no longer needed after removing qsort
+
+* util/chd: make metadata hash comparison local to sort
+
+Move the metadata_hash comparison from operator&lt; to a local std::sort lambda, keeping the comparison logic at the point where it is used.
+
+* util/chd: use data() for vector metadata input
+
+Use vector::data() when passing the metadata input buffer, matching the same container access cleanup in chd.cpp.
+
+* util/chd: replace bits_for_value with std::bit_width
+
+Use the C++20 std::bit_width function instead of the custom
+bits_for_value implementation.
+
+* Remove static method bits_for_value from chd.h
+
+Remove the now-unused bits_for_value declaration from chd.h after
+replacing the implementation with std::bit_width.
+
+* Fix formatting of sort function for hasharray
+
+* util/chdcodec: use data() for vector buffers
+
+Use data() when passing the start of vector buffers
+
+* tools/chdman: use data() for vector buffers
+
+Use data() when passing the start of vector buffers
+
+* util/chdcodec: use std::endian for native byte order
+
+Use std::endian instead of manually detecting native byte order</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/maldaiza/">maldaiza</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/8ccd3f1ad797ac08f4fba9e3a581281cb758f934">8ccd3f1ad797ac08f4fba9e3a581281cb758f934</a></div>
