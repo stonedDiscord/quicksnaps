@@ -1,22 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/c7a92906e890f7245e919914630579d79bda67d2">c7a92906e890f7245e919914630579d79bda67d2</a> from <a href="https://github.com/mamedev/mame/commit/ceb2c72dd441a1e906904167ff60f0529307e2ca">ceb2c72dd441a1e906904167ff60f0529307e2ca</a> - mame-linux-clang-c7a92906e890f7245e919914630579d79bda67d2 - generated 2026-08-14T18:59:31.785843+00:00</div>
-<div class="commit-message">bgfx: add vector CRT renderer (#15692)
-
-* bgfx: add vector CRT renderer
-
-* docs: Add missing vector CRT screenshots
-
-* Fix erroneous indent
-
-* bgfx: enable vector CRT rendering by default. Keep -nobgfx_vectorcrt available as an explicit opt-out.
-
-* Increase bloom targets from one-third to half resolution to prevent the blur kernel from becoming under-resolved at 1080p. Normalize blur offsets against output resolution to preserve the apparent bloom size.
-
-* Adjust default vector bloom settings
-
-* bgfx: improve vector CRT bloom sampling</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/ec7dfe973a159b4423ec4ff64cf86a73d9910a73">ec7dfe973a159b4423ec4ff64cf86a73d9910a73</a> from <a href="https://github.com/mamedev/mame/commit/c7a92906e890f7245e919914630579d79bda67d2">c7a92906e890f7245e919914630579d79bda67d2</a> - mame-linux-clang-ec7dfe973a159b4423ec4ff64cf86a73d9910a73 - generated 2026-08-14T19:00:51.886657+00:00</div>
+<div class="commit-message">sega/saturn_cd_hle.cpp: better handling of no disc cases
+- fix regression where tray open/close will just hang the emulated machine
+- make it play along with the recently added status changes
+- reset tray status only during power-on not device_reset
+- fix #15884</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/a4000tn/">a4000tn</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
