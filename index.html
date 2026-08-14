@@ -1,12 +1,59 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/786c24b2dfd489e6bcd5553e37ca32b54368032d">786c24b2dfd489e6bcd5553e37ca32b54368032d</a> from <a href="https://github.com/mamedev/mame/commit/058c9b30250592f67df44a17c2df423e4cf2305c">058c9b30250592f67df44a17c2df423e4cf2305c</a> - mame-linux-clang-786c24b2dfd489e6bcd5553e37ca32b54368032d - generated 2026-08-14T18:24:13.818952+00:00</div>
-<div class="commit-message">dataeast/deco16ic.cpp: Fixed attempt to set zero scroll rows.
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a> from <a href="https://github.com/mamedev/mame/commit/786c24b2dfd489e6bcd5553e37ca32b54368032d">786c24b2dfd489e6bcd5553e37ca32b54368032d</a> - mame-linux-clang-40b4007861c024d3e34f477f048c015448d9f810 - generated 2026-08-14T18:52:58.688410+00:00</div>
+<div class="commit-message">machine/53c7xx: Initial support for the NCR53C710
 
-If only one scroll row configured, don&#x27;t right-shift it.  Caused an
-assertion failure in debug builds.</div></header>
+- Split the generic ncr53c7xx_device into ncr53c700_device and
+  ncr53c710_device
+- Changed register defines into constants
+- Convert the UNIMPLEMENTED define into a function
+- Correct DCNTL bit definitions and implemented manual-start
+- Corrected SCSI selection to present both initiator and target IDs
+- Added target BSY waiting
+- Corrected SFBR to latch the first byte of each Block Move
+- Added masked SFBR comparisons for Transfer Control instructions
+- Corrected Block Move opcode widths and rejected reserved initiator
+  opcode 0
+- Implemented 53C710 specific software reset and SIGP handling
+- Support big-endian mode on the 53C710
+- Added 53C710 table-indirect Block Move and selection operands
+- Added 53C710 register/SFBR read-modify-write SCRIPTS instructions
+- Added 53C710 memory-to-memory moves
+- Added relative Transfer Control addresses
+- Implemented SIGP wakeup from Wait Reselect
+- Improved logging
+- Added SCRIPTS disassembly for the newly supported 53C710 instructions
+
+Add working SCSI support to the Amiga 4000T driver. The system
+successfully boots now instead of hanging while checking for SCSI.
+
+AI disclosure: gpt-5.6-sol was used as a research and debugging tool.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/a4000tn/">a4000tn</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000tn/previous/after.png"><img loading="lazy" src="machines/a4000tn/previous/after.png" alt="a4000tn previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000tn/current/after.png"><img loading="lazy" src="machines/a4000tn/current/after.png" alt="a4000tn current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a4000tn/">a4000tn</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000tn/previous/before.png"><img loading="lazy" src="machines/a4000tn/previous/before.png" alt="a4000tn previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000tn/current/before.png"><img loading="lazy" src="machines/a4000tn/current/before.png" alt="a4000tn current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a4000t/">a4000t</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000t/previous/after.png"><img loading="lazy" src="machines/a4000t/previous/after.png" alt="a4000t previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000t/current/after.png"><img loading="lazy" src="machines/a4000t/current/after.png" alt="a4000t current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/a4000t/">a4000t</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/40b4007861c024d3e34f477f048c015448d9f810">40b4007861c024d3e34f477f048c015448d9f810</a></div>
+<div class="comparison">
+<figure><a href="machines/a4000t/previous/before.png"><img loading="lazy" src="machines/a4000t/previous/before.png" alt="a4000t previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/a4000t/current/before.png"><img loading="lazy" src="machines/a4000t/current/before.png" alt="a4000t current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/shackled/">shackled</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/786c24b2dfd489e6bcd5553e37ca32b54368032d">786c24b2dfd489e6bcd5553e37ca32b54368032d</a></div>
 <div class="comparison">
@@ -582,30 +629,6 @@ assertion failure in debug builds.</div></header>
 <div class="comparison">
 <figure><a href="machines/spaceftr/previous/before.png"><img loading="lazy" src="machines/spaceftr/previous/before.png" alt="spaceftr previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/spaceftr/current/before.png"><img loading="lazy" src="machines/spaceftr/current/before.png" alt="spaceftr current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/spaceshp/">spaceshp</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/spaceshp/previous/after.png"><img loading="lazy" src="machines/spaceshp/previous/after.png" alt="spaceshp previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/spaceshp/current/after.png"><img loading="lazy" src="machines/spaceshp/current/after.png" alt="spaceshp current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/spaceshp/">spaceshp</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/spaceshp/previous/before.png"><img loading="lazy" src="machines/spaceshp/previous/before.png" alt="spaceshp previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/spaceshp/current/before.png"><img loading="lazy" src="machines/spaceshp/current/before.png" alt="spaceshp current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/barrier/">barrier</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/barrier/previous/after.png"><img loading="lazy" src="machines/barrier/previous/after.png" alt="barrier previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/barrier/current/after.png"><img loading="lazy" src="machines/barrier/current/after.png" alt="barrier current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/barrier/">barrier</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/400799550549d414dc31c526ae249fd55094237a">400799550549d414dc31c526ae249fd55094237a</a></div>
-<div class="comparison">
-<figure><a href="machines/barrier/previous/before.png"><img loading="lazy" src="machines/barrier/previous/before.png" alt="barrier previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/barrier/current/before.png"><img loading="lazy" src="machines/barrier/current/before.png" alt="barrier current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
