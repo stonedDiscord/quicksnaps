@@ -1,16 +1,40 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a> from <a href="https://github.com/mamedev/mame/commit/40de11e14765a0cae63af5ecbd5c068adee438bf">40de11e14765a0cae63af5ecbd5c068adee438bf</a> - mame-linux-clang-84f9bb97c118b362b97f958bc311c094edca41cd - generated 2026-08-15T16:56:49.758114+00:00</div>
-<div class="commit-message">mc68340: Implement DMA transfers and external interrupt handling (#15896)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e5e82312c2c9b67ea26e257435d3902910e7e944">e5e82312c2c9b67ea26e257435d3902910e7e944</a> from <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a> - mame-linux-clang-e5e82312c2c9b67ea26e257435d3902910e7e944 - generated 2026-08-15T16:57:47.361894+00:00</div>
+<div class="commit-message">util/chd: fix several size and range handling issues (#15893)
 
-* mc68340: Implement DMA transfers and external interrupt handling
+* util/chd: Check all bytes when detecting zero-filled hunks
 
-Convert the DMA module to a device and implement dual-address transfers, external request handshakes and interrupt arbitration. Support configured external autovectors and restrict MBAR accesses to CPU space.
+Check the full hunk byte-by-byte when determining whether it is zero-filled.
 
-* bfm/cobra3: Hook up MC68340 DMA and correct board signals
+The previous code checked the buffer as uint32_t values, which could leave the final 1-3 bytes unchecked when the hunk size was not divisible by four. Checking bytes also avoids requiring the input buffer to be aligned for uint32_t access.
 
-Read multiplexed inputs from the connected byte lane, pass the video controller interrupt at its asserted polarity, and connect the active-high SCSI request to the DMA controller&#x27;s active-low DREQ input.</div></header>
+CHATGPT 6.3 used to help find what to change.
+
+* util/chd: Reject zero hunk and unit sizes
+
+Reject zero hunk and unit sizes before calculating the hunk and unit counts.
+
+This prevents division by zero when opening a malformed CHD.
+
+* util/chd: Validate hunk and unit sizes when creating CHDs
+
+Reject zero hunk and unit sizes before checking the number of units per hunk.
+
+This prevents modulo by zero when creating a CHD with invalid size parameters.
+
+* util/chd: Handle zero-length byte reads and writes
+
+Treat zero-length byte reads and writes as no-ops.
+
+This avoids unsigned underflow when calculating the last affected hunk from offset + bytes - 1.
+
+* util/chd: Preserve 64-bit parent unit references
+
+Keep parent unit references in 64-bit values when compressing V5 maps.
+
+Also perform parent unit index calculations in 64-bit arithmetic to avoid truncation or overflow for references beyond the 32-bit range.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/c3_ppays/">c3_ppays</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a></div>
