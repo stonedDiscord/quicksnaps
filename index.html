@@ -1,17 +1,29 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/40de11e14765a0cae63af5ecbd5c068adee438bf">40de11e14765a0cae63af5ecbd5c068adee438bf</a> from <a href="https://github.com/mamedev/mame/commit/ad09989a8c36b6fc6c4236709f066fe0fd31a47e">ad09989a8c36b6fc6c4236709f066fe0fd31a47e</a> - mame-linux-clang-40de11e14765a0cae63af5ecbd5c068adee438bf - generated 2026-08-15T16:55:05.244410+00:00</div>
-<div class="commit-message">M68HC05: Add SPI and SCI Registers (#15897)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a> from <a href="https://github.com/mamedev/mame/commit/40de11e14765a0cae63af5ecbd5c068adee438bf">40de11e14765a0cae63af5ecbd5c068adee438bf</a> - mame-linux-clang-84f9bb97c118b362b97f958bc311c094edca41cd - generated 2026-08-15T16:56:49.758114+00:00</div>
+<div class="commit-message">mc68340: Implement DMA transfers and external interrupt handling (#15896)
 
-* M68HC05: Remaining Registers Implemented
+* mc68340: Implement DMA transfers and external interrupt handling
 
-Adds remaining SPI and SCI registers.
+Convert the DMA module to a device and implement dual-address transfers, external request handshakes and interrupt arbitration. Support configured external autovectors and restrict MBAR accesses to CPU space.
 
-* M86HC05: Fix ROM size
+* bfm/cobra3: Hook up MC68340 DMA and correct board signals
 
-The mc68hc05c8a datasheet notices that these two are short by 4 bytes. This corrects the error.</div></header>
+Read multiplexed inputs from the connected byte lane, pass the video controller interrupt at its asserted polarity, and connect the active-high SCSI request to the DMA controller&#x27;s active-low DREQ input.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/c3_ppays/">c3_ppays</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a></div>
+<div class="comparison">
+<figure><a href="machines/c3_ppays/previous/after.png"><img loading="lazy" src="machines/c3_ppays/previous/after.png" alt="c3_ppays previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/c3_ppays/current/after.png"><img loading="lazy" src="machines/c3_ppays/current/after.png" alt="c3_ppays current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/c3_ppays/">c3_ppays</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/84f9bb97c118b362b97f958bc311c094edca41cd">84f9bb97c118b362b97f958bc311c094edca41cd</a></div>
+<div class="comparison">
+<figure><a href="machines/c3_ppays/previous/before.png"><img loading="lazy" src="machines/c3_ppays/previous/before.png" alt="c3_ppays previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/c3_ppays/current/before.png"><img loading="lazy" src="machines/c3_ppays/current/before.png" alt="c3_ppays current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/victlapa/">victlapa</a></h3>
 <div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
 <div class="comparison">
@@ -599,18 +611,6 @@ The mc68hc05c8a datasheet notices that these two are short by 4 bytes. This corr
 <div class="comparison">
 <figure><a href="machines/skydest/previous/after.png"><img loading="lazy" src="machines/skydest/previous/after.png" alt="skydest previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/skydest/current/after.png"><img loading="lazy" src="machines/skydest/current/after.png" alt="skydest current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/skydest/">skydest</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/a30e4c0d7a187fb497e2e346203c276d23a2432e">a30e4c0d7a187fb497e2e346203c276d23a2432e</a></div>
-<div class="comparison">
-<figure><a href="machines/skydest/previous/before.png"><img loading="lazy" src="machines/skydest/previous/before.png" alt="skydest previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/skydest/current/before.png"><img loading="lazy" src="machines/skydest/current/before.png" alt="skydest current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/kingdrby/">kingdrby</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/a30e4c0d7a187fb497e2e346203c276d23a2432e">a30e4c0d7a187fb497e2e346203c276d23a2432e</a></div>
-<div class="comparison">
-<figure><a href="machines/kingdrby/previous/after.png"><img loading="lazy" src="machines/kingdrby/previous/after.png" alt="kingdrby previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/kingdrby/current/after.png"><img loading="lazy" src="machines/kingdrby/current/after.png" alt="kingdrby current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
