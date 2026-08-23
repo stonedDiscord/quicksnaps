@@ -1,47 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/69fb86bd2508e86ef516d2d27d1238d5ab7fdfce">69fb86bd2508e86ef516d2d27d1238d5ab7fdfce</a> from <a href="https://github.com/mamedev/mame/commit/fbda0e727c853b7af6f4d2c3ebf297b807787900">fbda0e727c853b7af6f4d2c3ebf297b807787900</a> - mame-linux-clang-69fb86bd2508e86ef516d2d27d1238d5ab7fdfce - generated 2026-08-23T12:00:35.404981+00:00</div>
-<div class="commit-message">cpu/sh/sh7709s.cpp : Fix up background cycle accounting and bank conflict checks (#15685)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/0ca1ca86205339638566213ea7ab7f8ef3d909bb">0ca1ca86205339638566213ea7ab7f8ef3d909bb</a> from <a href="https://github.com/mamedev/mame/commit/69fb86bd2508e86ef516d2d27d1238d5ab7fdfce">69fb86bd2508e86ef516d2d27d1238d5ab7fdfce</a> - mame-linux-clang-0ca1ca86205339638566213ea7ab7f8ef3d909bb - generated 2026-08-23T12:01:35.486746+00:00</div>
+<div class="commit-message">bus/msx/cart/moonsound.cpp: Allow variable RAM size options, Updates: (#15929)
 
-* cpu/sh/sh7709s.cpp: Fix burst write penalty
-
-* cpu/sh/sh7709s.cpp : Fix precharge conflict timing to use banks
-
-* cpu/sh/sh7709s.cpp: Adjust background cycle accounting
-
-* cpu/sh/sh7709s.cpp: Fix address used for writeback accounting
-
-* cpu/sh/sh7709s.cpp: Timing fixes + icache sampling changes
-
-* src/mame/cave/cv1k.cpp: Add nandflash r/w + sound write timing
-src/devices/machine/nandflash.{cpp,h}: Add nandflash ready delay timing
-
-* src/devices/cpu/sh/sh7709s.cpp: Add full icache tracking compile option
-Add a couple of extra comments about slowdown oddities that show up in
-some titles
-
-* src/devices/cpu/sh/sh7709s.cpp: Add critical word first handling
-
-* src/devices/cpu/sh/sh7709s.cpp: Fixup background cycle accounting
-
-* src/devices/cpu/sh/sh7709s.cpp: Fixup some tpc/writeback accounting
-Don&#x27;t need to use m_precharge_remaining_cycles as it&#x27;s a fixed cost we
-can calculate on the background elapsed cycles
-
-* src/devices/cpu/sh/sh7709s.cpp: Fix critical word first handling
-
-* src/mame/cave/cv1k.cpp: Also track penalties for eeprom access
-
-* src/mame/cave/cv1k.cpp: Use the game uncached area access addresses
-
-* src/devices/cpu/sh/sh7709s.cpp: Fix AMX decode table for sdram bank
-
-* src/mame/cave/cv1k_v.cpp: Add blitter r/w access penalties
-
-* cpu/sh/sh7709s.cpp: Move WCR1 to background accounting
-
-* src/devices/cpu/sh/sh7709s.cpp: Model remaining cpu cycle waits</div></header>
+- Fix side effects for debugger reads
+- Add notes</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/pinkswtssc/">pinkswtssc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/69fb86bd2508e86ef516d2d27d1238d5ab7fdfce">69fb86bd2508e86ef516d2d27d1238d5ab7fdfce</a></div>
