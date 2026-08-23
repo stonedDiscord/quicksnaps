@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "1b1ec018340ec9d11f5b50ab1c45f5dc8f706d57",
+    "artifact": "mame-linux-clang-1b1ec018340ec9d11f5b50ab1c45f5dc8f706d57",
+    "variant": "current",
+    "input_fingerprint": "00ff4a30d265e81db8e2eb88a61b06623c9e0c23cfff95517944fec742fef596"
+  },
+  "result": {
+    "name": "kn6000",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "1b1ec018340ec9d11f5b50ab1c45f5dc8f706d57",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-23T16:50:05.621461+00:00",
+        "duration_seconds": 0.612,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "1b1ec018340ec9d11f5b50ab1c45f5dc8f706d57",
+        "artifact": "mame-linux-clang-1b1ec018340ec9d11f5b50ab1c45f5dc8f706d57"
+      }
+    }
+  }
+}
