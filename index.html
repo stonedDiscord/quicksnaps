@@ -1,19 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/1becd11527d9eac5f5fd1d61b04d86b79319cebc">1becd11527d9eac5f5fd1d61b04d86b79319cebc</a> from <a href="https://github.com/mamedev/mame/commit/98bbf50d86b564cf5ff24cff831e042c5a525cd8">98bbf50d86b564cf5ff24cff831e042c5a525cd8</a> - mame-linux-clang-1becd11527d9eac5f5fd1d61b04d86b79319cebc - generated 2026-08-23T10:50:54.058787+00:00</div>
-<div class="commit-message">bus/wangpc: fix default card responses on the read buses (#15916)
-
-The bus ANDs the responses of all installed cards, so a card that does
-not decode an address must leave the data lines released.  The default
-implementations returned 0 instead, which meant that any card without a
-memory or I/O read handler forced every read on that bus to zero.
-
-With a Text/Image/Graphics controller installed (it has no memory
-presence of its own) this made the extended memory board test in the
-power-up diagnostic fail, leaving the machine with 128K of RAM.
-
-Co-authored-by: Claude Opus 5 &lt;noreply@anthropic.com&gt;</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/7026ff1e72324c3d85c160005e744138d5b23de2">7026ff1e72324c3d85c160005e744138d5b23de2</a> from <a href="https://github.com/mamedev/mame/commit/1becd11527d9eac5f5fd1d61b04d86b79319cebc">1becd11527d9eac5f5fd1d61b04d86b79319cebc</a> - mame-linux-clang-7026ff1e72324c3d85c160005e744138d5b23de2 - generated 2026-08-23T10:52:30.442135+00:00</div>
+<div class="commit-message">gen_fifo: FIFO is uppercase,
+emupal: capitalize device name</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/quizardff/">quizardff</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/a3ee360dccc8986c5766b898bf5f5b13562a0ed7">a3ee360dccc8986c5766b898bf5f5b13562a0ed7</a></div>
