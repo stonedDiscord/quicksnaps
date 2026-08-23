@@ -1,15 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7">2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7</a> from <a href="https://github.com/mamedev/mame/commit/aa2b12e56f15bebf1ced01a6b4c9ccfbf5089c6b">aa2b12e56f15bebf1ced01a6b4c9ccfbf5089c6b</a> - mame-linux-clang-2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7 - generated 2026-08-23T09:55:21.718388+00:00</div>
-<div class="commit-message">sound/cdp1869: Improve video accuracy. [Curt Coder]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/420968ca7a722418b27cbcaf5a332f83bde4a9be">420968ca7a722418b27cbcaf5a332f83bde4a9be</a> from <a href="https://github.com/mamedev/mame/commit/2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7">2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7</a> - mame-linux-clang-420968ca7a722418b27cbcaf5a332f83bde4a9be - generated 2026-08-23T09:57:01.843040+00:00</div>
+<div class="commit-message">machine/swim3.cpp: MFM write support and GCR read/write support added. [R. Belmont]
+* Tested reading, writing, and formatting for both 800K GCR and 1.44M MFM disks.
 
-- Proper tone-on-tone palette
-- Partial updates on OUT 3
-- Wrap the refresh address counter at the maximum page memory size
-- Ignore CPU accesses to page and character memory during display time
+apple/dbdma.cpp: Allow unaligned transfers, which the ATA driver will require. [R. Belmont]
 
-AI disclosure: assisted by Claude Opus 5, validated side-by-side with a real tmc600.</div></header>
+apple/heathrow.cpp: Hooked the SWIM3 up properly. [R. Belmont]
+
+apple/macpdm.cpp: Hooked up write DMA for the SWIM3. [R. Belmont]
+
+AI disclosure: Claude Opus 5 assisted with planning and interpreting the finer points of OG&#x27;s code.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/comx35p/">comx35p</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7">2ac5c5f9c1035a7dafbb1bf097a903d00de0ced7</a></div>
