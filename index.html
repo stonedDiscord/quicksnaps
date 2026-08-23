@@ -1,14 +1,78 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e0deaf3898b154c1060fc8c3b33b94e1b063ded1">e0deaf3898b154c1060fc8c3b33b94e1b063ded1</a> from <a href="https://github.com/mamedev/mame/commit/cc6ee26353d36ed2342548d78da24f8e84e22adf">cc6ee26353d36ed2342548d78da24f8e84e22adf</a> - mame-linux-clang-e0deaf3898b154c1060fc8c3b33b94e1b063ded1 - generated 2026-08-23T10:11:32.786265+00:00</div>
-<div class="commit-message">cpu/z180: Fix some bugs found when bringing up the Apple II RamFAST SCSI card. [R. Belmont]
-- When starting a timer, use its reload value, not zero
-- Fix DMA completion IRQs being silently dropped when IFF is clear
-- Check the right bit for the DMA1 interrupt&#x27;s edge vs level trigger setting
-- Internal IRQs could be taken while another interrupt was in flight and completely hose the machine state.  External IRQs were already properly gated
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/c690a9ed43fa84ffc05eb653d133cf063678e998">c690a9ed43fa84ffc05eb653d133cf063678e998</a> from <a href="https://github.com/mamedev/mame/commit/e0deaf3898b154c1060fc8c3b33b94e1b063ded1">e0deaf3898b154c1060fc8c3b33b94e1b063ded1</a> - mame-linux-clang-c690a9ed43fa84ffc05eb653d133cf063678e998 - generated 2026-08-23T10:12:27.726020+00:00</div>
+<div class="commit-message">imagedev/floppy: batch sequential flux writes (#15425)
 
-AI disclosure: debugging was assisted by Claude Opus 5</div></header>
+* imagedev/floppy: batch sequential flux writes
+
+Some floppy controllers commit generated write flux in very small spans.
+This is especially visible while formatting, where a controller can emit a
+full track byte-by-byte and each byte-level commit previously edited the
+persistent track vector immediately. That turns one logical sequential track
+write into thousands of repeated track scans and insertions, making format
+operations orders of magnitude slower than the emulated disk timing.
+
+Keep the existing write path semantics by delaying only contiguous writes to
+the same cylinder, side and subcylinder. The accumulated span is flushed
+before any operation that can observe or depend on committed media state,
+including cache fills, write-splice updates and image commit. Non-contiguous
+writes or writes to another track also flush first, so existing callers that
+issue isolated writes continue to take the same path with no behavioral
+change beyond avoiding redundant intermediate vector edits.
+
+The pending span stores the original start/end positions and concatenated
+flux-change positions, then reuses the existing wspan_remove_damaged and
+wspan_write helpers when flushed. This preserves the existing damaged-region
+handling and track modification logic while making sequential write streams
+behave like the single larger write they represent.
+
+* imagedev/floppy: replace write_flux with streaming write interface
+
+Replace the batched write_flux(start, end, count, transitions) interface with
+an event-driven streaming interface: write_start, write_flux_change, write_end
+and write_flush.  This makes the floppy device own the write-gate lifecycle
+and the transition buffer rather than requiring every controller to maintain
+its own.
+
+write_start activates the write gate and snapshots the current track identity.
+write_flux_change appends a single transition timestamp to an internal buffer.
+write_end deactivates the write gate and flushes buffered transitions to the
+track.  write_flush commits transitions earlier than a given time without
+ending the write, retaining later transitions for a subsequent flush or end.
+
+All controllers now call write_flux_change directly as transitions are
+generated rather than maintaining local buffers.  Controllers that use
+speculative execution with checkpoint/rollback (wd_fdc, 64h156, c2040fdc,
+paulafdc) previously needed local 32-entry write buffers to avoid duplicating
+transitions after rollback.  The floppy device now handles this transparently:
+write_flux_change detects out-of-sequence timestamps and discards stale
+entries, so replayed transitions replace their predecessors cleanly.
+
+The hp9895 controller supports simultaneous read and write for write-with-
+verify loopback.  It previously read back transitions from the fdc_pll write
+buffer.  Since that buffer no longer exists, hp9895 now maintains its own
+loopback buffer that captures transition times as they are generated and
+serves them back through get_next_transition when the write gate is active.
+
+Add a floppy parameter to fdc_pll_t::start_writing so that write_start is
+called on the floppy device at the correct point in the PLL lifecycle.  All
+controllers that use fdc_pll_t (wd_fdc, swim3, mc6843, upd765, i8271,
+hdc92x4, hp9885, isbc202, c8050fdc, victor9k_fdc, hp9895) now pass their
+floppy pointer through start_writing.  The same change applies to the wd_fdc
+digital PLL and the paulafdc PLL.
+
+The old fdc_pll_t::write_next_bit had a lazy-init path that implicitly
+started writing on the first bit if start_writing had not been called.  Three
+controllers (upd765, i8271, hdc92x4) relied on this for sector writes -- only
+their format-track paths called start_writing explicitly.  That lazy init is
+removed; the sector-write paths now call start_writing at the point where they
+transition from reading gap data to writing sector data.
+
+The batching performance benefit from the earlier write_flux optimization is
+preserved: transitions accumulate in the floppy device and are written to the
+track representation only at flush points, avoiding repeated track vector
+edits during sequential writes such as formatting.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
