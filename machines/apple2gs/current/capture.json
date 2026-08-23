@@ -1,29 +1,29 @@
 {
   "request": {
     "checkpoint_version": 3,
-    "revision": "cc6ee26353d36ed2342548d78da24f8e84e22adf",
-    "artifact": "mame-linux-clang-cc6ee26353d36ed2342548d78da24f8e84e22adf",
+    "revision": "e3898ce38f6a06bdf681858b76fedcd885afc32e",
+    "artifact": "mame-linux-clang-e3898ce38f6a06bdf681858b76fedcd885afc32e",
     "variant": "current",
     "input_fingerprint": "63570be3e3e5e19be22f4c5531ba532005158d55d04d86c69ab3e139f8c79f91"
   },
   "result": {
     "name": "apple2gs",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "cc6ee26353d36ed2342548d78da24f8e84e22adf",
+    "revision": "e3898ce38f6a06bdf681858b76fedcd885afc32e",
     "captures": {
       "current": {
-        "status": "passed",
-        "captured_at": "2026-08-23T10:10:20.627908+00:00",
-        "duration_seconds": 2.717,
+        "status": "failed",
+        "captured_at": "2026-08-23T12:49:54.784874+00:00",
+        "duration_seconds": 0.622,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "cc6ee26353d36ed2342548d78da24f8e84e22adf",
-        "artifact": "mame-linux-clang-cc6ee26353d36ed2342548d78da24f8e84e22adf"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "e3898ce38f6a06bdf681858b76fedcd885afc32e",
+        "artifact": "mame-linux-clang-e3898ce38f6a06bdf681858b76fedcd885afc32e"
       }
     }
   }
