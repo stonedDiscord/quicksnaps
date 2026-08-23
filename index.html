@@ -1,13 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/cfd4da01d3c80c5e1b44c593c646cc4a40a4d735">cfd4da01d3c80c5e1b44c593c646cc4a40a4d735</a> from <a href="https://github.com/mamedev/mame/commit/5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6">5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6</a> - mame-linux-clang-cfd4da01d3c80c5e1b44c593c646cc4a40a4d735 - generated 2026-08-23T12:39:59.171978+00:00</div>
-<div class="commit-message">cpu/arm7: Bugfixes and updates [R. Belmont]
-- Fixed multiple issues with ARMv3 parts that dynamically switch between 26 and 32 bit modes
-- Add ARM610 model for RISC PC 600
-- Allow ARM926 to execute code from the instruction TCM
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/daf70c560d8fe48b2ae800831b3d9079964530a7">daf70c560d8fe48b2ae800831b3d9079964530a7</a> from <a href="https://github.com/mamedev/mame/commit/cfd4da01d3c80c5e1b44c593c646cc4a40a4d735">cfd4da01d3c80c5e1b44c593c646cc4a40a4d735</a> - mame-linux-clang-daf70c560d8fe48b2ae800831b3d9079964530a7 - generated 2026-08-23T12:43:10.043589+00:00</div>
+<div class="commit-message">amiga: Implement CDTV subcode support
 
-AI disclosure: debugging assisted by Claude Opus 5</div></header>
+- machine/6525tpi: Correct port C input and interrupt latch handling
+- machine/cr511b: Add raw P-W subcode output
+- amiga: Connect CDTV and A570 subcode signals
+- amiga: Hook up 6500/1 remote control input converter. This allows the
+  front-panel buttons for Play/Stop/Prev/Next to work
+- amiga: Remove floppy from default for the CDTV
+
+CD+G playback works now.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/a7000p/">a7000p</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/cfd4da01d3c80c5e1b44c593c646cc4a40a4d735">cfd4da01d3c80c5e1b44c593c646cc4a40a4d735</a></div>
