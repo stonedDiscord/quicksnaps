@@ -1,12 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a> from <a href="https://github.com/mamedev/mame/commit/ee54357fafeb2c4abc8fc47391adf73deacdc396">ee54357fafeb2c4abc8fc47391adf73deacdc396</a> - mame-linux-clang-aab5dcadb6025303ba019d0189344a5df536a623 - generated 2026-08-23T11:17:17.510293+00:00</div>
-<div class="commit-message">PSX SPU: use ram_device, support 512k/1mb/2m/4m SPU RAM (sample code at https://github.com/smf-/nolibgs_hello_worlds_spuram), fix register/dma endian issues, implement master volume, implement voice1&amp;3 decoded data writing, write CD decoded data even if no CD/XA playing, use a timer to trigger SPU IRQ at the correct time, implement first/second half decoded data flag in status register, extend SPU register space to support channel volume reading, fix chon register reading, fix FM chaining, remove unused non interpolating code as the SPU always interpolates, update SPU repeat address register when hitting a loop start (sound generation needs an overhaul to make this work properly). [smf]
-
-PSX CPU: move ram_device into drivers, support all ram window sizes, mirror 0x1fc801xxx registers at 0x9fc801xxx &amp; 0xbfc801xxx [smf]
-
-PSX GPU: use ram_device, add support for setting the PAL &amp; NTSC CRTC clock &amp; set the device clock to half the system clock. [smf]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/17e1e9419edc5c483bc6a4a387c7e1d7b7341e32">17e1e9419edc5c483bc6a4a387c7e1d7b7341e32</a> from <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a> - mame-linux-clang-17e1e9419edc5c483bc6a4a387c7e1d7b7341e32 - generated 2026-08-23T11:24:40.169783+00:00</div>
+<div class="commit-message">sat_console.cpp: pull high unknown identifier read by -bios 1
+- fix: #15891</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/tondemo/">tondemo</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a></div>
