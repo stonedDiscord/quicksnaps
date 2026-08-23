@@ -1,13 +1,27 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/7213cf9a390990076eeef3525afe2b1f416e637e">7213cf9a390990076eeef3525afe2b1f416e637e</a> from <a href="https://github.com/mamedev/mame/commit/e3dc8abfde7c3a401629ce782b2ff72202b838b1">e3dc8abfde7c3a401629ce782b2ff72202b838b1</a> - mame-linux-clang-7213cf9a390990076eeef3525afe2b1f416e637e - generated 2026-08-23T10:41:35.201461+00:00</div>
-<div class="commit-message">chromatics/cgc7900: Implement interrupt acknowledge. [Curt Coder]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e0190f12d510a467308dc2953c53b8069e72c19b">e0190f12d510a467308dc2953c53b8069e72c19b</a> from <a href="https://github.com/mamedev/mame/commit/7213cf9a390990076eeef3525afe2b1f416e637e">7213cf9a390990076eeef3525afe2b1f416e637e</a> - mame-linux-clang-e0190f12d510a467308dc2953c53b8069e72c19b - generated 2026-08-23T10:43:18.862942+00:00</div>
+<div class="commit-message">trs/tandy2k: Generate video with the CRT9007. [Curt Coder]
 
-Fixes keyboard input in cgc7900.
+crt9007: Implement address mode 2 contiguous row-table addressing.
 
-AI disclaimer: assisted by Claude Opus 5</div></header>
+crt9021: Latch LD/SH state so rising edges reach the display callback.
+
+AI disclosure: assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/tandy2k/">tandy2k</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/e0190f12d510a467308dc2953c53b8069e72c19b">e0190f12d510a467308dc2953c53b8069e72c19b</a></div>
+<div class="comparison">
+<figure><a href="machines/tandy2k/previous/before.png"><img loading="lazy" src="machines/tandy2k/previous/before.png" alt="tandy2k previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/tandy2k/current/before.png"><img loading="lazy" src="machines/tandy2k/current/before.png" alt="tandy2k current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/tandy2khd/">tandy2khd</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/e0190f12d510a467308dc2953c53b8069e72c19b">e0190f12d510a467308dc2953c53b8069e72c19b</a></div>
+<div class="comparison">
+<figure><a href="machines/tandy2khd/previous/before.png"><img loading="lazy" src="machines/tandy2khd/previous/before.png" alt="tandy2khd previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/tandy2khd/current/before.png"><img loading="lazy" src="machines/tandy2khd/current/before.png" alt="tandy2khd current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/quizardff/">quizardff</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/a3ee360dccc8986c5766b898bf5f5b13562a0ed7">a3ee360dccc8986c5766b898bf5f5b13562a0ed7</a></div>
 <div class="comparison">
@@ -595,18 +609,6 @@ AI disclaimer: assisted by Claude Opus 5</div></header>
 <div class="comparison">
 <figure><a href="machines/alpinerc/previous/before.png"><img loading="lazy" src="machines/alpinerc/previous/before.png" alt="alpinerc previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/alpinerc/current/before.png"><img loading="lazy" src="machines/alpinerc/current/before.png" alt="alpinerc current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/cybrcycc/">cybrcycc</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/cybrcycc/previous/after.png"><img loading="lazy" src="machines/cybrcycc/previous/after.png" alt="cybrcycc previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/cybrcycc/current/after.png"><img loading="lazy" src="machines/cybrcycc/current/after.png" alt="cybrcycc current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/cybrcycc/">cybrcycc</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/cybrcycc/previous/before.png"><img loading="lazy" src="machines/cybrcycc/previous/before.png" alt="cybrcycc previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/cybrcycc/current/before.png"><img loading="lazy" src="machines/cybrcycc/current/before.png" alt="cybrcycc current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
