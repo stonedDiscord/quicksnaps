@@ -1,8 +1,23 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/856885eb1624a03262f2b5e803e78ce3078c6013">856885eb1624a03262f2b5e803e78ce3078c6013</a> from <a href="https://github.com/mamedev/mame/commit/f99c618eae4a4a8dfcf75fdc27b98b6b1e851d2d">f99c618eae4a4a8dfcf75fdc27b98b6b1e851d2d</a> - mame-linux-clang-856885eb1624a03262f2b5e803e78ce3078c6013 - generated 2026-08-23T10:04:02.248654+00:00</div>
-<div class="commit-message">ddr/mc8030: Fix keyboard. [Curt Coder]</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/f6dfb51ef61d4085cb0f5438544f23a737403a23">f6dfb51ef61d4085cb0f5438544f23a737403a23</a> from <a href="https://github.com/mamedev/mame/commit/856885eb1624a03262f2b5e803e78ce3078c6013">856885eb1624a03262f2b5e803e78ce3078c6013</a> - mame-linux-clang-f6dfb51ef61d4085cb0f5438544f23a737403a23 - generated 2026-08-23T10:05:58.321324+00:00</div>
+<div class="commit-message">z80sio: Fix interrupt, DMA, and status handling. [Curt Coder]
+
+- implement 8085 three-cycle CALL interrupt acknowledge
+- use channel A WR2 for interrupt mode/vector selection
+- fix special receive condition vectoring
+- implement WR2A DMA request modes and interrupt suppression
+- correct RR0 /RTSB reporting on channel B
+- latch external/status inputs until reset and retrigger changed conditions
+- suppress reset-time modem control edges
+- fix transmitter interrupt/DMA reset inhibition
+- correct CRC preset and sync/hunt state handling
+- tighten channel reset and first-character receive interrupt behavior
+
+Fixes MikroMikko 1 and 2 MPSC tests. Checked drivers that use z80sio for keyboard input are still working.
+
+AI disclosure: assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
