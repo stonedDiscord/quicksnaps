@@ -1,14 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e0b94b77a594025ff9d8914c628894afc3281193">e0b94b77a594025ff9d8914c628894afc3281193</a> from <a href="https://github.com/mamedev/mame/commit/c690a9ed43fa84ffc05eb653d133cf063678e998">c690a9ed43fa84ffc05eb653d133cf063678e998</a> - mame-linux-clang-e0b94b77a594025ff9d8914c628894afc3281193 - generated 2026-08-23T10:13:22.537250+00:00</div>
-<div class="commit-message">chd: Handle short writes (#15902)
-
-Check the number of bytes written by CHD file write operations and report an I/O error when a write completes without writing all requested data
-
-Also, prevent the alignment padding loop from getting stuck if a write succeeds without making any progress
-
-Used ChatGPT (GPT-5.6 Sol) to review the code, identify the short-write handling issues, and help prepare the fix.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/3314e1bf934826724f6a051d13f133b6bf5520bf">3314e1bf934826724f6a051d13f133b6bf5520bf</a> from <a href="https://github.com/mamedev/mame/commit/e0b94b77a594025ff9d8914c628894afc3281193">e0b94b77a594025ff9d8914c628894afc3281193</a> - mame-linux-clang-3314e1bf934826724f6a051d13f133b6bf5520bf - generated 2026-08-23T10:14:18.461751+00:00</div>
+<div class="commit-message">votrax: Fix a sign error that can make the SC-01 F2 noise-injection filter unstable for valid internal ROM states. (#15906)</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
