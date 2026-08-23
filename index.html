@@ -1,17 +1,37 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/9bed46bc06912e30aa3d042b6e90d3552b804486">9bed46bc06912e30aa3d042b6e90d3552b804486</a> from <a href="https://github.com/mamedev/mame/commit/9ceb93161b78f5200e7a2e7591798a4c08cc22fa">9ceb93161b78f5200e7a2e7591798a4c08cc22fa</a> - mame-linux-clang-9bed46bc06912e30aa3d042b6e90d3552b804486 - generated 2026-08-23T11:44:10.541306+00:00</div>
-<div class="commit-message">scc68070: Fix UART Status (#15933)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a> from <a href="https://github.com/mamedev/mame/commit/9bed46bc06912e30aa3d042b6e90d3552b804486">9bed46bc06912e30aa3d042b6e90d3552b804486</a> - mame-linux-clang-44e18736b274548077dd90bce9d9af12a99eb4c8 - generated 2026-08-23T11:45:34.230550+00:00</div>
+<div class="commit-message">atari/pofo: Modernize driver. [Curt Coder]
 
-This change fixes several issues in the UART for this device. This has the effect of resolving some errors in the CD-i bios tests.
+Split the ASIC from the driver, implemented LCD contrast and soft power off, fixed the system tick and interrupts, and refactored the expansion buses to use memory taps.
 
-Previously, UART would flag as Ready on every callback. Now it won&#x27;t identify as ready while a transmission is currently queued.
-
-It would also preserve the Break flag on reset. This change correctly resets the Break flag.
-
-Finally, this unsets Ready when transmitting a write.</div></header>
+AI disclosure: assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/pofo/">pofo</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a></div>
+<div class="comparison">
+<figure><a href="machines/pofo/previous/after.png"><img loading="lazy" src="machines/pofo/previous/after.png" alt="pofo previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pofo/current/after.png"><img loading="lazy" src="machines/pofo/current/after.png" alt="pofo current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pofo/">pofo</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a></div>
+<div class="comparison">
+<figure><a href="machines/pofo/previous/before.png"><img loading="lazy" src="machines/pofo/previous/before.png" alt="pofo previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pofo/current/before.png"><img loading="lazy" src="machines/pofo/current/before.png" alt="pofo current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pofo2/">pofo2</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a></div>
+<div class="comparison">
+<figure><a href="machines/pofo2/previous/after.png"><img loading="lazy" src="machines/pofo2/previous/after.png" alt="pofo2 previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pofo2/current/after.png"><img loading="lazy" src="machines/pofo2/current/after.png" alt="pofo2 current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/pofo2/">pofo2</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a></div>
+<div class="comparison">
+<figure><a href="machines/pofo2/previous/before.png"><img loading="lazy" src="machines/pofo2/previous/before.png" alt="pofo2 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/pofo2/current/before.png"><img loading="lazy" src="machines/pofo2/current/before.png" alt="pofo2 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/tondemo/">tondemo</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a></div>
 <div class="comparison">
@@ -587,30 +607,6 @@ Finally, this unsets Ready when transmitting a write.</div></header>
 <div class="comparison">
 <figure><a href="machines/ridgerac/previous/before.png"><img loading="lazy" src="machines/ridgerac/previous/before.png" alt="ridgerac previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/ridgerac/current/before.png"><img loading="lazy" src="machines/ridgerac/current/before.png" alt="ridgerac current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/raveracej/">raveracej</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/raveracej/previous/after.png"><img loading="lazy" src="machines/raveracej/previous/after.png" alt="raveracej previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/raveracej/current/after.png"><img loading="lazy" src="machines/raveracej/current/after.png" alt="raveracej current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/raveracej/">raveracej</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/raveracej/previous/before.png"><img loading="lazy" src="machines/raveracej/previous/before.png" alt="raveracej previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/raveracej/current/before.png"><img loading="lazy" src="machines/raveracej/current/before.png" alt="raveracej current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/raveraceja/">raveraceja</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/raveraceja/previous/after.png"><img loading="lazy" src="machines/raveraceja/previous/after.png" alt="raveraceja previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/raveraceja/current/after.png"><img loading="lazy" src="machines/raveraceja/current/after.png" alt="raveraceja current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/raveraceja/">raveraceja</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/raveraceja/previous/before.png"><img loading="lazy" src="machines/raveraceja/previous/before.png" alt="raveraceja previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/raveraceja/current/before.png"><img loading="lazy" src="machines/raveraceja/current/before.png" alt="raveraceja current before input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
