@@ -1,19 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/25ae98b69b2ed4f4cd3015c65d4b48a635525741">25ae98b69b2ed4f4cd3015c65d4b48a635525741</a> from <a href="https://github.com/mamedev/mame/commit/300e479b0377ca37a4fad58200d0ad53414b4e10">300e479b0377ca37a4fad58200d0ad53414b4e10</a> - mame-linux-clang-25ae98b69b2ed4f4cd3015c65d4b48a635525741 - generated 2026-08-23T11:56:53.881790+00:00</div>
-<div class="commit-message">osd/modules/debugger/debuggdbstub.cpp: gdbstub socket lifecycle fixes (#15934)
-
-# Opening the listening socket at the first stop threw the fatal error
-from inside the instruction hook, crashing MAME with a segfault when
-the port was already taken.  The socket is now bound in init_debugger
-and the fatal error is deferred to a reset notifier, which fires
-inside running_machine::run&#x27;s exception handler and exits cleanly.
-
-# On detach the connection is closed once the reply has been flushed,
-so the port is free for another listener.
-
-assisted: GLM-5.1</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/fbda0e727c853b7af6f4d2c3ebf297b807787900">fbda0e727c853b7af6f4d2c3ebf297b807787900</a> from <a href="https://github.com/mamedev/mame/commit/25ae98b69b2ed4f4cd3015c65d4b48a635525741">25ae98b69b2ed4f4cd3015c65d4b48a635525741</a> - mame-linux-clang-fbda0e727c853b7af6f4d2c3ebf297b807787900 - generated 2026-08-23T11:57:45.354100+00:00</div>
+<div class="commit-message">New working software items (apple2_flop_misc.xml)
+-------------------------------------------------
+Haunted House (Nosoft-Ware) [AJR, Internet Archive]</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/slotoujia/">slotoujia</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/1ff7d66e66ac10ad0541af0cab3a47336ade5c47">1ff7d66e66ac10ad0541af0cab3a47336ade5c47</a></div>
