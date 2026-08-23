@@ -1,10 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/cc6ee26353d36ed2342548d78da24f8e84e22adf">cc6ee26353d36ed2342548d78da24f8e84e22adf</a> from <a href="https://github.com/mamedev/mame/commit/5f4a88b1e1811e5e7794357389f68cc01e19ebd3">5f4a88b1e1811e5e7794357389f68cc01e19ebd3</a> - mame-linux-clang-cc6ee26353d36ed2342548d78da24f8e84e22adf - generated 2026-08-23T10:10:36.257107+00:00</div>
-<div class="commit-message">a2bus/a2hsscsi.cpp: Modernized and upgraded to working [R. Belmont]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/e0deaf3898b154c1060fc8c3b33b94e1b063ded1">e0deaf3898b154c1060fc8c3b33b94e1b063ded1</a> from <a href="https://github.com/mamedev/mame/commit/cc6ee26353d36ed2342548d78da24f8e84e22adf">cc6ee26353d36ed2342548d78da24f8e84e22adf</a> - mame-linux-clang-e0deaf3898b154c1060fc8c3b33b94e1b063ded1 - generated 2026-08-23T10:11:32.786265+00:00</div>
+<div class="commit-message">cpu/z180: Fix some bugs found when bringing up the Apple II RamFAST SCSI card. [R. Belmont]
+- When starting a timer, use its reload value, not zero
+- Fix DMA completion IRQs being silently dropped when IFF is clear
+- Check the right bit for the DMA1 interrupt&#x27;s edge vs level trigger setting
+- Internal IRQs could be taken while another interrupt was in flight and completely hose the machine state.  External IRQs were already properly gated
 
-a2bus/a2bus.cpp: Added support for IIgs multi-bank DMA and cycle-interruptable accesses [R. Belmont]</div></header>
+AI disclosure: debugging was assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
