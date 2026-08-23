@@ -1,10 +1,88 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bb260b934be61fb3f6a85d0a7755dd9d34881de6">bb260b934be61fb3f6a85d0a7755dd9d34881de6</a> from <a href="https://github.com/mamedev/mame/commit/894f16844044bd54e7b3c679a308c21e354b6929">894f16844044bd54e7b3c679a308c21e354b6929</a> - mame-linux-clang-bb260b934be61fb3f6a85d0a7755dd9d34881de6 - generated 2026-08-23T10:07:49.497649+00:00</div>
-<div class="commit-message">upd765: Deassert DRQ on terminal count and prevent FIFO handling from reasserting DRQ after the DMA transfer has completed. (#15861)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/5f4a88b1e1811e5e7794357389f68cc01e19ebd3">5f4a88b1e1811e5e7794357389f68cc01e19ebd3</a> from <a href="https://github.com/mamedev/mame/commit/bb260b934be61fb3f6a85d0a7755dd9d34881de6">bb260b934be61fb3f6a85d0a7755dd9d34881de6</a> - mame-linux-clang-5f4a88b1e1811e5e7794357389f68cc01e19ebd3 - generated 2026-08-23T10:09:07.837472+00:00</div>
+<div class="commit-message">nakajies: Complete the emulation and mark working (#15407)
 
-Fixes floppy format in ct486 which enables the FDC37C78 FIFO.</div></header>
+* Initial work, make all the nakajies machines work.
+
+Connect serial device
+Connect parallel device
+Connect PCMCIA
+Get sound working using the beeper device
+Add Home binding to the normal power-on path
+Fix periodic timer
+Fix RAM/ROM mapping which prevented formatting internal memory/cards
+Don&#x27;t force CR2032 battery low signal
+Add settings for 0xA0 status bits
+Map numeric keypad to the virtual one on the keyboard for calculator
+Base all timers on the main crystal
+Mark as working with sound
+
+Extensively tested on T400, testing on other systems was basic, but
+covered the main use-cases and things that previously didn&#x27;t work.
+
+* Make the memory NVRAM
+
+The machine uses battery-back SRAM, so contents are expected to
+survive a restart.
+
+* nakajies: power control cleanups and fixes
+
+Add a Home-key &quot;power button&quot; that ties into the ROM wake/sleep
+paths. When powered off (either via Home or the timeout), display
+&quot;POWERED OFF&quot; and dim the screen.
+
+Pressing Home again will power it on.
+
+Clean up the 0x60 port hack so the IRQ F9 timer correctly counts
+down the power timeout.
+
+Add port 0x61 keyboard scan latch to prevent power off from capturing
+mid-scan. Mame restarting the matrix mid-instruction would prevent
+the keyboard from working.
+
+Also, remove the default F8 binding to IRQ F8. This IRQ disables
+input and enters a tight loop, eventively hanging the machine. It
+can still be bound if someone actually wants to do that though,
+just make sure the footgun is unloaded when handing it to the user.
+
+* nakajies: fix resume keyboard first scan
+
+There&#x27;s a hitten F+J+Space chord that when held during power-on will
+enter a monitor/diagnostic utility. Previously this was almost
+impossible to hit on purpose.
+
+* nakajies: support DreamWriter 200 floppy access
+
+Map the DreamWriter 200 FDC ports explicitly instead of installing the
+controller map wholesale. This lets the driver pass through the normal N82077
+registers while overriding only the DOR, MSR and FIFO behavior that the ROM
+observably depends on.
+
+On reset release, the ROM immediately issues Sense Interrupt Status commands
+and expects reset-complete results. Track those reset-sense requests in the
+driver, report result-ready in MSR while the synthetic result is pending, and
+use the core controller result when available before falling back to the reset
+status values the ROM accepts.
+
+Track command lengths for data-transfer commands so the wrapper can pulse TC
+after the expected read, write or format payload has crossed the FIFO. The ROM
+also rejects Sense Interrupt Status results with the head-select bit set, so
+mask that ST0 bit on the first SIS result byte while leaving other controller
+results untouched.
+
+Configure the N82077AA in PS/2 mode to match the port layout used here. This
+commit does not functionally depend on the preceding floppy image batching
+change; however, formatting performs full-track writes through the generic
+floppy image layer, so without that batching fix it still works but is
+pathologically slow.
+
+* nakajies: address DreamWriter review feedback
+
+Remove the pointless fdc_dor_r trampoline
+Suppress side effects in debugger for fdc_fifo_r()
+Remove synthetic and inaccurate powered off screen</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
