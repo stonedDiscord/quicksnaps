@@ -1,10 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a> from <a href="https://github.com/mamedev/mame/commit/9bed46bc06912e30aa3d042b6e90d3552b804486">9bed46bc06912e30aa3d042b6e90d3552b804486</a> - mame-linux-clang-44e18736b274548077dd90bce9d9af12a99eb4c8 - generated 2026-08-23T11:45:34.230550+00:00</div>
-<div class="commit-message">atari/pofo: Modernize driver. [Curt Coder]
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8b9d724dd082477a87cacf1e2a6d589c78072586">8b9d724dd082477a87cacf1e2a6d589c78072586</a> from <a href="https://github.com/mamedev/mame/commit/44e18736b274548077dd90bce9d9af12a99eb4c8">44e18736b274548077dd90bce9d9af12a99eb4c8</a> - mame-linux-clang-8b9d724dd082477a87cacf1e2a6d589c78072586 - generated 2026-08-23T11:46:30.271628+00:00</div>
+<div class="commit-message">formats/ipf_dsk: Fix crashes and add missing SPS/CAPS decoder features. [Curt Coder]
 
-Split the ASIC from the driver, implemented LCD contrast and soft power off, fixed the system tick and interrupts, and refactored the expansion buses to use memory taps.
+Fixes an out-of-bounds timing_set() write reachable from any type-4 track, wrong per-block timing on short type-3/4 tracks, and a DoS via zero-length tags. Adds support for old CAPS_ENCODER (v1) files - the majority of real Amiga .ipf dumps - unknown-tag tolerance, DMB bit-size mode, noise (type 1) tracks, and geometry/variant detection from actual decoded tracks instead of a hardcoded DSDD. Verified against the SPS Decoder Library v5.21 and the ~5600 .ipf files currently softlisted.
 
 AI disclosure: assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
