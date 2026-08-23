@@ -1,125 +1,125 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a> from <a href="https://github.com/mamedev/mame/commit/420968ca7a722418b27cbcaf5a332f83bde4a9be">420968ca7a722418b27cbcaf5a332f83bde4a9be</a> - mame-linux-clang-6999eee5d06abc96e569fac66965d0e746447f8f - generated 2026-08-23T09:58:30.216973+00:00</div>
-<div class="commit-message">skeleton/dyna_dc4000.cpp: added GFX emulation, inputs, hopper. Games appear to be mostly playable, but need extensive testing. AI disclosure: Claude Opus 5 reverse-engineered the blitter.</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a> from <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a> - mame-linux-clang-4810ca9f110048fc97983bc0e4c218fa13cfe06c - generated 2026-08-23T09:59:58.802164+00:00</div>
+<div class="commit-message">source reorganization: moved all exclusively Dyna drivers into a dyna folder</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
-<h3><a href="machines/cmast92/">cmast92</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/cmast92/previous/after.png"><img loading="lazy" src="machines/cmast92/previous/after.png" alt="cmast92 previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/cmast92/current/after.png"><img loading="lazy" src="machines/cmast92/current/after.png" alt="cmast92 current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/cmast92/">cmast92</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/cmast92/previous/before.png"><img loading="lazy" src="machines/cmast92/previous/before.png" alt="cmast92 previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/cmast92/current/before.png"><img loading="lazy" src="machines/cmast92/current/before.png" alt="cmast92 current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/eldoraddo/">eldoraddo</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/eldoraddo/previous/after.png"><img loading="lazy" src="machines/eldoraddo/previous/after.png" alt="eldoraddo previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoraddo/current/after.png"><img loading="lazy" src="machines/eldoraddo/current/after.png" alt="eldoraddo current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/eldoraddo/">eldoraddo</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/eldoraddo/previous/before.png"><img loading="lazy" src="machines/eldoraddo/previous/before.png" alt="eldoraddo previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoraddo/current/before.png"><img loading="lazy" src="machines/eldoraddo/current/before.png" alt="eldoraddo current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/eldoraddod/">eldoraddod</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/eldoraddod/previous/after.png"><img loading="lazy" src="machines/eldoraddod/previous/after.png" alt="eldoraddod previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoraddod/current/after.png"><img loading="lazy" src="machines/eldoraddod/current/after.png" alt="eldoraddod current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/eldoraddod/">eldoraddod</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/eldoraddod/previous/before.png"><img loading="lazy" src="machines/eldoraddod/previous/before.png" alt="eldoraddod previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoraddod/current/before.png"><img loading="lazy" src="machines/eldoraddod/current/before.png" alt="eldoraddod current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/aladdinb/">aladdinb</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/aladdinb/previous/after.png"><img loading="lazy" src="machines/aladdinb/previous/after.png" alt="aladdinb previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/aladdinb/current/after.png"><img loading="lazy" src="machines/aladdinb/current/after.png" alt="aladdinb current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/aladdinb/">aladdinb</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/aladdinb/previous/before.png"><img loading="lazy" src="machines/aladdinb/previous/before.png" alt="aladdinb previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/aladdinb/current/before.png"><img loading="lazy" src="machines/aladdinb/current/before.png" alt="aladdinb current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/aladdin/">aladdin</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/aladdin/previous/after.png"><img loading="lazy" src="machines/aladdin/previous/after.png" alt="aladdin previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/aladdin/current/after.png"><img loading="lazy" src="machines/aladdin/current/after.png" alt="aladdin current after input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/aladdin/">aladdin</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
-<div class="comparison">
-<figure><a href="machines/aladdin/previous/before.png"><img loading="lazy" src="machines/aladdin/previous/before.png" alt="aladdin previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/aladdin/current/before.png"><img loading="lazy" src="machines/aladdin/current/before.png" alt="aladdin current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/eldoraddoc/previous/after.png"><img loading="lazy" src="machines/eldoraddoc/previous/after.png" alt="eldoraddoc previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/eldoraddoc/current/after.png"><img loading="lazy" src="machines/eldoraddoc/current/after.png" alt="eldoraddoc current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/eldoraddoc/previous/before.png"><img loading="lazy" src="machines/eldoraddoc/previous/before.png" alt="eldoraddoc previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/eldoraddoc/current/before.png"><img loading="lazy" src="machines/eldoraddoc/current/before.png" alt="eldoraddoc current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
-<h3><a href="machines/eldoradd/">eldoradd</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<h3><a href="machines/eldoraddod/">eldoraddod</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
-<figure><a href="machines/eldoradd/previous/after.png"><img loading="lazy" src="machines/eldoradd/previous/after.png" alt="eldoradd previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoradd/current/after.png"><img loading="lazy" src="machines/eldoradd/current/after.png" alt="eldoradd current after input"></a><figcaption>Current</figcaption></figure>
+<figure><a href="machines/eldoraddod/previous/after.png"><img loading="lazy" src="machines/eldoraddod/previous/after.png" alt="eldoraddod previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoraddod/current/after.png"><img loading="lazy" src="machines/eldoraddod/current/after.png" alt="eldoraddod current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
-<h3><a href="machines/eldoradd/">eldoradd</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<h3><a href="machines/eldoraddod/">eldoraddod</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
-<figure><a href="machines/eldoradd/previous/before.png"><img loading="lazy" src="machines/eldoradd/previous/before.png" alt="eldoradd previous before input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/eldoradd/current/before.png"><img loading="lazy" src="machines/eldoradd/current/before.png" alt="eldoradd current before input"></a><figcaption>Current</figcaption></figure>
+<figure><a href="machines/eldoraddod/previous/before.png"><img loading="lazy" src="machines/eldoraddod/previous/before.png" alt="eldoraddod previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoraddod/current/before.png"><img loading="lazy" src="machines/eldoraddod/current/before.png" alt="eldoraddod current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/eldoraddob/">eldoraddob</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/eldoraddob/previous/after.png"><img loading="lazy" src="machines/eldoraddob/previous/after.png" alt="eldoraddob previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/eldoraddob/current/after.png"><img loading="lazy" src="machines/eldoraddob/current/after.png" alt="eldoraddob current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/eldoraddob/">eldoraddob</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/eldoraddob/previous/before.png"><img loading="lazy" src="machines/eldoraddob/previous/before.png" alt="eldoraddob previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/eldoraddob/current/before.png"><img loading="lazy" src="machines/eldoraddob/current/before.png" alt="eldoraddob current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
+<h3><a href="machines/eldoraddo/">eldoraddo</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/eldoraddo/previous/after.png"><img loading="lazy" src="machines/eldoraddo/previous/after.png" alt="eldoraddo previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoraddo/current/after.png"><img loading="lazy" src="machines/eldoraddo/current/after.png" alt="eldoraddo current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/eldoraddo/">eldoraddo</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/eldoraddo/previous/before.png"><img loading="lazy" src="machines/eldoraddo/previous/before.png" alt="eldoraddo previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoraddo/current/before.png"><img loading="lazy" src="machines/eldoraddo/current/before.png" alt="eldoraddo current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/eldoradd/">eldoradd</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/eldoradd/previous/after.png"><img loading="lazy" src="machines/eldoradd/previous/after.png" alt="eldoradd previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoradd/current/after.png"><img loading="lazy" src="machines/eldoradd/current/after.png" alt="eldoradd current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/eldoradd/">eldoradd</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/eldoradd/previous/before.png"><img loading="lazy" src="machines/eldoradd/previous/before.png" alt="eldoradd previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/eldoradd/current/before.png"><img loading="lazy" src="machines/eldoradd/current/before.png" alt="eldoradd current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/cmast92/">cmast92</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/cmast92/previous/after.png"><img loading="lazy" src="machines/cmast92/previous/after.png" alt="cmast92 previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/cmast92/current/after.png"><img loading="lazy" src="machines/cmast92/current/after.png" alt="cmast92 current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/cmast92/">cmast92</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/cmast92/previous/before.png"><img loading="lazy" src="machines/cmast92/previous/before.png" alt="cmast92 previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/cmast92/current/before.png"><img loading="lazy" src="machines/cmast92/current/before.png" alt="cmast92 current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/cmast92a/">cmast92a</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/cmast92a/previous/after.png"><img loading="lazy" src="machines/cmast92a/previous/after.png" alt="cmast92a previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/cmast92a/current/after.png"><img loading="lazy" src="machines/cmast92a/current/after.png" alt="cmast92a current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/cmast92a/">cmast92a</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/cmast92a/previous/before.png"><img loading="lazy" src="machines/cmast92a/previous/before.png" alt="cmast92a previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/cmast92a/current/before.png"><img loading="lazy" src="machines/cmast92a/current/before.png" alt="cmast92a current before input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
+<h3><a href="machines/aladdinb/">aladdinb</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/aladdinb/previous/after.png"><img loading="lazy" src="machines/aladdinb/previous/after.png" alt="aladdinb previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/aladdinb/current/after.png"><img loading="lazy" src="machines/aladdinb/current/after.png" alt="aladdinb current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/aladdinb/">aladdinb</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/aladdinb/previous/before.png"><img loading="lazy" src="machines/aladdinb/previous/before.png" alt="aladdinb previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/aladdinb/current/before.png"><img loading="lazy" src="machines/aladdinb/current/before.png" alt="aladdinb current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/aladdin/">aladdin</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/aladdin/previous/after.png"><img loading="lazy" src="machines/aladdin/previous/after.png" alt="aladdin previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/aladdin/current/after.png"><img loading="lazy" src="machines/aladdin/current/after.png" alt="aladdin current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
+<h3><a href="machines/aladdin/">aladdin</a></h3>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
+<div class="comparison">
+<figure><a href="machines/aladdin/previous/before.png"><img loading="lazy" src="machines/aladdin/previous/before.png" alt="aladdin previous before input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/aladdin/current/before.png"><img loading="lazy" src="machines/aladdin/current/before.png" alt="aladdin current before input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/aladdina/">aladdina</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/aladdina/previous/after.png"><img loading="lazy" src="machines/aladdina/previous/after.png" alt="aladdina previous after input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/aladdina/current/after.png"><img loading="lazy" src="machines/aladdina/current/after.png" alt="aladdina current after input"></a><figcaption>Current</figcaption></figure>
 </div></article><article class="gallery-card">
 <h3><a href="machines/aladdina/">aladdina</a></h3>
-<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/6999eee5d06abc96e569fac66965d0e746447f8f">6999eee5d06abc96e569fac66965d0e746447f8f</a></div>
+<div class="reason">Before input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
 <div class="comparison">
 <figure><a href="machines/aladdina/previous/before.png"><img loading="lazy" src="machines/aladdina/previous/before.png" alt="aladdina previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/aladdina/current/before.png"><img loading="lazy" src="machines/aladdina/current/before.png" alt="aladdina current before input"></a><figcaption>Current</figcaption></figure>
