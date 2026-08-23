@@ -1,0 +1,30 @@
+{
+  "request": {
+    "checkpoint_version": 3,
+    "revision": "359a352e70477cc4f14f8e0564baa66ecfe66f6a",
+    "artifact": "mame-linux-clang-359a352e70477cc4f14f8e0564baa66ecfe66f6a",
+    "variant": "current",
+    "input_fingerprint": "9c04f24541cb4a033cfde01b1c2df274fc30b7e48ddcccfc81e908e903e362ff"
+  },
+  "result": {
+    "name": "sc88",
+    "status": "failed",
+    "button": "1 Player Start",
+    "revision": "359a352e70477cc4f14f8e0564baa66ecfe66f6a",
+    "captures": {
+      "current": {
+        "status": "failed",
+        "captured_at": "2026-08-23T12:46:55.682256+00:00",
+        "duration_seconds": 0.587,
+        "button": "1 Player Start",
+        "button_applied": true,
+        "warmup_seconds": 30.0,
+        "after_seconds": 2.0,
+        "press_seconds": 0.25,
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "359a352e70477cc4f14f8e0564baa66ecfe66f6a",
+        "artifact": "mame-linux-clang-359a352e70477cc4f14f8e0564baa66ecfe66f6a"
+      }
+    }
+  }
+}
