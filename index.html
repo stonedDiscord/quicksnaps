@@ -1,8 +1,25 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/a9984c2fabbd34878cc75df4b9f55ab21cced169">a9984c2fabbd34878cc75df4b9f55ab21cced169</a> from <a href="https://github.com/mamedev/mame/commit/98f14dfb3005c5a728d305c648499f8ea93b3a85">98f14dfb3005c5a728d305c648499f8ea93b3a85</a> - mame-linux-clang-a9984c2fabbd34878cc75df4b9f55ab21cced169 - generated 2026-08-23T11:42:18.065968+00:00</div>
-<div class="commit-message">ibmpcjr: Use MC14529 device to select audio output</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/9ceb93161b78f5200e7a2e7591798a4c08cc22fa">9ceb93161b78f5200e7a2e7591798a4c08cc22fa</a> from <a href="https://github.com/mamedev/mame/commit/a9984c2fabbd34878cc75df4b9f55ab21cced169">a9984c2fabbd34878cc75df4b9f55ab21cced169</a> - mame-linux-clang-9ceb93161b78f5200e7a2e7591798a4c08cc22fa - generated 2026-08-23T11:43:18.680162+00:00</div>
+<div class="commit-message">osd/modules/debugger/debuggdbstub.cpp: answer qOffsets so symbol files load unrelocated (#15932)
+
+GDB asks for the section offsets of the running target when a symbol
+file is loaded; without an answer it applies its default relocation and
+symbol addresses stop matching the emulated address space.  The CPU
+address space is not relocated, so reply with all-zero offsets: a
+symbol file linked at its runtime addresses and loaded with
+&quot;file&quot;/&quot;add-symbol-file&quot; is used as-is.
+
+assisted: GLM-5.1
+
+Example (Z80, symbol file linked at its runtime addresses):
+
+    (gdb) file boot.elf
+    (gdb) target remote 127.0.0.1:12000
+    0x00000000 in ?? ()
+    (gdb) break boot_continue
+    Breakpoint 1 at 0x69</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/tondemo/">tondemo</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a></div>
