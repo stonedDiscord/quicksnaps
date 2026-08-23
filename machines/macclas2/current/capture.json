@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
+    "artifact": "mame-linux-clang-5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
     "variant": "current",
-    "input_fingerprint": "d1364d36391a2364c5107e84a5655b63d94011ec7002748ef371fd905f52db3b"
+    "input_fingerprint": "4c5ad60800331f9fbb1dad7bdc707da738f2acbcb4b9133fdcfac050606ab427"
   },
   "result": {
     "name": "macclas2",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 11.461,
+        "status": "failed",
+        "captured_at": "2026-08-23T12:34:56.626155+00:00",
+        "duration_seconds": 1.15,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
+        "artifact": "mame-linux-clang-5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6"
       }
     }
   }

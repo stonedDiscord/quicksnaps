@@ -1,28 +1,29 @@
 {
   "request": {
-    "checkpoint_version": 1,
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-    "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "checkpoint_version": 3,
+    "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
+    "artifact": "mame-linux-clang-5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
     "variant": "current",
-    "input_fingerprint": "6aa8397e2b2cd07ff5adf7ccedbe33b19060486501d12bead18047ec7ada0c7e"
+    "input_fingerprint": "bbc678541710960e9a730397f6f6bceed076d05e33e36dbd4c1aa5d05f1ed6d8"
   },
   "result": {
     "name": "mactv",
-    "status": "passed",
+    "status": "failed",
     "button": "1 Player Start",
-    "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
+    "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
     "captures": {
       "current": {
-        "status": "passed",
-        "duration_seconds": 21.081,
+        "status": "failed",
+        "captured_at": "2026-08-23T12:35:16.537966+00:00",
+        "duration_seconds": 1.185,
         "button": "1 Player Start",
-        "button_applied": false,
+        "button_applied": true,
         "warmup_seconds": 30.0,
         "after_seconds": 2.0,
         "press_seconds": 0.25,
-        "failure_reason": null,
-        "revision": "4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923",
-        "artifact": "mame-linux-clang-4ce8cfae3ec8fe8ed3e59e582ca54a73989cf923"
+        "failure_reason": "Fatal error: Required files are missing, the machine cannot be run.",
+        "revision": "5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6",
+        "artifact": "mame-linux-clang-5094a51dbe89b9b12b8a200bfccd9ae1cf4793e6"
       }
     }
   }
