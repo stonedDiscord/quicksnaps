@@ -1,8 +1,20 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/8449523cb1c7bde3bd9ba18be43ff3cdf12a5687">8449523cb1c7bde3bd9ba18be43ff3cdf12a5687</a> from <a href="https://github.com/mamedev/mame/commit/e05b909725df6f2115c8a9eaf6dd5f33e0494aaf">e05b909725df6f2115c8a9eaf6dd5f33e0494aaf</a> - mame-linux-clang-8449523cb1c7bde3bd9ba18be43ff3cdf12a5687 - generated 2026-08-23T10:49:01.962089+00:00</div>
-<div class="commit-message">pc_kbd/pcat101.cpp: fix missing column select pullup</div></header>
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/98bbf50d86b564cf5ff24cff831e042c5a525cd8">98bbf50d86b564cf5ff24cff831e042c5a525cd8</a> from <a href="https://github.com/mamedev/mame/commit/8449523cb1c7bde3bd9ba18be43ff3cdf12a5687">8449523cb1c7bde3bd9ba18be43ff3cdf12a5687</a> - mame-linux-clang-98bbf50d86b564cf5ff24cff831e042c5a525cd8 - generated 2026-08-23T10:49:57.207630+00:00</div>
+<div class="commit-message">machine/z80sio: MK68564 improvements
+
+- Derive mk68564_device directly from z80sio_device
+- Correct XMTCTL character-length mapping
+- Implement internal loop mode
+- Implement MK68564 specific interrupt pending, acknowledge and vector
+  handling
+
+Also reset m_tx_count when starting a transmission from an idle
+condition to avoid additional delays - this change affects all z80sio
+devices.
+
+AI disclosure: gpt-5.6-sol was used as a research and debugging tool.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/quizardff/">quizardff</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/a3ee360dccc8986c5766b898bf5f5b13562a0ed7">a3ee360dccc8986c5766b898bf5f5b13562a0ed7</a></div>
