@@ -1,23 +1,28 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/6beda1d0348fd2f6ba940206bdec59d2d3eb22ca">6beda1d0348fd2f6ba940206bdec59d2d3eb22ca</a> from <a href="https://github.com/mamedev/mame/commit/3314e1bf934826724f6a051d13f133b6bf5520bf">3314e1bf934826724f6a051d13f133b6bf5520bf</a> - mame-linux-clang-6beda1d0348fd2f6ba940206bdec59d2d3eb22ca - generated 2026-08-23T10:16:31.208971+00:00</div>
-<div class="commit-message">ti/ti85.cpp: Implemented TI-84 Plus C Silver Edition driver (#15687)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/82350fccdd8853fd345c69b6847a298c79d33e64">82350fccdd8853fd345c69b6847a298c79d33e64</a> from <a href="https://github.com/mamedev/mame/commit/6beda1d0348fd2f6ba940206bdec59d2d3eb22ca">6beda1d0348fd2f6ba940206bdec59d2d3eb22ca</a> - mame-linux-clang-82350fccdd8853fd345c69b6847a298c79d33e64 - generated 2026-08-23T10:18:22.611195+00:00</div>
+<div class="commit-message">nokia/mikromikko2: Generate video with the CRT9007. [Curt Coder]
 
-* video/ili9335.cpp: Add Ilitek ILI9335 driver
+crt9007: Load the first data row during the vertical retrace, run the
+DMA at one character per character time and enable the row buffer write
+with the first character of the row rather than half a character time
+before it, which stored a stale character in the first location of the
+row buffer and pushed every character one location too far.
 
-* machine/intelfsh.cpp: Add Macronix 29LV320ETTI
+crt9212: The read enable is not delayed by a clock, unlike the write
+data, which is latched one clock before it is written to the RAM. Also
+fixed the write address counter being indexed with the read address
+counter.
 
-* ti/ti85.cpp: Implement ti84pcse emulation
-
-* ti/ti85.cpp: Implement RTC timer
-
-* ti84pcse: Condense RTC handlers; implement port mirroring
-
-* ti/ti85.cpp: Fixes for ti83 and ti84pcse
-
-* ti/ti85.cpp: Fix misc ti83p ASIC behavior</div></header>
+AI disclosure: assisted by Claude Opus 5</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
+<h3><a href="machines/mm2m35d/">mm2m35d</a></h3>
+<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/82350fccdd8853fd345c69b6847a298c79d33e64">82350fccdd8853fd345c69b6847a298c79d33e64</a></div>
+<div class="comparison">
+<figure><a href="machines/mm2m35d/previous/after.png"><img loading="lazy" src="machines/mm2m35d/previous/after.png" alt="mm2m35d previous after input"></a><figcaption>Previous</figcaption></figure>
+<figure><a href="machines/mm2m35d/current/after.png"><img loading="lazy" src="machines/mm2m35d/current/after.png" alt="mm2m35d current after input"></a><figcaption>Current</figcaption></figure>
+</div></article><article class="gallery-card">
 <h3><a href="machines/ti84pseb/">ti84pseb</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/6beda1d0348fd2f6ba940206bdec59d2d3eb22ca">6beda1d0348fd2f6ba940206bdec59d2d3eb22ca</a></div>
 <div class="comparison">
@@ -611,12 +616,6 @@
 <div class="comparison">
 <figure><a href="machines/airco22b/previous/before.png"><img loading="lazy" src="machines/airco22b/previous/before.png" alt="airco22b previous before input"></a><figcaption>Previous</figcaption></figure>
 <figure><a href="machines/airco22b/current/before.png"><img loading="lazy" src="machines/airco22b/current/before.png" alt="airco22b current before input"></a><figcaption>Current</figcaption></figure>
-</div></article><article class="gallery-card">
-<h3><a href="machines/adillor/">adillor</a></h3>
-<div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1">cd0a41e0a21a9ad59fc2974d25b50ff62e82f3f1</a></div>
-<div class="comparison">
-<figure><a href="machines/adillor/previous/after.png"><img loading="lazy" src="machines/adillor/previous/after.png" alt="adillor previous after input"></a><figcaption>Previous</figcaption></figure>
-<figure><a href="machines/adillor/current/after.png"><img loading="lazy" src="machines/adillor/current/after.png" alt="adillor current after input"></a><figcaption>Current</figcaption></figure>
 </div></article></div></section>
 <section><h2>All games</h2>
 <input id="filter" type="search" placeholder="Filter machines..." autofocus>
