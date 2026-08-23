@@ -1,85 +1,10 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/894f16844044bd54e7b3c679a308c21e354b6929">894f16844044bd54e7b3c679a308c21e354b6929</a> from <a href="https://github.com/mamedev/mame/commit/f6dfb51ef61d4085cb0f5438544f23a737403a23">f6dfb51ef61d4085cb0f5438544f23a737403a23</a> - mame-linux-clang-894f16844044bd54e7b3c679a308c21e354b6929 - generated 2026-08-23T10:06:56.322768+00:00</div>
-<div class="commit-message">wangpc: implement the PM001 Winchester Disk Controller (#15781)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bb260b934be61fb3f6a85d0a7755dd9d34881de6">bb260b934be61fb3f6a85d0a7755dd9d34881de6</a> from <a href="https://github.com/mamedev/mame/commit/894f16844044bd54e7b3c679a308c21e354b6929">894f16844044bd54e7b3c679a308c21e354b6929</a> - mame-linux-clang-bb260b934be61fb3f6a85d0a7755dd9d34881de6 - generated 2026-08-23T10:07:49.497649+00:00</div>
+<div class="commit-message">upd765: Deassert DRQ on terminal count and prevent FIFO handling from reasserting DRQ after the DMA transfer has completed. (#15861)
 
-* wangpc: implement the PM001 Winchester Disk Controller
-
-The wdc device was a non-functional skeleton: the Z80 firmware ran but
-the board had no drive, no disk path, no DMA and no host handshake, so
-the BIOS POST reported it defective and nothing could use it.
-
-With no known surviving schematics, the hardware model was reconstructed
-from the 378-9040 R9 firmware, the 378-9041 sequencing PROM and the
-system BIOS (details in the source header). The essentials:
-
-- 8-byte command/result blocks through the command and response
-  latches, handshaked by a hardware busy flip-flop (set by a command
-  write or a response read, cleared by the firmware&#x27;s status write).
-- A Z80 read in the sector buffer window loads the DMA address
-  counter; handshake bit 5 requests the bus, and the hardware releases
-  DREQ and strobes CTC TRG1 after every 0x100 bytes served, pacing the
-  firmware one physical sector at a time while the host programs its
-  DMA controller once for the whole operation.
-- Handshake bit 7 ends a transfer and raises the host interrupt (a
-  set flip-flop, cleared by reading +0x04), routed by the channel
-  select register or the option register DREQ bits.
-- The handshake port doubles as the stepper interface (bit 0 step,
-  bit 1 direction); drive geometry comes from the firmware table:
-  305+1 cylinders, 4 heads, 32 sectors of 256 bytes (10MB), with the
-  last cylinder reserved for the drive self-test.
-- The Z80 runs at 5MHz (10MHz XTAL / 2): the BIOS diagnostic gives
-  the firmware a fixed settle window that a slower clock cannot meet.
-
-The serializer/disk path is high-level emulated against a CHD created
-with: chdman createhd -chs 306,4,32 -ss 256
-
-Verified end to end on real-world software: the board passes the BIOS
-POST DMA diagnostic, the BIOS boot loader reads from it, the original
-SPFORMAT and INITW utilities format and initialize a virgin disk
-(including the 12-pass surface test and code download to card RAM),
-and MS-DOS boots from the Winchester to the DOS prompt with:
-
-    mame wangpc -slot5 wdc -hard &lt;chd&gt; -flop1 boot
-
-then initializing per the Wang manual (initw, copy system files).
-
-Co-Authored-By: Claude Fable 5 &lt;noreply@anthropic.com&gt;
-
-* wangpc: address review feedback on the wdc device
-
-- handshake_w: reword the request latch clearing condition with an
-  explicit was_requesting, it tests the previous state of bit 5
-- index_tick: one index pulse per revolution, as the physical drive
-  produces (3600 rpm = 60 Hz); the doubled pulse was an early
-  empirical crutch and re-testing shows it is not needed
-- guard the interrupt clearing read at +0x04 with a side effects check
-
-Co-Authored-By: Claude Fable 5 &lt;noreply@anthropic.com&gt;
-
-* wangpc: document the wdc host interface from the technical reference
-
-Chapter 10 of the Wang Professional Computer Technical Reference Manual
-(2nd edition, August 1985, 715-0080A) documents the WDC programming
-interface, and its table 10-5 matches the recording format reconstructed
-from the firmware byte for byte. Cite it in the source header, which
-until now read as if nothing at all had been documented.
-
-Also record what the tables add: the +0xFC reset, implemented but not
-described here; the interrupt level and DMA channel bit assignment of
-the option register; that the +0x06 channel select the diagnostic uses
-is absent from table 10-1, which routes the channel through +0xFE
-instead; and that the abort write documented at +0x00 is deliberately
-left unimplemented rather than guessed at, no known software using it.
-
-Comments only, no functional change.
-
-Co-Authored-By: Claude Opus 5 &lt;noreply@anthropic.com&gt;
-
----------
-
-Co-authored-by: Claude Fable 5 &lt;noreply@anthropic.com&gt;</div></header>
+Fixes floppy format in ct486 which enables the FDC37C78 FIFO.</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/eldoraddoc/">eldoraddoc</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/4810ca9f110048fc97983bc0e4c218fa13cfe06c">4810ca9f110048fc97983bc0e4c218fa13cfe06c</a></div>
