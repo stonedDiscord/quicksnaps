@@ -1,13 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>MAME quick snaps</title>
 <link rel="stylesheet" href="style.css"></head><body><header class="hero"><h1>MAME quick snaps</h1>
-<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/bb96dce43df93a0614277732bffd852279478659">bb96dce43df93a0614277732bffd852279478659</a> from <a href="https://github.com/mamedev/mame/commit/17e1e9419edc5c483bc6a4a387c7e1d7b7341e32">17e1e9419edc5c483bc6a4a387c7e1d7b7341e32</a> - mame-linux-clang-bb96dce43df93a0614277732bffd852279478659 - generated 2026-08-23T11:25:41.043961+00:00</div>
-<div class="commit-message">mc6846: CP2 latches an interrupt edge only when it is an input (#15924)
+<div class="meta">Revision <a href="https://github.com/mamedev/mame/commit/5eaaccc9f513633c07c5fcd46b5d063a3a1cd943">5eaaccc9f513633c07c5fcd46b5d063a3a1cd943</a> from <a href="https://github.com/mamedev/mame/commit/bb96dce43df93a0614277732bffd852279478659">bb96dce43df93a0614277732bffd852279478659</a> - mame-linux-clang-5eaaccc9f513633c07c5fcd46b5d063a3a1cd943 - generated 2026-08-23T11:27:07.305290+00:00</div>
+<div class="commit-message">cpu/h8/gt913: Some refactoring and tidying of peripherals (#15925)
 
-PCR bit 5 selects the direction of CP2: 0 makes it an interrupt input, 1 makes
-it an output.  set_input_cp2() had the test the wrong way round, so the edge
-flag could only be latched while the pin was configured as an output, which is
-exactly when it cannot be driven from outside.</div></header>
+- Rework timers to be more like the base h8 timers instead of using emu_timer
+- Move the ADC into the CPU class
+- Move sound component into src/devices/sound
+- Implement internal clock divider instead of doing it in system drivers</div></header>
 <main><section><h2>Latest visual changes</h2><div class="gallery"><article class="gallery-card">
 <h3><a href="machines/tondemo/">tondemo</a></h3>
 <div class="reason">After input changed at <a href="https://github.com/mamedev/mame/commit/aab5dcadb6025303ba019d0189344a5df536a623">aab5dcadb6025303ba019d0189344a5df536a623</a></div>
